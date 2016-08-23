@@ -18,8 +18,6 @@ In order to use the code in this SDK, you need to add the following dependencies
  }
 ```
 
-The instructions below assume you have the latest Android SDK (v1.0.0)
-
 # Sample Usage
 
 A simple example to retrieve the list of categories of a help center.
