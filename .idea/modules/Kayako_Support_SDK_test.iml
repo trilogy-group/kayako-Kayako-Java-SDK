@@ -18,6 +18,7 @@
     <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.4.1" level="project" />
     <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.50" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="module" module-name="Kayako_Support_SDK_main" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="Kayako_Support_SDK_main" />
 </module>

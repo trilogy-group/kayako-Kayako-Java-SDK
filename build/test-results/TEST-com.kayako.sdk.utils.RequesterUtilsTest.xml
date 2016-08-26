@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kayako.sdk.utils.RequesterUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-08-26T10:04:27" hostname="mw-macbook.local" time="0.241">
+  <properties/>
+  <testcase name="get_ensureRequestArgumentsAreSent" classname="com.kayako.sdk.utils.RequesterUtilsTest" time="0.241"/>
+  <system-out><![CDATA[Path: ///path/to/something?_case=camel&include=something,something&sectionId=2&sortBy=ASC
+Count of Expected Query Parameters:4
+Count of Actual Query Parameters:4
+------
+Query Parameter Name:_case
+Expected Value:camel
+Actual Value:camel
+------
+Query Parameter Name:include
+Expected Value:something,something
+Actual Value:something,something
+------
+Query Parameter Name:sectionId
+Expected Value:2
+Actual Value:2
+------
+Query Parameter Name:sortBy
+Expected Value:ASC
+Actual Value:ASC
+------
+Header Name:X-Session-Id
+Expected Value:boogabooga
+Actual Value:boogabooga
+------
+Header Name:X-OTP
+Expected Value:123456
+Actual Value:123456
+]]></system-out>
+  <system-err><![CDATA[Aug 26, 2016 3:34:28 PM okhttp3.mockwebserver.MockWebServer$3 execute
+INFO: MockWebServer[51534] starting to accept connections
+Aug 26, 2016 3:34:28 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFO: MockWebServer[51534] received request: GET ///path/to/something?_case=camel&include=something,something&sectionId=2&sortBy=ASC HTTP/1.1 and responded: HTTP/1.1 200 OK
+]]></system-err>
+</testsuite>

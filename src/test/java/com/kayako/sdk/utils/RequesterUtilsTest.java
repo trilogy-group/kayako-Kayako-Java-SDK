@@ -33,21 +33,21 @@ public class RequesterUtilsTest {
         final String INCLUDE_VALUE = "something,something";
 
         // Query Parameters
-        Map<String, String> defaultQueryParameters = new HashMap<>();
+        Map<String, String> defaultQueryParameters = new HashMap();
         defaultQueryParameters.put("_case", "camel");
         defaultQueryParameters.put("include", INCLUDE_VALUE);
 
-        Map<String, String> otherQueryParameters = new HashMap<>();
+        Map<String, String> otherQueryParameters = new HashMap();
         otherQueryParameters.put("sortBy", "ASC");
         otherQueryParameters.put("sectionId", "2");
 
-        Map<String, String> allQueryParameters = new HashMap<>();
+        Map<String, String> allQueryParameters = new HashMap();
         allQueryParameters.putAll(defaultQueryParameters);
         allQueryParameters.putAll(otherQueryParameters);
 
         // Headers
 
-        Map<String, String> headers = new HashMap<>();
+        Map<String, String> headers = new HashMap();
         headers.put("X-Session-Id", "boogabooga");
         headers.put("X-OTP", "123456");
 
