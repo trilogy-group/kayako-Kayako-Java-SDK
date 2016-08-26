@@ -20,19 +20,23 @@ public class SearchArticleRequester implements Requester {
     private static final String ARG_QUERY = "query";
 
     private String mQuery;
+    private Map<String, String> queryParameters;
 
     private SearchArticleRequester() {
     }
 
     public SearchArticleRequester(String query) {
         mQuery = query;
-    }
-
-    @Override
-    public String request(String helpDeskUrl) throws IOException {
-        Map<String, String> queryParameters = new HashMap<>();
+        queryParameters = new HashMap<String, String>();
         queryParameters.put(ARG_QUERY, mQuery);
         queryParameters.put(ARG_IN, ARG_VALUE_ARTICLES);
-        return RequesterUtils.get(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParameters);
+    }
+
+    public String request(String helpDeskUrl) throws IOException {
+        return RequesterUtils.getSync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParameters);
+    }
+
+    public void request(String helpDeskUrl, RequestCallback callback) {
+        RequesterUtils.getAsync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParameters, callback);
     }
 }

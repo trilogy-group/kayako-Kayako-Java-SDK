@@ -18,20 +18,24 @@ public class ArticleRequester implements Requester {
     private static final String ARG_SECTION_ID = "section_id";
 
     private long mSectionId;
+    private Map<String, String> queryParams;
 
     private ArticleRequester() {
     }
 
     public ArticleRequester(long sectionId) {
         mSectionId = sectionId;
-    }
-
-    @Override
-    public String request(String helpDeskUrl) throws IOException {
-
-        Map<String, String> queryParams = new HashMap<>();
+        queryParams = new HashMap<String, String>();
         queryParams.put(ARG_SECTION_ID, String.valueOf(mSectionId));
-
-        return RequesterUtils.get(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams);
     }
+
+    public String request(String helpDeskUrl) throws IOException {
+        return RequesterUtils.getSync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams);
+    }
+
+    public void request(String helpDeskUrl, RequestCallback callback) {
+        RequesterUtils.getAsync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams, callback);
+    }
+
+
 }

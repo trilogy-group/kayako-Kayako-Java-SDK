@@ -8,4 +8,12 @@ import java.io.IOException;
  */
 public interface Requester {
     String request(String helpDeskUrl) throws IOException;
+
+    void request(String helpDeskUrl, RequestCallback callback);
+
+    interface RequestCallback {
+        void onSuccess(String jsonResponse);
+
+        void onFailure(String errorMessage);
+    }
 }

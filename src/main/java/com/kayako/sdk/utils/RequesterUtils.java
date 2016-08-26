@@ -1,5 +1,6 @@
 package com.kayako.sdk.utils;
 
+import com.kayako.sdk.helpcenter.base.Requester;
 import okhttp3.*;
 import okhttp3.internal.Util;
 
@@ -67,7 +68,9 @@ public class RequesterUtils {
         return okHttpClient;
     }
 
-    public static String get(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
+
+    private static Request createGetRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) {
+
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
 
         // TODO: This function should be public for the classes in this sdk to use. But, this shouldn't be available to the user.
@@ -81,10 +84,33 @@ public class RequesterUtils {
             }
         }
         Request request = requestBuilder.build();
+        return request;
+    }
+
+    public static String getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
+        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
         // TODO: Should we create a new Http Client each time?
         Response response = createHttpClient().newCall(request).execute();
         return response.body().string();
+    }
+
+    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final Requester.RequestCallback callback) {
+        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
+
+        createHttpClient().newCall(request).enqueue(new Callback() {
+            public void onFailure(Call call, IOException e) {
+                if (callback != null) {
+                    callback.onFailure(e.getMessage());
+                }
+            }
+
+            public void onResponse(Call call, Response response) throws IOException {
+                if (callback != null) {
+                    callback.onSuccess(response.body().string());
+                }
+            }
+        });
     }
 
 }

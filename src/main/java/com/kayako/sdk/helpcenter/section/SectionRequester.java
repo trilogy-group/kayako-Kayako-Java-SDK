@@ -17,19 +17,22 @@ public class SectionRequester implements Requester {
     private static final String ARG_CATEGORY_ID = "category_id";
 
     private long mCategoryId;
+    private Map<String, String> queryParams;
 
     private SectionRequester() {
     }
 
     public SectionRequester(long categoryId) {
         mCategoryId = categoryId;
+        queryParams = new HashMap<String, String>();
+        queryParams.put(ARG_CATEGORY_ID, String.valueOf(mCategoryId));
     }
 
-    @Override
     public String request(String helpDeskUrl) throws IOException {
-        Map<String, String> queryParams = new HashMap<>();
-        queryParams.put(ARG_CATEGORY_ID, String.valueOf(mCategoryId));
+        return RequesterUtils.getSync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams);
+    }
 
-        return RequesterUtils.get(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams);
+    public void request(String helpDeskUrl, RequestCallback callback) {
+        RequesterUtils.getAsync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams, callback);
     }
 }
