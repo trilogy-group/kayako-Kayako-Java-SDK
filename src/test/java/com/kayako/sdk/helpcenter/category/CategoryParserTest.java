@@ -173,7 +173,7 @@ public class CategoryParserTest {
     }
 
     private void checkIfParsedCategoryIsValid(String sampleJsonResponse, Locale aLocale) {
-        List<Category> categories = categoryParser.parse(sampleJsonResponse, aLocale);
+        List<Category> categories = categoryParser.parse(sampleJsonResponse);
 
         assertNotNull(categories);
         for (Category category : categories) {

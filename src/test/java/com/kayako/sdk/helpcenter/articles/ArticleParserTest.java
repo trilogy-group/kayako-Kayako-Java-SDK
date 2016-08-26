@@ -1,6 +1,8 @@
 package com.kayako.sdk.helpcenter.articles;
 
+import com.google.gson.JsonParser;
 import com.kayako.sdk.helpcenter.section.Section;
+import com.kayako.sdk.helpcenter.section.SectionParser;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -842,10 +844,13 @@ public class ArticleParserTest {
 
         assertTrue("There should be 4 articles parsed", articleList.size() == 4);
         for (Article article : articleList) {
-            Assert.assertNotNull(article.getId());
-            Assert.assertNotNull(article.getTitle());
-            System.out.println(article.getId() + ":" + article.getTitle());
+            validateArticle(article);
         }
     }
 
+    private void validateArticle(Article article) {
+        Assert.assertNotNull(article.getId());
+        Assert.assertNotNull(article.getTitle());
+        System.out.println(article.getId() + ":" + article.getTitle());
+    }
 }
