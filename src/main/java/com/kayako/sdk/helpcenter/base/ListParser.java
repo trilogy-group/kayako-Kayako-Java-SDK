@@ -1,5 +1,7 @@
 package com.kayako.sdk.helpcenter.base;
 
+import com.google.gson.JsonObject;
+
 import java.util.List;
 
 /**
@@ -8,4 +10,6 @@ import java.util.List;
  */
 public interface ListParser<T extends Resource> {
     List<T> parse(String json);
+
+    T parseItem(JsonObject node);
 }

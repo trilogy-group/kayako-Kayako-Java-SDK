@@ -31,7 +31,7 @@ public class CategoryParser implements ListParser<Category> {
         mLocale = locale;
     }
 
-    public List<Category> parse(String json, Locale locale) {
+    private List<Category> parse(String json, Locale locale) {
         List<Category> categoryList = new ArrayList<>();
 
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
@@ -39,19 +39,7 @@ public class CategoryParser implements ListParser<Category> {
 
         for (JsonElement dataNode : data) {
             JsonObject categoryNode = dataNode.getAsJsonObject();
-            Category category = new Category();
-
-            // Id
-            category.setId(categoryNode.get(ITEM_ID).getAsLong());
-
-            // Title
-            JsonArray titleLocales = categoryNode.get(NODE_TITLES).getAsJsonArray();
-            category.setTitle(ParserUtils.getTranslationFromLocaleField(mLocale, titleLocales));
-
-            // Description
-            JsonArray descriptionLocales = categoryNode.get(NODE_DESCRIPTION).getAsJsonArray();
-            category.setDescription(ParserUtils.getTranslationFromLocaleField(mLocale, descriptionLocales));
-
+            Category category = parseItem(categoryNode);
             categoryList.add(category);
         }
 
@@ -61,5 +49,23 @@ public class CategoryParser implements ListParser<Category> {
     @Override
     public List<Category> parse(String json) {
         return parse(json, mLocale);
+    }
+
+    @Override
+    public Category parseItem(JsonObject categoryNode) {
+        Category category = new Category();
+
+        // Id
+        category.setId(categoryNode.get(ITEM_ID).getAsLong());
+
+        // Title
+        JsonArray titleLocales = categoryNode.get(NODE_TITLES).getAsJsonArray();
+        category.setTitle(ParserUtils.getTranslationFromLocaleField(mLocale, titleLocales));
+
+        // Description
+        JsonArray descriptionLocales = categoryNode.get(NODE_DESCRIPTION).getAsJsonArray();
+        category.setDescription(ParserUtils.getTranslationFromLocaleField(mLocale, descriptionLocales));
+
+        return category;
     }
 }

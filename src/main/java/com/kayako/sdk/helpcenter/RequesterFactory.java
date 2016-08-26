@@ -3,6 +3,7 @@ package com.kayako.sdk.helpcenter;
 import com.kayako.sdk.helpcenter.articles.ArticleRequester;
 import com.kayako.sdk.helpcenter.base.Requester;
 import com.kayako.sdk.helpcenter.category.CategoryRequester;
+import com.kayako.sdk.helpcenter.search.SearchArticleRequester;
 import com.kayako.sdk.helpcenter.section.SectionRequester;
 
 /**
@@ -21,5 +22,9 @@ public class RequesterFactory {
 
     public static Requester getArticleRequester(long sectionId) {
         return new ArticleRequester(sectionId);
+    }
+
+    public static Requester getSearchArticlesRequester(String query) {
+        return new SearchArticleRequester(query);
     }
 }

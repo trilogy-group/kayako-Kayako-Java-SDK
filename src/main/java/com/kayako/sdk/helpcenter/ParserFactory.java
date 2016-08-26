@@ -5,6 +5,7 @@ import com.kayako.sdk.helpcenter.articles.ArticleParser;
 import com.kayako.sdk.helpcenter.base.ListParser;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.helpcenter.category.CategoryParser;
+import com.kayako.sdk.helpcenter.search.SearchArticleParser;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
 
@@ -26,5 +27,9 @@ public class ParserFactory {
 
     public static ListParser<Article> getArticleParser(Locale locale) {
         return new ArticleParser(locale);
+    }
+
+    public static ListParser getSearchArticleParser(Locale locale) {
+        return new SearchArticleParser(locale);
     }
 }
