@@ -36,7 +36,7 @@ public class SectionParser implements ListParser<Section> {
     }
 
     private List<Section> parse(String json, Locale locale) {
-        List<Section> sectionList = new ArrayList<>();
+        List<Section> sectionList = new ArrayList<Section>();
 
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
         JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
@@ -50,12 +50,10 @@ public class SectionParser implements ListParser<Section> {
         return sectionList;
     }
 
-    @Override
     public List<Section> parse(String json) {
         return parse(json, mLocale);
     }
 
-    @Override
     public Section parseItem(JsonObject sectionNode) {
         Section section = new Section();
 

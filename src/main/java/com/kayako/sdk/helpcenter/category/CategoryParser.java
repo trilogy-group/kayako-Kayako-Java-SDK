@@ -32,7 +32,7 @@ public class CategoryParser implements ListParser<Category> {
     }
 
     private List<Category> parse(String json, Locale locale) {
-        List<Category> categoryList = new ArrayList<>();
+        List<Category> categoryList = new ArrayList<Category>();
 
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
         JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
@@ -46,12 +46,10 @@ public class CategoryParser implements ListParser<Category> {
         return categoryList;
     }
 
-    @Override
     public List<Category> parse(String json) {
         return parse(json, mLocale);
     }
 
-    @Override
     public Category parseItem(JsonObject categoryNode) {
         Category category = new Category();
 

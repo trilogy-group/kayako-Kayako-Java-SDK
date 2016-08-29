@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.base.ListParser;
+import com.kayako.sdk.helpcenter.search.SearchArticle;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.utils.ParserUtils;
 
@@ -36,7 +37,7 @@ public class ArticleParser implements ListParser<Article> {
     }
 
     private List<Article> parse(String json, Locale locale) {
-        List<Article> articleList = new ArrayList<>();
+        List<Article> articleList = new ArrayList<Article>();
 
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
         JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
@@ -49,12 +50,10 @@ public class ArticleParser implements ListParser<Article> {
         return articleList;
     }
 
-    @Override
     public List parse(String json) {
         return parse(json, mLocale);
     }
 
-    @Override
     public Article parseItem(JsonObject articleNode) {
         Article article = new Article();
 

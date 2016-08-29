@@ -1,5 +1,6 @@
 package com.kayako.sdk.utils;
 
+import com.kayako.sdk.helpcenter.base.KayakoError;
 import com.kayako.sdk.helpcenter.base.Requester;
 import okhttp3.*;
 import okhttp3.internal.Util;
@@ -110,7 +111,7 @@ public class RequesterUtils {
         getHttpClient().newCall(request).enqueue(new Callback() {
             public void onFailure(Call call, IOException e) {
                 if (callback != null) {
-                    callback.onFailure(e.getMessage());
+                    callback.onFailure(KayakoError.UNABLE_TO_CONNECT_TO_SERVER);
                 }
             }
 

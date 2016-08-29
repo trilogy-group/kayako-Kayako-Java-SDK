@@ -31,7 +31,7 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
     }
 
     private List<SearchArticle> parse(String json, Locale locale) {
-        List<SearchArticle> searchArticleList = new ArrayList<>();
+        List<SearchArticle> searchArticleList = new ArrayList<SearchArticle>();
 
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
         JsonArray dataNode = jsonObject.getAsJsonArray(NODE_DATA);
@@ -51,12 +51,10 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
     }
 
 
-    @Override
     public List parse(String json) {
         return parse(json, mLocale);
     }
 
-    @Override
     public SearchArticle parseItem(JsonObject node) {
         JsonObject articleNode = node.get(NODE_ORIGINAL).getAsJsonObject();
 

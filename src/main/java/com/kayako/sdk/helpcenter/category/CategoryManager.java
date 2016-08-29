@@ -1,6 +1,8 @@
 package com.kayako.sdk.helpcenter.category;
 
 
+import com.kayako.sdk.helpcenter.base.KayakoError;
+import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.base.ListParser;
 import com.kayako.sdk.helpcenter.base.Requester;
 
@@ -36,5 +38,27 @@ public class CategoryManager {
         }
     }
 
-    // TODO: Handle errors
+    public void getCategories(String url, final Callback callback) {
+        // Make Request
+        requester.request(url, new Requester.RequestCallback() {
+            public void onSuccess(String jsonResponse) {
+                List<Category> categories = parser.parse(jsonResponse);
+
+                if (categories != null) {
+                    callback.onSuccess(categories);
+                } else {
+                    callback.onError(KayakoError.INVALID_RESPONSE);
+                }
+            }
+
+            public void onFailure(KayakoError error) {
+                callback.onError(error);
+            }
+        });
+
+    }
+
+    public interface Callback extends ListCallback<Category> {
+    }
+
 }
