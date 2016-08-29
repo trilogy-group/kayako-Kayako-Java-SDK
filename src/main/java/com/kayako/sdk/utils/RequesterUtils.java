@@ -21,6 +21,8 @@ public class RequesterUtils {
     public static final long WRITE_TIMEOUT_IN_SECONDS = 30;
     public static final long READ_TIMEOUT_IN_SECONDS = 30;
 
+    public static OkHttpClient mOkHttpClient;
+
     private static String combineUrl(String helpDeskUrl, String apiEndpoint) {
         return String.format("%s/%s", helpDeskUrl, apiEndpoint);
     }
@@ -68,6 +70,14 @@ public class RequesterUtils {
         return okHttpClient;
     }
 
+    private static OkHttpClient getHttpClient() {
+        if (mOkHttpClient == null) {
+            return mOkHttpClient = createHttpClient();
+        } else {
+            return mOkHttpClient;
+        }
+    }
+
 
     private static Request createGetRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) {
 
@@ -90,15 +100,14 @@ public class RequesterUtils {
     public static String getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
         Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
-        // TODO: Should we create a new Http Client each time?
-        Response response = createHttpClient().newCall(request).execute();
+        Response response = getHttpClient().newCall(request).execute();
         return response.body().string();
     }
 
     public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final Requester.RequestCallback callback) {
         Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
-        createHttpClient().newCall(request).enqueue(new Callback() {
+        getHttpClient().newCall(request).enqueue(new Callback() {
             public void onFailure(Call call, IOException e) {
                 if (callback != null) {
                     callback.onFailure(e.getMessage());
