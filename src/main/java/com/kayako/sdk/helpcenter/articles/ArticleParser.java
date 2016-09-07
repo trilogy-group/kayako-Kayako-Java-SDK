@@ -22,6 +22,7 @@ public class ArticleParser implements ListParser<Article> {
 
     private static final String NODE_DATA = "data";
     private static final String NODE_TITLES = "titles";
+    private static final String NODE_CONTENTS = "contents";
     private static final String ITEM_ID = "id";
     private static final String ITEM_UIID = "uuid";
     private static final String NODE_DESCRIPTION = "descriptions";
@@ -62,6 +63,10 @@ public class ArticleParser implements ListParser<Article> {
 
         // UUID
         article.setUuid(articleNode.get(ITEM_UIID).getAsString());
+
+        // Contents
+        JsonArray contentLocales = articleNode.get(NODE_CONTENTS).getAsJsonArray();
+        article.setContents(ParserUtils.getTranslationFromLocaleField(mLocale, contentLocales));
 
         // Title
         JsonArray titleLocales = articleNode.get(NODE_TITLES).getAsJsonArray();

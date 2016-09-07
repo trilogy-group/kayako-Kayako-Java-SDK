@@ -27,9 +27,9 @@ public class ArticleManagerTest {
         for (Article article : articleList) {
             Assert.assertNotNull(article);
             Assert.assertNotNull(article.getTitle());
+            Assert.assertNotNull(article.getContents());
             Assert.assertNotNull(article.getId());
-
-            System.out.println(article.getId() + " : " + article.getTitle());
+            System.out.println(article.getId() + " : " + article.getTitle() + ":" + article.getContents());
         }
     }
 
