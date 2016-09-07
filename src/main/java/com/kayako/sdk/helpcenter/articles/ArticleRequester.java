@@ -20,14 +20,12 @@ public class ArticleRequester implements Requester {
     private long mSectionId;
     private Map<String, String> queryParams;
 
-
-    private ArticleRequester() {
-    }
-
-    public ArticleRequester(long sectionId) {
+    public ArticleRequester(long sectionId, int offset, int limit) {
         mSectionId = sectionId;
         queryParams = new HashMap<String, String>();
         queryParams.put(ARG_SECTION_ID, String.valueOf(mSectionId));
+        queryParams.put(ARG_OFFSET, String.valueOf(offset));
+        queryParams.put(ARG_LIMIT, String.valueOf(limit));
     }
 
     public String request(String helpDeskUrl) throws IOException {
@@ -37,6 +35,5 @@ public class ArticleRequester implements Requester {
     public void request(String helpDeskUrl, RequestCallback callback) {
         RequesterUtils.getAsync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams, callback);
     }
-
 
 }

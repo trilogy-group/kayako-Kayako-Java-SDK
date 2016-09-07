@@ -21,7 +21,7 @@ public class ArticleManagerTest {
     public void getArticles_LiveTest() throws Exception {
         Locale locale = Locale.forLanguageTag("en-us");
         Long sectionId = 253L;
-        ArticleManager articleManager = new ArticleManager(RequesterFactory.getArticleRequester(sectionId), ParserFactory.getArticleParser(locale));
+        ArticleManager articleManager = new ArticleManager(RequesterFactory.getArticleRequester(sectionId, 0, 20), ParserFactory.getArticleParser(locale));
         List<Article> articleList = articleManager.getArticles("https://support.kayako.com");
 
         for (Article article : articleList) {

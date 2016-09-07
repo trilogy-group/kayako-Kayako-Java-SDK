@@ -19,7 +19,7 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.forLanguageTag("en-us");
         String query = "zapier";
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query), ParserFactory.getSearchArticleParser(locale));
+        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query,0,99), ParserFactory.getSearchArticleParser(locale));
         List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
 
         for (SearchArticle searchArticle : searchArticleList) {

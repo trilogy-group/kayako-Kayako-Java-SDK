@@ -53,28 +53,28 @@ public class HelpCenter {
         return sectionManager.getSections(mHelpDeskUrl);
     }
 
-    public void getSections(long categoryId, int limit, int offset, SectionManager.Callback callback) {
+    public void getSections(long categoryId, int offset, int limit, SectionManager.Callback callback) {
         SectionManager sectionManager = new SectionManager(new SectionRequester(categoryId, offset, limit), new SectionParser(mLocale));
         sectionManager.getSections(mHelpDeskUrl, callback);
     }
 
-    public List<Article> getArticles(long sectionId) {
-        ArticleManager articleManager = new ArticleManager(new ArticleRequester(sectionId), new ArticleParser(mLocale));
+    public List<Article> getArticles(long sectionId, int offset, int limit) {
+        ArticleManager articleManager = new ArticleManager(new ArticleRequester(sectionId, offset, limit), new ArticleParser(mLocale));
         return articleManager.getArticles(mHelpDeskUrl);
     }
 
-    public void getArticles(long sectionId, ArticleManager.Callback callback) {
-        ArticleManager articleManager = new ArticleManager(new ArticleRequester(sectionId), new ArticleParser(mLocale));
+    public void getArticles(long sectionId, int offset, int limit, ArticleManager.Callback callback) {
+        ArticleManager articleManager = new ArticleManager(new ArticleRequester(sectionId, offset, limit), new ArticleParser(mLocale));
         articleManager.getArticles(mHelpDeskUrl, callback);
     }
 
-    public List<SearchArticle> getSearchArticles(String query) {
-        SearchArticleManager searchArticleManager = new SearchArticleManager(new SearchArticleRequester(query), new SearchArticleParser(mLocale));
+    public List<SearchArticle> getSearchArticles(String query, int offset, int limit) {
+        SearchArticleManager searchArticleManager = new SearchArticleManager(new SearchArticleRequester(query, offset, limit), new SearchArticleParser(mLocale));
         return searchArticleManager.getSearchArticles(mHelpDeskUrl);
     }
 
-    public void getSearchArticles(String query, SearchArticleManager.Callback callback) {
-        SearchArticleManager searchArticleManager = new SearchArticleManager(new SearchArticleRequester(query), new SearchArticleParser(mLocale));
+    public void getSearchArticles(String query, int offset, int limit, SearchArticleManager.Callback callback) {
+        SearchArticleManager searchArticleManager = new SearchArticleManager(new SearchArticleRequester(query, offset, limit), new SearchArticleParser(mLocale));
         searchArticleManager.getSearchArticles(mHelpDeskUrl, callback);
     }
 }

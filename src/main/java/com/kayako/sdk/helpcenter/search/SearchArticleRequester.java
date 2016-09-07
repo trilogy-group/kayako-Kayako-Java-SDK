@@ -25,9 +25,11 @@ public class SearchArticleRequester implements Requester {
     private SearchArticleRequester() {
     }
 
-    public SearchArticleRequester(String query) {
+    public SearchArticleRequester(String query, int offset, int limit) {
         mQuery = query;
         queryParameters = new HashMap<String, String>();
+        queryParameters.put(ARG_OFFSET, String.valueOf(offset));
+        queryParameters.put(ARG_LIMIT, String.valueOf(limit));
         queryParameters.put(ARG_QUERY, mQuery);
         queryParameters.put(ARG_IN, ARG_VALUE_ARTICLES);
     }

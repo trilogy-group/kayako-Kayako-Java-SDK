@@ -20,11 +20,11 @@ public class RequesterFactory {
         return new SectionRequester(categoryId, offset, limit);
     }
 
-    public static Requester getArticleRequester(long sectionId) {
-        return new ArticleRequester(sectionId);
+    public static Requester getArticleRequester(long sectionId, int offset, int limit) {
+        return new ArticleRequester(sectionId, offset, limit);
     }
 
-    public static Requester getSearchArticlesRequester(String query) {
-        return new SearchArticleRequester(query);
+    public static Requester getSearchArticlesRequester(String query, int offset, int limit) {
+        return new SearchArticleRequester(query, offset, limit);
     }
 }
