@@ -38,13 +38,13 @@ public class HelpCenter {
         mLocale = locale;
     }
 
-    public List<Category> getCategories() {
-        CategoryManager categoryManager = new CategoryManager(new CategoryRequester(), new CategoryParser(mLocale));
+    public List<Category> getCategories(int offset, int limit) {
+        CategoryManager categoryManager = new CategoryManager(new CategoryRequester(offset, limit), new CategoryParser(mLocale));
         return categoryManager.getCategories(mHelpDeskUrl);
     }
 
-    public void getCategories(CategoryManager.Callback callback) {
-        CategoryManager categoryManager = new CategoryManager(new CategoryRequester(), new CategoryParser(mLocale));
+    public void getCategories(int offset, int limit, CategoryManager.Callback callback) {
+        CategoryManager categoryManager = new CategoryManager(new CategoryRequester(offset, limit), new CategoryParser(mLocale));
         categoryManager.getCategories(mHelpDeskUrl, callback);
     }
 

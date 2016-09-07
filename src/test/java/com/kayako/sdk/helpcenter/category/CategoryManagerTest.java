@@ -19,7 +19,7 @@ public class CategoryManagerTest {
     @Test
     public void getCategories_LiveTest() throws Exception {
         Locale locale = Locale.forLanguageTag("en-us");
-        mCategoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(), ParserFactory.getCategoryParser(locale));
+        mCategoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(0, 999), ParserFactory.getCategoryParser(locale));
 
         String url = "https://support.kayako.com";
         List<Category> categoryList = mCategoryManager.getCategories(url);

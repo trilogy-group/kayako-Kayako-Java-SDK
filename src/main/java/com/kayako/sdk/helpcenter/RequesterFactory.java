@@ -12,8 +12,8 @@ import com.kayako.sdk.helpcenter.section.SectionRequester;
  */
 public class RequesterFactory {
 
-    public static Requester getCategoryRequester() {
-        return new CategoryRequester();
+    public static Requester getCategoryRequester(int offset, int limit) {
+        return new CategoryRequester(offset, limit);
     }
 
     public static Requester getSectionRequester(long categoryId, int offset, int limit) {
