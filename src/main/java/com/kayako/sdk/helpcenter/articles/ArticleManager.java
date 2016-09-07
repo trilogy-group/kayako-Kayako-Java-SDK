@@ -4,8 +4,6 @@ import com.kayako.sdk.helpcenter.base.KayakoError;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.base.ListParser;
 import com.kayako.sdk.helpcenter.base.Requester;
-import com.kayako.sdk.helpcenter.section.Section;
-import com.kayako.sdk.helpcenter.section.SectionManager;
 
 import java.io.IOException;
 import java.util.List;

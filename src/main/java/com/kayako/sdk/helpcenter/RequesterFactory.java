@@ -16,8 +16,8 @@ public class RequesterFactory {
         return new CategoryRequester();
     }
 
-    public static Requester getSectionRequester(long categoryId) {
-        return new SectionRequester(categoryId);
+    public static Requester getSectionRequester(long categoryId, int offset, int limit) {
+        return new SectionRequester(categoryId, offset, limit);
     }
 
     public static Requester getArticleRequester(long sectionId) {

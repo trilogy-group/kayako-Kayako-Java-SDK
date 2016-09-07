@@ -8,7 +8,6 @@ import com.kayako.sdk.helpcenter.base.Requester;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

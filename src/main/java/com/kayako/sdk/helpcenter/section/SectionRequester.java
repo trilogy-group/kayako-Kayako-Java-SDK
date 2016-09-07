@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class SectionRequester implements Requester {
     public static final String ENDPOINT = "/api/v1/sections.json";
-    public static final String INCLUDE = "localeField";
+    public static final String INCLUDE = "localeField,category";
     private static final String ARG_CATEGORY_ID = "category_id";
 
     private long mCategoryId;
@@ -22,10 +22,12 @@ public class SectionRequester implements Requester {
     private SectionRequester() {
     }
 
-    public SectionRequester(long categoryId) {
+    public SectionRequester(long categoryId, int offset, int limit) {
         mCategoryId = categoryId;
         queryParams = new HashMap<String, String>();
         queryParams.put(ARG_CATEGORY_ID, String.valueOf(mCategoryId));
+        queryParams.put(ARG_OFFSET, String.valueOf(offset));
+        queryParams.put(ARG_LIMIT, String.valueOf(limit));
     }
 
     public String request(String helpDeskUrl) throws IOException {

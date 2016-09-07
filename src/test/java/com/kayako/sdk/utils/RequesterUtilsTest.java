@@ -51,7 +51,7 @@ public class RequesterUtilsTest {
         headers.put("X-Session-Id", "boogabooga");
         headers.put("X-OTP", "123456");
 
-        RequesterUtils.get(serverUrl, ENDPOINT, INCLUDE_VALUE, headers, otherQueryParameters);
+        RequesterUtils.getSync(serverUrl, ENDPOINT, INCLUDE_VALUE, headers, otherQueryParameters);
 
         // Test Request
 

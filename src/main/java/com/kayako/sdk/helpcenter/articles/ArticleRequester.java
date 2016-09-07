@@ -14,11 +14,12 @@ import java.util.Map;
 public class ArticleRequester implements Requester {
 
     public static final String ENDPOINT = "/api/v1/articles.json";
-    public static final String INCLUDE = "localeField";
+    public static final String INCLUDE = "localeField,category,section";
     private static final String ARG_SECTION_ID = "section_id";
 
     private long mSectionId;
     private Map<String, String> queryParams;
+
 
     private ArticleRequester() {
     }

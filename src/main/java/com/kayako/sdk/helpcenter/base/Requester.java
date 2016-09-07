@@ -7,6 +7,9 @@ import java.io.IOException;
  * @date 18/08/16
  */
 public interface Requester {
+    String ARG_OFFSET = "offset";
+    String ARG_LIMIT = "limit";
+
     String request(String helpDeskUrl) throws IOException;
 
     void request(String helpDeskUrl, RequestCallback callback);
