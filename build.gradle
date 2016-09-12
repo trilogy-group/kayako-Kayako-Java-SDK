@@ -1,4 +1,9 @@
+group 'com.kayako.sdk.k5'
+version 'v1'
+
 apply plugin: 'java'
+
+sourceCompatibility = 1.5
 
 repositories {
     jcenter()

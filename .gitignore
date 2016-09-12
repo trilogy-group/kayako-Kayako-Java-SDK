@@ -1,5 +1,6 @@
-out
-gradle
-build
-.idea
+## Gradle ###
 .gradle
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
