@@ -5,9 +5,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.kayako.sdk.helpcenter.ParserFactory;
+import com.kayako.sdk.helpcenter.base.ItemParser;
 import com.kayako.sdk.helpcenter.base.ListParser;
-import com.kayako.sdk.helpcenter.search.SearchArticle;
 import com.kayako.sdk.helpcenter.section.Section;
+import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.utils.ParserUtils;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class ArticleParser implements ListParser<Article> {
     private static final String NODE_CONTENTS = "contents";
     private static final String ITEM_ID = "id";
     private static final String ITEM_UIID = "uuid";
-    private static final String NODE_DESCRIPTION = "descriptions";
+    private static final String NODE_AUTHOR = "author";
     private static final String NODE_SECTION = "section";
 
     private Locale mLocale;
@@ -76,6 +77,12 @@ public class ArticleParser implements ListParser<Article> {
         ListParser<Section> sectionParser = ParserFactory.getSectionParser(mLocale);
         JsonObject sectionNode = articleNode.get(NODE_SECTION).getAsJsonObject();
         article.setSection(sectionParser.parseItem(sectionNode));
+
+        // Author
+        JsonObject authorNode = articleNode.get(NODE_AUTHOR).getAsJsonObject();
+        ItemParser userParser = ParserFactory.getUserMinimalParser();
+        UserMinimal author = (UserMinimal) userParser.parseItem(authorNode);
+        article.setAuthor(author);
 
         return article;
 

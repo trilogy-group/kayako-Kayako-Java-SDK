@@ -2,6 +2,7 @@ package com.kayako.sdk.helpcenter.articles;
 
 import com.kayako.sdk.helpcenter.base.Resource;
 import com.kayako.sdk.helpcenter.section.Section;
+import com.kayako.sdk.helpcenter.user.UserMinimal;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -18,6 +19,8 @@ public class Article implements Resource {
     private String contents;
 
     private Section section;
+
+    private UserMinimal author;
 
     public long getId() {
         return id;
@@ -58,5 +61,14 @@ public class Article implements Resource {
     public void setSection(Section section) {
         this.section = section;
     }
-// TODO: Lot more data including creator, author, attachments, status, upvote count,etc
+
+    public UserMinimal getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(UserMinimal author) {
+        this.author = author;
+    }
+
+    // TODO: Lot more data including creator, author, attachments, status, upvote count,etc
 }

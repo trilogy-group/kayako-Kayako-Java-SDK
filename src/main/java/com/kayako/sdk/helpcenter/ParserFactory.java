@@ -2,12 +2,14 @@ package com.kayako.sdk.helpcenter;
 
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.articles.ArticleParser;
+import com.kayako.sdk.helpcenter.base.ItemParser;
 import com.kayako.sdk.helpcenter.base.ListParser;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.helpcenter.category.CategoryParser;
 import com.kayako.sdk.helpcenter.search.SearchArticleParser;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
+import com.kayako.sdk.helpcenter.user.UserParser;
 
 import java.util.Locale;
 
@@ -31,5 +33,9 @@ public class ParserFactory {
 
     public static ListParser getSearchArticleParser(Locale locale) {
         return new SearchArticleParser(locale);
+    }
+
+    public static ItemParser getUserMinimalParser() {
+        return new UserParser();
     }
 }

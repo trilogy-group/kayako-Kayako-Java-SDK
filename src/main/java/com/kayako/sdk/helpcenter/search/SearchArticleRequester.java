@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class SearchArticleRequester implements Requester {
     private static final String ENDPOINT = "/api/v1/helpcenter/search";
-    private static final String INCLUDE = "locale_field,category,section,article";
+    private static final String INCLUDE = "locale_field,category,section,article,userMinimal";
 
     private static final String ARG_IN = "in";
     private static final String ARG_VALUE_ARTICLES = "articles";
