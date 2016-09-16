@@ -26,6 +26,8 @@ public class ArticleParser implements ListParser<Article> {
     private static final String NODE_CONTENTS = "contents";
     private static final String ITEM_ID = "id";
     private static final String ITEM_UIID = "uuid";
+    private static final String ITEM_PUBLISHED_AT = "publishedAt";
+    private static final String ITEM_UPDATED_AT = "updatedAt";
     private static final String NODE_AUTHOR = "author";
     private static final String NODE_SECTION = "section";
 
@@ -83,6 +85,14 @@ public class ArticleParser implements ListParser<Article> {
         ItemParser userParser = ParserFactory.getUserMinimalParser();
         UserMinimal author = (UserMinimal) userParser.parseItem(authorNode);
         article.setAuthor(author);
+
+        // Last Posted
+        long timePosted = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_PUBLISHED_AT).getAsString());
+        article.setLastPosted(timePosted);
+
+        // Last Updated
+        long timeUpdated = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_PUBLISHED_AT).getAsString());
+        article.setLastUpdated(timeUpdated);
 
         return article;
 

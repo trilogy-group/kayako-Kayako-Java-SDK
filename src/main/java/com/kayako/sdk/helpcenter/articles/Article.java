@@ -22,6 +22,10 @@ public class Article implements Resource {
 
     private UserMinimal author;
 
+    private long lastUpdated;
+
+    private long lastPosted;
+
     public long getId() {
         return id;
     }
@@ -70,5 +74,20 @@ public class Article implements Resource {
         this.author = author;
     }
 
-    // TODO: Lot more data including creator, author, attachments, status, upvote count,etc
+    public long getLastUpdated() {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(long lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
+
+    public long getLastPosted() {
+        return lastPosted;
+    }
+
+    public void setLastPosted(long lastPosted) {
+        this.lastPosted = lastPosted;
+    }
+
 }

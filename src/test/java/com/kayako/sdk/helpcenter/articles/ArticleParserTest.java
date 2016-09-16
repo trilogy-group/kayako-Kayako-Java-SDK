@@ -439,7 +439,7 @@ public class ArticleParserTest {
                 "    \"lastUrl\": \"https://support.kayako.com/api/v1/articles.json?_case=camel&include=%2A&limit=2&offset=4&sectionId=243\"\n" +
                 "}";
 
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.US;
         ArticleParser articleParser = new ArticleParser(locale);
         List<Article> articleList = articleParser.parse(jsonSample);
 
@@ -453,6 +453,8 @@ public class ArticleParserTest {
         Assert.assertNotNull(article.getId());
         Assert.assertNotNull(article.getTitle());
         Assert.assertNotNull(article.getAuthor());
+        Assert.assertTrue(article.getLastPosted() != 0);
+        Assert.assertTrue(article.getLastUpdated() != 0);
         System.out.println(article.getId() + ":" + article.getTitle());
         System.out.println("Author:" + article.getAuthor().getFullName());
     }

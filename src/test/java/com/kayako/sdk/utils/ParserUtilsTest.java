@@ -154,4 +154,15 @@ public class ParserUtilsTest {
         System.out.println("First Translation parsed when translation for specified locale is missing and english translation is missing");
     }
 
+    private static final long ONE_DAY_IN_MILLISECONDS = 86400000L;
+
+    @Test
+    public void getTimeInMilliSeconds_withExpectedDateFormat() {
+        String date = "2016-02-24T21:59:26+00:00";
+        long actualTimeInMilliSeconds = ParserUtils.getTimeInMilliSeconds(date);
+        long expectedTimeInMilliSeconds = 1456351166000L; // used http://www.epochconverter.com/ AND http://coderstoolbox.net/unixtimestamp/
+
+        boolean isSameDay = Math.abs(expectedTimeInMilliSeconds - actualTimeInMilliSeconds) < ONE_DAY_IN_MILLISECONDS;
+        Assert.assertTrue("Time conversion failed! Actual (" + actualTimeInMilliSeconds + ") and Expected (" + expectedTimeInMilliSeconds + ") doesn't match\n Difference = " + (actualTimeInMilliSeconds - expectedTimeInMilliSeconds), isSameDay);
+    }
 }

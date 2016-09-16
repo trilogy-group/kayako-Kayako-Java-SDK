@@ -4,6 +4,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -47,7 +50,7 @@ public class ParserUtils {
                 return currentTranslation;
             }
 
-            if (new Locale("en").equals(currentLocale)) {
+            if (Locale.ENGLISH.equals(currentLocale)) {
                 enTranslation = currentTranslation;
             }
 
@@ -62,6 +65,17 @@ public class ParserUtils {
             return firstTranslation;
         } else {
             return null;
+        }
+    }
+
+    public static long getTimeInMilliSeconds(String isoTimeStamp) {
+        // TODO: Known to be unreliable from time to time. Find a better way to do this later.
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.UK);
+            return sdf.parse(isoTimeStamp).getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return 0;
         }
     }
 }
