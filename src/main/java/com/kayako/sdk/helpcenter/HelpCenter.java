@@ -84,5 +84,5 @@ public class HelpCenter {
         LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester(), ParserFactory.getLocaleParser());
         localeManager.getLocales(mHelpDeskUrl, callback);
     }
-
+    
 }

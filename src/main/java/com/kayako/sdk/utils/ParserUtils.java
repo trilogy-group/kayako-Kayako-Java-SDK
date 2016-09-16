@@ -41,12 +41,13 @@ public class ParserUtils {
 
             String currentLocaleCode = localeElement.getAsString();
             String currentTranslation = translationElement.getAsString();
+            Locale currentLocale = new Locale(LocaleUtils.getLanguage(currentLocaleCode));
 
-            if (selectLocale.equals(Locale.forLanguageTag(currentLocaleCode))) {
+            if (selectLocale.equals(currentLocale)) {
                 return currentTranslation;
             }
 
-            if (Locale.forLanguageTag(currentLocaleCode).equals(Locale.forLanguageTag(("en-us")))) {
+            if (new Locale("en").equals(currentLocale)) {
                 enTranslation = currentTranslation;
             }
 
