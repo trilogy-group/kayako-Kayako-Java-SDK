@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kayako Support SDK.iml" filepath="$PROJECT_DIR$/.idea/modules/Kayako Support SDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_main.iml" group="Kayako Support SDK" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_test.iml" group="Kayako Support SDK" />
+    </modules>
+  </component>
+</project>
