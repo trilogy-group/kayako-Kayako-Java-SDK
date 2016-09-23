@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class SearchArticleManagerTest {
     @Test
     public void getSearchArticles_LiveTest() throws Exception {
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.ENGLISH;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
         SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
@@ -56,8 +56,15 @@ public class SearchArticleManagerTest {
         performSearch("zapier");
     }
 
+    /**
+     * Performs a search on the Kayako Articles.
+     *
+     * The search fails if the query is less than 3 characters long.
+     *
+     * @param query query used for search
+     */
     public void performSearch(String query) {
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
         SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
         List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
@@ -71,7 +78,4 @@ public class SearchArticleManagerTest {
             assertNotNull(searchArticle.getOriginalArticle().getSection().getCategory());
         }
     }
-
-    // TODO: Validation - at least 3 characters for query
-
 }

@@ -15,8 +15,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class RequesterUtils {
 
-    // TODO: Document - what does each function do?
-
     public static final long CONNECTION_TIMEOUT_IN_SECONDS = 30;
     public static final long WRITE_TIMEOUT_IN_SECONDS = 30;
     public static final long READ_TIMEOUT_IN_SECONDS = 30;
@@ -80,11 +78,7 @@ public class RequesterUtils {
 
 
     private static Request createGetRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) {
-
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
-
-        // TODO: This function should be public for the classes in this sdk to use. But, this shouldn't be available to the user.
-
         Request.Builder requestBuilder = new Request.Builder().url(httpUrl).get();
 
         // Add headers if available

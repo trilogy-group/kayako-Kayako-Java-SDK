@@ -16,8 +16,7 @@ public class UserParser implements ItemParser<UserMinimal> {
 
     public UserMinimal parse(String json) {
         JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        return parseItem(jsonObject);
-        // TODO: Untested. No API that just returns UserMinimal
+        return parseItem(jsonObject); // Untested. No API that just returns UserMinimal
     }
 
     public UserMinimal parseItem(JsonObject node) {

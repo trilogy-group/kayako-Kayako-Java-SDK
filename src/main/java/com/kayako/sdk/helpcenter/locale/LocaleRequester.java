@@ -16,8 +16,6 @@ public class LocaleRequester implements Requester {
     public static final String ENDPOINT = "/api/v1/locales.json";
     public static final String INCLUDE = "locale";
 
-    // TODO: Test? All 42+ Locales are loaded (no need to specify limit)
-
     public String request(String helpDeskUrl) throws IOException {
         return RequesterUtils.getSync(helpDeskUrl, ENDPOINT, INCLUDE, null, null);
     }

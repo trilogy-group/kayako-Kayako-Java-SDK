@@ -14,13 +14,11 @@ import static org.junit.Assert.*;
  */
 public class CategoryParserTest {
 
-    // TODO: Figure out what best to do when translations are null for title. For description, it's allowed.
-
     CategoryParser categoryParser;
 
     @Before
     public void setUp() throws Exception {
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.ENGLISH;
         categoryParser = new CategoryParser(locale);
     }
 

@@ -537,7 +537,7 @@ public class SectionParserTest {
                 "    \"totalCount\": 9\n" +
                 "}";
 
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.ENGLISH;
 
         SectionParser sectionParser = new SectionParser(locale);
 
@@ -555,7 +555,4 @@ public class SectionParserTest {
         Assert.assertNotNull(section.getTitle());
         System.out.println(section.getId() + ":" + section.getTitle());
     }
-
-    // TODO: How about loading more than 10 items. Load More Implementation?
-
 }
