@@ -1,6 +1,5 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.helpcenter.base.KayakoError;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.base.ListParser;
 import com.kayako.sdk.helpcenter.base.Requester;

@@ -69,7 +69,6 @@ public class ParserUtils {
     }
 
     public static long getTimeInMilliSeconds(String isoTimeStamp) {
-        // TODO: Known to be unreliable from time to time. Find a better way to do this later.
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.UK);
             return sdf.parse(isoTimeStamp).getTime();

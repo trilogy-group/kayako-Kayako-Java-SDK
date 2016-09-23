@@ -17,6 +17,6 @@ public interface Requester {
     interface RequestCallback {
         void onSuccess(String jsonResponse);
 
-        void onFailure(KayakoError kayakoError);
+        void onFailure(Throwable error);
     }
 }
