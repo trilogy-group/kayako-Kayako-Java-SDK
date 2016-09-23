@@ -46,11 +46,11 @@ public class SectionManager {
                 if (sections != null) {
                     callback.onSuccess(sections);
                 } else {
-                    callback.onError(KayakoError.INVALID_RESPONSE);
+                    callback.onError(new NullPointerException("Invalid Response. Parsing failed."));
                 }
             }
 
-            public void onFailure(KayakoError error) {
+            public void onFailure(Throwable error) {
                 callback.onError(error);
             }
         });

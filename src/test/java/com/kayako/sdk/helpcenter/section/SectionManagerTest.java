@@ -16,7 +16,7 @@ public class SectionManagerTest {
 
     @Test
     public void getSections_LiveTest() throws Exception {
-        Locale locale = Locale.forLanguageTag("en-us");
+        Locale locale = Locale.US;
         long categoryId = 5;
         SectionManager sectionManager = new SectionManager(RequesterFactory.getSectionRequester(categoryId, 0, 999), ParserFactory.getSectionParser(locale));
         List<Section> sectionList = sectionManager.getSections("https://support.kayako.com");

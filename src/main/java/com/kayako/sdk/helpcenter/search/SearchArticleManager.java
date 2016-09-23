@@ -44,11 +44,11 @@ public class SearchArticleManager {
                 if (searchArticles != null) {
                     callback.onSuccess(searchArticles);
                 } else {
-                    callback.onError(KayakoError.INVALID_RESPONSE);
+                    callback.onError(new NullPointerException("Invalid Response. Parsing failed."));
                 }
             }
 
-            public void onFailure(KayakoError error) {
+            public void onFailure(Throwable error) {
                 callback.onError(error);
             }
         });

@@ -9,7 +9,7 @@ import java.util.List;
  * @date 18/08/16
  */
 public interface ListParser<T extends Resource> {
-    List<T> parse(String json);
+    List<T> parse(String json) throws NullPointerException;
 
-    T parseItem(JsonObject node);
+    T parseItem(JsonObject node) throws NullPointerException;
 }

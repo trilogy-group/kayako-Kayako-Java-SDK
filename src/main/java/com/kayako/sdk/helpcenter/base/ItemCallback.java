@@ -9,5 +9,5 @@ import java.util.List;
 public interface ItemCallback<T extends Resource> {
     void onSuccess(T item);
 
-    void onError(KayakoError error);
+    void onError(Throwable error);
 }

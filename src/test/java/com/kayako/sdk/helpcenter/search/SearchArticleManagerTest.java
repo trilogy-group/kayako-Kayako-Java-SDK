@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class SearchArticleManagerTest {
     @Test
     public void getSearchArticles_LiveTest() throws Exception {
-        Locale locale = Locale.ENGLISH;
+        Locale locale = Locale.US;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
         SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));

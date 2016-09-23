@@ -7,8 +7,8 @@ import com.google.gson.JsonObject;
  * @date 18/08/16
  */
 public interface ItemParser<T extends Resource> {
-    public T parse(String json);
+    T parse(String json) throws NullPointerException;
 
-    T parseItem(JsonObject node);
+    T parseItem(JsonObject node) throws NullPointerException;
 
 }
