@@ -1,9 +1,78 @@
-group 'com.kayako.sdk.k5'
-version 'v1'
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
 
-apply plugin: 'java'
+plugins {
+    id "com.jfrog.bintray" version "1.7"
+}
 
-sourceCompatibility = 1.5
+def appBaseName = "kayako-sdk"
+
+def appGroupId = "com.kayako"
+def appArtifactId = "kayako"
+def appVersion = "0.0.1"
+
+def appBintrayUser = "kayako"
+def appUserOrg = "kayako-support"
+def appBintrayApiKey = "FILL_IN_BEFORE_DEPLOYMENT"
+
+def appRepoName = "kayako-devkits"
+def appPackageName = "kayako"
+def appVcsUrl = "https://github.com/kayako/Kayako-Java-SDK.git"
+
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    apply plugin: 'java'
+}
+
+// Add following to prevent PARSE ERROR
+def javaVersion = JavaVersion.VERSION_1_7;
+sourceCompatibility = javaVersion;
+targetCompatibility = javaVersion;
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+
+            groupId "${appGroupId}"
+            artifactId "${appArtifactId}"
+            version "${appVersion}"
+        }
+    }
+}
+
+bintray {
+    user = "${appBintrayUser}"
+    key = "${appBintrayApiKey}"
+    publications = ['MyPublication']
+    pkg {
+        repo = appRepoName
+        name = appPackageName
+        userOrg = appUserOrg
+        licenses = ['Apache-2.0']
+        vcsUrl = appVcsUrl
+        labels = ['kayako']
+        publicDownloadNumbers = false
+        version {
+            name = "${appVersion}"
+            desc = "v${appVersion}"
+            vcsTag = "v${appVersion}"
+            attributes = ["${appArtifactId}": "${appGroupId}:${appArtifactId}:${appVersion}"]
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
 
 repositories {
     jcenter()
@@ -17,3 +86,5 @@ dependencies {
     compile 'com.squareup.okio:okio:1.9.0'
     compile 'com.google.code.gson:gson:2.4'
 }
+
+
