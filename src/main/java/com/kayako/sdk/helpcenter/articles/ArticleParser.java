@@ -91,7 +91,7 @@ public class ArticleParser implements ListParser<Article> {
         article.setLastPosted(timePosted);
 
         // Last Updated
-        long timeUpdated = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_PUBLISHED_AT).getAsString());
+        long timeUpdated = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_UPDATED_AT).getAsString());
         article.setLastUpdated(timeUpdated);
 
         return article;
