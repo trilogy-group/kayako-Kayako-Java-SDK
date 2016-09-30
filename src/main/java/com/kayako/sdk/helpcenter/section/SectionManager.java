@@ -37,7 +37,7 @@ public class SectionManager {
         }
     }
 
-    public void getSections(String url, final Callback callback) {
+    public void getSections(String url, final ListCallback<Section> callback) {
         // Make Request
         mRequester.request(url, new Requester.RequestCallback() {
             public void onSuccess(String jsonResponse) {
@@ -54,8 +54,5 @@ public class SectionManager {
                 callback.onError(error);
             }
         });
-    }
-
-    public interface Callback extends ListCallback<Section> {
     }
 }

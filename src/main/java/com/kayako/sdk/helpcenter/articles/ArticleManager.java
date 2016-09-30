@@ -37,7 +37,7 @@ public class ArticleManager {
         }
     }
 
-    public void getArticles(String url, final Callback callback) {
+    public void getArticles(String url, final ListCallback<Article> callback) {
         // Make Request
         mRequester.request(url, new Requester.RequestCallback() {
             public void onSuccess(String jsonResponse) {
@@ -55,8 +55,4 @@ public class ArticleManager {
             }
         });
     }
-
-    public interface Callback extends ListCallback<Article> {
-    }
-
 }

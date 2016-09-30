@@ -15,11 +15,6 @@ public class Category implements Resource {
 
     private long displayOrder;
 
-    @Override
-    public String toString() {
-        return title;
-    }
-
     public long getId() {
         return id;
     }
@@ -50,5 +45,15 @@ public class Category implements Resource {
 
     public void setDisplayOrder(long displayOrder) {
         this.displayOrder = displayOrder;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", displayOrder=" + displayOrder +
+                '}';
     }
 }

@@ -48,4 +48,14 @@ public class SearchArticle implements Resource {
     public void setOriginalArticle(Article originalArticle) {
         this.originalArticle = originalArticle;
     }
+
+    @Override
+    public String toString() {
+        return "SearchArticle{" +
+                "title='" + title + '\'' +
+                ", categoryName='" + categoryName + '\'' +
+                ", sectionName='" + sectionName + '\'' +
+                ", originalArticle=" + originalArticle +
+                '}';
+    }
 }

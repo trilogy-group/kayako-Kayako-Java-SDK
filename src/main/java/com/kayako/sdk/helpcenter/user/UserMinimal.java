@@ -40,4 +40,13 @@ public class UserMinimal implements Resource {
     public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
     }
+
+    @Override
+    public String toString() {
+        return "UserMinimal{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", avatarUrl='" + avatarUrl + '\'' +
+                '}';
+    }
 }

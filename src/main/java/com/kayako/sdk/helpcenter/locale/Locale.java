@@ -90,4 +90,18 @@ public class Locale implements Resource {
         this.direction = direction;
     }
 
+    @Override
+    public String toString() {
+        return "Locale{" +
+                "id=" + id +
+                ", locale='" + locale + '\'' +
+                ", name='" + name + '\'' +
+                ", nativeName='" + nativeName + '\'' +
+                ", region='" + region + '\'' +
+                ", nativeRegion='" + nativeRegion + '\'' +
+                ", isPublic=" + isPublic +
+                ", isLocalized=" + isLocalized +
+                ", direction='" + direction + '\'' +
+                '}';
+    }
 }

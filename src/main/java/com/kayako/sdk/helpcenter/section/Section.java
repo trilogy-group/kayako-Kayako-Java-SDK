@@ -7,7 +7,7 @@ import com.kayako.sdk.helpcenter.category.Category;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class Section implements Resource{
+public class Section implements Resource {
 
     private long id;
 
@@ -69,5 +69,15 @@ public class Section implements Resource{
         this.display_order = display_order;
     }
 
-
+    @Override
+    public String toString() {
+        return "Section{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", visibility='" + visibility + '\'' +
+                ", category=" + category +
+                ", display_order=" + display_order +
+                '}';
+    }
 }

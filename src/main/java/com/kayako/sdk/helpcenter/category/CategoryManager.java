@@ -36,7 +36,7 @@ public class CategoryManager {
         }
     }
 
-    public void getCategories(String url, final Callback callback) {
+    public void getCategories(String url, final ListCallback<Category> callback) {
         // Make Request
         requester.request(url, new Requester.RequestCallback() {
             public void onSuccess(String jsonResponse) {
@@ -53,10 +53,6 @@ public class CategoryManager {
                 callback.onError(error);
             }
         });
-
-    }
-
-    public interface Callback extends ListCallback<Category> {
     }
 
 }

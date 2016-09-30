@@ -90,4 +90,17 @@ public class Article implements Resource {
         this.lastPosted = lastPosted;
     }
 
+    @Override
+    public String toString() {
+        return "Article{" +
+                "id=" + id +
+                ", uuid='" + uuid + '\'' +
+                ", title='" + title + '\'' +
+                ", contents='" + contents + '\'' +
+                ", section=" + section +
+                ", author=" + author +
+                ", lastUpdated=" + lastUpdated +
+                ", lastPosted=" + lastPosted +
+                '}';
+    }
 }

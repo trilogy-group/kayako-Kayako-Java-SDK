@@ -35,7 +35,7 @@ public class SearchArticleManager {
         }
     }
 
-    public void getSearchArticles(String url, final Callback callback) {
+    public void getSearchArticles(String url, final ListCallback<SearchArticle> callback) {
         // Make Request
         mRequester.request(url, new Requester.RequestCallback() {
             public void onSuccess(String jsonResponse) {
@@ -55,6 +55,4 @@ public class SearchArticleManager {
 
     }
 
-    public interface Callback extends ListCallback<SearchArticle> {
-    }
 }

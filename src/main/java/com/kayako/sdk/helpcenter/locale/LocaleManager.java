@@ -37,7 +37,7 @@ public class LocaleManager {
         }
     }
 
-    public void getLocales(String url, final Callback callback) {
+    public void getLocales(String url, final ListCallback<Locale> callback) {
         // Make Request
         mRequester.request(url, new Requester.RequestCallback() {
             public void onSuccess(String jsonResponse) {
@@ -55,8 +55,4 @@ public class LocaleManager {
             }
         });
     }
-
-    public interface Callback extends ListCallback<Locale> {
-    }
-
 }
