@@ -12,15 +12,18 @@ def appBaseName = "kayako-sdk"
 
 def appGroupId = "com.kayako"
 def appArtifactId = "kayako"
-def appVersion = "0.0.1"
+def appVersion = "0.0.3"
 
 def appBintrayUser = "kayako"
 def appUserOrg = "kayako-support"
-def appBintrayApiKey = "FILL_IN"
+def appBintrayApiKey = "a1e733251a551209c4228ed893f9bf8ce663ea1f"
 
 def appRepoName = "kayako-devkits"
 def appPackageName = "kayako"
+
 def appVcsUrl = "https://github.com/kayako/Kayako-Java-SDK.git"
+def appWebsiteUrl = "https://github.com/kayako/Kayako-Java-SDK"
+def appIssueTrackerUrl = "https://github.com/kayako/Kayako-Java-SDK/issues"
 
 def javaVersion = JavaVersion.VERSION_1_7;
 
@@ -58,6 +61,8 @@ bintray {
         name = appPackageName
         userOrg = appUserOrg
         licenses = ['Apache-2.0']
+        websiteUrl = appWebsiteUrl
+        issueTrackerUrl = appIssueTrackerUrl
         vcsUrl = appVcsUrl
         labels = ['kayako']
         publicDownloadNumbers = false
