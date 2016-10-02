@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+plugins {
+    id "com.jfrog.bintray" version "1.7"
+}
+
+def appBaseName = "kayako-sdk"
+
+def appGroupId = "com.kayako"
+def appArtifactId = "kayako"
+def appVersion = "0.0.3"
+
+def appBintrayUser = "kayako"
+def appUserOrg = "kayako-support"
+def appBintrayApiKey = "a1e733251a551209c4228ed893f9bf8ce663ea1f"
+
+def appRepoName = "kayako-devkits"
+def appPackageName = "kayako"
+
+def appVcsUrl = "https://github.com/kayako/Kayako-Java-SDK.git"
+def appWebsiteUrl = "https://github.com/kayako/Kayako-Java-SDK"
+def appIssueTrackerUrl = "https://github.com/kayako/Kayako-Java-SDK/issues"
+
+def javaVersion = JavaVersion.VERSION_1_7;
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    apply plugin: 'java'
+
+    // Add following to prevent PARSE ERROR
+    sourceCompatibility = javaVersion;
+    targetCompatibility = javaVersion;
+}
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+
+            groupId "${appGroupId}"
+            artifactId "${appArtifactId}"
+            version "${appVersion}"
+        }
+    }
+}
+
+bintray {
+    user = "${appBintrayUser}"
+    key = "${appBintrayApiKey}"
+    publications = ['MyPublication']
+    pkg {
+        repo = appRepoName
+        name = appPackageName
+        userOrg = appUserOrg
+        licenses = ['Apache-2.0']
+        websiteUrl = appWebsiteUrl
+        issueTrackerUrl = appIssueTrackerUrl
+        vcsUrl = appVcsUrl
+        labels = ['kayako']
+        publicDownloadNumbers = false
+        version {
+            name = "${appVersion}"
+            desc = "v${appVersion}"
+            vcsTag = "v${appVersion}"
+            attributes = ["${appArtifactId}": "${appGroupId}:${appArtifactId}:${appVersion}"]
+        }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
+
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.okhttp3:mockwebserver:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    compile 'com.google.code.gson:gson:2.4'
+}
+
+
