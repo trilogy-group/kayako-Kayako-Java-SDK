@@ -16,7 +16,7 @@ def appVersion = "0.0.3"
 
 def appBintrayUser = "kayako"
 def appUserOrg = "kayako-support"
-def appBintrayApiKey = "a1e733251a551209c4228ed893f9bf8ce663ea1f"
+def appBintrayApiKey = "FILL_API_KEY_HERE"
 
 def appRepoName = "kayako-devkits"
 def appPackageName = "kayako"
