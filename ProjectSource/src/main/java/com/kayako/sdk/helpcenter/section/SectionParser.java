@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.helpcenter.category.Category;
@@ -68,7 +69,7 @@ public class SectionParser implements ListParser<Section> {
         section.setDescription(ParserUtils.getTranslationFromLocaleField(mLocale, descriptionLocales));
 
         // Category
-        ListParser<Category> categoryParser = ParserFactory.getCategoryParser(mLocale);
+        Parser<Category> categoryParser = ParserFactory.getCategoryParser(mLocale);
         JsonObject categoryNode = sectionNode.get(NODE_CATEGORY).getAsJsonObject();
         section.setCategory(categoryParser.parseItem(categoryNode));
 

@@ -1,7 +1,9 @@
 package com.kayako.sdk.helpcenter.locale;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.RequesterFactory;
+import com.kayako.sdk.helpcenter.category.Category;
 import org.junit.Test;
 
 import java.util.List;
@@ -16,8 +18,8 @@ public class LocaleManagerTest {
 
     @Test
     public void getLocales() throws Exception {
-        LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester("http://support.kayako.com"), ParserFactory.getLocaleParser());
-        List<Locale> locales = localeManager.getLocales();
+
+        List<Locale> locales = new ListManager<Locale>(RequesterFactory.getLocaleRequester("http://support.kayako.com"), ParserFactory.getLocaleParser()).getList();
 
         for (Locale locale : locales) {
             LocaleParserTest.validateLocale(locale);

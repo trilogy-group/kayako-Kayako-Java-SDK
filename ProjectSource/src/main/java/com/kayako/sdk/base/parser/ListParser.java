@@ -1,15 +1,11 @@
 package com.kayako.sdk.base.parser;
 
-import com.google.gson.JsonObject;
-
 import java.util.List;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 18/08/16
  */
-public interface ListParser<T extends Resource> {
+public interface ListParser<T extends Resource> extends Parser {
     List<T> parse(String json) throws NullPointerException;
-
-    T parseItem(JsonObject node) throws NullPointerException;
 }

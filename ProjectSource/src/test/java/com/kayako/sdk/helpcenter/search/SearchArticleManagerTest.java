@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.search;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.RequesterFactory;
 import org.junit.Test;
@@ -20,8 +21,7 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.US;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles();
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");
@@ -66,8 +66,8 @@ public class SearchArticleManagerTest {
     public void performSearch(String query) {
         Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles();
+
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");

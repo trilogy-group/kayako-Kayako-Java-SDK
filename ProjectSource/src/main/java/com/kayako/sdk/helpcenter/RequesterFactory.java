@@ -2,7 +2,7 @@ package com.kayako.sdk.helpcenter;
 
 import com.kayako.sdk.helpcenter.articles.ArticleRequester;
 import com.kayako.sdk.base.requester.ListRequester;
-import com.kayako.sdk.helpcenter.category.GetCategoriesRequester;
+import com.kayako.sdk.helpcenter.category.CategoryRequester;
 import com.kayako.sdk.helpcenter.locale.LocaleRequester;
 import com.kayako.sdk.helpcenter.search.SearchArticleRequester;
 import com.kayako.sdk.helpcenter.section.SectionRequester;
@@ -14,7 +14,7 @@ import com.kayako.sdk.helpcenter.section.SectionRequester;
 public class RequesterFactory {
 
     public static ListRequester getCategoryRequester(String helpCenterUrl, int offset, int limit) {
-        return new GetCategoriesRequester(helpCenterUrl, offset, limit);
+        return new CategoryRequester(helpCenterUrl, offset, limit);
     }
 
     public static ListRequester getSectionRequester(String helpCenterUrl, long categoryId, int offset, int limit) {

@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.section;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.RequesterFactory;
 import org.junit.Assert;
@@ -18,8 +19,7 @@ public class SectionManagerTest {
     public void getSections_LiveTest() throws Exception {
         Locale locale = Locale.US;
         long categoryId = 5;
-        SectionManager sectionManager = new SectionManager(RequesterFactory.getSectionRequester("https://support.kayako.com", categoryId, 0, 999), ParserFactory.getSectionParser(locale));
-        List<Section> sectionList = sectionManager.getSections();
+        List<Section> sectionList = new ListManager<Section>(RequesterFactory.getSectionRequester("https://support.kayako.com", categoryId, 0, 999), ParserFactory.getSectionParser(locale)).getList();
 
         for (Section section : sectionList) {
             Assert.assertNotNull(section);

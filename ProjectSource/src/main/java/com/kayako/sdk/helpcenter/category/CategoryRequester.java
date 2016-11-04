@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.category;
 
+import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.ListRequester;
 import com.kayako.sdk.base.requester.Response;
@@ -13,7 +14,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class GetCategoriesRequester implements ListRequester {
+public class CategoryRequester implements ListRequester,ItemRequester {
 
     public static final String ENDPOINT = "/api/v1/categories.json";
     public static final String INCLUDE = "localeField";
@@ -21,7 +22,7 @@ public class GetCategoriesRequester implements ListRequester {
     private Map<String, String> mQueryParams;
     private String mHelpDeskUrl;
 
-    public GetCategoriesRequester(String helpDeskUrl, int offset, int limit) {
+    public CategoryRequester(String helpDeskUrl, int offset, int limit) {
         mQueryParams = new HashMap<String, String>();
         mQueryParams.put(ARG_OFFSET, String.valueOf(offset));
         mQueryParams.put(ARG_LIMIT, String.valueOf(limit));

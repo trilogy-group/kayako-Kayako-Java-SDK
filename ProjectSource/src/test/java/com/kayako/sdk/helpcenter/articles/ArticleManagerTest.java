@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.articles;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.RequesterFactory;
 import com.kayako.sdk.helpcenter.section.Section;
@@ -21,8 +22,8 @@ public class ArticleManagerTest {
     public void getArticles_LiveTest() throws Exception {
         Locale locale = Locale.forLanguageTag("en-us");
         Long sectionId = 253L;
-        ArticleManager articleManager = new ArticleManager(RequesterFactory.getArticleRequester("https://support.kayako.com",sectionId, 0, 20), ParserFactory.getArticleParser(locale));
-        List<Article> articleList = articleManager.getArticles();
+        ListManager<Article> articleManager = new ListManager<>(RequesterFactory.getArticleRequester("https://support.kayako.com",sectionId, 0, 20), ParserFactory.getArticleParser(locale));
+        List<Article> articleList = articleManager.getList();
 
         for (Article article : articleList) {
             Assert.assertNotNull(article);

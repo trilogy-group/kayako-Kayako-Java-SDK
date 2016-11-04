@@ -1,15 +1,11 @@
 package com.kayako.sdk.helpcenter;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.articles.Article;
-import com.kayako.sdk.helpcenter.articles.ArticleManager;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.category.Category;
-import com.kayako.sdk.helpcenter.category.CategoryManager;
-import com.kayako.sdk.helpcenter.locale.LocaleManager;
 import com.kayako.sdk.helpcenter.search.SearchArticle;
-import com.kayako.sdk.helpcenter.search.SearchArticleManager;
 import com.kayako.sdk.helpcenter.section.Section;
-import com.kayako.sdk.helpcenter.section.SectionManager;
 
 import java.util.List;
 import java.util.Locale;
@@ -29,53 +25,48 @@ public class HelpCenter {
     }
 
     public List<Category> getCategories(int offset, int limit) {
-        CategoryManager categoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale));
-        return categoryManager.getCategories();
+        return new ListManager<Category>(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale)).getList();
     }
 
+    @Deprecated
     public void getCategories(int offset, int limit, ListCallback<Category> callback) {
-        CategoryManager categoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale));
-        categoryManager.getCategories(callback);
+        new ListManager<Category>(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale)).getList(callback);
     }
 
     public List<Section> getSections(long categoryId, int offset, int limit) {
-        SectionManager sectionManager = new SectionManager(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale));
-        return sectionManager.getSections();
+        return new ListManager<Section>(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale)).getList();
     }
 
+    @Deprecated
     public void getSections(long categoryId, int offset, int limit, ListCallback<Section> callback) {
-        SectionManager sectionManager = new SectionManager(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale));
-        sectionManager.getSections(callback);
+        new ListManager<Section>(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale)).getList(callback);
     }
 
     public List<Article> getArticles(long sectionId, int offset, int limit) {
-        ArticleManager articleManager = new ArticleManager(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale));
-        return articleManager.getArticles();
+        return new ListManager<Article>(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale)).getList();
     }
 
+    @Deprecated
     public void getArticles(long sectionId, int offset, int limit, ListCallback<Article> callback) {
-        ArticleManager articleManager = new ArticleManager(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale));
-        articleManager.getArticles(callback);
+        new ListManager<Article>(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale)).getList(callback);
     }
 
     public List<SearchArticle> getSearchArticles(String query, int offset, int limit) {
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale));
-        return searchArticleManager.getSearchArticles();
+        return new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale)).getList();
     }
 
+    @Deprecated
     public void getSearchArticles(String query, int offset, int limit, ListCallback<SearchArticle> callback) {
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale));
-        searchArticleManager.getSearchArticles(callback);
+        new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale)).getList(callback);
     }
 
     public List<com.kayako.sdk.helpcenter.locale.Locale> getLocales() {
-        LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser());
-        return localeManager.getLocales();
+        return new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser()).getList();
     }
 
+    @Deprecated
     public void getLocales(ListCallback<com.kayako.sdk.helpcenter.locale.Locale> callback) {
-        LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser());
-        localeManager.getLocales(callback);
+        new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser()).getList(callback);
     }
 
 }

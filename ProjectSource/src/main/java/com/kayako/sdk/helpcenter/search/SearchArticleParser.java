@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.base.parser.ListParser;
@@ -58,7 +59,7 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
     public SearchArticle parseItem(JsonObject node) {
         JsonObject articleNode = node.get(NODE_ORIGINAL).getAsJsonObject();
 
-        ListParser<Article> articleParser = ParserFactory.getArticleParser(mLocale);
+        Parser<Article> articleParser = ParserFactory.getArticleParser(mLocale);
         Article article = articleParser.parseItem(articleNode);
 
         SearchArticle searchArticle = new SearchArticle();

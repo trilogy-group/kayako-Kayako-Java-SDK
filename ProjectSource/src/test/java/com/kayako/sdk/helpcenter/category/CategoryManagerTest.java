@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.category;
 
+import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.RequesterFactory;
 import org.junit.Assert;
@@ -14,16 +15,12 @@ import java.util.Locale;
  */
 public class CategoryManagerTest {
 
-    private CategoryManager mCategoryManager;
-
     @Test
     public void getCategories_LiveTest() throws Exception {
         Locale locale = Locale.US;
         String url = "https://support.kayako.com";
 
-        mCategoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(url, 0, 999), ParserFactory.getCategoryParser(locale));
-
-        List<Category> categoryList = mCategoryManager.getCategories();
+        List<Category> categoryList = new ListManager<Category>(RequesterFactory.getCategoryRequester(url, 0, 999), ParserFactory.getCategoryParser(locale)).getList();
         Assert.assertNotNull(categoryList);
 
         for (Category category : categoryList) {
