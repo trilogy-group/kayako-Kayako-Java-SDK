@@ -1,6 +1,5 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.google.gson.JsonParser;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -96,7 +95,7 @@ public class SectionParserTest {
                 "                \"role\": {\n" +
                 "                    \"id\": 1,\n" +
                 "                    \"title\": \"Administrator\",\n" +
-                "                    \"type\": \"ADMIN\",\n" +
+                "                    \"response\": \"ADMIN\",\n" +
                 "                    \"resourceType\": \"role\",\n" +
                 "                    \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                },\n" +
@@ -198,7 +197,7 @@ public class SectionParserTest {
                 "                \"role\": {\n" +
                 "                    \"id\": 1,\n" +
                 "                    \"title\": \"Administrator\",\n" +
-                "                    \"type\": \"ADMIN\",\n" +
+                "                    \"response\": \"ADMIN\",\n" +
                 "                    \"resourceType\": \"role\",\n" +
                 "                    \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                },\n" +
@@ -300,7 +299,7 @@ public class SectionParserTest {
                 "                \"role\": {\n" +
                 "                    \"id\": 1,\n" +
                 "                    \"title\": \"Administrator\",\n" +
-                "                    \"type\": \"ADMIN\",\n" +
+                "                    \"response\": \"ADMIN\",\n" +
                 "                    \"resourceType\": \"role\",\n" +
                 "                    \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                },\n" +
@@ -402,7 +401,7 @@ public class SectionParserTest {
                 "                \"role\": {\n" +
                 "                    \"id\": 5,\n" +
                 "                    \"title\": \"Owner\",\n" +
-                "                    \"type\": \"OWNER\",\n" +
+                "                    \"response\": \"OWNER\",\n" +
                 "                    \"resourceType\": \"role\",\n" +
                 "                    \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/5\"\n" +
                 "                },\n" +
@@ -504,7 +503,7 @@ public class SectionParserTest {
                 "                \"role\": {\n" +
                 "                    \"id\": 1,\n" +
                 "                    \"title\": \"Administrator\",\n" +
-                "                    \"type\": \"ADMIN\",\n" +
+                "                    \"response\": \"ADMIN\",\n" +
                 "                    \"resourceType\": \"role\",\n" +
                 "                    \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                },\n" +
@@ -541,7 +540,7 @@ public class SectionParserTest {
 
         SectionParser sectionParser = new SectionParser(locale);
 
-        List<Section> sectionList = sectionParser.parse(sampleResponse);
+        List<Section> sectionList = sectionParser.parseList(sampleResponse);
 
 
         assertTrue("There should be 5 sections parsed", sectionList.size() == 5);

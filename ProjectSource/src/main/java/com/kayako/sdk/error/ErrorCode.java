@@ -7,17 +7,27 @@ package com.kayako.sdk.error;
 public enum ErrorCode {
 
     /**
-     * When new error states are introduced on the server side, they will be grouped under OTHER
+     * 3xx Status Code
      */
-    SERVER_ERROR,
+    EXTERNAL_REDIRECTION_ERROR,
 
     /**
-     * When new error states are introduced on the server side, they will be grouped under OTHER
+     * 4xx Status Code
+     */
+    EXTERNAL_CLIENT_ERROR,
+
+    /**
+     * 5xx Http Status Code
+     */
+    EXTERNAL_SERVER_ERROR,
+
+    /**
+     * When new error states are introduced, they will be grouped under OTHER until the next version
      */
     OTHER,
 
     /**
-     * Error States prefixed with INTERNAL_ are exceptions that are local in nature and not
+     * Error States prefixed with INTERNAL_ are exceptions that are local in nature and does not involve server
      */
     INTERNAL_UNABLE_TO_CONNECT_TO_SERVER,
     INTERNAL_UNABLE_TO_PARSE_RESPONSE;

@@ -1,8 +1,8 @@
 package com.kayako.sdk.error;
 
-import com.kayako.sdk.error.type.Error;
-import com.kayako.sdk.error.type.Log;
-import com.kayako.sdk.error.type.Notification;
+import com.kayako.sdk.error.response.Error;
+import com.kayako.sdk.error.response.Log;
+import com.kayako.sdk.error.response.Notification;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +13,30 @@ import java.util.List;
  */
 public class ResponseMessages {
 
+    private int statusCode;
+
     private List<Notification> notifications;
 
     private List<Error> errors;
 
     private List<Log> logs;
 
+    public ResponseMessages(int statusCode, List<Notification> notifications, List<Error> errors, List<Log> logs) {
+        this.statusCode = statusCode;
+        this.notifications = notifications;
+        this.errors = errors;
+        this.logs = logs;
+    }
+
     /**
-     * @return list of notification-type response messages
+     * @return Http Status code
+     */
+    public int getStatusCode() {
+        return statusCode;
+    }
+
+    /**
+     * @return list of notification-response response messages
      */
     public List<Notification> getNotifications() {
         if (notifications == null) {
@@ -30,14 +46,14 @@ public class ResponseMessages {
     }
 
     /**
-     * @param notifications notification-type response messages
+     * @param notifications notification-response response messages
      */
     public void setNotifications(List<Notification> notifications) {
         this.notifications = notifications;
     }
 
     /**
-     * @return list of error-type response messages
+     * @return list of error-response response messages
      */
     public List<Error> getErrors() {
         if (errors == null) {
@@ -47,14 +63,14 @@ public class ResponseMessages {
     }
 
     /**
-     * @param errors error-type response messages
+     * @param errors error-response response messages
      */
     public void setErrors(List<Error> errors) {
         this.errors = errors;
     }
 
     /**
-     * @return list of log-type response messages
+     * @return list of log-response response messages
      */
     public List<Log> getLogs() {
         if (logs == null) {
@@ -64,7 +80,7 @@ public class ResponseMessages {
     }
 
     /**
-     * @param logs log-type response messages
+     * @param logs log-response response messages
      */
     public void setLogs(List<Log> logs) {
         this.logs = logs;

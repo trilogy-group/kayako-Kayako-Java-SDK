@@ -1,7 +1,5 @@
 package com.kayako.sdk.error;
 
-import com.sun.istack.internal.Nullable;
-import com.sun.javafx.beans.annotations.NonNull;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -15,7 +13,7 @@ public class KayakoException extends Exception {
     private String message;
 
     /**
-     * The error code that explains the reason for failure to perform action
+     * The error code that explains the generic reason for failure to perform action
      */
     private ErrorCode code;
 
@@ -25,7 +23,8 @@ public class KayakoException extends Exception {
     private ResponseMessages responseMessages;
 
 
-    public KayakoException(@NonNull ErrorCode code, @Nullable String message, @Nullable ResponseMessages responseMessages) {
+    public KayakoException(ErrorCode code, String message,
+                           ResponseMessages responseMessages) {
         super(message);
         this.message = message;
         this.code = code;
@@ -33,25 +32,22 @@ public class KayakoException extends Exception {
     }
 
     /**
-     * @return code to identify type of failure  (For Developers)
+     * @return code to identify response of failure
      */
-    @NonNull
     public ErrorCode getCode() {
         return code;
     }
 
     /**
-     * @return message to show the user
+     * @return message explaining reason for failure
      */
-    @Nullable
     public String getMessage() {
         return message;
     }
 
     /**
-     * @return Contains all the notifications, logs and errors returned in API response (For Developers)
+     * @return Contains all the notifications, logs and errors returned in API response
      */
-    @Nullable
     public ResponseMessages getResponseMessages() {
         return responseMessages;
     }

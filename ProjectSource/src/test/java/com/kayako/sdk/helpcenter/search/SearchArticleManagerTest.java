@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.ExecutionException;
 
 import static org.junit.Assert.*;
 
@@ -21,7 +20,7 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.US;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
-        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale)).getList();
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleListParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");
@@ -67,7 +66,7 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
 
-        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale)).getList();
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleListParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");

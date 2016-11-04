@@ -1,4 +1,4 @@
-package com.kayako.sdk.error.type;
+package com.kayako.sdk.error.response;
 
 /**
  * Notifications are intended for end users (and are localized).

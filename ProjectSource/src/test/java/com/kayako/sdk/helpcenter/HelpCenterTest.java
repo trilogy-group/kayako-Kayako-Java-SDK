@@ -29,6 +29,8 @@ public class HelpCenterTest {
     @Test
     public void getCategories() {
         System.out.print(mHelpCenter.getCategories(0, 10).get(0));
+
+        System.out.print(mHelpCenter.getCategory(1));
     }
 
     @Test
@@ -49,6 +51,8 @@ public class HelpCenterTest {
     @Test
     public void getSections() {
         System.out.print(mHelpCenter.getSections(1, 0, 10).get(0));
+
+        System.out.print(mHelpCenter.getSection(194));
     }
 
     @Test
@@ -69,6 +73,8 @@ public class HelpCenterTest {
     @Test
     public void getArticles() {
         System.out.print(mHelpCenter.getArticles(243, 0, 10).get(0));
+
+        System.out.print(mHelpCenter.getArticle(1145));
     }
 
     @Test
@@ -109,6 +115,8 @@ public class HelpCenterTest {
     @Test
     public void getLocales() {
         System.out.print(mHelpCenter.getLocales().get(0));
+
+        System.out.print(mHelpCenter.getLocale(1));
     }
 
     @Test

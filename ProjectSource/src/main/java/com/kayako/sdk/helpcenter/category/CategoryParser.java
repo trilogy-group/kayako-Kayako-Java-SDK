@@ -1,13 +1,10 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.utils.ParserUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -15,9 +12,8 @@ import java.util.Locale;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class CategoryParser implements ListParser<Category> {
+public class CategoryParser implements ListParser<Category>, ItemParser<Category> {
 
-    private static final String NODE_DATA = "data";
     private static final String NODE_TITLES = "titles";
     private static final String ITEM_ID = "id";
     private static final String NODE_DESCRIPTION = "descriptions";
@@ -31,39 +27,23 @@ public class CategoryParser implements ListParser<Category> {
         mLocale = locale;
     }
 
-    private List<Category> parse(String json, Locale locale) {
-        List<Category> categoryList = new ArrayList<Category>();
+    @Override
+    public Category parse(String jsonOfResource) throws NullPointerException {
+        ParserUtils.ResourceMap resourceMap =
+                ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
-        JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
-
-        for (JsonElement dataNode : data) {
-            JsonObject categoryNode = dataNode.getAsJsonObject();
-            Category category = parseItem(categoryNode);
-            categoryList.add(category);
-        }
-
-        return categoryList;
-    }
-
-    public List<Category> parse(String json) {
-        return parse(json, mLocale);
-    }
-
-    public Category parseItem(JsonObject categoryNode) {
         Category category = new Category();
-
-        // Id
-        category.setId(categoryNode.get(ITEM_ID).getAsLong());
-
-        // Title
-        JsonArray titleLocales = categoryNode.get(NODE_TITLES).getAsJsonArray();
-        category.setTitle(ParserUtils.getTranslationFromLocaleField(mLocale, titleLocales));
-
-        // Description
-        JsonArray descriptionLocales = categoryNode.get(NODE_DESCRIPTION).getAsJsonArray();
-        category.setDescription(ParserUtils.getTranslationFromLocaleField(mLocale, descriptionLocales));
-
+        category.setId(resourceMap.getAsLong(ITEM_ID));
+        category.setTitle(resourceMap.getAsLocalizedString(NODE_TITLES, mLocale));
+        category.setDescription(resourceMap.getAsLocalizedString(NODE_DESCRIPTION, mLocale));
         return category;
+    }
+
+    public List<Category> parseList(String json) {
+        return ParserUtils.getResourceListFromDataNode(json, this);
+    }
+
+    public Category parseItem(String json) throws NullPointerException {
+        return ParserUtils.getResourceFromDataNode(json, this);
     }
 }

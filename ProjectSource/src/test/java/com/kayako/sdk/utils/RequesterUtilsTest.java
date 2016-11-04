@@ -12,6 +12,8 @@ import java.util.Map;
 import static junit.framework.TestCase.assertEquals;
 
 /**
+ * Restrict all classes using OkHttp library here.
+ *
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 18/08/16
  */

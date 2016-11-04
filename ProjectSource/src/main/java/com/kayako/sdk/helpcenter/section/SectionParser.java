@@ -1,16 +1,12 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.kayako.sdk.base.parser.Parser;
-import com.kayako.sdk.helpcenter.ParserFactory;
+import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.utils.ParserUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -18,9 +14,8 @@ import java.util.Locale;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class SectionParser implements ListParser<Section> {
+public class SectionParser implements ListParser<Section>, ItemParser<Section> {
 
-    private static final String NODE_DATA = "data";
     private static final String NODE_TITLES = "titles";
     private static final String ITEM_ID = "id";
     private static final String NODE_CATEGORY = "category";
@@ -35,44 +30,27 @@ public class SectionParser implements ListParser<Section> {
         mLocale = locale;
     }
 
-    private List<Section> parse(String json, Locale locale) {
-        List<Section> sectionList = new ArrayList<Section>();
+    @Override
+    public Section parse(String jsonOfResource) throws NullPointerException {
+        ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
-        JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
-
-        for (JsonElement dataNode : data) {
-            JsonObject sectionNode = dataNode.getAsJsonObject();
-            Section section = parseItem(sectionNode);
-            sectionList.add(section);
-        }
-
-        return sectionList;
-    }
-
-    public List<Section> parse(String json) {
-        return parse(json, mLocale);
-    }
-
-    public Section parseItem(JsonObject sectionNode) {
         Section section = new Section();
+        section.setId(resourceMap.getAsLong(ITEM_ID));
+        section.setTitle(resourceMap.getAsLocalizedString(NODE_TITLES, mLocale));
+        section.setDescription(resourceMap.getAsLocalizedString(NODE_DESCRIPTION, mLocale));
 
-        // Id
-        section.setId(sectionNode.get(ITEM_ID).getAsLong());
-
-        // Title
-        JsonArray titleLocales = sectionNode.get(NODE_TITLES).getAsJsonArray();
-        section.setTitle(ParserUtils.getTranslationFromLocaleField(mLocale, titleLocales));
-
-        // Description
-        JsonArray descriptionLocales = sectionNode.get(NODE_DESCRIPTION).getAsJsonArray();
-        section.setDescription(ParserUtils.getTranslationFromLocaleField(mLocale, descriptionLocales));
-
-        // Category
-        Parser<Category> categoryParser = ParserFactory.getCategoryParser(mLocale);
-        JsonObject categoryNode = sectionNode.get(NODE_CATEGORY).getAsJsonObject();
-        section.setCategory(categoryParser.parseItem(categoryNode));
+        Category category = ParserFactory.getCategoryParser(mLocale).parse(resourceMap.getAsJsonString(NODE_CATEGORY));
+        section.setCategory(category);
 
         return section;
+    }
+
+    public List<Section> parseList(String json) throws NullPointerException {
+        return ParserUtils.getResourceListFromDataNode(json, this);
+    }
+
+    @Override
+    public Section parseItem(String json) throws NullPointerException {
+        return ParserUtils.getResourceFromDataNode(json, this);
     }
 }

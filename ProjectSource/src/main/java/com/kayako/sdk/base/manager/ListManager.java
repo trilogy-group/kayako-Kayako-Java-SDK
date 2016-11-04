@@ -34,7 +34,7 @@ public class ListManager<T extends Resource> {
             // TODO: Error handling
 
             // Parse Json Response
-            return parser.parse(response.body);
+            return parser.parseList(response.body);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -46,7 +46,7 @@ public class ListManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-                List<T> categories = parser.parse(response.body);
+                List<T> categories = parser.parseList(response.body);
 
                 if (categories != null) {
                     callback.onSuccess(categories);
@@ -66,7 +66,7 @@ public class ListManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-                List<T> items = parser.parse(response.body);
+                List<T> items = parser.parseList(response.body);
 
                 if (items != null) {
                     callback.onSuccess(items);

@@ -1,4 +1,4 @@
-package com.kayako.sdk.error.type;
+package com.kayako.sdk.error.response;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

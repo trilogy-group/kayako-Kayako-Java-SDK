@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter.articles;
+package com.kayako.sdk.helpcenter.section;
 
 import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.ListRequester;
@@ -13,21 +13,23 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class ArticleRequester implements ListRequester {
+public class GetSectionListRequester implements ListRequester {
+    public static final String ENDPOINT = "/api/v1/sections.json";
+    public static final String INCLUDE = "localeField,category";
+    private static final String ARG_CATEGORY_ID = "category_id";
 
-    public static final String ENDPOINT = "/api/v1/articles.json";
-    public static final String INCLUDE = "localeField,category,section,userMinimal";
-    private static final String ARG_SECTION_ID = "section_id";
-
-    private long mSectionId;
     private String mHelpCenterUrl;
+    private long mCategoryId;
     private Map<String, String> queryParams;
 
-    public ArticleRequester(String helpCenterUrl, long sectionId, int offset, int limit) {
-        mSectionId = sectionId;
+    private GetSectionListRequester() {
+    }
+
+    public GetSectionListRequester(String helpCenterUrl, long categoryId, int offset, int limit) {
         mHelpCenterUrl = helpCenterUrl;
+        mCategoryId = categoryId;
         queryParams = new HashMap<String, String>();
-        queryParams.put(ARG_SECTION_ID, String.valueOf(mSectionId));
+        queryParams.put(ARG_CATEGORY_ID, String.valueOf(mCategoryId));
         queryParams.put(ARG_OFFSET, String.valueOf(offset));
         queryParams.put(ARG_LIMIT, String.valueOf(limit));
     }
@@ -39,5 +41,4 @@ public class ArticleRequester implements ListRequester {
     public void request(RequestCallback callback) {
         RequesterUtils.getAsync(mHelpCenterUrl, ENDPOINT, INCLUDE, null, queryParams, callback);
     }
-
 }

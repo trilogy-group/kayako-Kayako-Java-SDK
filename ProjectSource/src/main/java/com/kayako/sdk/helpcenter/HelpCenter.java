@@ -1,5 +1,7 @@
 package com.kayako.sdk.helpcenter;
 
+import com.kayako.sdk.base.callback.ItemCallback;
+import com.kayako.sdk.base.manager.ItemManager;
 import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.base.ListCallback;
@@ -24,49 +26,114 @@ public class HelpCenter {
         mLocale = locale;
     }
 
+    // Category
+
     public List<Category> getCategories(int offset, int limit) {
-        return new ListManager<Category>(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale)).getList();
+        return new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList();
     }
 
     @Deprecated
     public void getCategories(int offset, int limit, ListCallback<Category> callback) {
-        new ListManager<Category>(RequesterFactory.getCategoryRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryParser(mLocale)).getList(callback);
+        new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
     }
 
+    public void getCategories(int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Category> callback) {
+        new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
+    }
+
+    public Category getCategory(long categoryId) {
+        return new ItemManager<Category>(RequesterFactory.getCategoryItemRequester(mHelpDeskUrl, categoryId), ParserFactory.getCategoryItemParser(mLocale)).getItem();
+    }
+
+    public void getCategory(long categoryId, ItemCallback<Category> callback) {
+        new ItemManager<Category>(RequesterFactory.getCategoryItemRequester(mHelpDeskUrl, categoryId), ParserFactory.getCategoryItemParser(mLocale)).getItem(callback);
+    }
+
+
+    // Section
+
     public List<Section> getSections(long categoryId, int offset, int limit) {
-        return new ListManager<Section>(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale)).getList();
+        return new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList();
     }
 
     @Deprecated
     public void getSections(long categoryId, int offset, int limit, ListCallback<Section> callback) {
-        new ListManager<Section>(RequesterFactory.getSectionRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionParser(mLocale)).getList(callback);
+        new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
     }
 
+    public void getSection(long categoryId, int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Section> callback) {
+        new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
+    }
+
+    public Section getSection(long sectionId) {
+        return new ItemManager<Section>(RequesterFactory.getSectionItemRequester(mHelpDeskUrl, sectionId), ParserFactory.getSectionItemParser(mLocale)).getItem();
+    }
+
+    public void getSection(long sectionId, ItemCallback<Section> callback) {
+        new ItemManager<Section>(RequesterFactory.getSectionItemRequester(mHelpDeskUrl, sectionId), ParserFactory.getSectionItemParser(mLocale)).getItem(callback);
+    }
+
+
+    // Article
+
     public List<Article> getArticles(long sectionId, int offset, int limit) {
-        return new ListManager<Article>(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale)).getList();
+        return new ListManager<Article>(RequesterFactory.getArticleListRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleListParser(mLocale)).getList();
     }
 
     @Deprecated
     public void getArticles(long sectionId, int offset, int limit, ListCallback<Article> callback) {
-        new ListManager<Article>(RequesterFactory.getArticleRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleParser(mLocale)).getList(callback);
+        new ListManager<Article>(RequesterFactory.getArticleListRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleListParser(mLocale)).getList(callback);
     }
 
+    public void getArticles(long sectionId, int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Article> callback) {
+        new ListManager<Article>(RequesterFactory.getArticleListRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleListParser(mLocale)).getList(callback);
+    }
+
+    public Article getArticle(long articleId) {
+        return new ItemManager<Article>(RequesterFactory.getArticleItemRequester(mHelpDeskUrl, articleId), ParserFactory.getArticleItemParser(mLocale)).getItem();
+    }
+
+    public void getArticle(long articleId, ItemCallback<Article> callback) {
+        new ItemManager<Article>(RequesterFactory.getArticleItemRequester(mHelpDeskUrl, articleId), ParserFactory.getArticleItemParser(mLocale)).getItem(callback);
+    }
+
+
+    // Search Articles
+
     public List<SearchArticle> getSearchArticles(String query, int offset, int limit) {
-        return new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale)).getList();
+        return new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleListParser(mLocale)).getList();
     }
 
     @Deprecated
     public void getSearchArticles(String query, int offset, int limit, ListCallback<SearchArticle> callback) {
-        new ListManager<SearchArticle>(RequesterFactory.getSearchArticlesRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleParser(mLocale)).getList(callback);
+        new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleListParser(mLocale)).getList(callback);
     }
 
+    public void getSearchArticles(String query, int offset, int limit, com.kayako.sdk.base.callback.ListCallback<SearchArticle> callback) {
+        new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleListParser(mLocale)).getList(callback);
+    }
+
+    // Locale
+
     public List<com.kayako.sdk.helpcenter.locale.Locale> getLocales() {
-        return new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser()).getList();
+        return new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleListRequester(mHelpDeskUrl), ParserFactory.getLocaleListParser()).getList();
     }
 
     @Deprecated
     public void getLocales(ListCallback<com.kayako.sdk.helpcenter.locale.Locale> callback) {
-        new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleRequester(mHelpDeskUrl), ParserFactory.getLocaleParser()).getList(callback);
+        new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleListRequester(mHelpDeskUrl), ParserFactory.getLocaleListParser()).getList(callback);
+    }
+
+    public void getLocales(com.kayako.sdk.base.callback.ListCallback<com.kayako.sdk.helpcenter.locale.Locale> callback) {
+        new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleListRequester(mHelpDeskUrl), ParserFactory.getLocaleListParser()).getList(callback);
+    }
+
+    public com.kayako.sdk.helpcenter.locale.Locale getLocale(long localeId) {
+        return new ItemManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleItemRequester(mHelpDeskUrl, localeId), ParserFactory.getLocaleItemParser()).getItem();
+    }
+
+    public void getLocale(long localeId, ItemCallback<com.kayako.sdk.helpcenter.locale.Locale> callback) {
+        new ItemManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleItemRequester(mHelpDeskUrl, localeId), ParserFactory.getLocaleItemParser()).getItem(callback);
     }
 
 }

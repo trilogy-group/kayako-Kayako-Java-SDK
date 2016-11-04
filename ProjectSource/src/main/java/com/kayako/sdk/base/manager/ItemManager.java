@@ -30,10 +30,16 @@ public class ItemManager<T extends Resource> {
             // Make Request
             Response response = requester.request();
 
+            return parser.parseItem(response.body);
+
+            /*if(response.statusCode == 200){
+                // Parse Json Response
+            }else {
+                // TODO: Create ThrowKayakoException Util
+            }*/
+
             // TODO: Error handling
 
-            // Parse Json Response
-            return parser.parse(response.body);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -45,7 +51,7 @@ public class ItemManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-                T item = parser.parse(response.body);
+                T item = parser.parseItem(response.body);
 
                 if (item != null) {
                     callback.onSuccess(item);

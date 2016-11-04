@@ -1,4 +1,4 @@
-package com.kayako.sdk.error.type;
+package com.kayako.sdk.error.response;
 
 /**
  * Logs are to be logged by API clients and are intended for their developers and maintainers.

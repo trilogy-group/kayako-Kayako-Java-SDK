@@ -132,7 +132,7 @@ public class SearchArticleParserTest {
                 "                        \"role\": {\n" +
                 "                            \"id\": 1,\n" +
                 "                            \"title\": \"Administrator\",\n" +
-                "                            \"type\": \"ADMIN\",\n" +
+                "                            \"response\": \"ADMIN\",\n" +
                 "                            \"resourceType\": \"role\",\n" +
                 "                            \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                        },\n" +
@@ -165,7 +165,7 @@ public class SearchArticleParserTest {
                 "                    \"role\": {\n" +
                 "                        \"id\": 1,\n" +
                 "                        \"title\": \"Administrator\",\n" +
-                "                        \"type\": \"ADMIN\",\n" +
+                "                        \"response\": \"ADMIN\",\n" +
                 "                        \"resourceType\": \"role\",\n" +
                 "                        \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                    },\n" +
@@ -191,7 +191,7 @@ public class SearchArticleParserTest {
                 "                    \"role\": {\n" +
                 "                        \"id\": 1,\n" +
                 "                        \"title\": \"Administrator\",\n" +
-                "                        \"type\": \"ADMIN\",\n" +
+                "                        \"response\": \"ADMIN\",\n" +
                 "                        \"resourceType\": \"role\",\n" +
                 "                        \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                    },\n" +
@@ -345,7 +345,7 @@ public class SearchArticleParserTest {
                 "                        \"role\": {\n" +
                 "                            \"id\": 1,\n" +
                 "                            \"title\": \"Administrator\",\n" +
-                "                            \"type\": \"ADMIN\",\n" +
+                "                            \"response\": \"ADMIN\",\n" +
                 "                            \"resourceType\": \"role\",\n" +
                 "                            \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                        },\n" +
@@ -378,7 +378,7 @@ public class SearchArticleParserTest {
                 "                    \"role\": {\n" +
                 "                        \"id\": 1,\n" +
                 "                        \"title\": \"Administrator\",\n" +
-                "                        \"type\": \"ADMIN\",\n" +
+                "                        \"response\": \"ADMIN\",\n" +
                 "                        \"resourceType\": \"role\",\n" +
                 "                        \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                    },\n" +
@@ -404,7 +404,7 @@ public class SearchArticleParserTest {
                 "                    \"role\": {\n" +
                 "                        \"id\": 1,\n" +
                 "                        \"title\": \"Administrator\",\n" +
-                "                        \"type\": \"ADMIN\",\n" +
+                "                        \"response\": \"ADMIN\",\n" +
                 "                        \"resourceType\": \"role\",\n" +
                 "                        \"resourceUrl\": \"https://support.kayako.com/api/v1/roles/1\"\n" +
                 "                    },\n" +
@@ -454,7 +454,7 @@ public class SearchArticleParserTest {
 
 
         SearchArticleParser searchArticleParser = new SearchArticleParser(Locale.forLanguageTag("en-us"));
-        List<SearchArticle> searchArticleList = searchArticleParser.parse(json);
+        List<SearchArticle> searchArticleList = searchArticleParser.parseList(json);
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println(searchArticle.getTitle() + " : " + searchArticle.getCategoryName() + " > " + searchArticle.getSectionName());

@@ -1,18 +1,13 @@
 package com.kayako.sdk.helpcenter.articles;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.kayako.sdk.base.parser.Parser;
-import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.utils.ParserUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -20,13 +15,12 @@ import java.util.Locale;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class ArticleParser implements ListParser<Article> {
+public class ArticleParser implements ListParser<Article>, ItemParser<Article> {
 
-    private static final String NODE_DATA = "data";
     private static final String NODE_TITLES = "titles";
     private static final String NODE_CONTENTS = "contents";
     private static final String ITEM_ID = "id";
-    private static final String ITEM_UIID = "uuid";
+    private static final String ITEM_UUID = "uuid";
     private static final String ITEM_PUBLISHED_AT = "publishedAt";
     private static final String ITEM_UPDATED_AT = "updatedAt";
     private static final String NODE_AUTHOR = "author";
@@ -41,61 +35,31 @@ public class ArticleParser implements ListParser<Article> {
         mLocale = locale;
     }
 
-    private List<Article> parse(String json, Locale locale) {
-        List<Article> articleList = new ArrayList<Article>();
-
-        JsonObject jsonObject = new JsonParser().parse(json).getAsJsonObject();
-        JsonArray data = jsonObject.getAsJsonArray(NODE_DATA);
-
-        for (JsonElement articleNode : data) {
-            Article article = parseItem(articleNode.getAsJsonObject());
-            articleList.add(article);
-        }
-
-        return articleList;
-    }
-
-    public List parse(String json) {
-        return parse(json, mLocale);
-    }
-
-    public Article parseItem(JsonObject articleNode) {
-        Article article = new Article();
-
-        // Id
-        article.setId(articleNode.get(ITEM_ID).getAsLong());
-
-        // UUID
-        article.setUuid(articleNode.get(ITEM_UIID).getAsString());
-
-        // Contents
-        JsonArray contentLocales = articleNode.get(NODE_CONTENTS).getAsJsonArray();
-        article.setContents(ParserUtils.getTranslationFromLocaleField(mLocale, contentLocales));
-
-        // Title
-        JsonArray titleLocales = articleNode.get(NODE_TITLES).getAsJsonArray();
-        article.setTitle(ParserUtils.getTranslationFromLocaleField(mLocale, titleLocales));
-
-        // Section
+    @Override
+    public Article parse(String jsonOfResource) throws NullPointerException {
+        ParserUtils.ResourceMap map = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
         Parser<Section> sectionParser = ParserFactory.getSectionParser(mLocale);
-        JsonObject sectionNode = articleNode.get(NODE_SECTION).getAsJsonObject();
-        article.setSection(sectionParser.parseItem(sectionNode));
+        Parser<UserMinimal> userMinimalParser = ParserFactory.getUserMinimalParser();
 
-        // Author
-        JsonObject authorNode = articleNode.get(NODE_AUTHOR).getAsJsonObject();
-        ItemParser userParser = ParserFactory.getUserMinimalParser();
-        UserMinimal author = (UserMinimal) userParser.parseItem(authorNode);
-        article.setAuthor(author);
-
-        // Last Posted
-        long timePosted = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_PUBLISHED_AT).getAsString());
-        article.setLastPosted(timePosted);
-
-        // Last Updated
-        long timeUpdated = ParserUtils.getTimeInMilliSeconds(articleNode.get(ITEM_UPDATED_AT).getAsString());
-        article.setLastUpdated(timeUpdated);
+        Article article = new Article();
+        article.setId(map.getAsLong(ITEM_ID));
+        article.setUuid(map.getAsString(ITEM_UUID));
+        article.setContents(map.getAsLocalizedString(NODE_CONTENTS, mLocale));
+        article.setTitle(map.getAsLocalizedString(NODE_TITLES, mLocale));
+        article.setSection(sectionParser.parse(map.getAsJsonString(NODE_SECTION)));
+        article.setAuthor(userMinimalParser.parse(map.getAsJsonString(NODE_AUTHOR)));
+        article.setLastPosted(map.getAsTimeInMilliseconds(ITEM_PUBLISHED_AT));
+        article.setLastUpdated(map.getAsTimeInMilliseconds(ITEM_UPDATED_AT));
 
         return article;
+    }
 
+    public List<Article> parseList(String json) {
+        return ParserUtils.getResourceListFromDataNode(json, this);
+    }
+
+    @Override
+    public Article parseItem(String json) throws NullPointerException {
+        return ParserUtils.getResourceFromDataNode(json, this);
     }
 }

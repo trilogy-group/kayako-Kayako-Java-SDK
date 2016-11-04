@@ -11,5 +11,5 @@ import com.google.gson.JsonObject;
  * @date 04/11/16
  */
 public interface Parser<T extends Resource> {
-    T parseItem(JsonObject node) throws NullPointerException;
+    T parse(String jsonOfResource) throws NullPointerException;
 }

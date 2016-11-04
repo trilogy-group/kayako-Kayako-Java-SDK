@@ -14,7 +14,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class CategoryRequester implements ListRequester,ItemRequester {
+public class GetCategoryListRequester implements ListRequester,ItemRequester {
 
     public static final String ENDPOINT = "/api/v1/categories.json";
     public static final String INCLUDE = "localeField";
@@ -22,7 +22,7 @@ public class CategoryRequester implements ListRequester,ItemRequester {
     private Map<String, String> mQueryParams;
     private String mHelpDeskUrl;
 
-    public CategoryRequester(String helpDeskUrl, int offset, int limit) {
+    public GetCategoryListRequester(String helpDeskUrl, int offset, int limit) {
         mQueryParams = new HashMap<String, String>();
         mQueryParams.put(ARG_OFFSET, String.valueOf(offset));
         mQueryParams.put(ARG_LIMIT, String.valueOf(limit));
