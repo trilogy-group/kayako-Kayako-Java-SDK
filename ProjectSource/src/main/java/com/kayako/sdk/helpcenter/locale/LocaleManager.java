@@ -2,7 +2,7 @@ package com.kayako.sdk.helpcenter.locale;
 
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.requester.RequestCallback;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.ListRequester;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 
@@ -15,20 +15,20 @@ import java.util.List;
  */
 public class LocaleManager {
 
-    private Requester mRequester;
+    private ListRequester mRequester;
     private ListParser<Locale> mParser;
 
     private LocaleManager() {
     }
 
-    public LocaleManager(Requester requester, ListParser<Locale> parser) {
+    public LocaleManager(ListRequester requester, ListParser<Locale> parser) {
         mRequester = requester;
         mParser = parser;
     }
 
-    public List<Locale> getLocales(String url) {
+    public List<Locale> getLocales() {
         try {
-            Response response = mRequester.request(url);
+            Response response = mRequester.request();
 
             List<Locale> locales = mParser.parse(response.body);
             return locales;
@@ -38,9 +38,9 @@ public class LocaleManager {
         }
     }
 
-    public void getLocales(String url, final ListCallback<Locale> callback) {
+    public void getLocales(final ListCallback<Locale> callback) {
         // Make Request
-        mRequester.request(url, new RequestCallback() {
+        mRequester.request(new RequestCallback() {
             public void onSuccess(Response response) {
                 List<Locale> locales = mParser.parse(response.body);
 

@@ -4,7 +4,7 @@ import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.ListRequester;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,20 +15,20 @@ import java.util.List;
  */
 public class SectionManager {
 
-    private Requester mRequester;
+    private ListRequester mRequester;
     private ListParser mParser;
 
     private SectionManager() {
     }
 
-    public SectionManager(Requester requester, ListParser<Section> parser) {
+    public SectionManager(ListRequester requester, ListParser<Section> parser) {
         mRequester = requester;
         mParser = parser;
     }
 
-    public List<Section> getSections(String url) {
+    public List<Section> getSections() {
         try {
-            Response response = mRequester.request(url);
+            Response response = mRequester.request();
 
             List<Section> sectionList = mParser.parse(response.body);
             return sectionList;
@@ -38,9 +38,9 @@ public class SectionManager {
         }
     }
 
-    public void getSections(String url, final ListCallback<Section> callback) {
+    public void getSections(final ListCallback<Section> callback) {
         // Make Request
-        mRequester.request(url, new RequestCallback() {
+        mRequester.request(new RequestCallback() {
             public void onSuccess(Response response) {
                 List<Section> sections = mParser.parse(response.body);
 

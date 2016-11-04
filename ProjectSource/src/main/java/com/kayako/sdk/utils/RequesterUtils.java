@@ -1,7 +1,6 @@
 package com.kayako.sdk.utils;
 
 import com.kayako.sdk.base.requester.RequestCallback;
-import com.kayako.sdk.base.requester.Requester;
 import okhttp3.*;
 import okhttp3.Response;
 import okhttp3.internal.Util;

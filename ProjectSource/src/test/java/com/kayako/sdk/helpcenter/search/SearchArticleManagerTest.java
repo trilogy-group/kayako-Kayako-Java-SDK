@@ -20,8 +20,8 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.US;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
+        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale));
+        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");
@@ -58,7 +58,7 @@ public class SearchArticleManagerTest {
 
     /**
      * Performs a search on the Kayako Articles.
-     *
+     * <p>
      * The search fails if the query is less than 3 characters long.
      *
      * @param query query used for search
@@ -66,8 +66,8 @@ public class SearchArticleManagerTest {
     public void performSearch(String query) {
         Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
+        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleParser(locale));
+        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");

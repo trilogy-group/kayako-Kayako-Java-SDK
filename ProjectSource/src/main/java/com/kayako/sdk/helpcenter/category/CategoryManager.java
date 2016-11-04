@@ -5,7 +5,7 @@ import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.ListRequester;
 
 import java.io.IOException;
 import java.util.List;
@@ -16,18 +16,18 @@ import java.util.List;
  */
 public class CategoryManager {
 
-    private Requester requester;
+    private ListRequester requester;
     private ListParser parser;
 
-    public CategoryManager(Requester requester, ListParser parser) {
+    public CategoryManager(ListRequester requester, ListParser parser) {
         this.parser = parser;
         this.requester = requester;
     }
 
-    public List<Category> getCategories(String url) {
+    public List<Category> getCategories() {
         try {
             // Make Request
-            Response response = requester.request(url);
+            Response response = requester.request();
 
             // Parse Json Response
             return parser.parse(response.body);
@@ -38,9 +38,9 @@ public class CategoryManager {
         }
     }
 
-    public void getCategories(String url, final ListCallback<Category> callback) {
+    public void getCategories(final ListCallback<Category> callback) {
         // Make Request
-        requester.request(url, new RequestCallback() {
+        requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
                 List<Category> categories = parser.parse(response.body);
 

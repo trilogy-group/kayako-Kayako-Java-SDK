@@ -14,11 +14,10 @@ import static org.junit.Assert.*;
  */
 public class LocaleManagerTest {
 
-
     @Test
     public void getLocales() throws Exception {
-        LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester(), ParserFactory.getLocaleParser());
-        List<Locale> locales = localeManager.getLocales("http://support.kayako.com");
+        LocaleManager localeManager = new LocaleManager(RequesterFactory.getLocaleRequester("http://support.kayako.com"), ParserFactory.getLocaleParser());
+        List<Locale> locales = localeManager.getLocales();
 
         for (Locale locale : locales) {
             LocaleParserTest.validateLocale(locale);

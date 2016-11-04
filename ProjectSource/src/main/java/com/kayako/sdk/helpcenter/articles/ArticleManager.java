@@ -4,7 +4,7 @@ import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.ListRequester;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,20 +15,20 @@ import java.util.List;
  */
 public class ArticleManager {
 
-    private Requester mRequester;
+    private ListRequester mRequester;
     private ListParser mParser;
 
     private ArticleManager() {
     }
 
-    public ArticleManager(Requester requester, ListParser<Article> parser) {
+    public ArticleManager(ListRequester requester, ListParser<Article> parser) {
         mRequester = requester;
         mParser = parser;
     }
 
-    public List<Article> getArticles(String url) {
+    public List<Article> getArticles() {
         try {
-            Response response = mRequester.request(url);
+            Response response = mRequester.request();
 
             List<Article> articleList = mParser.parse(response.body);
             return articleList;
@@ -38,9 +38,9 @@ public class ArticleManager {
         }
     }
 
-    public void getArticles(String url, final ListCallback<Article> callback) {
+    public void getArticles(final ListCallback<Article> callback) {
         // Make Request
-        mRequester.request(url, new RequestCallback() {
+        mRequester.request(new RequestCallback() {
             public void onSuccess(Response response) {
                 List<Article> articles = mParser.parse(response.body);
 

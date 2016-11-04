@@ -4,7 +4,7 @@ import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.ListRequester;
 
 import java.io.IOException;
 import java.util.List;
@@ -15,18 +15,18 @@ import java.util.List;
  */
 public class SearchArticleManager {
 
-    private Requester mRequester;
+    private ListRequester mRequester;
     private ListParser mParser;
 
-    public SearchArticleManager(Requester requester, ListParser parser) {
+    public SearchArticleManager(ListRequester requester, ListParser parser) {
         this.mParser = parser;
         this.mRequester = requester;
     }
 
-    public List<SearchArticle> getSearchArticles(String url) {
+    public List<SearchArticle> getSearchArticles() {
         try {
             // Make Request
-            Response response = mRequester.request(url);
+            Response response = mRequester.request();
 
             // Parse Json Response
             return mParser.parse(response.body);
@@ -37,9 +37,9 @@ public class SearchArticleManager {
         }
     }
 
-    public void getSearchArticles(String url, final ListCallback<SearchArticle> callback) {
+    public void getSearchArticles(final ListCallback<SearchArticle> callback) {
         // Make Request
-        mRequester.request(url, new RequestCallback() {
+        mRequester.request(new RequestCallback() {
             public void onSuccess(Response response) {
                 List<SearchArticle> searchArticles = mParser.parse(response.body);
 
