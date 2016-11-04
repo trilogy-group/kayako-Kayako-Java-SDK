@@ -1,6 +1,7 @@
 package com.kayako.sdk.helpcenter.category;
 
 
+import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
@@ -39,7 +40,7 @@ public class CategoryManager {
 
     public void getCategories(String url, final ListCallback<Category> callback) {
         // Make Request
-        requester.request(url, new Requester.RequestCallback() {
+        requester.request(url, new RequestCallback() {
             public void onSuccess(Response response) {
                 List<Category> categories = parser.parse(response.body);
 

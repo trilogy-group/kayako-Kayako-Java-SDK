@@ -13,10 +13,4 @@ public interface Requester {
     Response request(String helpDeskUrl) throws IOException;
 
     void request(String helpDeskUrl, RequestCallback callback);
-
-    interface RequestCallback {
-        void onSuccess(Response response);
-
-        void onFailure(Throwable error);
-    }
 }

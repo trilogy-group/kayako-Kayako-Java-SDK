@@ -1,5 +1,6 @@
 package com.kayako.sdk.utils;
 
+import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Requester;
 import okhttp3.*;
 import okhttp3.Response;
@@ -100,7 +101,7 @@ public class RequesterUtils {
         return new com.kayako.sdk.base.requester.Response(response.code(), response.body().string());
     }
 
-    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final Requester.RequestCallback callback) {
+    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final RequestCallback callback) {
         Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
         getHttpClient().newCall(request).enqueue(new Callback() {

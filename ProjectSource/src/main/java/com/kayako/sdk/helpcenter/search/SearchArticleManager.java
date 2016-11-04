@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.search;
 
+import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.base.parser.ListParser;
@@ -38,7 +39,7 @@ public class SearchArticleManager {
 
     public void getSearchArticles(String url, final ListCallback<SearchArticle> callback) {
         // Make Request
-        mRequester.request(url, new Requester.RequestCallback() {
+        mRequester.request(url, new RequestCallback() {
             public void onSuccess(Response response) {
                 List<SearchArticle> searchArticles = mParser.parse(response.body);
 

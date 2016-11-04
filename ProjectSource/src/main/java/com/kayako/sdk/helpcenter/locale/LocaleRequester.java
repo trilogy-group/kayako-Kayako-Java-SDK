@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.locale;
 
+import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.utils.RequesterUtils;
