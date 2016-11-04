@@ -4,7 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.kayako.sdk.helpcenter.base.ListParser;
+import com.kayako.sdk.base.parser.ListParser;
 
 import java.util.*;
 

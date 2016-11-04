@@ -1,8 +1,9 @@
 package com.kayako.sdk.helpcenter.locale;
 
+import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
-import com.kayako.sdk.helpcenter.base.ListParser;
-import com.kayako.sdk.helpcenter.base.Requester;
 
 import java.io.IOException;
 import java.util.List;
@@ -25,11 +26,10 @@ public class LocaleManager {
     }
 
     public List<Locale> getLocales(String url) {
-        String jsonResponse = null;
         try {
-            jsonResponse = mRequester.request(url);
+            Response response = mRequester.request(url);
 
-            List<Locale> locales = mParser.parse(jsonResponse);
+            List<Locale> locales = mParser.parse(response.body);
             return locales;
         } catch (IOException e) {
             e.printStackTrace();
@@ -40,8 +40,8 @@ public class LocaleManager {
     public void getLocales(String url, final ListCallback<Locale> callback) {
         // Make Request
         mRequester.request(url, new Requester.RequestCallback() {
-            public void onSuccess(String jsonResponse) {
-                List<Locale> locales = mParser.parse(jsonResponse);
+            public void onSuccess(Response response) {
+                List<Locale> locales = mParser.parse(response.body);
 
                 if (locales != null) {
                     callback.onSuccess(locales);

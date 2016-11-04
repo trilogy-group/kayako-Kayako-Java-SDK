@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter.base;
+package com.kayako.sdk.base.parser;
 
 import java.io.Serializable;
 

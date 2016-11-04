@@ -6,7 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.articles.Article;
-import com.kayako.sdk.helpcenter.base.ListParser;
+import com.kayako.sdk.base.parser.ListParser;
 
 import java.util.ArrayList;
 import java.util.List;

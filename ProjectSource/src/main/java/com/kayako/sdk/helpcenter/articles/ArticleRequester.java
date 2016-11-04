@@ -1,6 +1,7 @@
 package com.kayako.sdk.helpcenter.articles;
 
-import com.kayako.sdk.helpcenter.base.Requester;
+import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.utils.RequesterUtils;
 
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class ArticleRequester implements Requester {
         queryParams.put(ARG_LIMIT, String.valueOf(limit));
     }
 
-    public String request(String helpDeskUrl) throws IOException {
+    public Response request(String helpDeskUrl) throws IOException {
         return RequesterUtils.getSync(helpDeskUrl, ENDPOINT, INCLUDE, null, queryParams);
     }
 

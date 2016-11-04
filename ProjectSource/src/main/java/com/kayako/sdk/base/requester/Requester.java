@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter.base;
+package com.kayako.sdk.base.requester;
 
 import java.io.IOException;
 
@@ -10,12 +10,12 @@ public interface Requester {
     String ARG_OFFSET = "offset";
     String ARG_LIMIT = "limit";
 
-    String request(String helpDeskUrl) throws IOException;
+    Response request(String helpDeskUrl) throws IOException;
 
     void request(String helpDeskUrl, RequestCallback callback);
 
     interface RequestCallback {
-        void onSuccess(String jsonResponse);
+        void onSuccess(Response response);
 
         void onFailure(Throwable error);
     }

@@ -2,8 +2,8 @@ package com.kayako.sdk.helpcenter;
 
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.articles.ArticleParser;
-import com.kayako.sdk.helpcenter.base.ItemParser;
-import com.kayako.sdk.helpcenter.base.ListParser;
+import com.kayako.sdk.base.parser.ItemParser;
+import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.helpcenter.category.CategoryParser;
 import com.kayako.sdk.helpcenter.locale.LocaleParser;

@@ -1,7 +1,7 @@
 package com.kayako.sdk.helpcenter;
 
 import com.kayako.sdk.helpcenter.articles.ArticleRequester;
-import com.kayako.sdk.helpcenter.base.Requester;
+import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.helpcenter.category.CategoryRequester;
 import com.kayako.sdk.helpcenter.locale.LocaleRequester;
 import com.kayako.sdk.helpcenter.search.SearchArticleRequester;

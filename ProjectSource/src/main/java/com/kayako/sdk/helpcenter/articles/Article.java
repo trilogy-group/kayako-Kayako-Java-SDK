@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.articles;
 
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 

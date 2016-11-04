@@ -2,7 +2,7 @@ package com.kayako.sdk.helpcenter.user;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.kayako.sdk.helpcenter.base.ItemParser;
+import com.kayako.sdk.base.parser.ItemParser;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

@@ -2,22 +2,14 @@ package com.kayako.sdk.helpcenter;
 
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.articles.ArticleManager;
-import com.kayako.sdk.helpcenter.articles.ArticleParser;
-import com.kayako.sdk.helpcenter.articles.ArticleRequester;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.helpcenter.category.CategoryManager;
-import com.kayako.sdk.helpcenter.category.CategoryParser;
-import com.kayako.sdk.helpcenter.category.CategoryRequester;
 import com.kayako.sdk.helpcenter.locale.LocaleManager;
 import com.kayako.sdk.helpcenter.search.SearchArticle;
 import com.kayako.sdk.helpcenter.search.SearchArticleManager;
-import com.kayako.sdk.helpcenter.search.SearchArticleParser;
-import com.kayako.sdk.helpcenter.search.SearchArticleRequester;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionManager;
-import com.kayako.sdk.helpcenter.section.SectionParser;
-import com.kayako.sdk.helpcenter.section.SectionRequester;
 
 import java.util.List;
 import java.util.Locale;

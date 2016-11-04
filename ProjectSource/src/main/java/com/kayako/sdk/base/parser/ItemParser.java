@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter.base;
+package com.kayako.sdk.base.parser;
 
 import com.google.gson.JsonObject;
 
@@ -10,5 +10,4 @@ public interface ItemParser<T extends Resource> {
     T parse(String json) throws NullPointerException;
 
     T parseItem(JsonObject node) throws NullPointerException;
-
 }

@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter.base;
+package com.kayako.sdk.base.parser;
 
 import com.google.gson.JsonObject;
 

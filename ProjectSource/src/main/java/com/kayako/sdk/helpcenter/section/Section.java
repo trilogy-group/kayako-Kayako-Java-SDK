@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 import com.kayako.sdk.helpcenter.category.Category;
 
 /**

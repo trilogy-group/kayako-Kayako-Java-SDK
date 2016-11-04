@@ -1,9 +1,10 @@
 package com.kayako.sdk.helpcenter.category;
 
 
+import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.helpcenter.base.ListCallback;
-import com.kayako.sdk.helpcenter.base.ListParser;
-import com.kayako.sdk.helpcenter.base.Requester;
+import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.base.requester.Requester;
 
 import java.io.IOException;
 import java.util.List;
@@ -25,10 +26,10 @@ public class CategoryManager {
     public List<Category> getCategories(String url) {
         try {
             // Make Request
-            String jsonResponse = requester.request(url);
+            Response response = requester.request(url);
 
             // Parse Json Response
-            return parser.parse(jsonResponse);
+            return parser.parse(response.body);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -39,8 +40,8 @@ public class CategoryManager {
     public void getCategories(String url, final ListCallback<Category> callback) {
         // Make Request
         requester.request(url, new Requester.RequestCallback() {
-            public void onSuccess(String jsonResponse) {
-                List<Category> categories = parser.parse(jsonResponse);
+            public void onSuccess(Response response) {
+                List<Category> categories = parser.parse(response.body);
 
                 if (categories != null) {
                     callback.onSuccess(categories);

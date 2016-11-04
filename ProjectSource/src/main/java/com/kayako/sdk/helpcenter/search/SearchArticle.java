@@ -1,7 +1,7 @@
 package com.kayako.sdk.helpcenter.search;
 
 import com.kayako.sdk.helpcenter.articles.Article;
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
