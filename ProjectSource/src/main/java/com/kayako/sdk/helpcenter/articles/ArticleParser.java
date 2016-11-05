@@ -59,7 +59,17 @@ public class ArticleParser implements ListParser<Article>, ItemParser<Article> {
     }
 
     @Override
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
+    }
+
+    @Override
     public Article parseItem(String json) throws NullPointerException {
         return ParserUtils.getResourceFromDataNode(json, this);
+    }
+
+    @Override
+    public boolean containsItem(String jsonOfResponse) {
+        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

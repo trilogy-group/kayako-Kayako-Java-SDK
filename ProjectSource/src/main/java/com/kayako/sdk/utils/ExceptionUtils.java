@@ -9,6 +9,8 @@ import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.error.response.Log;
 import com.kayako.sdk.error.response.Notification;
 
+import java.util.List;
+
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 04/11/16
@@ -31,7 +33,23 @@ public class ExceptionUtils {
         ListParser<Error> errorListParser = ParserFactory.getErrorListParser();
         ListParser<Log> logListParser = ParserFactory.getLogListParser();
 
-        return new ResponseMessages(statusCode, notificationListParser.parseList(json), errorListParser.parseList(json), logListParser.parseList(json));
+        List<Notification> notifications = null;
+        List<Error> errors = null;
+        List<Log> logs = null;
+
+        if (logListParser.containsList(json)) {
+            logs = logListParser.parseList(json);
+        }
+
+        if (notificationListParser.containsList(json)) {
+            notifications = notificationListParser.parseList(json);
+        }
+
+        if (errorListParser.containsList(json)) {
+            errors = errorListParser.parseList(json);
+        }
+        
+        return new ResponseMessages(statusCode, notifications, errors, logs);
     }
 
     public static ErrorCode generateErrorCode(int statusCode) {

@@ -52,4 +52,12 @@ public class SectionParser implements ListParser<Section>, ItemParser<Section> {
     public Section parseItem(String json) throws NullPointerException {
         return ParserUtils.getResourceFromDataNode(json, this);
     }
+
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
+    }
+
+    public boolean containsItem(String jsonOfResponse) {
+        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
+    }
 }

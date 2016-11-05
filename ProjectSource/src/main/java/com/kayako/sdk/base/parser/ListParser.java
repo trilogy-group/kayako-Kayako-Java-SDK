@@ -12,4 +12,6 @@ import java.util.List;
  */
 public interface ListParser<T extends Resource> extends Parser<T> {
     List<T> parseList(String jsonOfResponse) throws NullPointerException;
+
+    boolean containsList(String jsonOfResponse);
 }

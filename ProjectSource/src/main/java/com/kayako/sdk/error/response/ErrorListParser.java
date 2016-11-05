@@ -23,6 +23,11 @@ public class ErrorListParser implements ListParser<Error> {
         return ParserUtils.getResourceList(json, NODE_ERRORS, this);
     }
 
+    @Override
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContained(jsonOfResponse, NODE_ERRORS);
+    }
+
     public Error parse(String jsonOfResource) throws NullPointerException {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 

@@ -24,9 +24,64 @@ public class ParserUtils<T extends Resource> {
 
     private static JsonParser sJsonParser = new JsonParser();
 
-    private static String getTranslationFromLocaleField(Locale selectLocale, String jsonOfLocaleFields) {
-        JsonArray localeFields = sJsonParser.parse(jsonOfLocaleFields).getAsJsonArray();
 
+    // PRIVATE METHODS
+
+    private static <T extends Resource> List<T> convertJsonArrayToResourceList(JsonArray jsonArray, Parser<T> parser) {
+        List<T> list = new ArrayList<>();
+        for (JsonElement element : jsonArray) {
+            list.add(parser.parse(element.getAsJsonObject().toString()));
+        }
+        return list;
+    }
+
+    private static JsonArray getDataNodeAsJsonArray(String json) throws NullPointerException {
+        return getNodeAsJsonArray(json, NODE_DATA);
+    }
+
+    private static JsonObject getDataNodeAsJsonObject(String json) throws NullPointerException {
+        return getNodeAsJsonObject(json, NODE_DATA);
+    }
+
+    private static JsonArray getNodeAsJsonArray(String json, String nodeName) {
+        return sJsonParser.parse(json).getAsJsonObject().getAsJsonArray(nodeName);
+    }
+
+    private static JsonObject getNodeAsJsonObject(String json, String nodeName) throws NullPointerException {
+        return sJsonParser.parse(json).getAsJsonObject().getAsJsonObject(nodeName);
+    }
+
+    private static JsonObject convertJsonToJsonObject(String json) {
+        return sJsonParser.parse(json).getAsJsonObject();
+    }
+
+    private static boolean checkIfContained(String json, String memberName) {
+        JsonObject jsonObject = sJsonParser.parse(json).getAsJsonObject();
+        return jsonObject.has(memberName) && !jsonObject.get(memberName).isJsonNull();
+    }
+
+    // PUBLIC METHODS, MADE PUBLIC ONLY FOR TESTS
+
+    public static long getTimeInMilliSeconds(String isoTimeStamp) {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.UK);
+            return sdf.parse(isoTimeStamp).getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    /**
+     * Extract the translation based on the specified Locale field.
+     * If select one unavailable, search for en-us locale.
+     * If en-us one unavailable, pick first one.
+     *
+     * @param selectLocale
+     * @param localeFields
+     * @return
+     */
+    public static String getTranslationFromLocaleField(Locale selectLocale, JsonArray localeFields) {
         String enTranslation = null;
         String firstTranslation = null;
 
@@ -66,36 +121,7 @@ public class ParserUtils<T extends Resource> {
         }
     }
 
-    /**
-     * Extract the translation based on the specified Locale field.
-     * If select one unavailable, search for en-us locale.
-     * If en-us one unavailable, pick first one.
-     *
-     * @param selectLocale
-     * @param localeFields
-     * @return
-     */
-    public static String getTranslationFromLocaleField(Locale selectLocale, JsonArray localeFields) {
-        return getTranslationFromLocaleField(selectLocale, localeFields.toString());
-    }
-
-    public static long getTimeInMilliSeconds(String isoTimeStamp) {
-        try {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.UK);
-            return sdf.parse(isoTimeStamp).getTime();
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return 0;
-        }
-    }
-
-    public static <T extends Resource> List<T> convertJsonArrayToResourceList(JsonArray jsonArray, Parser<T> parser) {
-        List<T> list = new ArrayList<>();
-        for (JsonElement element : jsonArray) {
-            list.add(parser.parse(element.getAsJsonObject().toString()));
-        }
-        return list;
-    }
+    // PUBLIC METHODS
 
     public static <T extends Resource> List<T> getResourceList(String json, String nodeName, Parser<T> parser) {
         return convertJsonArrayToResourceList(getNodeAsJsonArray(json, nodeName), parser);
@@ -114,30 +140,25 @@ public class ParserUtils<T extends Resource> {
     }
 
     public static ResourceMap convertResourceJsonToResourceMap(String json) {
-        return new MyResourceMap(convertJsonOfResourceToJsonObject(json));
+        return new MyResourceMap(convertJsonToJsonObject(json));
     }
 
-    // TODO: Once you shift all gson usage to this class, make sure you make the following classes private
-
-    public static JsonArray getDataNodeAsJsonArray(String json) throws NullPointerException {
-        return getNodeAsJsonArray(json, NODE_DATA);
+    public static boolean checkIfListContained(String jsonOfResponse, String memberName) {
+        return checkIfContained(jsonOfResponse, memberName) && convertJsonToJsonObject(jsonOfResponse).get(memberName).isJsonArray();
     }
 
-    public static JsonObject getDataNodeAsJsonObject(String json) throws NullPointerException {
-        return getNodeAsJsonObject(json, NODE_DATA);
+    public static boolean checkIfListContainedInDataNode(String jsonOfResponse) {
+        return checkIfContained(jsonOfResponse, NODE_DATA);
     }
 
-    public static JsonArray getNodeAsJsonArray(String json, String nodeName) {
-        return sJsonParser.parse(json).getAsJsonObject().getAsJsonArray(nodeName);
+    public static boolean checkIfItemContained(String jsonOfResponse, String memberName) {
+        return checkIfContained(jsonOfResponse, memberName) && convertJsonToJsonObject(jsonOfResponse).get(memberName).isJsonObject();
     }
 
-    public static JsonObject getNodeAsJsonObject(String json, String nodeName) throws NullPointerException {
-        return sJsonParser.parse(json).getAsJsonObject().getAsJsonObject(nodeName);
+    public static boolean checkIfItemContainedInDataNode(String jsonOfResponse) {
+        return checkIfItemContained(jsonOfResponse, NODE_DATA);
     }
 
-    public static JsonObject convertJsonOfResourceToJsonObject(String jsonOfResource) {
-        return sJsonParser.parse(jsonOfResource).getAsJsonObject();
-    }
 
     public interface ResourceMap {
 

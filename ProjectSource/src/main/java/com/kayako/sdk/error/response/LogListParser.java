@@ -21,6 +21,11 @@ public class LogListParser implements ListParser<Log> {
     }
 
     @Override
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContained(jsonOfResponse,NODE_LOGS);
+    }
+
+    @Override
     public Log parse(String jsonOfResource) throws NullPointerException {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 

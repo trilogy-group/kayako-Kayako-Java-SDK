@@ -1,6 +1,7 @@
 package com.kayako.sdk.base.callback;
 
 import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.error.KayakoException;
 
 import java.util.List;
 
@@ -10,4 +11,6 @@ import java.util.List;
  */
 public interface ListCallback<T extends Resource> extends Callback {
     void onSuccess(List<T> items);
+
+    void onFailure(KayakoException exception);
 }

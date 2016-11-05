@@ -45,4 +45,8 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
 
         return searchArticle;
     }
+
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
+    }
 }

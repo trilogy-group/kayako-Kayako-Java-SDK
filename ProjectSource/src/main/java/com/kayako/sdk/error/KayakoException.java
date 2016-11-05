@@ -52,7 +52,7 @@ public class KayakoException extends Exception {
      */
     public KayakoException(ErrorCode code, String message,
                            Throwable throwable) {
-        super(message);
+        super(message, throwable);
         this.message = message;
         this.code = code;
         this.throwable = throwable;

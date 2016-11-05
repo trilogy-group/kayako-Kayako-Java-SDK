@@ -11,4 +11,6 @@ package com.kayako.sdk.base.parser;
  */
 public interface ItemParser<T extends Resource> extends Parser<T>{
     T parseItem(String jsonOfResponse) throws NullPointerException;
+
+    boolean containsItem(String jsonOfResponse);
 }

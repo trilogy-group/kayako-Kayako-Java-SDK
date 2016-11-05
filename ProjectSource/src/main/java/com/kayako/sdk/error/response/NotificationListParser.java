@@ -20,6 +20,11 @@ public class NotificationListParser implements ListParser<Notification> {
         return ParserUtils.getResourceList(json, NODE_NOTIFICATIONS, this);
     }
 
+    @Override
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContained(jsonOfResponse,NODE_NOTIFICATIONS);
+    }
+
     public Notification parse(String jsonOfResource) throws NullPointerException {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
         return new Notification(resourceMap.getAsString(ITEM_TYPE), resourceMap.getAsString(ITEM_MESSAGE), resourceMap.getAsBoolean(ITEM_STICKY));

@@ -53,8 +53,15 @@ public class LocaleParser implements ListParser<Locale>, ItemParser<Locale> {
         return ParserUtils.getResourceListFromDataNode(json, this);
     }
 
-    @Override
     public Locale parseItem(String json) throws NullPointerException {
         return ParserUtils.getResourceFromDataNode(json, this);
+    }
+
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
+    }
+
+    public boolean containsItem(String jsonOfResponse) {
+        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

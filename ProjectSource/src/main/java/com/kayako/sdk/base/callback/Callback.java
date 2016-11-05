@@ -8,5 +8,4 @@ import com.kayako.sdk.error.KayakoException;
  */
 public interface Callback {
 
-    void onFailure(KayakoException exception);
 }

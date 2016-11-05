@@ -51,6 +51,9 @@ public class ItemManager<T extends Resource> {
         } catch (NullPointerException e) {
             // Throw Internal Parse Error (e4)
             throw ExceptionUtils.generateInternalKayakoException(ErrorCode.INTERNAL_UNABLE_TO_PARSE_RESPONSE, e);
+        } catch (KayakoException e) {
+            // Don't Catch KayakoExceptions
+            throw e;
         } catch (Exception e) {
             // Throw Other Errors (e5)
             throw ExceptionUtils.generateInternalKayakoException(ErrorCode.OTHER, e);
