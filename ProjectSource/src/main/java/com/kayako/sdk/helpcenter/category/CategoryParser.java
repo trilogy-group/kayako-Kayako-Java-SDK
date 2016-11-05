@@ -1,6 +1,5 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.google.gson.JsonObject;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.utils.ParserUtils;

@@ -1,7 +1,5 @@
 package com.kayako.sdk.base.parser;
 
-import com.google.gson.JsonObject;
-
 /**
  * This interface is used where the json node in other responses are converted into objects.
  * <p>

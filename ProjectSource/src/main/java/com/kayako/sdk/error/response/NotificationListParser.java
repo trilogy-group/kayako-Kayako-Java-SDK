@@ -1,6 +1,5 @@
 package com.kayako.sdk.error.response;
 
-import com.google.gson.JsonObject;
 import com.kayako.sdk.base.parser.ListParser;
 
 import java.util.List;

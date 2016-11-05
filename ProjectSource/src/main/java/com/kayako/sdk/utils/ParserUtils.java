@@ -6,7 +6,9 @@ import com.kayako.sdk.base.parser.Resource;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * All functions using Gson Library will be restricted to this Util class.

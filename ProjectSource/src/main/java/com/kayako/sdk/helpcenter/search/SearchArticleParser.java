@@ -1,17 +1,11 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Parser;
-import com.kayako.sdk.base.parser.Resource;
 import com.kayako.sdk.helpcenter.ParserFactory;
 import com.kayako.sdk.helpcenter.articles.Article;
-import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.utils.ParserUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
