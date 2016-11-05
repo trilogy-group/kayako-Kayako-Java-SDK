@@ -4,13 +4,14 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 05/11/16
  */
-public class NotificationListParserTest {
+public class LogListParserTest {
 
     // Test case that contains both errors and notifications and logs
     private final String jsonWithOtherResponseMessages = "{\n" +
@@ -40,20 +41,19 @@ public class NotificationListParserTest {
 
     @Test
     public void parseJson_alongWithLogAndNotification() throws Exception {
-        NotificationListParser notificationListParser = new NotificationListParser();
-        List<Notification> notifications = notificationListParser.parseList(jsonWithOtherResponseMessages);
+        LogListParser logListParser = new LogListParser();
+        List<Log> logs = logListParser.parseList(jsonWithOtherResponseMessages);
 
-        assertTrue("Only one notification", notifications.size() == 1);
-        Notification notification = notifications.get(0);
+        assertTrue("Only one log", logs.size() == 1);
+        Log log = logs.get(0);
 
-        validateNotification(notification);
+        validateLog(log);
     }
 
-    private void validateNotification(Notification notification) {
-        assertNotNull(notification);
-        assertNotNull(notification.message);
-        assertNotNull(notification.type);
-        notification.type.equals("INFO");
-        notification.message.equals("Two-factor authentication is enabled for your account");
+    private void validateLog(Log log) {
+        assertNotNull(log.message);
+        assertNotNull(log.level);
+        log.level.equals("ERROR");
+        log.message.equals("Unhandled exception caught: Novo\\\\Library\\\\Exception\\\\InvalidArgument in __src/library/REST/Resource/Assembler/Assembler.php:423");
     }
 }

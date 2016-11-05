@@ -1,6 +1,7 @@
 package com.kayako.sdk.error.response;
 
 import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.utils.ParserUtils;
 
 import java.util.List;
 
@@ -10,15 +11,17 @@ import java.util.List;
  */
 public class NotificationListParser implements ListParser<Notification> {
 
-    // TODO: Copy sample json, use tests to validate the parsing
+    private static final String NODE_NOTIFICATIONS = "notifications";
+    private static final String ITEM_STICKY = "sticky";
+    private static final String ITEM_TYPE = "type";
+    private static final String ITEM_MESSAGE = "message";
 
-    @Override
     public List<Notification> parseList(String json) throws NullPointerException {
-        return null;
+        return ParserUtils.getResourceList(json, NODE_NOTIFICATIONS, this);
     }
 
-    @Override
     public Notification parse(String jsonOfResource) throws NullPointerException {
-        return null;
+        ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
+        return new Notification(resourceMap.getAsString(ITEM_TYPE), resourceMap.getAsString(ITEM_MESSAGE), resourceMap.getAsBoolean(ITEM_STICKY));
     }
 }

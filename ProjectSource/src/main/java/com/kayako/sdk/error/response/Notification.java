@@ -12,16 +12,16 @@ public class Notification implements ResponseResource {
 
     public String message;
 
-    public boolean sticky;
+    public Boolean sticky;
 
-    public Notification(String type, String message, boolean sticky) {
+    public Notification(String type, String message, Boolean sticky) {
         this.type = type;
         this.message = message;
         this.sticky = sticky;
     }
 
     @Override
-    public Type getType() {
+    public Type getResponseMessageType() {
         return Type.NOTIFICATION;
     }
 }

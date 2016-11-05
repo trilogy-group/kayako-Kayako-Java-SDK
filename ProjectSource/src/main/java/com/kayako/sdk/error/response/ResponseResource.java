@@ -7,5 +7,5 @@ import com.kayako.sdk.base.parser.Resource;
  * @date 04/11/16
  */
 public interface ResponseResource extends Resource {
-    Type getType();
+    Type getResponseMessageType();
 }

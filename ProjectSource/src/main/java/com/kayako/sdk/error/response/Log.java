@@ -18,7 +18,7 @@ public class Log implements ResponseResource {
     }
 
     @Override
-    public Type getType() {
+    public Type getResponseMessageType() {
         return Type.LOG;
     }
 }
