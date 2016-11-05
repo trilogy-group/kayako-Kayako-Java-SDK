@@ -7,19 +7,19 @@ import com.kayako.sdk.base.parser.Resource;
  * @date 11/08/16
  */
 public class Category implements Resource {
-    private long id;
+    private Long id;
 
     private String title;
 
     private String description;
 
-    private long displayOrder;
+    private Long displayOrder;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -39,11 +39,11 @@ public class Category implements Resource {
         this.description = description;
     }
 
-    public long getDisplayOrder() {
+    public Long getDisplayOrder() {
         return displayOrder;
     }
 
-    public void setDisplayOrder(long displayOrder) {
+    public void setDisplayOrder(Long displayOrder) {
         this.displayOrder = displayOrder;
     }
 

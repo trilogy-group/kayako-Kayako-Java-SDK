@@ -10,7 +10,7 @@ import com.kayako.sdk.helpcenter.user.UserMinimal;
  */
 public class Article implements Resource {
 
-    private long id;
+    private Long id;
 
     private String uuid;
 
@@ -22,15 +22,15 @@ public class Article implements Resource {
 
     private UserMinimal author;
 
-    private long lastUpdated;
+    private Long lastUpdated;
 
-    private long lastPosted;
+    private Long lastPosted;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -74,19 +74,19 @@ public class Article implements Resource {
         this.author = author;
     }
 
-    public long getLastUpdated() {
+    public Long getLastUpdated() {
         return lastUpdated;
     }
 
-    public void setLastUpdated(long lastUpdated) {
+    public void setLastUpdated(Long lastUpdated) {
         this.lastUpdated = lastUpdated;
     }
 
-    public long getLastPosted() {
+    public Long getLastPosted() {
         return lastPosted;
     }
 
-    public void setLastPosted(long lastPosted) {
+    public void setLastPosted(Long lastPosted) {
         this.lastPosted = lastPosted;
     }
 

@@ -7,21 +7,21 @@ import com.kayako.sdk.base.parser.Resource;
  * @date 12/09/16
  */
 public class UserMinimal implements Resource {
-    private long id;
+    private Long id;
     private String fullName;
     private String avatarUrl;
 
-    public UserMinimal(long id, String full_name, String avatarUrl) {
+    public UserMinimal(Long id, String fullName, String avatarUrl) {
         this.id = id;
-        this.fullName = full_name;
+        this.fullName = fullName;
         this.avatarUrl = avatarUrl;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

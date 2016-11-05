@@ -155,7 +155,7 @@ public class ParserUtils<T extends Resource> {
          * @param memberName Key
          * @return true if value is null
          */
-        boolean checkNotNull(String memberName);
+        boolean isNotNull(String memberName);
 
         /**
          * @param memberName Key
@@ -173,19 +173,19 @@ public class ParserUtils<T extends Resource> {
          * @param memberName Key
          * @return Value as int type
          */
-        int getAsInt(String memberName);
+        Integer getAsInt(String memberName);
 
         /**
          * @param memberName Key
          * @return Value as long type
          */
-        long getAsLong(String memberName);
+        Long getAsLong(String memberName);
 
         /**
          * @param memberName Key
          * @return Value as boolean type
          */
-        boolean getAsBoolean(String memberName);
+        Boolean getAsBoolean(String memberName);
 
         /**
          * @param memberName Key
@@ -199,7 +199,7 @@ public class ParserUtils<T extends Resource> {
          * @param memberName Key
          * @return Value as long type (time in milliseconds)
          */
-        long getAsTimeInMilliseconds(String memberName);
+        Long getAsTimeInMilliseconds(String memberName);
 
         /**
          * Custom logic to traverse through and select the appropriate locale
@@ -227,8 +227,12 @@ public class ParserUtils<T extends Resource> {
 
         private JsonObject mJsonObject;
 
-        MyResourceMap(JsonObject jsonObjectOfResource) {
+        private MyResourceMap(JsonObject jsonObjectOfResource) {
             mJsonObject = jsonObjectOfResource;
+        }
+
+        private boolean isValueValid(String memberName) {
+            return hasMember(memberName) && isNotNull(memberName);
         }
 
         @Override
@@ -237,32 +241,48 @@ public class ParserUtils<T extends Resource> {
         }
 
         @Override
-        public boolean checkNotNull(String memberName) {
+        public boolean isNotNull(String memberName) {
             return !mJsonObject.get(memberName).isJsonNull();
-        }
-
-        public String getAsString(String memberName) {
-            return mJsonObject.get(memberName).getAsString();
         }
 
         public String getAsJsonString(String memberName) {
             return mJsonObject.get(memberName).toString();
         }
 
-        public int getAsInt(String memberName) {
+        public String getAsString(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+            return mJsonObject.get(memberName).getAsString();
+        }
+
+        public Integer getAsInt(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
             return mJsonObject.get(memberName).getAsInt();
         }
 
-        public long getAsLong(String memberName) {
+        public Long getAsLong(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
             return mJsonObject.get(memberName).getAsLong();
         }
 
-        public boolean getAsBoolean(String memberName) {
+        public Boolean getAsBoolean(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
             return mJsonObject.get(memberName).getAsBoolean();
         }
 
         @Override
         public List<String> getAsArrayOfStrings(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+
             List<String> strings = new ArrayList<>();
             for (JsonElement element : mJsonObject.get(memberName).getAsJsonArray()) {
                 strings.add(element.getAsString());
@@ -271,12 +291,20 @@ public class ParserUtils<T extends Resource> {
         }
 
         @Override
-        public long getAsTimeInMilliseconds(String memberName) {
+        public Long getAsTimeInMilliseconds(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+
             String dateString = mJsonObject.get(memberName).getAsString();
             return ParserUtils.getTimeInMilliSeconds(dateString);
         }
 
         public String getAsLocalizedString(String memberName, Locale selectLocale) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+
             JsonArray localeFields = mJsonObject.get(memberName).getAsJsonArray();
             return ParserUtils.getTranslationFromLocaleField(selectLocale, localeFields);
         }

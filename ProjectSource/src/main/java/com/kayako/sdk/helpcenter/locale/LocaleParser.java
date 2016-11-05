@@ -38,11 +38,11 @@ public class LocaleParser implements ListParser<Locale>, ItemParser<Locale> {
         locale.setPublic(resourceMap.getAsBoolean(ITEM_IS_PUBLIC));
         locale.setDirection(resourceMap.getAsString(ITEM_DIRECTION));
 
-        if (resourceMap.hasMember(ITEM_REGION) && resourceMap.checkNotNull(ITEM_REGION)) {
+        if (resourceMap.hasMember(ITEM_REGION) && resourceMap.isNotNull(ITEM_REGION)) {
             locale.setRegion(resourceMap.getAsString(ITEM_REGION));
         }
 
-        if (resourceMap.hasMember(ITEM_NATIVE_REGION) && resourceMap.checkNotNull(ITEM_NATIVE_REGION)) {
+        if (resourceMap.hasMember(ITEM_NATIVE_REGION) && resourceMap.isNotNull(ITEM_NATIVE_REGION)) {
             locale.setNativeRegion(resourceMap.getAsString(ITEM_NATIVE_REGION));
         }
 
