@@ -1,8 +1,9 @@
 package com.kayako.sdk.helpcenter.search;
 
 import com.kayako.sdk.base.manager.ListManager;
-import com.kayako.sdk.helpcenter.ParserFactory;
-import com.kayako.sdk.helpcenter.RequesterFactory;
+import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.RequesterFactory;
+import com.kayako.sdk.error.KayakoException;
 import org.junit.Test;
 
 import java.util.List;
@@ -62,7 +63,7 @@ public class SearchArticleManagerTest {
      *
      * @param query query used for search
      */
-    public void performSearch(String query) {
+    public void performSearch(String query) throws KayakoException {
         Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
 

@@ -2,8 +2,8 @@ package com.kayako.sdk.helpcenter.section;
 
 import com.kayako.sdk.base.manager.ItemManager;
 import com.kayako.sdk.base.manager.ListManager;
-import com.kayako.sdk.helpcenter.ParserFactory;
-import com.kayako.sdk.helpcenter.RequesterFactory;
+import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.RequesterFactory;
 import org.junit.Assert;
 import org.junit.Test;
 

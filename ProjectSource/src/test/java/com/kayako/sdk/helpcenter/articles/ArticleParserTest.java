@@ -444,19 +444,17 @@ public class ArticleParserTest {
         List<Article> articleList = articleParser.parseList(jsonSample);
 
         assertTrue("There should be 2 articles parsed", articleList.size() == 2);
-        for (Article article : articleList) {
-            validateArticle(article);
-        }
+        validateArticle1(articleList.get(0));
     }
 
-    private void validateArticle(Article article) {
+    private void validateArticle1(Article article) {
         Assert.assertNotNull(article.getId());
         Assert.assertNotNull(article.getTitle());
         Assert.assertNotNull(article.getAuthor());
         Assert.assertTrue(article.getLastPosted() != 0);
         Assert.assertTrue(article.getLastUpdated() != 0);
 
-        Assert.assertTrue(article.getId().equals(1145));
+        Assert.assertTrue(article.getId() == 1145);
         Assert.assertTrue(article.getTitle().equals("Starting out with Kayako"));
         Assert.assertTrue(article.getAuthor().getId() == 389);
 

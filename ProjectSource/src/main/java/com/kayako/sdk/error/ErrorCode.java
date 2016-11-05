@@ -21,15 +21,16 @@ public enum ErrorCode {
      */
     EXTERNAL_SERVER_ERROR,
 
-    /**
-     * When new error states are introduced, they will be grouped under OTHER until the next version
-     */
-    OTHER,
 
     /**
      * Error States prefixed with INTERNAL_ are exceptions that are local in nature and does not involve server
      */
     INTERNAL_UNABLE_TO_CONNECT_TO_SERVER,
-    INTERNAL_UNABLE_TO_PARSE_RESPONSE;
+    INTERNAL_UNABLE_TO_PARSE_RESPONSE,
+
+    /**
+     * When new or uncovered error states are introduced, they will be grouped under OTHER until the next version of SDK covers it
+     */
+    OTHER;
 
 }

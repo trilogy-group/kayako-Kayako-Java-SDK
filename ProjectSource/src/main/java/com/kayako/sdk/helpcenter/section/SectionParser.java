@@ -2,7 +2,7 @@ package com.kayako.sdk.helpcenter.section;
 
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.helpcenter.ParserFactory;
+import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.utils.ParserUtils;
 

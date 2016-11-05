@@ -1,8 +1,11 @@
 package com.kayako.sdk.helpcenter;
 
+import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.RequesterFactory;
 import com.kayako.sdk.base.callback.ItemCallback;
 import com.kayako.sdk.base.manager.ItemManager;
 import com.kayako.sdk.base.manager.ListManager;
+import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.base.ListCallback;
 import com.kayako.sdk.helpcenter.category.Category;
@@ -28,7 +31,7 @@ public class HelpCenter {
 
     // Category
 
-    public List<Category> getCategories(int offset, int limit) {
+    public List<Category> getCategories(int offset, int limit) throws KayakoException {
         return new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList();
     }
 
@@ -37,11 +40,11 @@ public class HelpCenter {
         new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
     }
 
-    public void getCategories(int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Category> callback) {
+    public void getCategories(int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Category> callback) throws KayakoException {
         new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
     }
 
-    public Category getCategory(long categoryId) {
+    public Category getCategory(long categoryId) throws KayakoException {
         return new ItemManager<Category>(RequesterFactory.getCategoryItemRequester(mHelpDeskUrl, categoryId), ParserFactory.getCategoryItemParser(mLocale)).getItem();
     }
 
@@ -52,7 +55,7 @@ public class HelpCenter {
 
     // Section
 
-    public List<Section> getSections(long categoryId, int offset, int limit) {
+    public List<Section> getSections(long categoryId, int offset, int limit) throws KayakoException {
         return new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList();
     }
 
@@ -65,7 +68,7 @@ public class HelpCenter {
         new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
     }
 
-    public Section getSection(long sectionId) {
+    public Section getSection(long sectionId) throws KayakoException {
         return new ItemManager<Section>(RequesterFactory.getSectionItemRequester(mHelpDeskUrl, sectionId), ParserFactory.getSectionItemParser(mLocale)).getItem();
     }
 
@@ -76,7 +79,7 @@ public class HelpCenter {
 
     // Article
 
-    public List<Article> getArticles(long sectionId, int offset, int limit) {
+    public List<Article> getArticles(long sectionId, int offset, int limit) throws KayakoException {
         return new ListManager<Article>(RequesterFactory.getArticleListRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleListParser(mLocale)).getList();
     }
 
@@ -89,7 +92,7 @@ public class HelpCenter {
         new ListManager<Article>(RequesterFactory.getArticleListRequester(mHelpDeskUrl, sectionId, offset, limit), ParserFactory.getArticleListParser(mLocale)).getList(callback);
     }
 
-    public Article getArticle(long articleId) {
+    public Article getArticle(long articleId) throws KayakoException {
         return new ItemManager<Article>(RequesterFactory.getArticleItemRequester(mHelpDeskUrl, articleId), ParserFactory.getArticleItemParser(mLocale)).getItem();
     }
 
@@ -100,7 +103,7 @@ public class HelpCenter {
 
     // Search Articles
 
-    public List<SearchArticle> getSearchArticles(String query, int offset, int limit) {
+    public List<SearchArticle> getSearchArticles(String query, int offset, int limit) throws KayakoException {
         return new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(mHelpDeskUrl, query, offset, limit), ParserFactory.getSearchArticleListParser(mLocale)).getList();
     }
 
@@ -115,7 +118,7 @@ public class HelpCenter {
 
     // Locale
 
-    public List<com.kayako.sdk.helpcenter.locale.Locale> getLocales() {
+    public List<com.kayako.sdk.helpcenter.locale.Locale> getLocales() throws KayakoException {
         return new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleListRequester(mHelpDeskUrl), ParserFactory.getLocaleListParser()).getList();
     }
 
@@ -128,7 +131,8 @@ public class HelpCenter {
         new ListManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleListRequester(mHelpDeskUrl), ParserFactory.getLocaleListParser()).getList(callback);
     }
 
-    public com.kayako.sdk.helpcenter.locale.Locale getLocale(long localeId) {
+
+    public com.kayako.sdk.helpcenter.locale.Locale getLocale(long localeId) throws KayakoException {
         return new ItemManager<com.kayako.sdk.helpcenter.locale.Locale>(RequesterFactory.getLocaleItemRequester(mHelpDeskUrl, localeId), ParserFactory.getLocaleItemParser()).getItem();
     }
 

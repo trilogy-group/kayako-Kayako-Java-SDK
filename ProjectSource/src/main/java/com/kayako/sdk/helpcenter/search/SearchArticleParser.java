@@ -2,7 +2,7 @@ package com.kayako.sdk.helpcenter.search;
 
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Parser;
-import com.kayako.sdk.helpcenter.ParserFactory;
+import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.utils.ParserUtils;
 

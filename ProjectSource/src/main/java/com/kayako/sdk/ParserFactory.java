@@ -1,6 +1,8 @@
-package com.kayako.sdk.helpcenter;
+package com.kayako.sdk;
 
 import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.error.response.*;
+import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.helpcenter.articles.ArticleParser;
 import com.kayako.sdk.base.parser.ItemParser;
@@ -81,9 +83,37 @@ public class ParserFactory {
     }
 
 
-    // All Parsers that only parse JSON Nodes
-
+    // User
     public static Parser<UserMinimal> getUserMinimalParser() {
         return new UserParser();
     }
+
+    // Response Message: Error
+    public static ListParser<Error> getErrorListParser() {
+        return new ErrorListParser();
+    }
+
+    public static Parser<Error> getErrorParser() {
+        return new ErrorListParser();
+    }
+
+    // Response Message: Notification
+    public static ListParser<Notification> getNotificationListParser() {
+        return new NotificationListParser();
+    }
+
+    public static Parser<Notification> getNotificationParser() {
+        return new NotificationListParser();
+    }
+
+
+    // Response Message: Log
+    public static ListParser<Log> getLogListParser() {
+        return new LogListParser();
+    }
+
+    public static Parser<Log> getLogParser() {
+        return new LogListParser();
+    }
+
 }

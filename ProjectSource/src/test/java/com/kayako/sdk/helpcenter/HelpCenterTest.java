@@ -28,9 +28,13 @@ public class HelpCenterTest {
 
     @Test
     public void getCategories() {
-        System.out.print(mHelpCenter.getCategories(0, 10).get(0));
+        try {
+            System.out.print(mHelpCenter.getCategories(0, 10).get(0));
 
-        System.out.print(mHelpCenter.getCategory(1));
+            System.out.print(mHelpCenter.getCategory(1));
+        } catch (Exception e) {
+            fail();
+        }
     }
 
     @Test
@@ -50,9 +54,14 @@ public class HelpCenterTest {
 
     @Test
     public void getSections() {
-        System.out.print(mHelpCenter.getSections(1, 0, 10).get(0));
+        try {
+            System.out.print(mHelpCenter.getSections(1, 0, 10).get(0));
 
-        System.out.print(mHelpCenter.getSection(194));
+            System.out.print(mHelpCenter.getSection(194));
+        } catch (Exception e) {
+            fail();
+        }
+
     }
 
     @Test
@@ -72,9 +81,13 @@ public class HelpCenterTest {
 
     @Test
     public void getArticles() {
-        System.out.print(mHelpCenter.getArticles(243, 0, 10).get(0));
+        try {
+            System.out.print(mHelpCenter.getArticles(243, 0, 10).get(0));
 
-        System.out.print(mHelpCenter.getArticle(1145));
+            System.out.print(mHelpCenter.getArticle(1145));
+        } catch (Exception e) {
+            fail();
+        }
     }
 
     @Test
@@ -94,7 +107,12 @@ public class HelpCenterTest {
 
     @Test
     public void getSearchArticles() {
-        System.out.print(mHelpCenter.getSearchArticles("kayako", 0, 10).get(0));
+        try {
+            System.out.print(mHelpCenter.getSearchArticles("kayako", 0, 10).get(0));
+        } catch (Exception e) {
+            fail();
+        }
+
     }
 
     @Test
@@ -114,9 +132,13 @@ public class HelpCenterTest {
 
     @Test
     public void getLocales() {
-        System.out.print(mHelpCenter.getLocales().get(0));
+        try {
+            System.out.print(mHelpCenter.getLocales().get(0));
 
-        System.out.print(mHelpCenter.getLocale(1));
+            System.out.print(mHelpCenter.getLocale(1));
+        } catch (Exception e) {
+            fail();
+        }
     }
 
     @Test

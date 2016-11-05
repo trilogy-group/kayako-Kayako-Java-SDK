@@ -18,17 +18,44 @@ public class KayakoException extends Exception {
     private ErrorCode code;
 
     /**
-     * Contains all the notifications, logs and errors in a response
+     * Contains all the notifications, logs and errors returned in the APU response (External)
      */
     private ResponseMessages responseMessages;
 
+    /**
+     * Contains the throwable that caused the error (Internal)
+     */
+    private Throwable throwable;
 
+
+    /**
+     * Constructor for Exceptions caused after making a successful request (provided by Server)
+     *
+     * @param code
+     * @param message
+     * @param responseMessages
+     */
     public KayakoException(ErrorCode code, String message,
                            ResponseMessages responseMessages) {
         super(message);
         this.message = message;
         this.code = code;
         this.responseMessages = responseMessages;
+    }
+
+    /**
+     * Constructor for Exceptions caused in the app
+     *
+     * @param code
+     * @param message
+     * @param throwable
+     */
+    public KayakoException(ErrorCode code, String message,
+                           Throwable throwable) {
+        super(message);
+        this.message = message;
+        this.code = code;
+        this.throwable = throwable;
     }
 
     /**
@@ -46,9 +73,16 @@ public class KayakoException extends Exception {
     }
 
     /**
-     * @return Contains all the notifications, logs and errors returned in API response
+     * @return responseMessages (notifications, logs and errors returned in API response)
      */
     public ResponseMessages getResponseMessages() {
         return responseMessages;
+    }
+
+    /**
+     * @return throwable that caused the internal error
+     */
+    public Throwable getThrowable() {
+        return throwable;
     }
 }

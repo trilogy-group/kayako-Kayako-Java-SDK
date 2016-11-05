@@ -1,4 +1,4 @@
-package com.kayako.sdk.helpcenter;
+package com.kayako.sdk;
 
 import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.helpcenter.articles.GetArticleListRequester;
