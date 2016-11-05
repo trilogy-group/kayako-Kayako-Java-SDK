@@ -6,9 +6,9 @@ import com.kayako.sdk.base.requester.ListRequester;
 import com.kayako.sdk.helpcenter.articles.GetArticleRequester;
 import com.kayako.sdk.helpcenter.category.GetCategoryListRequester;
 import com.kayako.sdk.helpcenter.category.GetCategoryRequester;
-import com.kayako.sdk.helpcenter.locale.LocaleListRequester;
-import com.kayako.sdk.helpcenter.locale.LocaleRequester;
-import com.kayako.sdk.helpcenter.search.SearchArticleRequester;
+import com.kayako.sdk.helpcenter.locale.GetLocaleListRequester;
+import com.kayako.sdk.helpcenter.locale.GetLocaleRequester;
+import com.kayako.sdk.helpcenter.search.GetSearchArticleListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionRequester;
 
@@ -43,15 +43,15 @@ public class RequesterFactory {
     }
 
     public static ListRequester getSearchArticleListRequester(String helpCenterUrl, String query, int offset, int limit) {
-        return new SearchArticleRequester(helpCenterUrl, query, offset, limit);
+        return new GetSearchArticleListRequester(helpCenterUrl, query, offset, limit);
     }
 
     public static ListRequester getLocaleListRequester(String helpCenterUrl) {
-        return new LocaleListRequester(helpCenterUrl);
+        return new GetLocaleListRequester(helpCenterUrl);
     }
 
     public static ItemRequester getLocaleItemRequester(String helpCenterUrl, long localeId) {
-        return new LocaleRequester(helpCenterUrl, localeId);
+        return new GetLocaleRequester(helpCenterUrl, localeId);
     }
 
 }

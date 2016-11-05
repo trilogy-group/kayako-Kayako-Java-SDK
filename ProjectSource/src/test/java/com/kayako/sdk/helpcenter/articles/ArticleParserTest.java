@@ -455,6 +455,11 @@ public class ArticleParserTest {
         Assert.assertNotNull(article.getAuthor());
         Assert.assertTrue(article.getLastPosted() != 0);
         Assert.assertTrue(article.getLastUpdated() != 0);
+
+        Assert.assertTrue(article.getId().equals(1145));
+        Assert.assertTrue(article.getTitle().equals("Starting out with Kayako"));
+        Assert.assertTrue(article.getAuthor().getId() == 389);
+
         System.out.println(article.getId() + ":" + article.getTitle());
         System.out.println("Author:" + article.getAuthor().getFullName());
     }

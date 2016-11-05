@@ -13,7 +13,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 26/08/16
  */
-public class SearchArticleRequester implements ListRequester {
+public class GetSearchArticleListRequester implements ListRequester {
     private static final String ENDPOINT = "/api/v1/helpcenter/search";
     private static final String INCLUDE = "localeField,category,section,article,userMinimal";
 
@@ -25,10 +25,10 @@ public class SearchArticleRequester implements ListRequester {
     private String mQuery;
     private Map<String, String> queryParameters;
 
-    private SearchArticleRequester() {
+    private GetSearchArticleListRequester() {
     }
 
-    public SearchArticleRequester(String helpCenterUrl, String query, int offset, int limit) {
+    public GetSearchArticleListRequester(String helpCenterUrl, String query, int offset, int limit) {
         mQuery = query;
         mHelpCenterUrl = helpCenterUrl;
         queryParameters = new HashMap<String, String>();

@@ -11,14 +11,14 @@ import java.io.IOException;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class LocaleListRequester implements ListRequester {
+public class GetLocaleListRequester implements ListRequester {
 
     public static final String ENDPOINT = "/api/v1/locales.json";
     public static final String INCLUDE = "locale";
 
     private String mHelpCenterUrl;
 
-    public LocaleListRequester(String helpCenterUrl) {
+    public GetLocaleListRequester(String helpCenterUrl) {
         mHelpCenterUrl = helpCenterUrl;
     }
 

@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 04/11/16
  */
-public class LocaleRequester implements ItemRequester {
+public class GetLocaleRequester implements ItemRequester {
 
     public static final String ENDPOINT = "/api/v1/locales/%s";
     public static final String INCLUDE = "locale";
@@ -20,7 +20,7 @@ public class LocaleRequester implements ItemRequester {
     private long mLocaleId;
 
 
-    public LocaleRequester(String helpCenterUrl, long localeId) {
+    public GetLocaleRequester(String helpCenterUrl, long localeId) {
         mHelpCenterUrl = helpCenterUrl;
         mLocaleId = localeId;
     }
