@@ -41,14 +41,14 @@ public class ItemManager<T extends Resource> {
 
             // Check if value is null (e2)
             if (item == null) {
-                throw new NullPointerException();
+                throw new IllegalArgumentException("item can not be null!");
             }
 
             return item;
         } catch (IOException e) {
             // Throw Internal Network Error (e3)
             throw ExceptionUtils.generateInternalKayakoException(ErrorCode.INTERNAL_UNABLE_TO_CONNECT_TO_SERVER, e);
-        } catch (NullPointerException e) {
+        } catch (NullPointerException | IllegalArgumentException e) {
             // Throw Internal Parse Error (e4)
             throw ExceptionUtils.generateInternalKayakoException(ErrorCode.INTERNAL_UNABLE_TO_PARSE_RESPONSE, e);
         } catch (KayakoException e) {
@@ -76,12 +76,12 @@ public class ItemManager<T extends Resource> {
 
                     // Check if value is null (e2)
                     if (item == null) {
-                        throw new NullPointerException();
+                        throw new IllegalArgumentException("item can not be null");
                     }
 
                     callback.onSuccess(item);
 
-                } catch (NullPointerException e) {
+                } catch (NullPointerException | IllegalArgumentException e) {
                     // Throw Internal Parse Error (e4)
                     callback.onFailure(ExceptionUtils.generateInternalKayakoException(ErrorCode.INTERNAL_UNABLE_TO_PARSE_RESPONSE, e));
                 } catch (Exception e) {

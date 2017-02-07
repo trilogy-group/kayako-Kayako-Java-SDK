@@ -1,14 +1,11 @@
 package com.kayako.sdk.helpcenter.articles;
 
 import com.kayako.sdk.base.requester.ItemRequester;
-import com.kayako.sdk.base.requester.ListRequester;
 import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.utils.RequesterUtils;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

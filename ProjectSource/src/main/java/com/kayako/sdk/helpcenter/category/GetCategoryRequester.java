@@ -7,8 +7,6 @@ import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.utils.RequesterUtils;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
