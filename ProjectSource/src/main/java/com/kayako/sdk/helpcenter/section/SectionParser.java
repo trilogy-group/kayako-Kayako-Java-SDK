@@ -3,6 +3,7 @@ package com.kayako.sdk.helpcenter.section;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.utils.ParserUtils;
 
@@ -13,7 +14,7 @@ import java.util.Locale;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class SectionParser implements ListParser<Section>, ItemParser<Section> {
+public class SectionParser implements Parser<Section> {
 
     private static final String NODE_TITLES = "titles";
     private static final String ITEM_ID = "id";
@@ -42,22 +43,5 @@ public class SectionParser implements ListParser<Section>, ItemParser<Section> {
         section.setCategory(category);
 
         return section;
-    }
-
-    public List<Section> parseList(String json) throws NullPointerException {
-        return ParserUtils.getResourceListFromDataNode(json, this);
-    }
-
-    @Override
-    public Section parseItem(String json) throws NullPointerException {
-        return ParserUtils.getResourceFromDataNode(json, this);
-    }
-
-    public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
-    }
-
-    public boolean containsItem(String jsonOfResponse) {
-        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

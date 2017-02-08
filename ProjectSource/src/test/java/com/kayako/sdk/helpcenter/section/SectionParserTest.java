@@ -1,5 +1,6 @@
 package com.kayako.sdk.helpcenter.section;
 
+import com.kayako.sdk.base.parser.ResponseParser;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -540,7 +541,7 @@ public class SectionParserTest {
 
         SectionParser sectionParser = new SectionParser(locale);
 
-        List<Section> sectionList = sectionParser.parseList(sampleResponse);
+        List<Section> sectionList = new ResponseParser<>(sectionParser).parseList(sampleResponse);
 
 
         assertTrue("There should be 5 sections parsed", sectionList.size() == 5);

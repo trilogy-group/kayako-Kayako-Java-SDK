@@ -1,6 +1,7 @@
 package com.kayako.sdk;
 
 import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.base.parser.ResponseParser;
 import com.kayako.sdk.error.response.*;
 import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.helpcenter.articles.Article;
@@ -33,11 +34,11 @@ public class ParserFactory {
 
     // Category
     public static ListParser<Category> getCategoryListParser(Locale locale) {
-        return new CategoryParser(locale);
+        return new ResponseParser<Category>(getCategoryParser(locale));
     }
 
     public static ItemParser<Category> getCategoryItemParser(Locale locale) {
-        return new CategoryParser(locale);
+        return new ResponseParser<Category>(getCategoryParser(locale));
     }
 
     public static Parser<Category> getCategoryParser(Locale locale) {
@@ -46,11 +47,11 @@ public class ParserFactory {
 
     // Sections
     public static ListParser<Section> getSectionListParser(Locale locale) {
-        return new SectionParser(locale);
+        return new ResponseParser<>(getSectionParser(locale));
     }
 
     public static ItemParser<Section> getSectionItemParser(Locale locale) {
-        return new SectionParser(locale);
+        return new ResponseParser<>(getSectionParser(locale));
     }
 
     public static Parser<Section> getSectionParser(Locale locale) {
@@ -59,11 +60,11 @@ public class ParserFactory {
 
     // Articles
     public static ListParser<Article> getArticleListParser(Locale locale) {
-        return new ArticleParser(locale);
+        return new ResponseParser<>(new ArticleParser(locale));
     }
 
     public static ItemParser<Article> getArticleItemParser(Locale locale) {
-        return new ArticleParser(locale);
+        return new ResponseParser<>(new ArticleParser(locale));
     }
 
     public static Parser<Article> getArticleParser(Locale locale) {
@@ -72,16 +73,20 @@ public class ParserFactory {
 
     // Search Article
     public static ListParser<SearchArticle> getSearchArticleListParser(Locale locale) {
+        return new ResponseParser<>(getSearchArticleParser(locale));
+    }
+
+    public static Parser<SearchArticle> getSearchArticleParser(Locale locale) {
         return new SearchArticleParser(locale);
     }
 
     // Locales
     public static ListParser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleListParser() {
-        return new LocaleParser();
+        return new ResponseParser<>(getLocaleParser());
     }
 
     public static ItemParser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleItemParser() {
-        return new LocaleParser();
+        return new ResponseParser<>(getLocaleParser());
     }
 
     public static Parser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleParser() {
