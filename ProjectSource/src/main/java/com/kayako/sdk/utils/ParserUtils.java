@@ -1,11 +1,12 @@
 package com.kayako.sdk.utils;
 
-import com.google.gson.*;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.base.parser.Resource;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -64,9 +65,8 @@ public class ParserUtils<T extends Resource> {
 
     public static long getTimeInMilliSeconds(String isoTimeStamp) {
         try {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.UK);
-            return sdf.parse(isoTimeStamp).getTime();
-        } catch (ParseException e) {
+            return TimeUtils.getIso8601StringToUnixTimestamp(isoTimeStamp);
+        } catch (Exception e) {
             e.printStackTrace();
             return 0;
         }
@@ -159,7 +159,6 @@ public class ParserUtils<T extends Resource> {
         return checkIfItemContained(jsonOfResponse, NODE_DATA);
     }
 
-
     public interface ResourceMap {
 
         /**
@@ -230,6 +229,8 @@ public class ParserUtils<T extends Resource> {
          * @return Value as localized string as specified in selectLocale
          */
         String getAsLocalizedString(String memberName, Locale selectLocale);
+
+        <E extends Enum> E getAsEnumType(String memberName, Class<E> enumClass);
 
         /**
          * @param memberName Key
@@ -328,6 +329,20 @@ public class ParserUtils<T extends Resource> {
 
             JsonArray localeFields = mJsonObject.get(memberName).getAsJsonArray();
             return ParserUtils.getTranslationFromLocaleField(selectLocale, localeFields);
+        }
+
+        @Override
+        public <E extends Enum> E getAsEnumType(String memberName, Class<E> enumClass) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+
+            String type = getAsString(memberName);
+            if (type == null) {
+                return null;
+            } else {
+                return (E) Enum.valueOf(enumClass, type);
+            }
         }
 
         public ResourceMap getAsResourceMap(String memberName) {

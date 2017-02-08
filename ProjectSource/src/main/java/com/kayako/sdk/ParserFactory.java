@@ -16,6 +16,12 @@ import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.helpcenter.user.UserParser;
+import com.kayako.sdk.messenger.conversation_fields.priority.Priority;
+import com.kayako.sdk.messenger.conversation_fields.priority.PriorityParser;
+import com.kayako.sdk.messenger.conversation_fields.status.Status;
+import com.kayako.sdk.messenger.conversation_fields.status.StatusParser;
+import com.kayako.sdk.messenger.conversation_fields.team.Team;
+import com.kayako.sdk.messenger.conversation_fields.team.TeamParser;
 
 import java.util.Locale;
 
@@ -82,10 +88,22 @@ public class ParserFactory {
         return new LocaleParser();
     }
 
-
     // User
     public static Parser<UserMinimal> getUserMinimalParser() {
         return new UserParser();
+    }
+
+    // Conversation
+    public static Parser<Team> getTeamParser() {
+        return new TeamParser();
+    }
+
+    public static Parser<Status> getStatusParser() {
+        return new StatusParser();
+    }
+
+    public static Parser<Priority> getPriorityParser() {
+        return new PriorityParser();
     }
 
     // Response Message: Error
@@ -105,7 +123,6 @@ public class ParserFactory {
     public static Parser<Notification> getNotificationParser() {
         return new NotificationListParser();
     }
-
 
     // Response Message: Log
     public static ListParser<Log> getLogListParser() {

@@ -11,6 +11,8 @@ public class UserMinimal implements Resource {
     private String fullName;
     private String avatarUrl;
 
+    // TODO: lastActiveAt
+
     public UserMinimal(Long id, String fullName, String avatarUrl) {
         this.id = id;
         this.fullName = fullName;
