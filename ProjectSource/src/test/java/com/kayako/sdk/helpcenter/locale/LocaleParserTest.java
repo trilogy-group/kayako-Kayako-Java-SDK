@@ -91,7 +91,7 @@ public class LocaleParserTest {
     @Test
     public void parse() throws Exception {
         LocaleParser localeParser = new LocaleParser();
-        List<Locale> localeList = localeParser.parse(json);
+        List<Locale> localeList = localeParser.parseList(json);
         for (Locale locale : localeList) {
             validateLocale(locale);
         }

@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -8,21 +8,21 @@ import com.kayako.sdk.helpcenter.base.Resource;
  */
 public class Locale implements Resource {
 
-    private long id;
+    private Long id;
     private String locale;
     private String name;
     private String nativeName;
     private String region;
     private String nativeRegion;
-    private boolean isPublic;
-    private boolean isLocalized;
+    private Boolean isPublic;
+    private Boolean isLocalized;
     private String direction;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -66,19 +66,19 @@ public class Locale implements Resource {
         this.nativeRegion = nativeRegion;
     }
 
-    public boolean isPublic() {
+    public Boolean isPublic() {
         return isPublic;
     }
 
-    public void setPublic(boolean isPublic) {
+    public void setPublic(Boolean isPublic) {
         this.isPublic = isPublic;
     }
 
-    public boolean isLocalized() {
+    public Boolean isLocalized() {
         return isLocalized;
     }
 
-    public void setLocalized(boolean isLocalized) {
+    public void setLocalized(Boolean isLocalized) {
         this.isLocalized = isLocalized;
     }
 

@@ -1,12 +1,13 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.helpcenter.ParserFactory;
-import com.kayako.sdk.helpcenter.RequesterFactory;
+import com.kayako.sdk.base.manager.ListManager;
+import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.RequesterFactory;
+import com.kayako.sdk.error.KayakoException;
 import org.junit.Test;
 
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.ExecutionException;
 
 import static org.junit.Assert.*;
 
@@ -20,8 +21,7 @@ public class SearchArticleManagerTest {
         Locale locale = Locale.US;
         String query = "hel";
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleListParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");
@@ -58,16 +58,16 @@ public class SearchArticleManagerTest {
 
     /**
      * Performs a search on the Kayako Articles.
-     *
+     * <p>
      * The search fails if the query is less than 3 characters long.
      *
      * @param query query used for search
      */
-    public void performSearch(String query) {
+    public void performSearch(String query) throws KayakoException {
         Locale locale = Locale.ENGLISH;
         String helpCenterUrl = "https://support.kayako.com";
-        SearchArticleManager searchArticleManager = new SearchArticleManager(RequesterFactory.getSearchArticlesRequester(query, 0, 99), ParserFactory.getSearchArticleParser(locale));
-        List<SearchArticle> searchArticleList = searchArticleManager.getSearchArticles(helpCenterUrl);
+
+        List<SearchArticle> searchArticleList = new ListManager<SearchArticle>(RequesterFactory.getSearchArticleListRequester(helpCenterUrl, query, 0, 99), ParserFactory.getSearchArticleListParser(locale)).getList();
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println("------");

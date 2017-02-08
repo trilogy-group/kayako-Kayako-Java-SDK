@@ -165,4 +165,6 @@ public class ParserUtilsTest {
         boolean isSameDay = Math.abs(expectedTimeInMilliSeconds - actualTimeInMilliSeconds) < ONE_DAY_IN_MILLISECONDS;
         Assert.assertTrue("Time conversion failed! Actual (" + actualTimeInMilliSeconds + ") and Expected (" + expectedTimeInMilliSeconds + ") doesn't match\n Difference = " + (actualTimeInMilliSeconds - expectedTimeInMilliSeconds), isSameDay);
     }
+
+
 }

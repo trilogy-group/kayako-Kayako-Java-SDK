@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 import com.kayako.sdk.helpcenter.category.Category;
 
 /**
@@ -9,7 +9,7 @@ import com.kayako.sdk.helpcenter.category.Category;
  */
 public class Section implements Resource {
 
-    private long id;
+    private Long id;
 
     private String title;
 
@@ -19,13 +19,13 @@ public class Section implements Resource {
 
     private Category category;
 
-    private int display_order;
+    private Integer display_order;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -61,11 +61,11 @@ public class Section implements Resource {
         this.category = category;
     }
 
-    public int getDisplay_order() {
+    public Integer getDisplay_order() {
         return display_order;
     }
 
-    public void setDisplay_order(int display_order) {
+    public void setDisplay_order(Integer display_order) {
         this.display_order = display_order;
     }
 

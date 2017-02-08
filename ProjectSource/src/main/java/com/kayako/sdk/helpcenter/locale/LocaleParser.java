@@ -1,18 +1,18 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.kayako.sdk.helpcenter.base.ListParser;
+//import com.google.gson.JsonObject;
 
-import java.util.*;
+import com.kayako.sdk.base.parser.ItemParser;
+import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.utils.ParserUtils;
+
+import java.util.List;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class LocaleParser implements ListParser<Locale> {
+public class LocaleParser implements ListParser<Locale>, ItemParser<Locale> {
 
     public static final String ITEM_ID = "id";
     public static final String ITEM_LOCALE = "locale";
@@ -23,39 +23,45 @@ public class LocaleParser implements ListParser<Locale> {
     public static final String ITEM_DIRECTION = "direction";
     public static final String ITEM_IS_PUBLIC = "isPublic";
     public static final String ITEM_IS_LOCALISED = "isLocalised";
-    private static final String NODE_DATA = "data";
 
-    public List<Locale> parse(String json) {
-        List<Locale> locales = new ArrayList<Locale>();
-        JsonArray jsonArray = new JsonParser().parse(json).getAsJsonObject().get(NODE_DATA).getAsJsonArray();
+    @Override
+    public Locale parse(String jsonOfResource) throws NullPointerException {
+        ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource.toString());
 
-        int count = 0;
-        for (JsonElement element : jsonArray) {
-            Locale locale = parseItem(element.getAsJsonObject());
-            locales.add(locale);
-        }
-        return locales;
-    }
-
-    public Locale parseItem(JsonObject node) {
         Locale locale = new Locale();
 
-        locale.setId(node.get(ITEM_ID).getAsLong());
-        locale.setLocale(node.get(ITEM_LOCALE).getAsString());
-        locale.setName(node.get(ITEM_NAME).getAsString());
-        locale.setNativeName(node.get(ITEM_NATIVE_NAME).getAsString());
-        locale.setLocalized(node.get(ITEM_IS_LOCALISED).getAsBoolean());
-        locale.setPublic(node.get(ITEM_IS_PUBLIC).getAsBoolean());
-        locale.setDirection(node.get(ITEM_DIRECTION).getAsString());
+        locale.setId(resourceMap.getAsLong(ITEM_ID));
+        locale.setLocale(resourceMap.getAsString(ITEM_LOCALE));
+        locale.setName(resourceMap.getAsString(ITEM_NAME));
+        locale.setNativeName(resourceMap.getAsString((ITEM_NATIVE_NAME)));
+        locale.setLocalized(resourceMap.getAsBoolean((ITEM_IS_LOCALISED)));
+        locale.setPublic(resourceMap.getAsBoolean(ITEM_IS_PUBLIC));
+        locale.setDirection(resourceMap.getAsString(ITEM_DIRECTION));
 
-        if (!node.get(ITEM_REGION).isJsonNull()) {
-            locale.setRegion(node.get(ITEM_REGION).getAsString());
+        if (resourceMap.hasMember(ITEM_REGION) && resourceMap.isNotNull(ITEM_REGION)) {
+            locale.setRegion(resourceMap.getAsString(ITEM_REGION));
         }
 
-        if (!node.get(ITEM_NATIVE_REGION).isJsonNull()) {
-            locale.setNativeRegion(node.get(ITEM_NATIVE_REGION).getAsString());
+        if (resourceMap.hasMember(ITEM_NATIVE_REGION) && resourceMap.isNotNull(ITEM_NATIVE_REGION)) {
+            locale.setNativeRegion(resourceMap.getAsString(ITEM_NATIVE_REGION));
         }
 
         return locale;
+    }
+
+    public List<Locale> parseList(String json) {
+        return ParserUtils.getResourceListFromDataNode(json, this);
+    }
+
+    public Locale parseItem(String json) throws NullPointerException {
+        return ParserUtils.getResourceFromDataNode(json, this);
+    }
+
+    public boolean containsList(String jsonOfResponse) {
+        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
+    }
+
+    public boolean containsItem(String jsonOfResponse) {
+        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

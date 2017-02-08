@@ -1,7 +1,8 @@
 package com.kayako.sdk.utils;
 
-import com.kayako.sdk.helpcenter.base.Requester;
+import com.kayako.sdk.base.requester.RequestCallback;
 import okhttp3.*;
+import okhttp3.Response;
 import okhttp3.internal.Util;
 
 import java.io.IOException;
@@ -91,14 +92,15 @@ public class RequesterUtils {
         return request;
     }
 
-    public static String getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
+    public static com.kayako.sdk.base.requester.Response getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
         Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
         Response response = getHttpClient().newCall(request).execute();
-        return response.body().string();
+
+        return new com.kayako.sdk.base.requester.Response(response.code(), response.body().string());
     }
 
-    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final Requester.RequestCallback callback) {
+    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final RequestCallback callback) {
         Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
 
         getHttpClient().newCall(request).enqueue(new Callback() {
@@ -110,10 +112,11 @@ public class RequesterUtils {
 
             public void onResponse(Call call, Response response) throws IOException {
                 if (callback != null) {
-                    callback.onSuccess(response.body().string());
+                    callback.onSuccess(new com.kayako.sdk.base.requester.Response(response.code(), response.body().string()));
                 }
             }
         });
     }
 
+    // TODO: putAsync, postAsync, deleteAsync
 }

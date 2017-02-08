@@ -1,7 +1,9 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.kayako.sdk.helpcenter.ParserFactory;
-import com.kayako.sdk.helpcenter.RequesterFactory;
+import com.kayako.sdk.base.manager.ItemManager;
+import com.kayako.sdk.base.manager.ListManager;
+import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.RequesterFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,23 +16,31 @@ import java.util.Locale;
  */
 public class CategoryManagerTest {
 
-    private CategoryManager mCategoryManager;
+    final private Locale LOCALE = Locale.US;
+    final private String URL = "https://support.kayako.com";
 
     @Test
     public void getCategories_LiveTest() throws Exception {
-        Locale locale = Locale.US;
-        mCategoryManager = new CategoryManager(RequesterFactory.getCategoryRequester(0, 999), ParserFactory.getCategoryParser(locale));
 
-        String url = "https://support.kayako.com";
-        List<Category> categoryList = mCategoryManager.getCategories(url);
+        List<Category> categoryList = new ListManager<Category>(RequesterFactory.getCategoryListRequester(URL, 0, 999), ParserFactory.getCategoryListParser(LOCALE)).getList();
         Assert.assertNotNull(categoryList);
 
         for (Category category : categoryList) {
-            Assert.assertNotNull(category);
-            Assert.assertNotNull(category.getTitle());
-            Assert.assertNotNull(category.getId());
-
-            System.out.println(category.getId() + " : " + category.getTitle());
+            validateCategory(category);
         }
     }
+
+    @Test
+    public void getCategory_LiveTest() throws Exception {
+        Category category = new ItemManager<Category>(RequesterFactory.getCategoryItemRequester(URL, 1), ParserFactory.getCategoryItemParser(LOCALE)).getItem();
+        validateCategory(category);
+    }
+
+    private void validateCategory(Category category) {
+        Assert.assertNotNull(category);
+        Assert.assertNotNull(category.getTitle());
+        Assert.assertNotNull(category.getId());
+        System.out.println(category.getId() + " : " + category.getTitle());
+    }
+
 }

@@ -1,27 +1,27 @@
 package com.kayako.sdk.helpcenter.user;
 
-import com.kayako.sdk.helpcenter.base.Resource;
+import com.kayako.sdk.base.parser.Resource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
 public class UserMinimal implements Resource {
-    private long id;
+    private Long id;
     private String fullName;
     private String avatarUrl;
 
-    public UserMinimal(long id, String full_name, String avatarUrl) {
+    public UserMinimal(Long id, String fullName, String avatarUrl) {
         this.id = id;
-        this.fullName = full_name;
+        this.fullName = fullName;
         this.avatarUrl = avatarUrl;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -41,12 +41,4 @@ public class UserMinimal implements Resource {
         this.avatarUrl = avatarUrl;
     }
 
-    @Override
-    public String toString() {
-        return "UserMinimal{" +
-                "id=" + id +
-                ", fullName='" + fullName + '\'' +
-                ", avatarUrl='" + avatarUrl + '\'' +
-                '}';
-    }
 }
