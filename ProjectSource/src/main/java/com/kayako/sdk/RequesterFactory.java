@@ -1,5 +1,6 @@
 package com.kayako.sdk;
 
+import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.CommonRequester;
 import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.helpcenter.articles.GetArticleListRequester;
@@ -12,6 +13,7 @@ import com.kayako.sdk.helpcenter.locale.GetLocaleRequester;
 import com.kayako.sdk.helpcenter.search.GetSearchArticleListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionRequester;
+import com.kayako.sdk.messenger.conversation.GetConversationListRequester;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -55,4 +57,7 @@ public class RequesterFactory {
         return new CommonRequester(new GetLocaleRequester(helpCenterUrl, localeId));
     }
 
+    public static ListRequester getConversationListRequester(String helpCenterUrl, FingerprintAuth auth) {
+        return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth));
+    }
 }

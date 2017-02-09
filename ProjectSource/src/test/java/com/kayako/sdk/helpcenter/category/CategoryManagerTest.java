@@ -21,7 +21,6 @@ public class CategoryManagerTest {
 
     @Test
     public void getCategories_LiveTest() throws Exception {
-
         List<Category> categoryList = new ListManager<Category>(RequesterFactory.getCategoryListRequester(URL, 0, 999), ParserFactory.getCategoryListParser(LOCALE)).getList();
         Assert.assertNotNull(categoryList);
 

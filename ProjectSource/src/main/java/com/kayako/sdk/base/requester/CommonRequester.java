@@ -18,11 +18,11 @@ public class CommonRequester implements ListRequester, ItemRequester {
     }
 
     public Response request() throws IOException {
-        return RequesterUtils.getSync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), null, mRequester.getQueryParameters());
+        return RequesterUtils.getSync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), mRequester.getHeaders(), mRequester.getQueryParameters());
     }
 
     public void request(RequestCallback callback) {
-        RequesterUtils.getAsync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), null, mRequester.getQueryParameters(), callback);
+        RequesterUtils.getAsync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), mRequester.getHeaders(), mRequester.getQueryParameters(), callback);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class CommonRequester implements ListRequester, ItemRequester {
     }
 
     @Override
-    public Map<String, String> getHeader() {
-        return mRequester.getHeader();
+    public Map<String, String> getHeaders() {
+        return mRequester.getHeaders();
     }
 }

@@ -59,7 +59,7 @@ public class GetSectionListRequester implements Requester {
     }
 
     @Override
-    public Map<String, String> getHeader() {
+    public Map<String, String> getHeaders() {
         return null;
     }
 }

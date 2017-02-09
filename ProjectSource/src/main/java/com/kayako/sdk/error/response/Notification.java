@@ -24,4 +24,13 @@ public class Notification implements ResponseResource {
     public Type getResponseMessageType() {
         return Type.NOTIFICATION;
     }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "type='" + type + '\'' +
+                ", message='" + message + '\'' +
+                ", sticky=" + sticky +
+                '}';
+    }
 }

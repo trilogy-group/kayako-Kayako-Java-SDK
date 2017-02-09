@@ -65,7 +65,7 @@ public class RequesterUtilsTest {
         String urlPath = recordedRequest1.getPath();
 
         // Check URL Path
-        System.out.println("Path: " + urlPath); // recordedRequest1.getHeader
+        System.out.println("Path: " + urlPath); // recordedRequest1.getHeaders
 
         String query = urlPath.substring(urlPath.indexOf("?") + 1); // Starting from ? (not including)
         String[] queryParameters = query.split("&");

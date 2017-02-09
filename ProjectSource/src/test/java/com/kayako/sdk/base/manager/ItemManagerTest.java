@@ -67,7 +67,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -193,7 +193,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -250,7 +250,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -323,7 +323,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -398,7 +398,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -455,7 +455,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -534,7 +534,7 @@ public class ItemManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 

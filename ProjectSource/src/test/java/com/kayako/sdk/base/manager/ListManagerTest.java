@@ -69,7 +69,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -194,7 +194,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -251,7 +251,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -325,7 +325,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -400,7 +400,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -457,7 +457,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 
@@ -536,7 +536,7 @@ public class ListManagerTest {
             }
 
             @Override
-            public Map<String, String> getHeader() {
+            public Map<String, String> getHeaders() {
                 return null;
             }
 

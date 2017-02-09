@@ -16,6 +16,6 @@ public interface Requester {
 
     Map<String, String> getQueryParameters();
 
-    Map<String, String> getHeader();
+    Map<String, String> getHeaders();
 
 }

@@ -44,4 +44,15 @@ public class Error implements ResponseResource {
     public Type getResponseMessageType() {
         return Type.ERROR;
     }
+
+    @Override
+    public String toString() {
+        return "Error{" +
+                "code='" + code + '\'' +
+                ", parameter='" + parameter + '\'' +
+                ", parameters=" + parameters +
+                ", message='" + message + '\'' +
+                ", moreInfo='" + moreInfo + '\'' +
+                '}';
+    }
 }
