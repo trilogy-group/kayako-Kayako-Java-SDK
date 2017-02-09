@@ -1,7 +1,7 @@
 package com.kayako.sdk;
 
 import com.kayako.sdk.base.parser.Parser;
-import com.kayako.sdk.base.parser.ResponseParser;
+import com.kayako.sdk.base.parser.DataNodeParser;
 import com.kayako.sdk.error.response.*;
 import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.helpcenter.articles.Article;
@@ -17,12 +17,14 @@ import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.helpcenter.user.UserParser;
-import com.kayako.sdk.messenger.conversation_fields.priority.Priority;
-import com.kayako.sdk.messenger.conversation_fields.priority.PriorityParser;
-import com.kayako.sdk.messenger.conversation_fields.status.Status;
-import com.kayako.sdk.messenger.conversation_fields.status.StatusParser;
-import com.kayako.sdk.messenger.conversation_fields.team.Team;
-import com.kayako.sdk.messenger.conversation_fields.team.TeamParser;
+import com.kayako.sdk.messenger.conversation.Conversation;
+import com.kayako.sdk.messenger.conversation.ConversationParser;
+import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
+import com.kayako.sdk.messenger.conversation.fields.priority.PriorityParser;
+import com.kayako.sdk.messenger.conversation.fields.status.Status;
+import com.kayako.sdk.messenger.conversation.fields.status.StatusParser;
+import com.kayako.sdk.messenger.conversation.fields.team.Team;
+import com.kayako.sdk.messenger.conversation.fields.team.TeamParser;
 
 import java.util.Locale;
 
@@ -34,11 +36,11 @@ public class ParserFactory {
 
     // Category
     public static ListParser<Category> getCategoryListParser(Locale locale) {
-        return new ResponseParser<Category>(getCategoryParser(locale));
+        return new DataNodeParser<Category>(getCategoryParser(locale));
     }
 
     public static ItemParser<Category> getCategoryItemParser(Locale locale) {
-        return new ResponseParser<Category>(getCategoryParser(locale));
+        return new DataNodeParser<Category>(getCategoryParser(locale));
     }
 
     public static Parser<Category> getCategoryParser(Locale locale) {
@@ -47,11 +49,11 @@ public class ParserFactory {
 
     // Sections
     public static ListParser<Section> getSectionListParser(Locale locale) {
-        return new ResponseParser<>(getSectionParser(locale));
+        return new DataNodeParser<>(getSectionParser(locale));
     }
 
     public static ItemParser<Section> getSectionItemParser(Locale locale) {
-        return new ResponseParser<>(getSectionParser(locale));
+        return new DataNodeParser<>(getSectionParser(locale));
     }
 
     public static Parser<Section> getSectionParser(Locale locale) {
@@ -60,11 +62,11 @@ public class ParserFactory {
 
     // Articles
     public static ListParser<Article> getArticleListParser(Locale locale) {
-        return new ResponseParser<>(new ArticleParser(locale));
+        return new DataNodeParser<>(new ArticleParser(locale));
     }
 
     public static ItemParser<Article> getArticleItemParser(Locale locale) {
-        return new ResponseParser<>(new ArticleParser(locale));
+        return new DataNodeParser<>(new ArticleParser(locale));
     }
 
     public static Parser<Article> getArticleParser(Locale locale) {
@@ -73,7 +75,7 @@ public class ParserFactory {
 
     // Search Article
     public static ListParser<SearchArticle> getSearchArticleListParser(Locale locale) {
-        return new ResponseParser<>(getSearchArticleParser(locale));
+        return new DataNodeParser<>(getSearchArticleParser(locale));
     }
 
     public static Parser<SearchArticle> getSearchArticleParser(Locale locale) {
@@ -82,11 +84,11 @@ public class ParserFactory {
 
     // Locales
     public static ListParser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleListParser() {
-        return new ResponseParser<>(getLocaleParser());
+        return new DataNodeParser<>(getLocaleParser());
     }
 
     public static ItemParser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleItemParser() {
-        return new ResponseParser<>(getLocaleParser());
+        return new DataNodeParser<>(getLocaleParser());
     }
 
     public static Parser<com.kayako.sdk.helpcenter.locale.Locale> getLocaleParser() {
@@ -99,6 +101,19 @@ public class ParserFactory {
     }
 
     // Conversation
+
+    public static ItemParser<Conversation> getConversationItemParser() {
+        return new DataNodeParser<>(getConversationParser());
+    }
+
+    public static ListParser<Conversation> getConversationListParser() {
+        return new DataNodeParser<>(getConversationParser());
+    }
+
+    public static Parser<Conversation> getConversationParser() {
+        return new ConversationParser();
+    }
+
     public static Parser<Team> getTeamParser() {
         return new TeamParser();
     }
@@ -137,5 +152,6 @@ public class ParserFactory {
     public static Parser<Log> getLogParser() {
         return new LogListParser();
     }
+
 
 }

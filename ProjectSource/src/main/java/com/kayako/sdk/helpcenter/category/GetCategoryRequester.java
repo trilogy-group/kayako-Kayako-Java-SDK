@@ -1,18 +1,16 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.kayako.sdk.base.requester.ItemRequester;
-import com.kayako.sdk.base.requester.ListRequester;
-import com.kayako.sdk.base.requester.RequestCallback;
-import com.kayako.sdk.base.requester.Response;
+import com.kayako.sdk.base.requester.*;
 import com.kayako.sdk.utils.RequesterUtils;
 
 import java.io.IOException;
+import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class GetCategoryRequester implements ListRequester, ItemRequester {
+public class GetCategoryRequester implements Requester {
 
     public static final String ENDPOINT = "/api/v1/categories/%s";
     public static final String INCLUDE = "localeField";
@@ -25,11 +23,28 @@ public class GetCategoryRequester implements ListRequester, ItemRequester {
         mCategoryId = categoryId;
     }
 
-    public Response request() throws IOException {
-        return RequesterUtils.getSync(mHelpDeskUrl, String.format(ENDPOINT, mCategoryId), INCLUDE, null, null);
+    @Override
+    public String getHelpCenterUrl() {
+        return mHelpDeskUrl;
     }
 
-    public void request(RequestCallback callback) {
-        RequesterUtils.getAsync(mHelpDeskUrl, String.format(ENDPOINT, mCategoryId), INCLUDE, null, null, callback);
+    @Override
+    public String getInclude() {
+        return INCLUDE;
+    }
+
+    @Override
+    public String getEndpointUrl() {
+        return String.format(ENDPOINT, mCategoryId);
+    }
+
+    @Override
+    public Map<String, String> getQueryParameters() {
+        return null;
+    }
+
+    @Override
+    public Map<String, String> getHeader() {
+        return null;
     }
 }

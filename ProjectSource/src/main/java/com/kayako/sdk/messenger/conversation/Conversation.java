@@ -2,9 +2,9 @@ package com.kayako.sdk.messenger.conversation;
 
 import com.kayako.sdk.base.parser.Resource;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
-import com.kayako.sdk.messenger.conversation_fields.priority.Priority;
-import com.kayako.sdk.messenger.conversation_fields.status.Status;
-import com.kayako.sdk.messenger.conversation_fields.team.Team;
+import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
+import com.kayako.sdk.messenger.conversation.fields.status.Status;
+import com.kayako.sdk.messenger.conversation.fields.team.Team;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

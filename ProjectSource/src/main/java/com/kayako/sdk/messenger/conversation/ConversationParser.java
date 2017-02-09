@@ -12,7 +12,7 @@ import java.util.List;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 08/02/17
  */
-public class ConversationParser implements Parser<Conversation>, ListParser<Conversation>, ItemParser<Conversation> {
+public class ConversationParser implements Parser<Conversation> {
 
     private static final String ITEM_ID = "id";
     private static final String ITEM_UUID = "uuid";
@@ -52,25 +52,5 @@ public class ConversationParser implements Parser<Conversation>, ListParser<Conv
                 resourceMap.getAsTimeInMilliseconds(ITEM_CREATED_AT),
                 resourceMap.getAsTimeInMilliseconds(ITEM_UPDATED_AT)
         );
-    }
-
-    @Override
-    public List<Conversation> parseList(String jsonOfResponse) throws NullPointerException {
-        return ParserUtils.getResourceListFromDataNode(jsonOfResponse, this);
-    }
-
-    @Override
-    public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
-    }
-
-    @Override
-    public Conversation parseItem(String jsonOfResponse) throws NullPointerException {
-        return ParserUtils.getResourceFromDataNode(jsonOfResponse, this);
-    }
-
-    @Override
-    public boolean containsItem(String jsonOfResponse) {
-        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

@@ -5,20 +5,24 @@ import com.kayako.sdk.utils.ParserUtils;
 import java.util.List;
 
 /**
+ * This class wraps all the methods necessary for parsing a response where the relevant values are in the data node of the JSON response.
+ *
+ * This is unlike the ErrorParsers.
+ *
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 08/02/17
  */
-public class ResponseParser<T extends Resource> implements ListParser<T>, ItemParser<T> {
+public class DataNodeParser<T extends Resource> implements ListParser<T>, ItemParser<T> {
 
     Parser<T> mParser;
 
-    public ResponseParser(Parser<T> parser) {
+    public DataNodeParser(Parser<T> parser) {
         mParser = parser;
     }
 
     @Override
     public T parse(String jsonOfResource) throws NullPointerException {
-        return null;
+        return ParserUtils.getResourceFromDataNode(jsonOfResource, mParser);
     }
 
     @Override

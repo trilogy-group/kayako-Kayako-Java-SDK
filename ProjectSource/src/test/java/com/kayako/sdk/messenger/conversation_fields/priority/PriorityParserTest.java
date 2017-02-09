@@ -1,5 +1,7 @@
 package com.kayako.sdk.messenger.conversation_fields.priority;
 
+import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
+import com.kayako.sdk.messenger.conversation.fields.priority.PriorityParser;
 import org.junit.Assert;
 import org.junit.Test;
 

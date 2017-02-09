@@ -1,6 +1,6 @@
 package com.kayako.sdk.base.requester;
 
-import java.io.IOException;
+import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -8,7 +8,14 @@ import java.io.IOException;
  */
 public interface Requester {
 
-    Response request() throws IOException;
+    String getHelpCenterUrl();
 
-    void request(RequestCallback callback);
+    String getInclude();
+
+    String getEndpointUrl();
+
+    Map<String, String> getQueryParameters();
+
+    Map<String, String> getHeader();
+
 }

@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.kayako.sdk.base.parser.ResponseParser;
+import com.kayako.sdk.base.parser.DataNodeParser;
 import org.junit.Test;
 
 import java.util.List;
@@ -92,7 +92,7 @@ public class LocaleParserTest {
     @Test
     public void parse() throws Exception {
         LocaleParser localeParser = new LocaleParser();
-        List<Locale> localeList = new ResponseParser<>(localeParser).parseList(json);
+        List<Locale> localeList = new DataNodeParser<>(localeParser).parseList(json);
         for (Locale locale : localeList) {
             validateLocale(locale);
         }

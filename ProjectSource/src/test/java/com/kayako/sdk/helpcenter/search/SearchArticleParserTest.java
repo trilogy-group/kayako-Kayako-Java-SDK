@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.base.parser.ResponseParser;
+import com.kayako.sdk.base.parser.DataNodeParser;
 import org.junit.Test;
 
 import java.util.List;
@@ -455,7 +455,7 @@ public class SearchArticleParserTest {
 
 
         SearchArticleParser searchArticleParser = new SearchArticleParser(Locale.forLanguageTag("en-us"));
-        List<SearchArticle> searchArticleList = new ResponseParser<>(searchArticleParser).parseList(json);
+        List<SearchArticle> searchArticleList = new DataNodeParser<>(searchArticleParser).parseList(json);
 
         for (SearchArticle searchArticle : searchArticleList) {
             System.out.println(searchArticle.getTitle() + " : " + searchArticle.getCategoryName() + " > " + searchArticle.getSectionName());

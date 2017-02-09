@@ -1,4 +1,4 @@
-package com.kayako.sdk.messenger.conversation_fields.priority;
+package com.kayako.sdk.messenger.conversation.fields.priority;
 
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.utils.ParserUtils;

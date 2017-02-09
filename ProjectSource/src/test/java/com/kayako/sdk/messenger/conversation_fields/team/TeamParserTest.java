@@ -1,5 +1,7 @@
 package com.kayako.sdk.messenger.conversation_fields.team;
 
+import com.kayako.sdk.messenger.conversation.fields.team.Team;
+import com.kayako.sdk.messenger.conversation.fields.team.TeamParser;
 import org.junit.Assert;
 import org.junit.Test;
 

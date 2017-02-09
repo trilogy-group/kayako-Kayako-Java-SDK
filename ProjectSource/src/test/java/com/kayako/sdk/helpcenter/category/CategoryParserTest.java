@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.kayako.sdk.base.parser.ResponseParser;
+import com.kayako.sdk.base.parser.DataNodeParser;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -172,7 +172,7 @@ public class CategoryParserTest {
     }
 
     private void checkIfParsedCategoryIsValid(String sampleJsonResponse, Locale aLocale) {
-        List<Category> categories = new ResponseParser<>(categoryParser).parseList(sampleJsonResponse);
+        List<Category> categories = new DataNodeParser<>(categoryParser).parseList(sampleJsonResponse);
 
         assertNotNull(categories);
         for (Category category : categories) {

@@ -1,4 +1,4 @@
-package com.kayako.sdk.messenger.conversation_fields.status;
+package com.kayako.sdk.messenger.conversation.fields.status;
 
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.utils.ParserUtils;

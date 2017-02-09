@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.articles;
 
-import com.kayako.sdk.base.parser.ResponseParser;
+import com.kayako.sdk.base.parser.DataNodeParser;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -442,7 +442,7 @@ public class ArticleParserTest {
 
         Locale locale = Locale.US;
         ArticleParser articleParser = new ArticleParser(locale);
-        List<Article> articleList = new ResponseParser<>(articleParser).parseList(jsonSample);
+        List<Article> articleList = new DataNodeParser<>(articleParser).parseList(jsonSample);
 
         assertTrue("There should be 2 articles parsed", articleList.size() == 2);
         validateArticle1(articleList.get(0));

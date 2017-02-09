@@ -1,5 +1,7 @@
 package com.kayako.sdk.messenger.conversation_fields.status;
 
+import com.kayako.sdk.messenger.conversation.fields.status.Status;
+import com.kayako.sdk.messenger.conversation.fields.status.StatusParser;
 import org.junit.Assert;
 import org.junit.Test;
 

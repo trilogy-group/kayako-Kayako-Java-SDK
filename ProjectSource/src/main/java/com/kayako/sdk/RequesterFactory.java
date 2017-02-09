@@ -1,5 +1,6 @@
 package com.kayako.sdk;
 
+import com.kayako.sdk.base.requester.CommonRequester;
 import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.helpcenter.articles.GetArticleListRequester;
 import com.kayako.sdk.base.requester.ListRequester;
@@ -19,39 +20,39 @@ import com.kayako.sdk.helpcenter.section.GetSectionRequester;
 public class RequesterFactory {
 
     public static ListRequester getCategoryListRequester(String helpCenterUrl, int offset, int limit) {
-        return new GetCategoryListRequester(helpCenterUrl, offset, limit);
+        return new CommonRequester(new GetCategoryListRequester(helpCenterUrl, offset, limit));
     }
 
     public static ItemRequester getCategoryItemRequester(String helpCenterUrl, long categoryId) {
-        return new GetCategoryRequester(helpCenterUrl, categoryId);
+        return new CommonRequester(new GetCategoryRequester(helpCenterUrl, categoryId));
     }
 
     public static ListRequester getSectionListRequester(String helpCenterUrl, long categoryId, int offset, int limit) {
-        return new GetSectionListRequester(helpCenterUrl, categoryId, offset, limit);
+        return new CommonRequester(new GetSectionListRequester(helpCenterUrl, categoryId, offset, limit));
     }
 
     public static ItemRequester getSectionItemRequester(String helpCenterUrl, long sectionId) {
-        return new GetSectionRequester(helpCenterUrl, sectionId);
+        return new CommonRequester(new GetSectionRequester(helpCenterUrl, sectionId));
     }
 
     public static ListRequester getArticleListRequester(String helpCenterUrl, long sectionId, int offset, int limit) {
-        return new GetArticleListRequester(helpCenterUrl, sectionId, offset, limit);
+        return new CommonRequester(new GetArticleListRequester(helpCenterUrl, sectionId, offset, limit));
     }
 
     public static ItemRequester getArticleItemRequester(String helpCenterUrl, long articleId) {
-        return new GetArticleRequester(helpCenterUrl, articleId);
+        return new CommonRequester(new GetArticleRequester(helpCenterUrl, articleId));
     }
 
     public static ListRequester getSearchArticleListRequester(String helpCenterUrl, String query, int offset, int limit) {
-        return new GetSearchArticleListRequester(helpCenterUrl, query, offset, limit);
+        return new CommonRequester(new GetSearchArticleListRequester(helpCenterUrl, query, offset, limit));
     }
 
     public static ListRequester getLocaleListRequester(String helpCenterUrl) {
-        return new GetLocaleListRequester(helpCenterUrl);
+        return new CommonRequester(new GetLocaleListRequester(helpCenterUrl));
     }
 
     public static ItemRequester getLocaleItemRequester(String helpCenterUrl, long localeId) {
-        return new GetLocaleRequester(helpCenterUrl, localeId);
+        return new CommonRequester(new GetLocaleRequester(helpCenterUrl, localeId));
     }
 
 }
