@@ -19,6 +19,7 @@ import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import static org.junit.Assert.fail;
 
@@ -46,6 +47,31 @@ public class ListManagerTest {
     @Test
     public void testExternalNetworkError_AuthFail() {
         ListRequester requester = new ListRequester() {
+
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
 
             Response response = new Response(401, "{\n" +
                     "  \"status\": 401,\n" +
@@ -148,6 +174,31 @@ public class ListManagerTest {
 
         ListRequester requester = new ListRequester() {
             @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
+            @Override
             public Response request() throws IOException {
                 return new Response(200, null);
             }
@@ -179,6 +230,31 @@ public class ListManagerTest {
     @Test
     public void testInternalParseError() {
         ListRequester requester = new ListRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -228,6 +304,31 @@ public class ListManagerTest {
     @Test
     public void testInternalNetworkError() {
         ListRequester requesterThatThrowsIOException = new ListRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 throw new SSLHandshakeException("meh");
@@ -279,6 +380,31 @@ public class ListManagerTest {
 
         ListRequester requester = new ListRequester() {
             @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
+            @Override
             public Response request() throws IOException {
                 throw new SocketTimeoutException();
             }
@@ -310,6 +436,31 @@ public class ListManagerTest {
     @Test
     public void testOtherError() {
         ListRequester requester = new ListRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -363,6 +514,31 @@ public class ListManagerTest {
     @Test
     public void testInternalNetworkError_404_Not_Found() {
         ListRequester requester = new ListRequester() {
+
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
 
             Response response = new Response(404, "Invalid response json");
 

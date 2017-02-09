@@ -17,6 +17,7 @@ import javax.net.ssl.SSLHandshakeException;
 import java.io.IOException;
 import java.net.SocketTimeoutException;
 import java.util.Locale;
+import java.util.Map;
 
 import static org.junit.Assert.fail;
 
@@ -44,6 +45,31 @@ public class ItemManagerTest {
     @Test
     public void testExternalNetworkError_AuthFail() {
         ItemRequester requester = new ItemRequester() {
+
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
 
             Response response = new Response(401, "{\n" +
                     "  \"status\": 401,\n" +
@@ -147,6 +173,31 @@ public class ItemManagerTest {
 
         ItemRequester requester = new ItemRequester() {
             @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
+            @Override
             public Response request() throws IOException {
                 return new Response(200, null);
             }
@@ -178,6 +229,31 @@ public class ItemManagerTest {
     @Test
     public void testInternalParseError() {
         ItemRequester requester = new ItemRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -226,6 +302,31 @@ public class ItemManagerTest {
     @Test
     public void testInternalNetworkError() {
         ItemRequester requesterThatThrowsIOException = new ItemRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 throw new SSLHandshakeException("meh");
@@ -277,6 +378,31 @@ public class ItemManagerTest {
 
         ItemRequester requester = new ItemRequester() {
             @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
+            @Override
             public Response request() throws IOException {
                 throw new SocketTimeoutException();
             }
@@ -308,6 +434,31 @@ public class ItemManagerTest {
     @Test
     public void testOtherError() {
         ItemRequester requester = new ItemRequester() {
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -361,6 +512,31 @@ public class ItemManagerTest {
     @Test
     public void testInternalNetworkError_404_Not_Found() {
         ItemRequester requester = new ItemRequester() {
+
+            @Override
+            public String getHelpCenterUrl() {
+                return null;
+            }
+
+            @Override
+            public String getInclude() {
+                return null;
+            }
+
+            @Override
+            public String getEndpointUrl() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getQueryParameters() {
+                return null;
+            }
+
+            @Override
+            public Map<String, String> getHeader() {
+                return null;
+            }
 
             Response response = new Response(404, "Invalid response json");
 
