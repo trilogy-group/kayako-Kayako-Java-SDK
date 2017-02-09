@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class DataNodeParser<T extends Resource> implements ListParser<T>, ItemParser<T> {
 
-    Parser<T> mParser;
+    private Parser<T> mParser;
 
     public DataNodeParser(Parser<T> parser) {
         mParser = parser;

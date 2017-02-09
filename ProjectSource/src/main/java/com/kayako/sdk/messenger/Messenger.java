@@ -5,7 +5,6 @@ import com.kayako.sdk.RequesterFactory;
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.callback.ListCallback;
 import com.kayako.sdk.base.manager.ListManager;
-import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.utils.FingerprintUtils;

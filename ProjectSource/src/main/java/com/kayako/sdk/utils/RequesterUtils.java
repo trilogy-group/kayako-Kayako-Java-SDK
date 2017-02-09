@@ -77,6 +77,7 @@ public class RequesterUtils {
         }
     }
 
+
     private static Request createGetRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) {
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
         Request.Builder requestBuilder = new Request.Builder().url(httpUrl).get();
