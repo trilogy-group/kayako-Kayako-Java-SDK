@@ -1,5 +1,7 @@
 package com.kayako.sdk.messenger;
 
+import com.kayako.sdk.auth.FingerprintAuth;
+
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 08/02/17
@@ -7,7 +9,7 @@ package com.kayako.sdk.messenger;
 public class Messenger {
 
     private String mHelpDeskUrl;
-    private String mFingerprint;
+    private FingerprintAuth mFingerprintAuth;
 
     /**
      * Create a Messenger instance for a new user - generating a new Fingerprint Id
@@ -22,15 +24,20 @@ public class Messenger {
      * Create a Messenger instance for an existing user - using the existing Fingerprint Id
      *
      * @param helpDeskUrl
-     * @param fingerprintId
+     * @param fingerprintAuth
      */
-    public Messenger(String helpDeskUrl, String fingerprintId) {
+    public Messenger(String helpDeskUrl, FingerprintAuth fingerprintAuth) {
         mHelpDeskUrl = helpDeskUrl;
-        mFingerprint = fingerprintId;
+        mFingerprintAuth = fingerprintAuth;
     }
 
-    public String getFingerprintId() {
-        return mFingerprint;
+    /**
+     * This is useful when you'd like to save the fingerprint auth for multiple requests using the same authentication
+     *
+     * @return
+     */
+    public FingerprintAuth getFingerprintAuth() {
+        return mFingerprintAuth;
     }
 
     // TODO: GET List Conversations
