@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
  */
 public class HelpCenterTest {
 
-    HelpCenter mHelpCenter;
+    private HelpCenter mHelpCenter;
 
     @Before
     public void setUp() {

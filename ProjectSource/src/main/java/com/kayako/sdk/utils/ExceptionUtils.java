@@ -48,7 +48,7 @@ public class ExceptionUtils {
         if (errorListParser.containsList(json)) {
             errors = errorListParser.parseList(json);
         }
-        
+
         return new ResponseMessages(statusCode, notifications, errors, logs);
     }
 
@@ -80,6 +80,20 @@ public class ExceptionUtils {
             case OTHER:
             default:
                 return "Failed to make request";
+        }
+    }
+
+    public static void logAllErrors(ResponseMessages responseMessages) {
+        for (Error error : responseMessages.getErrors()) {
+            System.out.println(error.toString());
+        }
+
+        for (Log error : responseMessages.getLogs()) {
+            System.out.println(error.toString());
+        }
+
+        for (Notification error : responseMessages.getNotifications()) {
+            System.out.println(error.toString());
         }
     }
 }

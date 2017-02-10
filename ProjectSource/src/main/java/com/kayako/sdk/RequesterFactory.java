@@ -14,6 +14,9 @@ import com.kayako.sdk.helpcenter.search.GetSearchArticleListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionListRequester;
 import com.kayako.sdk.helpcenter.section.GetSectionRequester;
 import com.kayako.sdk.messenger.conversation.GetConversationListRequester;
+import com.kayako.sdk.messenger.conversation.GetConversationRequester;
+import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
+import com.kayako.sdk.messenger.conversation.PostConversationRequester;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -59,5 +62,13 @@ public class RequesterFactory {
 
     public static ListRequester getConversationListRequester(String helpCenterUrl, FingerprintAuth auth) {
         return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth));
+    }
+
+    public static ItemRequester getConversationItemRequester(String helpCenterUrl, FingerprintAuth auth, long conversationId) {
+        return new CommonRequester(new GetConversationRequester(helpCenterUrl, auth, conversationId));
+    }
+
+    public static ItemRequester postConversationRequester(String helpCenterUrl, FingerprintAuth auth, PostConversationBodyParams bodyParams) {
+        return new CommonRequester(new PostConversationRequester(helpCenterUrl, auth, bodyParams));
     }
 }

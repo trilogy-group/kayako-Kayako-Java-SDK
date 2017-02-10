@@ -3,10 +3,13 @@ package com.kayako.sdk.messenger;
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.RequesterFactory;
 import com.kayako.sdk.auth.FingerprintAuth;
+import com.kayako.sdk.base.callback.ItemCallback;
 import com.kayako.sdk.base.callback.ListCallback;
+import com.kayako.sdk.base.manager.ItemManager;
 import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.messenger.conversation.Conversation;
+import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.utils.FingerprintUtils;
 
 import java.util.List;
@@ -41,6 +44,11 @@ public class Messenger {
         mFingerprintAuth = fingerprintAuth;
     }
 
+    private FingerprintAuth generateNewFingerprintId() {
+        String fingerprintId = FingerprintUtils.generateUUIDv4();
+        return new FingerprintAuth(fingerprintId);
+    }
+
     /**
      * This is useful when you'd like to save the fingerprint auth for multiple requests using the same authentications
      *
@@ -59,9 +67,7 @@ public class Messenger {
         this.mFingerprintAuth = mFingerprintAuth;
     }
 
-    // TODO: GET List Conversations
     // TODO: GET List Messages
-    // TODO: POST Conversation
     // TODO: POST Message
 
     public List<Conversation> getConversationList() throws KayakoException {
@@ -72,9 +78,19 @@ public class Messenger {
         new ListManager<Conversation>(RequesterFactory.getConversationListRequester(mHelpDeskUrl, mFingerprintAuth), ParserFactory.getConversationListParser()).getList(callback);
     }
 
-    private FingerprintAuth generateNewFingerprintId() {
-        String fingerprintId = FingerprintUtils.generateUUIDv4();
-        return new FingerprintAuth(fingerprintId);
+    public Conversation getConversation(long conversationId) throws KayakoException {
+        return new ItemManager<Conversation>(RequesterFactory.getConversationItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId), ParserFactory.getConversationItemParser()).getItem();
     }
 
+    public void getConversation(long conversationId, ItemCallback<Conversation> callback) {
+        new ItemManager<Conversation>(RequesterFactory.getConversationItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId), ParserFactory.getConversationItemParser()).getItem(callback);
+    }
+
+    public Conversation postConversation(PostConversationBodyParams bodyParams) throws KayakoException {
+        return new ItemManager<Conversation>(RequesterFactory.postConversationRequester(mHelpDeskUrl, mFingerprintAuth, bodyParams), ParserFactory.getConversationItemParser()).getItem();
+    }
+
+    public void postConversation(PostConversationBodyParams bodyParams, ItemCallback<Conversation> callback) {
+        new ItemManager<Conversation>(RequesterFactory.postConversationRequester(mHelpDeskUrl, mFingerprintAuth, bodyParams), ParserFactory.getConversationItemParser()).getItem(callback);
+    }
 }

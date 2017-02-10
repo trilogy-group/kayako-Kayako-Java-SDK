@@ -2,7 +2,6 @@ package com.kayako.sdk.utils;
 
 import com.kayako.sdk.base.requester.RequestCallback;
 import okhttp3.*;
-import okhttp3.Response;
 import okhttp3.internal.Util;
 
 import java.io.IOException;
@@ -77,7 +76,6 @@ public class RequesterUtils {
         }
     }
 
-
     private static Request createGetRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) {
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
         Request.Builder requestBuilder = new Request.Builder().url(httpUrl).get();
@@ -92,17 +90,35 @@ public class RequesterUtils {
         return request;
     }
 
-    public static com.kayako.sdk.base.requester.Response getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
-        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
+    // TODO: Handle attachments
+    private static Request createPostRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) {
+        HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
 
+        // Add body params
+        MultipartBody.Builder builder = new MultipartBody.Builder();
+        builder.setType(MultipartBody.FORM);
+        for (String key : bodyParams.keySet()) {
+            builder.addFormDataPart(key, bodyParams.get(key));
+        }
+
+        Request.Builder requestBuilder = new Request.Builder().url(httpUrl).post(builder.build());
+
+        // Add headers if available
+        if (headers != null && !headers.isEmpty()) {
+            for (String key : headers.keySet()) {
+                requestBuilder.addHeader(key, headers.get(key));
+            }
+        }
+        Request request = requestBuilder.build();
+        return request;
+    }
+
+    private static com.kayako.sdk.base.requester.Response performSync(Request request) throws IOException {
         Response response = getHttpClient().newCall(request).execute();
-
         return new com.kayako.sdk.base.requester.Response(response.code(), response.body().string());
     }
 
-    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final RequestCallback callback) {
-        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
-
+    private static void performAsync(Request request, final RequestCallback callback) {
         getHttpClient().newCall(request).enqueue(new Callback() {
             public void onFailure(Call call, IOException e) {
                 if (callback != null) {
@@ -118,5 +134,33 @@ public class RequesterUtils {
         });
     }
 
-    // TODO: putAsync, postAsync, deleteAsync
+    public static com.kayako.sdk.base.requester.Response getSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams) throws IOException {
+        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
+        return performSync(request);
+    }
+
+    public static void getAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, final RequestCallback callback) {
+        Request request = createGetRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams);
+        performAsync(request, callback);
+    }
+
+    public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) throws IOException {
+        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
+
+        // TODO: Remove logs later
+        System.out.println("POST " + request.url());
+
+        return performSync(request);
+    }
+
+    public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, final RequestCallback callback) {
+        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
+
+        // TODO: Remove logs later
+        System.out.println("POST " + request.url());
+
+        performAsync(request, callback);
+    }
+
+    // TODO: putAsync, deleteAsync
 }

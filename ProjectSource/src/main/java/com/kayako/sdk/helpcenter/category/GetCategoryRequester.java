@@ -1,16 +1,14 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.kayako.sdk.base.requester.*;
-import com.kayako.sdk.utils.RequesterUtils;
+import com.kayako.sdk.base.requester.GetRequestProperty;
 
-import java.io.IOException;
 import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class GetCategoryRequester implements Requester {
+public class GetCategoryRequester implements GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/categories/%s";
     public static final String INCLUDE = "localeField";
@@ -47,4 +45,10 @@ public class GetCategoryRequester implements Requester {
     public Map<String, String> getHeaders() {
         return null;
     }
+
+    @Override
+    public METHOD getMethod() {
+        return METHOD.GET;
+    }
+
 }

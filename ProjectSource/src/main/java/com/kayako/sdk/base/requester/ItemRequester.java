@@ -6,7 +6,7 @@ import java.io.IOException;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 18/08/16
  */
-public interface ItemRequester extends Requester {
+public interface ItemRequester  {
 
     Response request() throws IOException;
 

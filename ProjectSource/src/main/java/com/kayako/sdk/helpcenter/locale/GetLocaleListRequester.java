@@ -1,16 +1,14 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.kayako.sdk.base.requester.*;
-import com.kayako.sdk.utils.RequesterUtils;
+import com.kayako.sdk.base.requester.GetRequestProperty;
 
-import java.io.IOException;
 import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class GetLocaleListRequester implements Requester {
+public class GetLocaleListRequester implements GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/locales.json";
     public static final String INCLUDE = "locale";
@@ -47,4 +45,10 @@ public class GetLocaleListRequester implements Requester {
     public Map<String, String> getHeaders() {
         return null;
     }
+
+    @Override
+    public METHOD getMethod() {
+        return METHOD.GET;
+    }
+
 }

@@ -1,7 +1,6 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.kayako.sdk.base.requester.CommonRequester;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.GetRequestProperty;
 
 import java.util.Map;
 
@@ -9,7 +8,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class GetSectionRequester implements Requester {
+public class GetSectionRequester implements GetRequestProperty {
     public static final String ENDPOINT = "/api/v1/sections/%s";
     public static final String INCLUDE = "localeField,category";
 
@@ -48,4 +47,10 @@ public class GetSectionRequester implements Requester {
     public Map<String, String> getHeaders() {
         return null;
     }
+
+    @Override
+    public METHOD getMethod() {
+        return METHOD.GET;
+    }
+
 }

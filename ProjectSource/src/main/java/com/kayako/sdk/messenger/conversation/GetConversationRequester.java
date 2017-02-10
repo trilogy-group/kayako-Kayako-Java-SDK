@@ -9,17 +9,19 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 09/02/17
  */
-public class GetConversationListRequester implements GetRequestProperty {
+public class GetConversationRequester implements GetRequestProperty {
 
     private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
-    private static final String ENDPOINT = "api/v1/conversations";
+    private static final String ENDPOINT = "api/v1/conversations/%s";
 
     private String mHelpdeskUrl;
     private FingerprintAuth mFingerprintAuth;
+    private Long mConversationId;
 
-    public GetConversationListRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth) {
+    public GetConversationRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, long conversationId) {
         mHelpdeskUrl = helpdeskUrl;
         mFingerprintAuth = fingerprintAuth;
+        mConversationId = conversationId;
     }
 
     @Override
@@ -34,7 +36,7 @@ public class GetConversationListRequester implements GetRequestProperty {
 
     @Override
     public String getEndpointUrl() {
-        return ENDPOINT;
+        return String.format(ENDPOINT, mConversationId);
     }
 
     @Override
@@ -51,4 +53,5 @@ public class GetConversationListRequester implements GetRequestProperty {
     public METHOD getMethod() {
         return METHOD.GET;
     }
+
 }

@@ -3,7 +3,6 @@ package com.kayako.sdk.base.requester;
 import com.kayako.sdk.utils.RequesterUtils;
 
 import java.io.IOException;
-import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -11,42 +10,37 @@ import java.util.Map;
  */
 public class CommonRequester implements ListRequester, ItemRequester {
 
-    private Requester mRequester;
+    private RequestProperty mRequestProperty;
 
-    public CommonRequester(Requester requester) {
-        mRequester = requester;
+    public CommonRequester(RequestProperty requester) {
+        mRequestProperty = requester;
     }
 
     public Response request() throws IOException {
-        return RequesterUtils.getSync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), mRequester.getHeaders(), mRequester.getQueryParameters());
+        switch (mRequestProperty.getMethod()) {
+            case GET:
+                GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
+                return RequesterUtils.getSync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude(), getRequester.getHeaders(), getRequester.getQueryParameters());
+            case POST:
+                PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
+                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
+            default:
+                throw new IllegalArgumentException("Only GET and POST is supported as of now");
+        }
     }
 
     public void request(RequestCallback callback) {
-        RequesterUtils.getAsync(mRequester.getHelpCenterUrl(), mRequester.getEndpointUrl(), mRequester.getInclude(), mRequester.getHeaders(), mRequester.getQueryParameters(), callback);
-    }
-
-    @Override
-    public String getHelpCenterUrl() {
-        return mRequester.getHelpCenterUrl();
-    }
-
-    @Override
-    public String getInclude() {
-        return mRequester.getInclude();
-    }
-
-    @Override
-    public String getEndpointUrl() {
-        return mRequester.getEndpointUrl();
-    }
-
-    @Override
-    public Map<String, String> getQueryParameters() {
-        return mRequester.getQueryParameters();
-    }
-
-    @Override
-    public Map<String, String> getHeaders() {
-        return mRequester.getHeaders();
+        switch (mRequestProperty.getMethod()) {
+            case GET:
+                GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
+                RequesterUtils.getAsync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude(), getRequester.getHeaders(), getRequester.getQueryParameters(), callback);
+                break;
+            case POST:
+                PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
+                RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), callback);
+                break;
+            default:
+                throw new IllegalArgumentException("Only GET and POST is supported as of now");
+        }
     }
 }

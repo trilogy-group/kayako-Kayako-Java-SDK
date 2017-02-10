@@ -4,9 +4,9 @@ import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
- * @date 18/08/16
+ * @date 09/02/17
  */
-public interface Requester {
+public interface GetRequestProperty extends RequestProperty {
 
     String getHelpCenterUrl();
 
@@ -17,5 +17,4 @@ public interface Requester {
     Map<String, String> getQueryParameters();
 
     Map<String, String> getHeaders();
-
 }

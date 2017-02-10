@@ -1,7 +1,6 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.base.requester.CommonRequester;
-import com.kayako.sdk.base.requester.Requester;
+import com.kayako.sdk.base.requester.GetRequestProperty;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +9,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 26/08/16
  */
-public class GetSearchArticleListRequester implements Requester {
+public class GetSearchArticleListRequester implements GetRequestProperty {
     private static final String ENDPOINT = "/api/v1/helpcenter/search";
     private static final String INCLUDE = "localeField,category,section,article,userMinimal";
 
@@ -62,4 +61,10 @@ public class GetSearchArticleListRequester implements Requester {
     public Map<String, String> getHeaders() {
         return null;
     }
+
+    @Override
+    public METHOD getMethod() {
+        return METHOD.GET;
+    }
+
 }
