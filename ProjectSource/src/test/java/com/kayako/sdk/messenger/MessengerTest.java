@@ -42,10 +42,8 @@ public class MessengerTest {
 
     @Test
     public void test_getExistingConversationList() throws Exception {
-
-
         try {
-            List<Conversation> conversationList = new Messenger(helpdeskUrl, fingerprintAuth).getConversationList();
+            List<Conversation> conversationList = new Messenger(helpdeskUrl, fingerprintAuth).getConversationList(0, 20);
             Assert.assertNotNull(conversationList);
             Assert.assertTrue(conversationList.size() > 4);
         } catch (KayakoException e) {
@@ -58,7 +56,7 @@ public class MessengerTest {
     @Test
     public void test_getNewConversationList() throws Exception {
         try {
-            List<Conversation> conversationList = new Messenger(helpdeskUrl).getConversationList();
+            List<Conversation> conversationList = new Messenger(helpdeskUrl).getConversationList(0, 20);
             Assert.assertEquals(0, conversationList.size());
         } catch (KayakoException e) {
             ExceptionUtils.logAllErrors(e.getResponseMessages());
@@ -125,6 +123,28 @@ public class MessengerTest {
             ExceptionUtils.logAllErrors(e.getResponseMessages());
             fail();
         }
+    }
 
+    @Test
+    public void test_ConversationList_Pagination() throws Exception {
+        try {
+            Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+
+            List<Conversation> conversations = messenger.getConversationList(0, 5);
+            Assert.assertEquals(5, conversations.size());
+
+            conversations.addAll(messenger.getConversationList(5, 3));
+            Assert.assertEquals(8, conversations.size());
+
+            conversations.addAll(messenger.getConversationList(8, 7));
+            Assert.assertEquals(12, conversations.size());
+
+            conversations.addAll(messenger.getConversationList(15, 5));
+            Assert.assertEquals(12, conversations.size());
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            ExceptionUtils.logAllErrors(e.getResponseMessages());
+            fail();
+        }
     }
 }

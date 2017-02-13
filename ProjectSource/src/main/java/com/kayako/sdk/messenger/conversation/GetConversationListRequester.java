@@ -3,6 +3,7 @@ package com.kayako.sdk.messenger.conversation;
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.GetRequestProperty;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -14,12 +15,19 @@ public class GetConversationListRequester implements GetRequestProperty {
     private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
     private static final String ENDPOINT = "api/v1/conversations";
 
+    private static final String ARG_OFFSET = "offset";
+    private static final String ARG_LIMIT = "limit";
+
     private String mHelpdeskUrl;
     private FingerprintAuth mFingerprintAuth;
+    private Map<String, String> mQueryParameters;
 
-    public GetConversationListRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth) {
+    public GetConversationListRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, int offset, int limit) {
         mHelpdeskUrl = helpdeskUrl;
         mFingerprintAuth = fingerprintAuth;
+        mQueryParameters = new HashMap<>();
+        mQueryParameters.put(ARG_OFFSET, String.valueOf(offset));
+        mQueryParameters.put(ARG_LIMIT, String.valueOf(limit));
     }
 
     @Override
@@ -39,7 +47,7 @@ public class GetConversationListRequester implements GetRequestProperty {
 
     @Override
     public Map<String, String> getQueryParameters() {
-        return null;
+        return mQueryParameters;
     }
 
     @Override

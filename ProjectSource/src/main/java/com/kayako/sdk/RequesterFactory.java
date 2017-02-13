@@ -61,8 +61,8 @@ public class RequesterFactory {
         return new CommonRequester(new GetLocaleRequester(helpCenterUrl, localeId));
     }
 
-    public static ListRequester getConversationListRequester(String helpCenterUrl, FingerprintAuth auth) {
-        return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth));
+    public static ListRequester getConversationListRequester(String helpCenterUrl, FingerprintAuth auth, int offset, int limit) {
+        return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth,offset,limit));
     }
 
     public static ItemRequester getConversationItemRequester(String helpCenterUrl, FingerprintAuth auth, long conversationId) {

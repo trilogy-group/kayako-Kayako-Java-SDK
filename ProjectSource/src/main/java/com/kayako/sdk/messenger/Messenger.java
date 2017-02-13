@@ -71,12 +71,12 @@ public class Messenger {
     // TODO: GET List Messages
     // TODO: POST Message
 
-    public List<Conversation> getConversationList() throws KayakoException {
-        return new ListManager<Conversation>(RequesterFactory.getConversationListRequester(mHelpDeskUrl, mFingerprintAuth), ParserFactory.getConversationListParser()).getList();
+    public List<Conversation> getConversationList(int offset, int limit) throws KayakoException {
+        return new ListManager<Conversation>(RequesterFactory.getConversationListRequester(mHelpDeskUrl, mFingerprintAuth, offset, limit), ParserFactory.getConversationListParser()).getList();
     }
 
-    public void getConversationList(ListCallback<Conversation> callback) {
-        new ListManager<Conversation>(RequesterFactory.getConversationListRequester(mHelpDeskUrl, mFingerprintAuth), ParserFactory.getConversationListParser()).getList(callback);
+    public void getConversationList(int offset, int limit, ListCallback<Conversation> callback) {
+        new ListManager<Conversation>(RequesterFactory.getConversationListRequester(mHelpDeskUrl, mFingerprintAuth, offset, limit), ParserFactory.getConversationListParser()).getList(callback);
     }
 
     public Conversation getConversation(long conversationId) throws KayakoException {
