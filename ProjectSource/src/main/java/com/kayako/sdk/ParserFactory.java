@@ -16,7 +16,7 @@ import com.kayako.sdk.helpcenter.search.SearchArticleParser;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
-import com.kayako.sdk.helpcenter.user.UserParser;
+import com.kayako.sdk.helpcenter.user.UserMinimalParser;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.ConversationParser;
 import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
@@ -25,6 +25,8 @@ import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.status.StatusParser;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
 import com.kayako.sdk.messenger.conversation.fields.team.TeamParser;
+import com.kayako.sdk.messenger.message.Message;
+import com.kayako.sdk.messenger.message.MessageParser;
 
 import java.util.Locale;
 
@@ -97,7 +99,7 @@ public class ParserFactory {
 
     // User
     public static Parser<UserMinimal> getUserMinimalParser() {
-        return new UserParser();
+        return new UserMinimalParser();
     }
 
     // Conversation
@@ -114,6 +116,9 @@ public class ParserFactory {
         return new ConversationParser();
     }
 
+
+    // Conversation Fields
+
     public static Parser<Team> getTeamParser() {
         return new TeamParser();
     }
@@ -124,6 +129,20 @@ public class ParserFactory {
 
     public static Parser<Priority> getPriorityParser() {
         return new PriorityParser();
+    }
+
+    // Message
+
+    public static Parser<Message> getMessageParser() {
+        return new MessageParser();
+    }
+
+    public static ListParser<Message> getMessageListParser() {
+        return new DataNodeParser<>(getMessageParser());
+    }
+
+    public static ItemParser<Message> getMessageItemParser() {
+        return new DataNodeParser<>(getMessageParser());
     }
 
     // Response Message: Error
@@ -152,6 +171,5 @@ public class ParserFactory {
     public static Parser<Log> getLogParser() {
         return new LogListParser();
     }
-
 
 }

@@ -1,5 +1,6 @@
 package com.kayako.sdk.messenger.conversation;
 
+import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -196,7 +197,7 @@ public class ConversationParserTest {
         Assert.assertEquals("a420b635-0d77-5306-af8a-867744566acc", conversation.getUuid());
         Assert.assertEquals(null, conversation.getLegacyId());
         Assert.assertEquals("Hey", conversation.getSubject());
-        Assert.assertEquals(Conversation.ChannelType.HELPCENTER, conversation.getChannel());
+        Assert.assertEquals(ChannelType.HELPCENTER, conversation.getChannel());
 
         Assert.assertEquals("John Doe", conversation.getRequester().getFullName());
         Assert.assertEquals("https://kayako-mobile-testing.kayako.com/avatar/get/f19cebf8-6d34-51e3-89ec-42e072a6ad43?1486460502", conversation.getCreator().getAvatarUrl());

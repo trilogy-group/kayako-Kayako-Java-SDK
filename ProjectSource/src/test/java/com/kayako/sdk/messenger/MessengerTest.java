@@ -8,6 +8,7 @@ import com.kayako.sdk.error.response.Log;
 import com.kayako.sdk.error.response.Notification;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
+import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.utils.ExceptionUtils;
 import org.junit.After;
 import org.junit.Assert;
@@ -88,4 +89,42 @@ public class MessengerTest {
 
     }
 
+    @Test
+    public void test_getMessagesOfConversation() throws Exception {
+        try {
+            Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+            List<Message> messageList = messenger.getMessages(20, 0, 0);
+
+            Assert.assertNotNull(messageList);
+            Assert.assertEquals(9, messageList.size());
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            ExceptionUtils.logAllErrors(e.getResponseMessages());
+            fail();
+        }
+    }
+
+    @Test
+    public void test_getMessagesOfConversation_Pagination() throws Exception {
+        try {
+            Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+
+            final long conversationId = 22;
+
+            List<Message> messageList = messenger.getMessages(conversationId, 0, 5);
+            Assert.assertNotNull(messageList);
+            Assert.assertEquals(5, messageList.size());
+
+            messageList = messenger.getMessages(conversationId, 15, 5);
+            Assert.assertNotNull(messageList);
+            Assert.assertEquals(1, messageList.size());
+
+
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            ExceptionUtils.logAllErrors(e.getResponseMessages());
+            fail();
+        }
+
+    }
 }

@@ -10,6 +10,7 @@ import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
+import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.utils.FingerprintUtils;
 
 import java.util.List;
@@ -92,5 +93,13 @@ public class Messenger {
 
     public void postConversation(PostConversationBodyParams bodyParams, ItemCallback<Conversation> callback) {
         new ItemManager<Conversation>(RequesterFactory.postConversationRequester(mHelpDeskUrl, mFingerprintAuth, bodyParams), ParserFactory.getConversationItemParser()).getItem(callback);
+    }
+
+    public List<Message> getMessages(long conversationId, int offset, int limit) throws KayakoException {
+        return new ListManager<Message>(RequesterFactory.getMessageListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, offset, limit), ParserFactory.getMessageListParser()).getList();
+    }
+
+    public void getMessages(long conversationId, int offset, int limit, ListCallback<Message> callback) {
+        new ListManager<Message>(RequesterFactory.getMessageListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, offset, limit), ParserFactory.getMessageListParser()).getList(callback);
     }
 }

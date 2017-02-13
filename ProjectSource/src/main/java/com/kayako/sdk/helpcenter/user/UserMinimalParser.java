@@ -9,7 +9,7 @@ import com.kayako.sdk.utils.ParserUtils;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class UserParser implements Parser<UserMinimal> {
+public class UserMinimalParser implements Parser<UserMinimal> {
 
     private static final String ITEM_ID = "id";
     private static final String ITEM_FULL_NAME = "fullName";

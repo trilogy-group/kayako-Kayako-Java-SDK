@@ -4,6 +4,7 @@ import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import com.kayako.sdk.utils.ParserUtils;
 
 import java.util.List;
@@ -39,7 +40,7 @@ public class ConversationParser implements Parser<Conversation> {
                 resourceMap.getAsString(ITEM_UUID),
                 resourceMap.getAsString(ITEM_LEGACY_ID),
                 resourceMap.getAsString(ITEM_SUBJECT),
-                resourceMap.getAsEnumType(ITEM_CHANNEL, Conversation.ChannelType.class),
+                resourceMap.getAsEnumType(ITEM_CHANNEL, ChannelType.class),
                 resourceMap.isNotNull(ITEM_REQUESTER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_REQUESTER)) : null,
                 resourceMap.isNotNull(ITEM_CREATOR) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_CREATOR)) : null,
                 resourceMap.isNotNull(ITEM_LAST_REPLIER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_LAST_REPLIER)) : null,
