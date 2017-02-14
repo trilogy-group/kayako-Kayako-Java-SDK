@@ -84,16 +84,23 @@ public class ExceptionUtils {
     }
 
     public static void logAllErrors(ResponseMessages responseMessages) {
-        for (Error error : responseMessages.getErrors()) {
-            System.out.println(error.toString());
+        if (responseMessages == null) {
+            return;
         }
 
-        for (Log error : responseMessages.getLogs()) {
-            System.out.println(error.toString());
-        }
+        if (responseMessages.getErrors() != null)
+            for (Error error : responseMessages.getErrors()) {
+                LogUtils.logError(ExceptionUtils.class, error.toString());
+            }
 
-        for (Notification error : responseMessages.getNotifications()) {
-            System.out.println(error.toString());
-        }
+        if (responseMessages.getLogs() != null)
+            for (Log error : responseMessages.getLogs()) {
+                LogUtils.logError(ExceptionUtils.class,error.toString());
+            }
+
+        if (responseMessages.getNotifications() != null)
+            for (Notification error : responseMessages.getNotifications()) {
+                LogUtils.logError(ExceptionUtils.class,error.toString());
+            }
     }
 }

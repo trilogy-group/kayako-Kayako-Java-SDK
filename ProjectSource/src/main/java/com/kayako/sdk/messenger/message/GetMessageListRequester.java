@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class GetMessageListRequester implements GetRequestProperty {
 
-    private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
+    private static final String INCLUDE = "userMinimal";
     private static final String ENDPOINT = "api/v1/conversations/%s/messages";
 
     private static final String ARG_OFFSET = "offset";

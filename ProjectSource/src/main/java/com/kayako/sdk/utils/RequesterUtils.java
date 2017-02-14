@@ -42,6 +42,8 @@ public class RequesterUtils {
             }
         }
 
+        LogUtils.logError(RequesterUtils.class, "URL: " + urlBuilder.build());
+
         return urlBuilder.build();
     }
 
@@ -113,9 +115,23 @@ public class RequesterUtils {
         return request;
     }
 
+    private static void showLogs(String requestMethod, String requestUrl, int responseCode, String responseBody) throws IOException {
+        boolean debug = true;
+        if (!debug) {
+            return;
+        }
+
+        LogUtils.logError(RequesterUtils.class, "METHOD: " + requestMethod);
+        LogUtils.logError(RequesterUtils.class, "URL: " + requestUrl);
+        LogUtils.logError(RequesterUtils.class, "STATUS: " + responseCode);
+        LogUtils.logError(RequesterUtils.class, "BODY: " + responseBody);
+    }
+
     private static com.kayako.sdk.base.requester.Response performSync(Request request) throws IOException {
         Response response = getHttpClient().newCall(request).execute();
-        return new com.kayako.sdk.base.requester.Response(response.code(), response.body().string());
+        String responseBodyString = response.body().string(); // .string() can only be called once, hence stored in a variable
+        showLogs(request.method(), request.url().toString(), response.code(), responseBodyString);
+        return new com.kayako.sdk.base.requester.Response(response.code(), responseBodyString);
     }
 
     private static void performAsync(Request request, final RequestCallback callback) {
@@ -146,19 +162,11 @@ public class RequesterUtils {
 
     public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) throws IOException {
         Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
-
-        // TODO: Remove logs later
-        System.out.println("POST " + request.url());
-
         return performSync(request);
     }
 
     public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, final RequestCallback callback) {
         Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
-
-        // TODO: Remove logs later
-        System.out.println("POST " + request.url());
-
         performAsync(request, callback);
     }
 
