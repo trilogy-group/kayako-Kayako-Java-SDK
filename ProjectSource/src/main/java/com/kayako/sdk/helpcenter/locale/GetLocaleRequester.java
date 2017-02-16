@@ -8,7 +8,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 04/11/16
  */
-public class GetLocaleRequester implements GetRequestProperty {
+public class GetLocaleRequester extends GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/locales/%s";
     public static final String INCLUDE = "locale";
@@ -44,11 +44,6 @@ public class GetLocaleRequester implements GetRequestProperty {
     @Override
     public Map<String, String> getHeaders() {
         return null;
-    }
-
-    @Override
-    public METHOD getMethod() {
-        return METHOD.GET;
     }
 
 }

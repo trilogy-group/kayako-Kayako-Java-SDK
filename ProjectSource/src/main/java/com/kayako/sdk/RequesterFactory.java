@@ -18,6 +18,8 @@ import com.kayako.sdk.messenger.conversation.GetConversationRequester;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.conversation.PostConversationRequester;
 import com.kayako.sdk.messenger.message.GetMessageListRequester;
+import com.kayako.sdk.messenger.message.PostMessageBodyParams;
+import com.kayako.sdk.messenger.message.PostMessageRequester;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -62,7 +64,7 @@ public class RequesterFactory {
     }
 
     public static ListRequester getConversationListRequester(String helpCenterUrl, FingerprintAuth auth, int offset, int limit) {
-        return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth,offset,limit));
+        return new CommonRequester(new GetConversationListRequester(helpCenterUrl, auth, offset, limit));
     }
 
     public static ItemRequester getConversationItemRequester(String helpCenterUrl, FingerprintAuth auth, long conversationId) {
@@ -75,5 +77,9 @@ public class RequesterFactory {
 
     public static ListRequester getMessageListRequester(String helpCenterUrl, FingerprintAuth auth, Long conversationId, int offset, int limit) {
         return new CommonRequester(new GetMessageListRequester(helpCenterUrl, auth, conversationId, offset, limit));
+    }
+
+    public static ItemRequester postMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, Long conversationId, PostMessageBodyParams bodyParams) {
+        return new CommonRequester(new PostMessageRequester(helpdeskUrl, fingerprintAuth, conversationId, bodyParams));
     }
 }

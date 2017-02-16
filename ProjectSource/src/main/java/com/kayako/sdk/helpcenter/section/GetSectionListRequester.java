@@ -9,7 +9,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class GetSectionListRequester implements GetRequestProperty {
+public class GetSectionListRequester extends GetRequestProperty {
     public static final String ENDPOINT = "/api/v1/sections.json";
     public static final String INCLUDE = "localeField,category";
 
@@ -56,11 +56,6 @@ public class GetSectionListRequester implements GetRequestProperty {
     @Override
     public Map<String, String> getHeaders() {
         return null;
-    }
-
-    @Override
-    public METHOD getMethod() {
-        return METHOD.GET;
     }
 
 }

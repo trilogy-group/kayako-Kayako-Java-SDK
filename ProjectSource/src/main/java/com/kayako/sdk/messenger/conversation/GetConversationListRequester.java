@@ -10,7 +10,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 09/02/17
  */
-public class GetConversationListRequester implements GetRequestProperty {
+public class GetConversationListRequester extends GetRequestProperty {
 
     private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
     private static final String ENDPOINT = "api/v1/conversations";
@@ -55,8 +55,4 @@ public class GetConversationListRequester implements GetRequestProperty {
         return mFingerprintAuth.getHeaders();
     }
 
-    @Override
-    public METHOD getMethod() {
-        return METHOD.GET;
-    }
 }

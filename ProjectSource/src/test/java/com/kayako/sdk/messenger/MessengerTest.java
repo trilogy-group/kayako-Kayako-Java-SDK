@@ -5,6 +5,7 @@ import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.message.Message;
+import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.mockserver.MockWebServerHelper;
 import com.kayako.sdk.mockserver.SampleDispatcher;
 import com.kayako.sdk.mockserver.base.ISampleResponse;
@@ -34,7 +35,7 @@ public class MessengerTest {
         mockWebServerHelper = new MockWebServerHelper();
         mockWebServerHelper.callOnSetup();
 
-        //helpdeskUrl = "https://kayako-mobile-testing.kayako.com"; //  Uncomment to get new values
+        // helpdeskUrl = "https://kayako-mobile-testing.kayako.com"; //  Uncomment to get new values
         helpdeskUrl = mockWebServerHelper.getMockedUrl();
     }
 
@@ -171,6 +172,23 @@ public class MessengerTest {
         } catch (KayakoException e) {
             e.printStackTrace();
             ExceptionUtils.logAllErrors(e.getResponseMessages());
+            fail();
+        }
+    }
+
+    @Test
+    public void test_addNewMessage() {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new PostMessage()));
+
+        Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+
+        try {
+            String contents = "This a new message!";
+            Message message = messenger.postMessage(23, new PostMessageBodyParams(contents, null));
+            Assert.assertNotNull(message);
+            Assert.assertEquals(contents, message.getContentText());
+        } catch (KayakoException e) {
+            e.printStackTrace();
             fail();
         }
     }

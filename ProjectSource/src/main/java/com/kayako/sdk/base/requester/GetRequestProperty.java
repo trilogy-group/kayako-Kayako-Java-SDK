@@ -6,15 +6,21 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 09/02/17
  */
-public interface GetRequestProperty extends RequestProperty {
+public abstract class GetRequestProperty implements RequestProperty {
 
-    String getHelpCenterUrl();
+    public abstract String getHelpCenterUrl();
 
-    String getInclude();
+    public abstract String getInclude();
 
-    String getEndpointUrl();
+    public abstract String getEndpointUrl();
 
-    Map<String, String> getQueryParameters();
+    public abstract Map<String, String> getQueryParameters();
 
-    Map<String, String> getHeaders();
+    public abstract Map<String, String> getHeaders();
+
+    @Override
+    public METHOD getMethod() {
+        return METHOD.GET;
+    }
+
 }

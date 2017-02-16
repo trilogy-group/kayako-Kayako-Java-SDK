@@ -10,7 +10,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 09/02/17
  */
-public class PostConversationRequester implements PostRequestProperty {
+public class PostConversationRequester extends PostRequestProperty {
 
     private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
     private static final String ENDPOINT = "api/v1/conversations";
@@ -58,11 +58,6 @@ public class PostConversationRequester implements PostRequestProperty {
     @Override
     public Map<String, String> getHeaders() {
         return mFingerprintAuth.getHeaders();
-    }
-
-    @Override
-    public METHOD getMethod() {
-        return METHOD.POST;
     }
 
     @Override

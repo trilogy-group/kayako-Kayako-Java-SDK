@@ -9,7 +9,7 @@ import java.util.Map;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 26/08/16
  */
-public class GetSearchArticleListRequester implements GetRequestProperty {
+public class GetSearchArticleListRequester extends GetRequestProperty {
     private static final String ENDPOINT = "/api/v1/helpcenter/search";
     private static final String INCLUDE = "localeField,category,section,article,userMinimal";
 
@@ -60,11 +60,6 @@ public class GetSearchArticleListRequester implements GetRequestProperty {
     @Override
     public Map<String, String> getHeaders() {
         return null;
-    }
-
-    @Override
-    public METHOD getMethod() {
-        return METHOD.GET;
     }
 
 }
