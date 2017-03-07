@@ -65,7 +65,7 @@ public class ParserUtils<T extends Resource> {
 
     public static long getTimeInMilliSeconds(String isoTimeStamp) {
         try {
-            return TimeUtils.getIso8601StringToUnixTimestamp(isoTimeStamp);
+            return IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(isoTimeStamp);
         } catch (Exception e) {
             e.printStackTrace();
             return 0;

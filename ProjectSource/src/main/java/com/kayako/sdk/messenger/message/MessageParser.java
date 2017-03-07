@@ -4,7 +4,7 @@ import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import com.kayako.sdk.utils.ParserUtils;
-import com.kayako.sdk.utils.TimeUtils;
+import com.kayako.sdk.utils.IsoTimeFormatUtils;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -43,9 +43,9 @@ public class MessageParser implements Parser<Message> {
                 resourceMap.getAsString(ITEM_CONTENT_HTML),
                 ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_CREATOR)),
                 resourceMap.getAsEnumType(ITEM_MESSAGE_STATUS, MessageStatus.class),
-                TimeUtils.getIso8601StringToUnixTimestamp(resourceMap.getAsString(ITEM_MESSAGE_STATUS_UPDATED_AT)),
-                TimeUtils.getIso8601StringToUnixTimestamp(resourceMap.getAsString(ITEM_CREATED_AT)),
-                TimeUtils.getIso8601StringToUnixTimestamp(resourceMap.getAsString(ITEM_UPDATED_AT))
+                IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(resourceMap.getAsString(ITEM_MESSAGE_STATUS_UPDATED_AT)),
+                IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(resourceMap.getAsString(ITEM_CREATED_AT)),
+                IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(resourceMap.getAsString(ITEM_UPDATED_AT))
         );
     }
 }
