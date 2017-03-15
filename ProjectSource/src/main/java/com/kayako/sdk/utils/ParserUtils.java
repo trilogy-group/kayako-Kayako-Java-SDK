@@ -208,6 +208,12 @@ public class ParserUtils<T extends Resource> {
         Boolean getAsBoolean(String memberName);
 
         /**
+         * @param memberName
+         * @return
+         */
+        Double getAsDouble(String memberName);
+
+        /**
          * @param memberName Key
          * @return Value as List of Strings
          */
@@ -264,7 +270,9 @@ public class ParserUtils<T extends Resource> {
 
         @Override
         public boolean isNotNull(String memberName) {
-            return !mJsonObject.get(memberName).isJsonNull();
+            return !mJsonObject
+                    .get(memberName)
+                    .isJsonNull();
         }
 
         public String getAsJsonString(String memberName) {
@@ -297,6 +305,14 @@ public class ParserUtils<T extends Resource> {
                 return null;
             }
             return mJsonObject.get(memberName).getAsBoolean();
+        }
+
+        @Override
+        public Double getAsDouble(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+            return mJsonObject.get(memberName).getAsDouble();
         }
 
         @Override

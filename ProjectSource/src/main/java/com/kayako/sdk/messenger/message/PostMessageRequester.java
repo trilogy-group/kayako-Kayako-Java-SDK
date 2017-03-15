@@ -14,7 +14,6 @@ import java.util.Map;
  */
 public class PostMessageRequester extends PostRequestProperty {
 
-    private static final String INCLUDE = "userMinimal";
     private static final String ENDPOINT = "api/v1/conversations/%s/messages";
 
     private static final String ARG_CONTENTS = "contents";

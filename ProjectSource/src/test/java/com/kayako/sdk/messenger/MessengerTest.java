@@ -2,8 +2,10 @@ package com.kayako.sdk.messenger;
 
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.error.KayakoException;
+import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
+import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.mockserver.MockWebServerHelper;
@@ -192,6 +194,32 @@ public class MessengerTest {
             Message message = messenger.postMessage(23, new PostMessageBodyParams(contents, null));
             Assert.assertNotNull(message);
             Assert.assertEquals(contents, message.getContentText());
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void test_getConversationStarter() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new GetConversationStarter()));
+
+        Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+
+        try {
+            ConversationStarter conversationStarter = messenger.getConversationStarter();
+            List<UserMinimal> users = conversationStarter.getLastActiveAgents();
+            Assert.assertEquals(users.get(0).getFullName(), "Robin Malhotra");
+            Assert.assertEquals(users.get(1).getFullName(), "Kayako Mobile Testing");
+            Assert.assertEquals(users.get(2).getFullName(), "Neil Mathew");
+
+            Assert.assertEquals(conversationStarter.getAverageReplyTime().doubleValue(), 1257.2, 0.09);
+
+            List<Conversation> activeConversations = conversationStarter.getActiveConversations();
+            Assert.assertEquals(activeConversations.get(0).getLastReplier().getFullName(), "Neil Mathew");
+            Assert.assertEquals(activeConversations.get(1).getLastReplier().getFullName(), "John Doe 2");
+            Assert.assertEquals(activeConversations.get(2).getLastReplier().getFullName(), "John Doe 2");
+
         } catch (KayakoException e) {
             e.printStackTrace();
             fail();

@@ -25,6 +25,8 @@ import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.status.StatusParser;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
 import com.kayako.sdk.messenger.conversation.fields.team.TeamParser;
+import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
+import com.kayako.sdk.messenger.conversationstarter.ConversationStarterParser;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.MessageParser;
 
@@ -35,6 +37,34 @@ import java.util.Locale;
  * @date 12/08/16
  */
 public class ParserFactory {
+
+    // Response Message: Error
+    public static ListParser<Error> getErrorListParser() {
+        return new ErrorListParser();
+    }
+
+    public static Parser<Error> getErrorParser() {
+        return new ErrorListParser();
+    }
+
+    // Response Message: Notification
+    public static ListParser<Notification> getNotificationListParser() {
+        return new NotificationListParser();
+    }
+
+    public static Parser<Notification> getNotificationParser() {
+        return new NotificationListParser();
+    }
+
+    // Response Message: Log
+    public static ListParser<Log> getLogListParser() {
+        return new LogListParser();
+    }
+
+    public static Parser<Log> getLogParser() {
+        return new LogListParser();
+    }
+
 
     // Category
     public static ListParser<Category> getCategoryListParser(Locale locale) {
@@ -145,31 +175,14 @@ public class ParserFactory {
         return new DataNodeParser<>(getMessageParser());
     }
 
-    // Response Message: Error
-    public static ListParser<Error> getErrorListParser() {
-        return new ErrorListParser();
+    // ConversationStarter
+
+    public static Parser<ConversationStarter> getConversationStarterParser() {
+        return new ConversationStarterParser();
     }
 
-    public static Parser<Error> getErrorParser() {
-        return new ErrorListParser();
-    }
-
-    // Response Message: Notification
-    public static ListParser<Notification> getNotificationListParser() {
-        return new NotificationListParser();
-    }
-
-    public static Parser<Notification> getNotificationParser() {
-        return new NotificationListParser();
-    }
-
-    // Response Message: Log
-    public static ListParser<Log> getLogListParser() {
-        return new LogListParser();
-    }
-
-    public static Parser<Log> getLogParser() {
-        return new LogListParser();
+    public static ItemParser<ConversationStarter> getConversationStarterItemParser() {
+        return new DataNodeParser<>(getConversationStarterParser());
     }
 
 }

@@ -10,13 +10,15 @@ public class UserMinimal implements Resource {
     private Long id;
     private String fullName;
     private String avatarUrl;
+    private Long lastActiveAt;
+    private Long lastSeenAt;
 
-    // TODO: lastActiveAt
-
-    public UserMinimal(Long id, String fullName, String avatarUrl) {
+    public UserMinimal(Long id, String fullName, String avatarUrl, Long lastActiveAt, Long lastSeenAt) {
         this.id = id;
         this.fullName = fullName;
         this.avatarUrl = avatarUrl;
+        this.lastActiveAt = lastActiveAt;
+        this.lastSeenAt = lastSeenAt;
     }
 
     public Long getId() {
@@ -43,4 +45,19 @@ public class UserMinimal implements Resource {
         this.avatarUrl = avatarUrl;
     }
 
+    public Long getLastActiveAt() {
+        return lastActiveAt;
+    }
+
+    public void setLastActiveAt(Long lastActiveAt) {
+        this.lastActiveAt = lastActiveAt;
+    }
+
+    public Long getLastSeenAt() {
+        return lastSeenAt;
+    }
+
+    public void setLastSeenAt(Long lastSeenAt) {
+        this.lastSeenAt = lastSeenAt;
+    }
 }

@@ -17,6 +17,7 @@ import com.kayako.sdk.messenger.conversation.GetConversationListRequester;
 import com.kayako.sdk.messenger.conversation.GetConversationRequester;
 import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.conversation.PostConversationRequester;
+import com.kayako.sdk.messenger.conversationstarter.GetConversationStarterRequester;
 import com.kayako.sdk.messenger.message.GetMessageListRequester;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.messenger.message.PostMessageRequester;
@@ -81,5 +82,9 @@ public class RequesterFactory {
 
     public static ItemRequester postMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, Long conversationId, PostMessageBodyParams bodyParams) {
         return new CommonRequester(new PostMessageRequester(helpdeskUrl, fingerprintAuth, conversationId, bodyParams));
+    }
+
+    public static ItemRequester getConversationStarterItemRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth) {
+        return new CommonRequester(new GetConversationStarterRequester(helpDeskUrl, fingerprintAuth));
     }
 }
