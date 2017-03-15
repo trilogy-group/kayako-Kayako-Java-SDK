@@ -27,6 +27,8 @@ import static org.junit.Assert.*;
  */
 public class HelpCenterTest {
 
+    private static final boolean useNetwork = false;
+
     private MockWebServerHelper mMockWebServer = new MockWebServerHelper();
     private HelpCenter mHelpCenter;
 
@@ -34,8 +36,13 @@ public class HelpCenterTest {
     public void setUp() throws IOException {
         mMockWebServer.callOnSetup();
 
-        // String helpCenterUrl = "http://support.kayako.com"; LogUtils.setShowLogs(true);
-        String helpCenterUrl = mMockWebServer.getMockedUrl();
+        String helpCenterUrl;
+        if (useNetwork) {
+            helpCenterUrl = "http://support.kayako.com";
+            LogUtils.setShowLogs(true);
+        } else {
+            helpCenterUrl = mMockWebServer.getMockedUrl();
+        }
         mHelpCenter = new HelpCenter(helpCenterUrl, Locale.US);
     }
 

@@ -11,7 +11,6 @@ import java.util.Map;
 public class GetArticleRequester extends GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/articles/%s";
-    public static final String INCLUDE = "localeField,category,section,userMinimal";
 
     private long mArticleId;
     private String mHelpCenterUrl;
@@ -27,8 +26,8 @@ public class GetArticleRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new ArticleIncludeArgument();
     }
 
     @Override

@@ -10,17 +10,16 @@ public abstract class GetRequestProperty implements RequestProperty {
 
     public abstract String getHelpCenterUrl();
 
-    public abstract String getInclude();
-
     public abstract String getEndpointUrl();
 
     public abstract Map<String, String> getQueryParameters();
 
     public abstract Map<String, String> getHeaders();
 
+    public abstract IncludeArgument getInclude();
+
     @Override
     public METHOD getMethod() {
         return METHOD.GET;
     }
-
 }

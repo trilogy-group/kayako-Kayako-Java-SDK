@@ -2,6 +2,7 @@ package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,9 +13,7 @@ import java.util.Map;
  */
 public class GetMessageListRequester extends GetRequestProperty {
 
-    private static final String INCLUDE = "userMinimal";
     private static final String ENDPOINT = "api/v1/conversations/%s/messages";
-
     private static final String ARG_OFFSET = "offset";
     private static final String ARG_LIMIT = "limit";
 
@@ -38,8 +37,8 @@ public class GetMessageListRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new MessageIncludeArgument();
     }
 
     @Override

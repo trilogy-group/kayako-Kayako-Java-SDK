@@ -11,8 +11,6 @@ import java.util.Map;
  */
 public class GetSectionListRequester extends GetRequestProperty {
     public static final String ENDPOINT = "/api/v1/sections.json";
-    public static final String INCLUDE = "localeField,category";
-
     private static final String ARG_CATEGORY_ID = "category_id";
     private static final String ARG_OFFSET = "offset";
     private static final String ARG_LIMIT = "limit";
@@ -39,8 +37,8 @@ public class GetSectionListRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new SectionIncludeArgument();
     }
 
     @Override

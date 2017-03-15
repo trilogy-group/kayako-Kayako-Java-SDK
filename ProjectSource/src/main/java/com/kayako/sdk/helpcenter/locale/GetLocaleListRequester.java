@@ -1,6 +1,7 @@
 package com.kayako.sdk.helpcenter.locale;
 
 import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
 import java.util.Map;
 
@@ -25,8 +26,8 @@ public class GetLocaleListRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new LocaleIncludeArgument();
     }
 
     @Override

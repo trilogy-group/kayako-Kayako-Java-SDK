@@ -20,10 +20,10 @@ public class CommonRequester implements ListRequester, ItemRequester {
         switch (mRequestProperty.getMethod()) {
             case GET:
                 GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
-                return RequesterUtils.getSync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude(), getRequester.getHeaders(), getRequester.getQueryParameters());
+                return RequesterUtils.getSync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude().toString(), getRequester.getHeaders(), getRequester.getQueryParameters());
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
-                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
+                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
             default:
                 throw new IllegalArgumentException("Only GET and POST is supported as of now");
         }
@@ -33,11 +33,11 @@ public class CommonRequester implements ListRequester, ItemRequester {
         switch (mRequestProperty.getMethod()) {
             case GET:
                 GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
-                RequesterUtils.getAsync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude(), getRequester.getHeaders(), getRequester.getQueryParameters(), callback);
+                RequesterUtils.getAsync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude().toString(), getRequester.getHeaders(), getRequester.getQueryParameters(), callback);
                 break;
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
-                RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), callback);
+                RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), callback);
                 break;
             default:
                 throw new IllegalArgumentException("Only GET and POST is supported as of now");

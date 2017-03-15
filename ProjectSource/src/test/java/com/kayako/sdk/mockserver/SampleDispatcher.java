@@ -5,7 +5,10 @@ import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.RecordedRequest;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -44,10 +47,52 @@ public class SampleDispatcher extends Dispatcher {
     private static boolean areQueryParametersMatching(ISampleResponse sampleResponse, RecordedRequest request) {
         String path = request.getPath();
         for (String key : sampleResponse.getQueryParameters().keySet()) {
-            if (!path.contains(key + "=" + sampleResponse.getQueryParameters().get(key))) {
+            if (key.equals("include")) {
+                return areIncludeArgumentsMatching(
+                        extractIncludeValueFromUrl(request.getPath()),
+                        sampleResponse.getQueryParameters().get(key));
+
+            } else if (!path.contains(key + "=" + sampleResponse.getQueryParameters().get(key))) {
                 return false;
             }
         }
         return true;
+    }
+
+    private static String extractIncludeValueFromUrl(String url) {
+        final String BEGINNING = "include=";
+        final String ENDING = "&";
+
+        url = url + "&";
+        int positionInclude = url.indexOf(BEGINNING) + BEGINNING.length();
+        int positionIncludeEnd = url.indexOf(ENDING, positionInclude);
+
+        return url.substring(positionInclude, positionIncludeEnd);
+    }
+
+    private static boolean areIncludeArgumentsMatching(String requestedIncludeString, String requiredIncludeString) {
+        if (requiredIncludeString == null || requiredIncludeString.length() == 0) {
+            return true;
+        }
+
+        List<String> requestedIncludeResources = new ArrayList<>();
+        if (requestedIncludeString.contains(",")) {
+            for (String a : requestedIncludeString.split(",")) {
+                requestedIncludeResources.add(a);
+            }
+        } else {
+            requestedIncludeResources.add(requestedIncludeString);
+        }
+
+        List<String> requiredIncludeResources = new ArrayList<>();
+        if (requestedIncludeString.contains(",")) {
+            for (String a : requiredIncludeString.split(",")) {
+                requiredIncludeResources.add(a);
+            }
+        } else {
+            requestedIncludeResources.add(requiredIncludeString);
+        }
+
+        return requestedIncludeResources.containsAll(requiredIncludeResources);
     }
 }

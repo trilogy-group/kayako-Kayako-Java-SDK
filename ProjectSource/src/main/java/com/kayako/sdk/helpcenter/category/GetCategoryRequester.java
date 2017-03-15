@@ -7,10 +7,10 @@ import java.util.Map;
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
- */public class GetCategoryRequester extends GetRequestProperty {
+ */
+public class GetCategoryRequester extends GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/categories/%s";
-    public static final String INCLUDE = "localeField";
 
     private String mHelpDeskUrl;
     private long mCategoryId;
@@ -26,8 +26,8 @@ import java.util.Map;
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public CategoryIncludeArgument getInclude() {
+        return new CategoryIncludeArgument();
     }
 
     @Override

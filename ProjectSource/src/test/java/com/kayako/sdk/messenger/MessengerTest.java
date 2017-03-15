@@ -27,6 +27,8 @@ import static org.junit.Assert.fail;
  */
 public class MessengerTest {
 
+    private static final boolean useNetwork = false;
+
     private MockWebServerHelper mockWebServerHelper;
     private String helpdeskUrl;
 
@@ -35,8 +37,11 @@ public class MessengerTest {
         mockWebServerHelper = new MockWebServerHelper();
         mockWebServerHelper.callOnSetup();
 
-        // helpdeskUrl = "https://kayako-mobile-testing.kayako.com"; //  Uncomment to get new values
-        helpdeskUrl = mockWebServerHelper.getMockedUrl();
+        if (useNetwork) {
+            helpdeskUrl = "https://kayako-mobile-testing.kayako.com"; //  Uncomment to get new values
+        } else {
+            helpdeskUrl = mockWebServerHelper.getMockedUrl();
+        }
     }
 
     @After

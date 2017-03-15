@@ -1,6 +1,7 @@
 package com.kayako.sdk.helpcenter.articles;
 
 import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +13,6 @@ import java.util.Map;
 public class GetArticleListRequester extends GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/articles.json";
-    public static final String INCLUDE = "localeField,category,section,userMinimal";
     private static final String ARG_SECTION_ID = "section_id";
     private static final String ARG_OFFSET = "offset";
     private static final String ARG_LIMIT = "limit";
@@ -36,8 +36,8 @@ public class GetArticleListRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new ArticleIncludeArgument();
     }
 
     @Override

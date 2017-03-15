@@ -1,6 +1,7 @@
 package com.kayako.sdk.helpcenter.section;
 
 import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
 import java.util.Map;
 
@@ -29,8 +30,8 @@ public class GetSectionRequester extends GetRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new SectionIncludeArgument();
     }
 
     @Override

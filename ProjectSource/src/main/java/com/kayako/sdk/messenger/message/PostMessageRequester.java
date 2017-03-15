@@ -2,6 +2,7 @@ package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 import com.kayako.sdk.base.requester.PostRequestProperty;
 
 import java.util.HashMap;
@@ -42,8 +43,8 @@ public class PostMessageRequester extends PostRequestProperty {
     }
 
     @Override
-    public String getInclude() {
-        return INCLUDE;
+    public IncludeArgument getInclude() {
+        return new MessageIncludeArgument();
     }
 
     @Override
