@@ -1,12 +1,12 @@
 package com.kayako.sdk.helpcenter.category;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 11/08/16
  */
-public class Category implements Resource {
+public class Category extends ComparableResource {
     private Long id;
 
     private String title;
@@ -56,4 +56,10 @@ public class Category implements Resource {
                 ", displayOrder=" + displayOrder +
                 '}';
     }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
+    }
+
 }

@@ -1,6 +1,6 @@
 package com.kayako.sdk.messenger.conversation;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
@@ -11,7 +11,7 @@ import com.kayako.sdk.messenger.conversation.fields.team.Team;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 08/02/17
  */
-public class Conversation implements Resource {
+public class Conversation extends ComparableResource {
 
     private Long id;
 
@@ -199,6 +199,12 @@ public class Conversation implements Resource {
     public void setUpdatedAt(Long updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
+    }
+
 }
 
 

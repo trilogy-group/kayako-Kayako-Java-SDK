@@ -1,7 +1,8 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.helpcenter.articles.Article;
+import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.helpcenter.articles.Article;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)

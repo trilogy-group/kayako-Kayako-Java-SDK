@@ -1,6 +1,6 @@
 package com.kayako.sdk.messenger.message;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 
@@ -8,7 +8,7 @@ import com.kayako.sdk.messenger.conversation.fields.ChannelType;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 13/02/17
  */
-public class Message implements Resource {
+public class Message extends ComparableResource {
 
     private Long id;
 
@@ -99,6 +99,11 @@ public class Message implements Resource {
 
     public Long getUpdatedAt() {
         return updatedAt;
+    }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
     }
 }
 

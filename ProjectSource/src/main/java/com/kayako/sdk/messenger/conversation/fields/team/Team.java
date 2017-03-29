@@ -1,12 +1,12 @@
 package com.kayako.sdk.messenger.conversation.fields.team;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 08/02/17
  */
-public class Team implements Resource {
+public class Team extends ComparableResource {
 
     private Long id;
 
@@ -65,4 +65,10 @@ public class Team implements Resource {
     public void setUpdatedAt(Long updatedAt) {
         this.updatedAt = updatedAt;
     }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
+    }
+
 }

@@ -1,12 +1,12 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class Locale implements Resource {
+public class Locale extends ComparableResource {
 
     private Long id;
     private String locale;
@@ -104,4 +104,10 @@ public class Locale implements Resource {
                 ", direction='" + direction + '\'' +
                 '}';
     }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
+    }
+
 }

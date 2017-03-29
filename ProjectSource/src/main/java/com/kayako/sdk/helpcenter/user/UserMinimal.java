@@ -1,12 +1,13 @@
 package com.kayako.sdk.helpcenter.user;
 
+import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.base.parser.Resource;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class UserMinimal implements Resource {
+public class UserMinimal extends ComparableResource {
     private Long id;
     private String fullName;
     private String avatarUrl;
@@ -60,4 +61,10 @@ public class UserMinimal implements Resource {
     public void setLastSeenAt(Long lastSeenAt) {
         this.lastSeenAt = lastSeenAt;
     }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
+    }
+
 }

@@ -35,4 +35,5 @@ public class ConversationStarter implements Resource {
     public List<Conversation> getActiveConversations() {
         return activeConversations;
     }
+
 }
