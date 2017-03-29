@@ -67,13 +67,12 @@ public class ListManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-
-                // Throw External Network Error (e1)
-                if (response.statusCode < 200 || response.statusCode > 299) {
-                    callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
-                }
-
                 try {
+                    // Throw External Network Error (e1)
+                    if (response.statusCode < 200 || response.statusCode > 299) {
+                        callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
+                    }
+
                     // Parse Json Response
                     List<T> list = parser.parseList(response.body);
 
