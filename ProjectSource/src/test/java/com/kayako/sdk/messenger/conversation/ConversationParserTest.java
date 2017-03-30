@@ -1,6 +1,7 @@
 package com.kayako.sdk.messenger.conversation;
 
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
+import com.kayako.sdk.messenger.message.MessageStatus;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -333,5 +334,8 @@ public class ConversationParserTest {
         Assert.assertEquals(48L, conversation.getReadMarker().getId().longValue());
         Assert.assertEquals(1, conversation.getReadMarker().getUnreadCount().intValue());
         Assert.assertEquals(241L, conversation.getReadMarker().getLastReadAt().longValue());
+
+        Assert.assertEquals("Hello Hello", conversation.getLastMessagePreview());
+        Assert.assertEquals(MessageStatus.DELIVERED, conversation.getLastMessageStatus());
     }
 }

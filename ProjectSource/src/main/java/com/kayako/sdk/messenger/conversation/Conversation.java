@@ -7,6 +7,7 @@ import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
 import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarker;
 import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
+import com.kayako.sdk.messenger.message.MessageStatus;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -45,9 +46,12 @@ public class Conversation extends ComparableResource {
 
     private ReadMarker readMarker;
 
+    private String lastMessagePreview;
+
+    private MessageStatus lastMessageStatus;
+
     // TODO:
     // "type": null,
-    // "read_marker": null,
     // "custom_fields": [],
 
     private Long lastRepliedAt;
@@ -56,7 +60,7 @@ public class Conversation extends ComparableResource {
 
     private Long updatedAt;
 
-    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt) {
+    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt, String lastMessagePreview, MessageStatus lastMessageStatus) {
         this.id = id;
         this.uuid = uuid;
         this.legacyId = legacyId;
@@ -74,6 +78,9 @@ public class Conversation extends ComparableResource {
         this.lastRepliedAt = lastRepliedAt;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+
+        this.lastMessagePreview = lastMessagePreview;
+        this.lastMessageStatus = lastMessageStatus;
     }
 
     public Long getId() {
@@ -210,6 +217,14 @@ public class Conversation extends ComparableResource {
 
     public void setReadMarker(ReadMarker readMarker) {
         this.readMarker = readMarker;
+    }
+
+    public String getLastMessagePreview() {
+        return lastMessagePreview;
+    }
+
+    public MessageStatus getLastMessageStatus() {
+        return lastMessageStatus;
     }
 
     @Override

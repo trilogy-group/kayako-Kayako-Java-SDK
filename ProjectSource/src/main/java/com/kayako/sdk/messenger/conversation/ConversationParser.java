@@ -5,6 +5,7 @@ import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
+import com.kayako.sdk.messenger.message.MessageStatus;
 import com.kayako.sdk.utils.ParserUtils;
 
 import java.util.List;
@@ -32,6 +33,8 @@ public class ConversationParser implements Parser<Conversation> {
     private static final String ITEM_LAST_REPLIED_AT = "lastRepliedAt";
     private static final String ITEM_CREATED_AT = "createdAt";
     private static final String ITEM_UPDATED_AT = "updatedAt";
+    private static final String ITEM_LAST_MESSAGE_PREVIEW = "lastMessagePreview";
+    private static final String ITEM_LAST_MESSAGE_STATUS = "lastMessageStatus";
 
     @Override
     public Conversation parse(String jsonOfResource) throws NullPointerException {
@@ -53,7 +56,9 @@ public class ConversationParser implements Parser<Conversation> {
                 resourceMap.getAsString(ITEM_REALTIME_CHANNEL),
                 resourceMap.getAsTimeInMilliseconds(ITEM_LAST_REPLIED_AT),
                 resourceMap.getAsTimeInMilliseconds(ITEM_CREATED_AT),
-                resourceMap.getAsTimeInMilliseconds(ITEM_UPDATED_AT)
+                resourceMap.getAsTimeInMilliseconds(ITEM_UPDATED_AT),
+                resourceMap.getAsString(ITEM_LAST_MESSAGE_PREVIEW),
+                resourceMap.getAsEnumType(ITEM_LAST_MESSAGE_STATUS, MessageStatus.class)
         );
     }
 }
