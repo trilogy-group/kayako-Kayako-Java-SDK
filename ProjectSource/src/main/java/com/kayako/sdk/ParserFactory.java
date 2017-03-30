@@ -1,13 +1,13 @@
 package com.kayako.sdk;
 
-import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.base.parser.DataNodeParser;
-import com.kayako.sdk.error.response.*;
-import com.kayako.sdk.error.response.Error;
-import com.kayako.sdk.helpcenter.articles.Article;
-import com.kayako.sdk.helpcenter.articles.ArticleParser;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.error.response.Error;
+import com.kayako.sdk.error.response.*;
+import com.kayako.sdk.helpcenter.articles.Article;
+import com.kayako.sdk.helpcenter.articles.ArticleParser;
 import com.kayako.sdk.helpcenter.category.Category;
 import com.kayako.sdk.helpcenter.category.CategoryParser;
 import com.kayako.sdk.helpcenter.locale.LocaleParser;
@@ -21,6 +21,8 @@ import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.ConversationParser;
 import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
 import com.kayako.sdk.messenger.conversation.fields.priority.PriorityParser;
+import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarker;
+import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarkerParser;
 import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.status.StatusParser;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
@@ -161,6 +163,10 @@ public class ParserFactory {
         return new PriorityParser();
     }
 
+    public static Parser<ReadMarker> getReadMarkerParser() {
+        return new ReadMarkerParser();
+    }
+
     // Message
 
     public static Parser<Message> getMessageParser() {
@@ -184,5 +190,4 @@ public class ParserFactory {
     public static ItemParser<ConversationStarter> getConversationStarterItemParser() {
         return new DataNodeParser<>(getConversationStarterParser());
     }
-
 }

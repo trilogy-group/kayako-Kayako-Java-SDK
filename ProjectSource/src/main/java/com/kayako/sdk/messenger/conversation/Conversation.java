@@ -4,6 +4,7 @@ import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
+import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarker;
 import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
 
@@ -42,6 +43,8 @@ public class Conversation extends ComparableResource {
 
     private String realtimeChannel;
 
+    private ReadMarker readMarker;
+
     // TODO:
     // "type": null,
     // "read_marker": null,
@@ -53,7 +56,7 @@ public class Conversation extends ComparableResource {
 
     private Long updatedAt;
 
-    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, Team assignedTeam, Status status, Boolean isCompleted, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt) {
+    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt) {
         this.id = id;
         this.uuid = uuid;
         this.legacyId = legacyId;
@@ -67,6 +70,7 @@ public class Conversation extends ComparableResource {
         this.isCompleted = isCompleted;
         this.priority = priority;
         this.realtimeChannel = realtimeChannel;
+        this.readMarker = readMarker;
         this.lastRepliedAt = lastRepliedAt;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -198,6 +202,14 @@ public class Conversation extends ComparableResource {
 
     public void setUpdatedAt(Long updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public ReadMarker getReadMarker() {
+        return readMarker;
+    }
+
+    public void setReadMarker(ReadMarker readMarker) {
+        this.readMarker = readMarker;
     }
 
     @Override

@@ -85,6 +85,7 @@ public class MessengerTest {
         Conversation conversation = new Messenger(helpdeskUrl, fingerprintAuth).getConversation(23L);
         Assert.assertNotNull(conversation);
         Assert.assertEquals(23, conversation.getId().longValue());
+        Assert.assertEquals(null, conversation.getReadMarker());
     }
 
     @Test

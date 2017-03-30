@@ -20,11 +20,11 @@ public class PriorityParser implements Parser<Priority> {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
         // Mandatory Fields
-        long id = resourceMap.getAsLong(ITEM_ID);
+        Long id = resourceMap.getAsLong(ITEM_ID);
         String label = resourceMap.getAsString(ITEM_LABEL);
-        int level = resourceMap.getAsInt(ITEM_LEVEL);
-        long createdAt = resourceMap.getAsTimeInMilliseconds(ITEM_CREATED_AT);
-        long updatedAt = resourceMap.getAsTimeInMilliseconds(ITEM_UPDATED_AT);
+        Integer level = resourceMap.getAsInt(ITEM_LEVEL);
+        Long createdAt = resourceMap.getAsTimeInMilliseconds(ITEM_CREATED_AT);
+        Long updatedAt = resourceMap.getAsTimeInMilliseconds(ITEM_UPDATED_AT);
         return new Priority(id, label, level, createdAt, updatedAt);
     }
 }

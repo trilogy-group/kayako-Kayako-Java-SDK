@@ -3,6 +3,7 @@ package com.kayako.sdk.messenger.conversation;
 import com.kayako.sdk.base.requester.IncludeArgument;
 import com.kayako.sdk.helpcenter.user.UserMinimalIncludeArgument;
 import com.kayako.sdk.messenger.conversation.fields.priority.PriorityIncludeArgument;
+import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarkerIncludeArgument;
 import com.kayako.sdk.messenger.conversation.fields.status.StatusIncludeArgument;
 import com.kayako.sdk.messenger.conversation.fields.team.TeamIncludeArgument;
 
@@ -22,5 +23,6 @@ public class ConversationIncludeArgument extends IncludeArgument {
         append(new TeamIncludeArgument());
         append(new StatusIncludeArgument());
         append(new PriorityIncludeArgument());
+        append(new ReadMarkerIncludeArgument());
     }
 }
