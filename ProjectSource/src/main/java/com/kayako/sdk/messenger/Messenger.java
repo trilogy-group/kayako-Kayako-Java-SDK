@@ -129,7 +129,7 @@ public class Messenger {
         return true;
     }
 
-    public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback) throws KayakoException {
+    public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback)  {
         new EmptyManager(RequesterFactory.putMessageItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId, putMessageBodyParams)).getStatus(emptyCallback);
     }
 }
