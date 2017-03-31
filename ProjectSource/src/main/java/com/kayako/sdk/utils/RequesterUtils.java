@@ -1,7 +1,8 @@
 package com.kayako.sdk.utils;
 
-import com.kayako.sdk.base.requester.RequestCallback;
+import com.kayako.sdk.base.requester.*;
 import okhttp3.*;
+import okhttp3.Response;
 import okhttp3.internal.Util;
 
 import java.io.IOException;
@@ -35,7 +36,9 @@ public class RequesterUtils {
         HttpUrl.Builder urlBuilder = HttpUrl.parse(url).newBuilder();
 
         urlBuilder.addQueryParameter("_case", "camel");
-        urlBuilder.addQueryParameter("include", includeResources);
+        if (includeResources != null && includeResources.length() > 0) {
+            urlBuilder.addQueryParameter("include", includeResources);
+        }
         if (queryParams != null && !queryParams.isEmpty()) {
             for (String key : queryParams.keySet()) {
                 urlBuilder.addQueryParameter(key, queryParams.get(key));
@@ -92,8 +95,31 @@ public class RequesterUtils {
         return request;
     }
 
-    // TODO: Handle attachments
+
+    private static Request createPutRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) {
+        HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
+
+        // Add body params
+        MultipartBody.Builder builder = new MultipartBody.Builder();
+        builder.setType(MultipartBody.FORM);
+        for (String key : bodyParams.keySet()) {
+            builder.addFormDataPart(key, bodyParams.get(key));
+        }
+
+        Request.Builder requestBuilder = new Request.Builder().url(httpUrl).put(builder.build());
+
+        // Add headers if available
+        if (headers != null && !headers.isEmpty()) {
+            for (String key : headers.keySet()) {
+                requestBuilder.addHeader(key, headers.get(key));
+            }
+        }
+        Request request = requestBuilder.build();
+        return request;
+    }
+
     private static Request createPostRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) {
+        // TODO: Handle attachments
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
 
         // Add body params
@@ -170,5 +196,15 @@ public class RequesterUtils {
         performAsync(request, callback);
     }
 
-    // TODO: putAsync, deleteAsync
+    public static com.kayako.sdk.base.requester.Response putSync(String helpCenterUrl, String endpointUrl, String includeResources, Map<String, String> headers, Map<String, String> queryParameters, Map<String, String> bodyParameters) throws IOException {
+        Request request = createPutRequest(helpCenterUrl, endpointUrl, includeResources, headers, queryParameters, bodyParameters);
+        return performSync(request);
+    }
+
+    public static void putAsync(String helpCenterUrl, String endpointUrl, String includeResources, Map<String, String> headers, Map<String, String> queryParameters, Map<String, String> bodyParameters, final RequestCallback callback) {
+        Request request = createPutRequest(helpCenterUrl, endpointUrl, includeResources, headers, queryParameters, bodyParameters);
+        performAsync(request, callback);
+    }
+
+    // TODO: deleteAsync
 }

@@ -8,6 +8,7 @@ import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
+import com.kayako.sdk.messenger.message.PutMessageBodyParams;
 import com.kayako.sdk.mockserver.MockWebServerHelper;
 import com.kayako.sdk.mockserver.SampleDispatcher;
 import com.kayako.sdk.mockserver.base.ISampleResponse;
@@ -225,5 +226,21 @@ public class MessengerTest {
             e.printStackTrace();
             fail();
         }
+    }
+
+    @Test
+    public void test_putMessage() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new PutMessage()));
+
+        boolean status = new Messenger(helpdeskUrl, fingerprintAuth)
+                .putMessage(
+                        191,
+                        951,
+                        new PutMessageBodyParams(
+                                PutMessageBodyParams.MessageStatus.SEEN
+                        )
+                );
+
+        Assert.assertEquals(true, status);
     }
 }

@@ -3,8 +3,10 @@ package com.kayako.sdk.messenger;
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.RequesterFactory;
 import com.kayako.sdk.auth.FingerprintAuth;
+import com.kayako.sdk.base.callback.EmptyCallback;
 import com.kayako.sdk.base.callback.ItemCallback;
 import com.kayako.sdk.base.callback.ListCallback;
+import com.kayako.sdk.base.manager.EmptyManager;
 import com.kayako.sdk.base.manager.ItemManager;
 import com.kayako.sdk.base.manager.ListManager;
 import com.kayako.sdk.error.KayakoException;
@@ -13,6 +15,7 @@ import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
+import com.kayako.sdk.messenger.message.PutMessageBodyParams;
 import com.kayako.sdk.utils.FingerprintUtils;
 
 import java.util.List;
@@ -113,7 +116,7 @@ public class Messenger {
         new ItemManager<Message>(RequesterFactory.postMessageRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, bodyParams), ParserFactory.getMessageItemParser()).getItem(callback);
     }
 
-    public ConversationStarter getConversationStarter() throws KayakoException{
+    public ConversationStarter getConversationStarter() throws KayakoException {
         return new ItemManager<ConversationStarter>(RequesterFactory.getConversationStarterItemRequester(mHelpDeskUrl, mFingerprintAuth), ParserFactory.getConversationStarterItemParser()).getItem();
     }
 
@@ -121,4 +124,12 @@ public class Messenger {
         new ItemManager<ConversationStarter>(RequesterFactory.getConversationStarterItemRequester(mHelpDeskUrl, mFingerprintAuth), ParserFactory.getConversationStarterItemParser()).getItem(callback);
     }
 
+    public boolean putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams) throws KayakoException {
+        new EmptyManager(RequesterFactory.putMessageItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId, putMessageBodyParams)).getStatus();
+        return true;
+    }
+
+    public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback) throws KayakoException {
+        new EmptyManager(RequesterFactory.putMessageItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId, putMessageBodyParams)).getStatus(emptyCallback);
+    }
 }
