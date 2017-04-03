@@ -41,13 +41,17 @@ public class CommonRequester implements Requester {
                 GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
                 RequesterUtils.getAsync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude().toString(), getRequester.getHeaders(), getRequester.getQueryParameters(), callback);
                 break;
+
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
                 RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), callback);
                 break;
+
             case PUT:
                 PutRequestProperty putRequester = (PutRequestProperty) mRequestProperty;
                 RequesterUtils.putAsync(putRequester.getHelpCenterUrl(), putRequester.getEndpointUrl(), putRequester.getInclude().toString(), putRequester.getHeaders(), putRequester.getQueryParameters(), putRequester.getBodyParameters(), callback);
+                break;
+
             default:
                 throw new IllegalArgumentException("Only GET, POST and PUT is supported as of now");
         }
