@@ -20,15 +20,15 @@ public class CommonRequester implements Requester {
         switch (mRequestProperty.getMethod()) {
             case GET:
                 GetRequestProperty getRequester = (GetRequestProperty) mRequestProperty;
-                return RequesterUtils.getSync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude() == null ? null : getRequester.getInclude().toString(), getRequester.getHeaders(), getRequester.getQueryParameters());
+                return RequesterUtils.getSync(getRequester.getHelpCenterUrl(), getRequester.getEndpointUrl(), getRequester.getInclude().toString(), getRequester.getHeaders(), getRequester.getQueryParameters());
 
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
-                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude() == null ? null : postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
+                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
 
             case PUT:
                 PutRequestProperty putRequester = (PutRequestProperty) mRequestProperty;
-                return RequesterUtils.putSync(putRequester.getHelpCenterUrl(), putRequester.getEndpointUrl(), putRequester.getInclude() == null ? null : putRequester.getInclude().toString(), putRequester.getHeaders(), putRequester.getQueryParameters(), putRequester.getBodyParameters());
+                return RequesterUtils.putSync(putRequester.getHelpCenterUrl(), putRequester.getEndpointUrl(), putRequester.getInclude().toString(), putRequester.getHeaders(), putRequester.getQueryParameters(), putRequester.getBodyParameters());
 
             default:
                 throw new IllegalArgumentException("Only GET, POST and PUT is supported as of now");

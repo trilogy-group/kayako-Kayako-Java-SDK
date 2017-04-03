@@ -53,7 +53,7 @@ public class PutMessageRequester extends PutRequestProperty {
 
     @Override
     public IncludeArgument getInclude() {
-        return null; // Only status is returned as response for this request
+        return new EmptyIncludeArgument();
     }
 
     @Override
