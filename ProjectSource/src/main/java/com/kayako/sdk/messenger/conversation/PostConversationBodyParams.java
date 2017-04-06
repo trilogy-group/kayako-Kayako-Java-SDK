@@ -11,12 +11,29 @@ public class PostConversationBodyParams {
     private String email;
     private String subject;
     private String contents;
+    private String clientId;
 
     public PostConversationBodyParams(String name, String email, String subject, String contents) {
+        if (name == null || email == null || subject == null || contents == null) {
+            throw new IllegalArgumentException("Mandatory fields can not be null ");
+        }
+
         this.name = name;
         this.email = email;
         this.subject = subject;
         this.contents = contents;
+    }
+
+    public PostConversationBodyParams(String name, String email, String subject, String contents, String clientId) {
+        if (name == null || email == null || subject == null || contents == null) {
+            throw new IllegalArgumentException("Mandatory fields can not be null ");
+        }
+
+        this.name = name;
+        this.email = email;
+        this.subject = subject;
+        this.contents = contents;
+        this.clientId = clientId;
     }
 
     public String getName() {
@@ -33,5 +50,9 @@ public class PostConversationBodyParams {
 
     public String getContents() {
         return contents;
+    }
+
+    public String getClientId() {
+        return clientId;
     }
 }

@@ -18,6 +18,7 @@ public class PostMessageRequester extends PostRequestProperty {
 
     private static final String ARG_CONTENTS = "contents";
     private static final String ARG_SOURCE = "source";
+    private static final String ARG_CLIENT_ID = "client_id";
 
     private String mHelpDeskUrl;
     private FingerprintAuth mFingerprintAuth;
@@ -33,6 +34,9 @@ public class PostMessageRequester extends PostRequestProperty {
         mBodyParams.put(ARG_CONTENTS, bodyParams.getContents());
         if (bodyParams.getType() != null) {
             mBodyParams.put(ARG_SOURCE, bodyParams.getType().toString());
+        }
+        if (bodyParams.getClientId() != null) {
+            mBodyParams.put(ARG_CLIENT_ID, bodyParams.getClientId());
         }
     }
 

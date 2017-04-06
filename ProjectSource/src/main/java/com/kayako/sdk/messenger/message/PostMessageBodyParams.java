@@ -8,6 +8,17 @@ public class PostMessageBodyParams {
 
     private String contents;
     private MessageSourceType type;
+    private String clientId;
+
+    public PostMessageBodyParams(String contents, MessageSourceType type, String clientId) {
+        if (contents == null) {
+            throw new IllegalStateException("Contents shouldn't be null");
+        }
+
+        this.contents = contents;
+        this.type = type;
+        this.clientId = clientId;
+    }
 
     public PostMessageBodyParams(String contents, MessageSourceType type) {
         if (contents == null) {
@@ -24,5 +35,9 @@ public class PostMessageBodyParams {
 
     public MessageSourceType getType() {
         return type;
+    }
+
+    public String getClientId() {
+        return clientId;
     }
 }

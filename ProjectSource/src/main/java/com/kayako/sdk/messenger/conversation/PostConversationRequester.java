@@ -20,6 +20,7 @@ public class PostConversationRequester extends PostRequestProperty {
     private static final String ARG_EMAIL = "email";
     private static final String ARG_SUBJECT = "subject";
     private static final String ARG_CONTENTS = "contents";
+    private static final String ARG_CLIENT_ID = "client_id";
     private static final String ARG_FILES = "files"; // TODO:
 
     private String mHelpdeskUrl;
@@ -34,6 +35,9 @@ public class PostConversationRequester extends PostRequestProperty {
         mBodyParams.put(ARG_EMAIL, bodyParams.getEmail());
         mBodyParams.put(ARG_SUBJECT, bodyParams.getSubject());
         mBodyParams.put(ARG_CONTENTS, bodyParams.getContents());
+        if (bodyParams.getClientId() != null) {
+            mBodyParams.put(ARG_CLIENT_ID, bodyParams.getClientId());
+        }
     }
 
     @Override
