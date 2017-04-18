@@ -30,7 +30,7 @@ import static org.junit.Assert.fail;
  */
 public class MessengerTest {
 
-    private static final boolean useNetwork = false;
+    private static final boolean useNetwork = true;
 
     private MockWebServerHelper mockWebServerHelper;
     private String helpdeskUrl;
@@ -95,7 +95,7 @@ public class MessengerTest {
 
         try {
             Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
-            Conversation conversation = messenger.postConversation(new PostConversationBodyParams("John Doe 2", "johndoeii@mailify.org", "Hello Hello", "Bleh said Bleh to Bleh"));
+            Conversation conversation = messenger.postConversation(new PostConversationBodyParams("John Doe 2", "johndoeii@mailify.org", "Hello Hello", "Bleh said Bleh to Bleh", PostConversationBodyParams.SourceType.MESSENGER));
             Assert.assertNotNull(conversation);
             Assert.assertNotNull(conversation.getId());
             System.out.println("Conversation id:" + conversation.getId());

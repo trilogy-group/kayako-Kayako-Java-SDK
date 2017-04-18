@@ -11,10 +11,11 @@ public class PostConversationBodyParams {
     private String email;
     private String subject;
     private String contents;
+    private SourceType source;
     private String clientId;
 
-    public PostConversationBodyParams(String name, String email, String subject, String contents) {
-        if (name == null || email == null || subject == null || contents == null) {
+    public PostConversationBodyParams(String name, String email, String subject, String contents, SourceType source) {
+        if (name == null || email == null || subject == null || contents == null || source == null) {
             throw new IllegalArgumentException("Mandatory fields can not be null ");
         }
 
@@ -22,10 +23,11 @@ public class PostConversationBodyParams {
         this.email = email;
         this.subject = subject;
         this.contents = contents;
+        this.source = source;
     }
 
-    public PostConversationBodyParams(String name, String email, String subject, String contents, String clientId) {
-        if (name == null || email == null || subject == null || contents == null) {
+    public PostConversationBodyParams(String name, String email, String subject, String contents, SourceType source, String clientId) {
+        if (name == null || email == null || subject == null || contents == null || source == null) {
             throw new IllegalArgumentException("Mandatory fields can not be null ");
         }
 
@@ -34,6 +36,7 @@ public class PostConversationBodyParams {
         this.subject = subject;
         this.contents = contents;
         this.clientId = clientId;
+        this.source = source;
     }
 
     public String getName() {
@@ -54,5 +57,13 @@ public class PostConversationBodyParams {
 
     public String getClientId() {
         return clientId;
+    }
+
+    public String getSource() {
+        return source.name();
+    }
+
+    public enum SourceType {
+        HELPCENTER, MESSENGER, API
     }
 }
