@@ -108,6 +108,14 @@ public class Messenger {
         new ListManager<Message>(RequesterFactory.getMessageListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, offset, limit), ParserFactory.getMessageListParser()).getList(callback);
     }
 
+    public Message getMessage(long conversationId, long messageId) throws KayakoException {
+        return new ItemManager<Message>(RequesterFactory.getMessageRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId), ParserFactory.getMessageItemParser()).getItem();
+    }
+
+    public void getMessage(long conversationId, long messageId, ItemCallback<Message> callback) {
+        new ItemManager<Message>(RequesterFactory.getMessageRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId), ParserFactory.getMessageItemParser()).getItem(callback);
+    }
+
     public Message postMessage(long conversationId, PostMessageBodyParams bodyParams) throws KayakoException {
         return new ItemManager<Message>(RequesterFactory.postMessageRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, bodyParams), ParserFactory.getMessageItemParser()).getItem();
     }
@@ -129,7 +137,7 @@ public class Messenger {
         return true;
     }
 
-    public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback)  {
+    public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback) {
         new EmptyManager(RequesterFactory.putMessageItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId, putMessageBodyParams)).getStatus(emptyCallback);
     }
 }

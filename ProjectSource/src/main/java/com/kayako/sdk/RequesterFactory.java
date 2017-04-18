@@ -77,6 +77,10 @@ public class RequesterFactory {
         return new CommonRequester(new GetMessageListRequester(helpCenterUrl, auth, conversationId, offset, limit));
     }
 
+    public static Requester getMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, long conversationId, long messageId) {
+        return new CommonRequester(new GetMessageRequester(helpdeskUrl, fingerprintAuth, conversationId, messageId));
+    }
+
     public static Requester postMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, Long conversationId, PostMessageBodyParams bodyParams) {
         return new CommonRequester(new PostMessageRequester(helpdeskUrl, fingerprintAuth, conversationId, bodyParams));
     }

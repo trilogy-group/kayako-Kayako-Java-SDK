@@ -30,7 +30,7 @@ import static org.junit.Assert.fail;
  */
 public class MessengerTest {
 
-    private static final boolean useNetwork = true;
+    private static final boolean useNetwork = false;
 
     private MockWebServerHelper mockWebServerHelper;
     private String helpdeskUrl;
@@ -125,6 +125,25 @@ public class MessengerTest {
             fail();
         }
     }
+
+    @Test
+    public void test_getMessageOfConversation() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new GetMessage()));
+
+        try {
+            Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+            Message message = messenger.getMessage(20, 246);
+
+            Assert.assertEquals(246L, message.getId().longValue());
+            Assert.assertEquals("Hey", message.getSubject());
+            Assert.assertEquals("Hello Hello", message.getContentText());
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            ExceptionUtils.logAllErrors(e.getResponseMessages());
+            fail();
+        }
+    }
+
 
     @Test
     public void test_getMessagesOfConversation_Pagination() throws Exception {
