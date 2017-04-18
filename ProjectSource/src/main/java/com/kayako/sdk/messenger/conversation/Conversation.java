@@ -31,6 +31,8 @@ public class Conversation extends ComparableResource {
 
     private UserMinimal lastReplier;
 
+    private UserMinimal lastAgentReplier;
+
     private Team assignedTeam;
 
     // TODO: TOM-1473
@@ -60,7 +62,7 @@ public class Conversation extends ComparableResource {
 
     private Long updatedAt;
 
-    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt, String lastMessagePreview, MessageStatus lastMessageStatus) {
+    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, UserMinimal lastAgentReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt, String lastMessagePreview, MessageStatus lastMessageStatus) {
         this.id = id;
         this.uuid = uuid;
         this.legacyId = legacyId;
@@ -69,6 +71,7 @@ public class Conversation extends ComparableResource {
         this.requester = requester;
         this.creator = creator;
         this.lastReplier = lastReplier;
+        this.lastAgentReplier = lastAgentReplier;
         this.assignedTeam = assignedTeam;
         this.status = status;
         this.isCompleted = isCompleted;
@@ -145,6 +148,14 @@ public class Conversation extends ComparableResource {
 
     public void setLastReplier(UserMinimal lastReplier) {
         this.lastReplier = lastReplier;
+    }
+
+    public UserMinimal getLastAgentReplier() {
+        return lastAgentReplier;
+    }
+
+    public void setLastAgentReplier(UserMinimal lastAgentReplier) {
+        this.lastAgentReplier = lastAgentReplier;
     }
 
     public Team getAssignedTeam() {

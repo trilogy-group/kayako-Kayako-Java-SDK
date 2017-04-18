@@ -24,6 +24,7 @@ public class ConversationParser implements Parser<Conversation> {
     private static final String ITEM_REQUESTER = "requester";
     private static final String ITEM_CREATOR = "creator";
     private static final String ITEM_LAST_REPLIER = "lastReplier";
+    private static final String ITEM_LAST_AGENT_REPLIER = "lastAgentReplier";
     private static final String ITEM_TEAM = "assignedTeam";
     private static final String ITEM_STATUS = "status";
     private static final String ITEM_IS_COMPLETED = "isCompleted";
@@ -48,6 +49,7 @@ public class ConversationParser implements Parser<Conversation> {
                 resourceMap.isNotNull(ITEM_REQUESTER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_REQUESTER)) : null,
                 resourceMap.isNotNull(ITEM_CREATOR) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_CREATOR)) : null,
                 resourceMap.isNotNull(ITEM_LAST_REPLIER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_LAST_REPLIER)) : null,
+                resourceMap.isNotNull(ITEM_LAST_AGENT_REPLIER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_LAST_AGENT_REPLIER)) : null,
                 resourceMap.isNotNull(ITEM_TEAM) ? ParserFactory.getTeamParser().parse(resourceMap.getAsJsonString(ITEM_TEAM)) : null,
                 resourceMap.isNotNull(ITEM_STATUS) ? ParserFactory.getStatusParser().parse(resourceMap.getAsJsonString(ITEM_STATUS)) : null,
                 resourceMap.getAsBoolean(ITEM_IS_COMPLETED),
