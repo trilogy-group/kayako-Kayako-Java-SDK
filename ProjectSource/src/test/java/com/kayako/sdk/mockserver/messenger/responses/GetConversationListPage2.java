@@ -57,6 +57,7 @@ public class GetConversationListPage2 extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/10\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -125,6 +126,7 @@ public class GetConversationListPage2 extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -193,6 +195,7 @@ public class GetConversationListPage2 extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +

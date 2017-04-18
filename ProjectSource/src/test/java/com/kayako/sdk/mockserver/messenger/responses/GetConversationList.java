@@ -58,6 +58,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/15\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": null,\n" +
                 "            \"assignedAgent\": null,\n" +
                 "            \"status\": {\n" +
@@ -114,6 +115,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -182,6 +184,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/10\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -250,6 +253,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -318,6 +322,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -386,6 +391,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/15\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": null,\n" +
                 "            \"assignedAgent\": null,\n" +
                 "            \"status\": {\n" +
@@ -442,6 +448,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/15\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": null,\n" +
                 "            \"assignedAgent\": null,\n" +
                 "            \"status\": {\n" +
@@ -498,6 +505,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/6\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -566,6 +574,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/15\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": null,\n" +
                 "            \"assignedAgent\": null,\n" +
                 "            \"status\": {\n" +
@@ -622,6 +631,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/10\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": null,\n" +
                 "            \"assignedAgent\": null,\n" +
                 "            \"status\": {\n" +
@@ -678,6 +688,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/10\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +
@@ -746,6 +757,7 @@ public final class GetConversationList extends BaseSampleResponse {
                 "                \"resourceType\": \"userMinimal\",\n" +
                 "                \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/1\"\n" +
                 "            },\n" +
+                "           \"lastAgentReplier\": null,\n"+
                 "            \"assignedTeam\": {\n" +
                 "                \"id\": 1,\n" +
                 "                \"title\": \"General\",\n" +

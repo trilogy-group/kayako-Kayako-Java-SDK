@@ -57,6 +57,7 @@ public class GetConversation extends BaseSampleResponse {
                 "            \"resourceType\": \"userMinimal\",\n" +
                 "            \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/15\"\n" +
                 "        },\n" +
+                "        \"lastAgentReplier\": null,\n"+
                 "        \"assignedTeam\": null,\n" +
                 "        \"assignedAgent\": null,\n" +
                 "        \"status\": {\n" +
