@@ -2,6 +2,7 @@ package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.base.requester.IncludeArgument;
 import com.kayako.sdk.helpcenter.user.UserMinimalIncludeArgument;
+import com.kayako.sdk.messenger.attachment.AttachmentIncludeArgument;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -16,5 +17,6 @@ public class MessageIncludeArgument extends IncludeArgument {
     public MessageIncludeArgument() {
         super(resources);
         append(new UserMinimalIncludeArgument());
+        append(new AttachmentIncludeArgument());
     }
 }

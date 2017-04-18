@@ -190,6 +190,12 @@ public class ParserUtils<T extends Resource> {
         String getAsJsonString(String memberName);
 
         /**
+         * @param memberName
+         * @return List of json responses
+         */
+        List<String> getAsArrayOfJsonStrings(String memberName);
+
+        /**
          * @param memberName Key
          * @return Value as int type
          */
@@ -277,6 +283,19 @@ public class ParserUtils<T extends Resource> {
 
         public String getAsJsonString(String memberName) {
             return mJsonObject.get(memberName).toString();
+        }
+
+        @Override
+        public List<String> getAsArrayOfJsonStrings(String memberName) {
+            if (!isValueValid(memberName)) {
+                return null;
+            }
+
+            List<String> strings = new ArrayList<>();
+            for (JsonElement element : mJsonObject.get(memberName).getAsJsonArray()) {
+                strings.add(element.toString());
+            }
+            return strings;
         }
 
         public String getAsString(String memberName) {

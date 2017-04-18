@@ -1,11 +1,13 @@
 package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.auth.FingerprintAuth;
+import com.kayako.sdk.base.requester.AttachmentFile;
 import com.kayako.sdk.base.requester.GetRequestProperty;
 import com.kayako.sdk.base.requester.IncludeArgument;
 import com.kayako.sdk.base.requester.PostRequestProperty;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -24,6 +26,7 @@ public class PostMessageRequester extends PostRequestProperty {
     private FingerprintAuth mFingerprintAuth;
     private Long mConversationId;
     private Map<String, String> mBodyParams;
+    private List<AttachmentFile> mAttachmentFiles;
 
     public PostMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, Long conversationId, PostMessageBodyParams bodyParams) {
         mHelpDeskUrl = helpdeskUrl;
@@ -38,6 +41,8 @@ public class PostMessageRequester extends PostRequestProperty {
         if (bodyParams.getClientId() != null) {
             mBodyParams.put(ARG_CLIENT_ID, bodyParams.getClientId());
         }
+
+        mAttachmentFiles = bodyParams.getAttachmentFileList();
     }
 
     @Override
@@ -68,5 +73,10 @@ public class PostMessageRequester extends PostRequestProperty {
     @Override
     public Map<String, String> getBodyParameters() {
         return mBodyParams;
+    }
+
+    @Override
+    public List<AttachmentFile> getAttachmentFiles() {
+        return mAttachmentFiles;
     }
 }

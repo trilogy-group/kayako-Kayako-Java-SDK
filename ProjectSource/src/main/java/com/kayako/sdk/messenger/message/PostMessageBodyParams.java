@@ -1,5 +1,9 @@
 package com.kayako.sdk.messenger.message;
 
+import com.kayako.sdk.base.requester.AttachmentFile;
+
+import java.util.List;
+
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 16/02/17
@@ -9,6 +13,14 @@ public class PostMessageBodyParams {
     private String contents;
     private MessageSourceType type;
     private String clientId;
+    private List<AttachmentFile> attachmentFileList;
+
+    public PostMessageBodyParams(String contents, MessageSourceType type, String clientId, List<AttachmentFile> attachmentFileList) {
+        this.contents = contents;
+        this.type = type;
+        this.clientId = clientId;
+        this.attachmentFileList = attachmentFileList;
+    }
 
     public PostMessageBodyParams(String contents, MessageSourceType type, String clientId) {
         if (contents == null) {
@@ -39,5 +51,9 @@ public class PostMessageBodyParams {
 
     public String getClientId() {
         return clientId;
+    }
+
+    public List<AttachmentFile> getAttachmentFileList() {
+        return attachmentFileList;
     }
 }

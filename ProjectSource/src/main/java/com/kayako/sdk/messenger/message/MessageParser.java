@@ -2,9 +2,13 @@ package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.messenger.attachment.Attachment;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
 import com.kayako.sdk.utils.ParserUtils;
 import com.kayako.sdk.utils.IsoTimeFormatUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -20,8 +24,7 @@ public class MessageParser implements Parser<Message> {
     private static final String ITEM_CONTENT_TEXT = "contentText";
     private static final String ITEM_CONTENT_HTML = "contentHtml";
     private static final String ITEM_CREATOR = "creator";
-
-    // TODO: Attachments, Metadata
+    private static final String ITEM_ATTACHMENTS = "attachments";
 
     private static final String ITEM_MESSAGE_STATUS = "messageStatus";
     private static final String ITEM_MESSAGE_STATUS_UPDATED_AT = "messageStatusUpdatedAt";
@@ -33,6 +36,14 @@ public class MessageParser implements Parser<Message> {
 
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
+        List<Attachment> attachments = new ArrayList<>();
+        List<String> attachmentJsonResponses = resourceMap.getAsArrayOfJsonStrings(ITEM_ATTACHMENTS);
+        if (attachmentJsonResponses != null) {
+            for (String json : attachmentJsonResponses) {
+                attachments.add(ParserFactory.getAttachmentParser().parse(json));
+            }
+        }
+
         return new Message(
                 resourceMap.getAsLong(ITEM_ID),
                 resourceMap.getAsString(ITEM_UUID),
@@ -42,6 +53,7 @@ public class MessageParser implements Parser<Message> {
                 resourceMap.getAsString(ITEM_CONTENT_TEXT),
                 resourceMap.getAsString(ITEM_CONTENT_HTML),
                 ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_CREATOR)),
+                attachments,
                 resourceMap.getAsEnumType(ITEM_MESSAGE_STATUS, MessageStatus.class),
                 IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(resourceMap.getAsString(ITEM_MESSAGE_STATUS_UPDATED_AT)),
                 IsoTimeFormatUtils.getTimeInMillisecondsFromIso8601String(resourceMap.getAsString(ITEM_CREATED_AT)),

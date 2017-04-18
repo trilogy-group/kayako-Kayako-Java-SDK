@@ -17,6 +17,10 @@ import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.section.SectionParser;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.helpcenter.user.UserMinimalParser;
+import com.kayako.sdk.messenger.attachment.Attachment;
+import com.kayako.sdk.messenger.attachment.AttachmentParser;
+import com.kayako.sdk.messenger.attachment.Thumbnail;
+import com.kayako.sdk.messenger.attachment.ThumbnailParser;
 import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.messenger.conversation.ConversationParser;
 import com.kayako.sdk.messenger.conversation.fields.priority.Priority;
@@ -189,5 +193,15 @@ public class ParserFactory {
 
     public static ItemParser<ConversationStarter> getConversationStarterItemParser() {
         return new DataNodeParser<>(getConversationStarterParser());
+    }
+
+    // Attachments
+
+    public static Parser<Thumbnail> getThumbnailParser() {
+        return new ThumbnailParser();
+    }
+
+    public static Parser<Attachment> getAttachmentParser() {
+        return new AttachmentParser();
     }
 }

@@ -24,7 +24,7 @@ public class CommonRequester implements Requester {
 
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
-                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters());
+                return RequesterUtils.postSync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), postRequester.getAttachmentFiles());
 
             case PUT:
                 PutRequestProperty putRequester = (PutRequestProperty) mRequestProperty;
@@ -44,7 +44,7 @@ public class CommonRequester implements Requester {
 
             case POST:
                 PostRequestProperty postRequester = (PostRequestProperty) mRequestProperty;
-                RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), callback);
+                RequesterUtils.postAsync(postRequester.getHelpCenterUrl(), postRequester.getEndpointUrl(), postRequester.getInclude().toString(), postRequester.getHeaders(), postRequester.getQueryParameters(), postRequester.getBodyParameters(), postRequester.getAttachmentFiles(), callback);
                 break;
 
             case PUT:

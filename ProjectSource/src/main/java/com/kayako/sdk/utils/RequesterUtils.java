@@ -118,15 +118,29 @@ public class RequesterUtils {
         return request;
     }
 
-    private static Request createPostRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) {
+    private static Request createPostRequest(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, List<AttachmentFile> attachmentFiles) {
         // TODO: Handle attachments
         HttpUrl httpUrl = createHttpUrl(combineUrl(helpDeskUrl, apiEndpoint), includeResources, queryParams);
 
-        // Add body params
         MultipartBody.Builder builder = new MultipartBody.Builder();
         builder.setType(MultipartBody.FORM);
+
+        // Add body params
         for (String key : bodyParams.keySet()) {
             builder.addFormDataPart(key, bodyParams.get(key));
+        }
+
+        // Add attachments
+        if (attachmentFiles != null) {
+            for (AttachmentFile attachmentFile : attachmentFiles) {
+                builder.addFormDataPart(
+                        attachmentFile.getParamKey(),
+                        attachmentFile.getFileName(),
+                        RequestBody.create(
+                                MediaType.parse(attachmentFile.getContentType()),
+                                attachmentFile.getFile()
+                        ));
+            }
         }
 
         Request.Builder requestBuilder = new Request.Builder().url(httpUrl).post(builder.build());
@@ -137,6 +151,7 @@ public class RequesterUtils {
                 requestBuilder.addHeader(key, headers.get(key));
             }
         }
+
         Request request = requestBuilder.build();
         return request;
     }
@@ -186,13 +201,13 @@ public class RequesterUtils {
         performAsync(request, callback);
     }
 
-    public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams) throws IOException {
-        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
+    public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, List<AttachmentFile> attachmentFiles) throws IOException {
+        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams, attachmentFiles);
         return performSync(request);
     }
 
-    public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, final RequestCallback callback) {
-        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams);
+    public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, List<AttachmentFile> attachmentFiles, final RequestCallback callback) {
+        Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams, attachmentFiles);
         performAsync(request, callback);
     }
 

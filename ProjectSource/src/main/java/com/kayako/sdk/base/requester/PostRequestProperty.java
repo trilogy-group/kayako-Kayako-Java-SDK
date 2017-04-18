@@ -1,5 +1,7 @@
 package com.kayako.sdk.base.requester;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -10,9 +12,11 @@ public abstract class PostRequestProperty extends GetRequestProperty {
 
     public abstract Map<String, String> getBodyParameters();
 
+    public List<AttachmentFile> getAttachmentFiles() {
+        return Collections.emptyList();
+    }
+
     public METHOD getMethod() {
         return METHOD.POST;
     }
-
-    // TODO: get File Attachments
 }

@@ -2,7 +2,10 @@ package com.kayako.sdk.messenger.message;
 
 import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
+import com.kayako.sdk.messenger.attachment.Attachment;
 import com.kayako.sdk.messenger.conversation.fields.ChannelType;
+
+import java.util.List;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -26,9 +29,7 @@ public class Message extends ComparableResource {
 
     private UserMinimal creator;
 
-    // TODO: Implement attachments[],downloadAll,source
-    // TODO: Ask someone reason behind metadata?
-    // TODO: Ask someone why source is mentioned in Resource Fields (which is similar to Channel)?
+    private List<Attachment> attachments;
 
     private MessageStatus messageStatus;
 
@@ -38,7 +39,7 @@ public class Message extends ComparableResource {
 
     private Long updatedAt;
 
-    public Message(Long id, String uuid, String clientId, String subject, ChannelType channel, String contentText, String contentHtml, UserMinimal creator, MessageStatus messageStatus, Long messageStatusUpdatedAt, Long createdAt, Long updatedAt) {
+    public Message(Long id, String uuid, String clientId, String subject, ChannelType channel, String contentText, String contentHtml, UserMinimal creator, List<Attachment> attachments, MessageStatus messageStatus, Long messageStatusUpdatedAt, Long createdAt, Long updatedAt) {
         this.id = id;
         this.uuid = uuid;
         this.clientId = clientId;
@@ -47,6 +48,7 @@ public class Message extends ComparableResource {
         this.contentText = contentText;
         this.contentHtml = contentHtml;
         this.creator = creator;
+        this.attachments = attachments;
         this.messageStatus = messageStatus;
         this.messageStatusUpdatedAt = messageStatusUpdatedAt;
         this.createdAt = createdAt;
@@ -104,6 +106,10 @@ public class Message extends ComparableResource {
     @Override
     public String getIdentifier() {
         return String.valueOf(id);
+    }
+
+    public List<Attachment> getAttachments() {
+        return attachments;
     }
 }
 

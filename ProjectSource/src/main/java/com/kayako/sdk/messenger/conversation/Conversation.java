@@ -35,9 +35,6 @@ public class Conversation extends ComparableResource {
 
     private Team assignedTeam;
 
-    // TODO: TOM-1473
-    // "assigned_agent": null,
-
     private Status status;
 
     private Boolean isCompleted;
