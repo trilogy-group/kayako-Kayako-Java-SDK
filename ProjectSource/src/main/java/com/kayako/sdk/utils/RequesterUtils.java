@@ -127,7 +127,10 @@ public class RequesterUtils {
 
         // Add body params
         for (String key : bodyParams.keySet()) {
-            builder.addFormDataPart(key, bodyParams.get(key));
+            String value = bodyParams.get(key);
+            if (value != null) {
+                builder.addFormDataPart(key, value);
+            }
         }
 
         // Add attachments
@@ -201,12 +204,12 @@ public class RequesterUtils {
         performAsync(request, callback);
     }
 
-    public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, Map<String,AttachmentFile> attachmentFiles) throws IOException {
+    public static com.kayako.sdk.base.requester.Response postSync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, Map<String, AttachmentFile> attachmentFiles) throws IOException {
         Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams, attachmentFiles);
         return performSync(request);
     }
 
-    public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, Map<String,AttachmentFile> attachmentFiles, final RequestCallback callback) {
+    public static void postAsync(String helpDeskUrl, String apiEndpoint, String includeResources, Map<String, String> headers, Map<String, String> queryParams, Map<String, String> bodyParams, Map<String, AttachmentFile> attachmentFiles, final RequestCallback callback) {
         Request request = createPostRequest(helpDeskUrl, apiEndpoint, includeResources, headers, queryParams, bodyParams, attachmentFiles);
         performAsync(request, callback);
     }
