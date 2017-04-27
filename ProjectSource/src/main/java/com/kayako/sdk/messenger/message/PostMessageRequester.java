@@ -5,6 +5,7 @@ import com.kayako.sdk.base.requester.AttachmentFile;
 import com.kayako.sdk.base.requester.GetRequestProperty;
 import com.kayako.sdk.base.requester.IncludeArgument;
 import com.kayako.sdk.base.requester.PostRequestProperty;
+import com.kayako.sdk.messenger.attachment.Attachment;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,12 +22,13 @@ public class PostMessageRequester extends PostRequestProperty {
     private static final String ARG_CONTENTS = "contents";
     private static final String ARG_SOURCE = "source";
     private static final String ARG_CLIENT_ID = "client_id";
+    private static final String ARG_FILES = "files";
 
     private String mHelpDeskUrl;
     private FingerprintAuth mFingerprintAuth;
     private Long mConversationId;
     private Map<String, String> mBodyParams;
-    private List<AttachmentFile> mAttachmentFiles;
+    private Map<String, AttachmentFile> mAttachmentFiles = new HashMap<>();
 
     public PostMessageRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, Long conversationId, PostMessageBodyParams bodyParams) {
         mHelpDeskUrl = helpdeskUrl;
@@ -35,14 +37,20 @@ public class PostMessageRequester extends PostRequestProperty {
 
         mBodyParams = new HashMap<>();
         mBodyParams.put(ARG_CONTENTS, bodyParams.getContents());
+
         if (bodyParams.getType() != null) {
             mBodyParams.put(ARG_SOURCE, bodyParams.getType().toString());
         }
+
         if (bodyParams.getClientId() != null) {
             mBodyParams.put(ARG_CLIENT_ID, bodyParams.getClientId());
         }
 
-        mAttachmentFiles = bodyParams.getAttachmentFileList();
+        if (bodyParams.getAttachmentFileList() != null) {
+            for (AttachmentFile attachmentFile : bodyParams.getAttachmentFileList()) {
+                mAttachmentFiles.put(ARG_FILES, attachmentFile);
+            }
+        }
     }
 
     @Override
@@ -76,7 +84,8 @@ public class PostMessageRequester extends PostRequestProperty {
     }
 
     @Override
-    public List<AttachmentFile> getAttachmentFiles() {
+    public Map<String, AttachmentFile> getAttachmentFiles() {
+
         return mAttachmentFiles;
     }
 }

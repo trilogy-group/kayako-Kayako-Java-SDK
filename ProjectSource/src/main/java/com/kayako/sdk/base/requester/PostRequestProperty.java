@@ -12,8 +12,8 @@ public abstract class PostRequestProperty extends GetRequestProperty {
 
     public abstract Map<String, String> getBodyParameters();
 
-    public List<AttachmentFile> getAttachmentFiles() {
-        return Collections.emptyList();
+    public Map<String, AttachmentFile> getAttachmentFiles() {
+        return Collections.emptyMap();
     }
 
     public METHOD getMethod() {

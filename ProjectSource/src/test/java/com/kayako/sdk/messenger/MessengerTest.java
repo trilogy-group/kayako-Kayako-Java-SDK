@@ -1,6 +1,7 @@
 package com.kayako.sdk.messenger;
 
 import com.kayako.sdk.auth.FingerprintAuth;
+import com.kayako.sdk.base.requester.AttachmentFile;
 import com.kayako.sdk.error.KayakoException;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 import com.kayako.sdk.messenger.conversation.Conversation;
@@ -19,6 +20,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -215,6 +218,36 @@ public class MessengerTest {
             Message message = messenger.postMessage(23, new PostMessageBodyParams(contents, null));
             Assert.assertNotNull(message);
             Assert.assertEquals(contents, message.getContentText());
+        } catch (KayakoException e) {
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void test_addFile() {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new PostMessageAttachment()));
+
+        Messenger messenger = new Messenger(helpdeskUrl, fingerprintAuth);
+
+        File file = new File("something.txt");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+            fail();
+        }
+        AttachmentFile attachmentFile = new AttachmentFile(file, "text/plain", "something.txt");
+        List<AttachmentFile> attachmentFiles = new ArrayList<>();
+        attachmentFiles.add(attachmentFile);
+
+        try {
+            String contents = "This a new message!";
+            Message message = messenger.postMessage(24, new PostMessageBodyParams(contents, null, null, attachmentFiles));
+            Assert.assertNotNull(message);
+            Assert.assertEquals(contents, message.getContentText());
+            Assert.assertNotNull(message.getAttachments());
+            Assert.assertNotNull("something.txt", message.getAttachments().get(0).getName());
         } catch (KayakoException e) {
             e.printStackTrace();
             fail();
