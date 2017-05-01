@@ -13,7 +13,6 @@ import java.util.Map;
  */
 public class PostConversationRequester extends PostRequestProperty {
 
-    private static final String INCLUDE = "userMinimal,team,caseStatus,casePriority";
     private static final String ENDPOINT = "api/v1/conversations";
 
     private static final String ARG_NAME = "name";

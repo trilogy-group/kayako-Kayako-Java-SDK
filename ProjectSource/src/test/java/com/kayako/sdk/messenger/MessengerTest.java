@@ -10,6 +10,8 @@ import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.messenger.message.PutMessageBodyParams;
+import com.kayako.sdk.messenger.rating.PostRatingBodyParams;
+import com.kayako.sdk.messenger.rating.PutRatingBodyParams;
 import com.kayako.sdk.messenger.rating.Rating;
 import com.kayako.sdk.mockserver.MockWebServerHelper;
 import com.kayako.sdk.mockserver.SampleDispatcher;
@@ -315,4 +317,37 @@ public class MessengerTest {
         Assert.assertTrue("Sorted in ascending order of createdAt", rating1.getCreatedAt() < rating2.getCreatedAt());
 
     }
+
+    @Test
+    public void test_postRatingList() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new PostRating()));
+
+        Rating rating1 = new Messenger(helpdeskUrl, new FingerprintAuth("7ef545ce-ee5c-410e-9a7f-0e01f2da988e"))
+                .postRating(
+                        360L,
+                        new PostRatingBodyParams(
+                                Rating.SCORE.BAD,
+                                "Horrible stuff. I hate it."
+                        ));
+
+        Assert.assertEquals(Rating.SCORE.BAD, rating1.getScore());
+        Assert.assertEquals("Horrible stuff. I hate it.", rating1.getComment());
+    }
+
+    @Test
+    public void test_putRatingList() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new PutRating()));
+
+        Rating rating1 = new Messenger(helpdeskUrl, new FingerprintAuth("7ef545ce-ee5c-410e-9a7f-0e01f2da988e"))
+                .putRating(
+                        359L,
+                        new PutRatingBodyParams(
+                                Rating.SCORE.GOOD,
+                                "Nice. I love it."
+                        ));
+
+        Assert.assertEquals(Rating.SCORE.GOOD, rating1.getScore());
+        Assert.assertEquals("Nice. I love it.", rating1.getComment());
+    }
+
 }

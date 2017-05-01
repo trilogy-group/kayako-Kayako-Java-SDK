@@ -16,6 +16,8 @@ import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.messenger.message.PutMessageBodyParams;
+import com.kayako.sdk.messenger.rating.PostRatingBodyParams;
+import com.kayako.sdk.messenger.rating.PutRatingBodyParams;
 import com.kayako.sdk.messenger.rating.Rating;
 import com.kayako.sdk.utils.FingerprintUtils;
 
@@ -148,5 +150,31 @@ public class Messenger {
 
     public void getRatingList(long conversationId, ListCallback<Rating> callback) {
         new ListManager<Rating>(RequesterFactory.getRatingListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId), ParserFactory.getRatingListParser()).getList(callback);
+    }
+
+    public Rating postRating(long conversationId, PostRatingBodyParams postRatingBodyParams) throws KayakoException {
+        return new ItemManager<Rating>(
+                RequesterFactory.postRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, postRatingBodyParams),
+                ParserFactory.getItemRatingParser()).getItem();
+    }
+
+    public void postRating(long conversationId, PostRatingBodyParams postRatingBodyParams, ItemCallback callback) {
+        new ItemManager<Rating>(RequesterFactory.postRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, postRatingBodyParams),
+                ParserFactory.getItemRatingParser())
+                .getItem(callback);
+    }
+
+    public Rating putRating(long conversationId, PutRatingBodyParams putRatingBodyParams) throws KayakoException {
+        return new ItemManager<Rating>(
+                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, putRatingBodyParams),
+                ParserFactory.getItemRatingParser())
+                .getItem();
+    }
+
+    public void putRating(long conversationId, PutRatingBodyParams putRatingBodyParams, ItemCallback callback) {
+        new ItemManager<Rating>(
+                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, putRatingBodyParams),
+                ParserFactory.getItemRatingParser())
+                .getItem(callback);
     }
 }

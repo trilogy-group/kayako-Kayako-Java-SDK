@@ -18,7 +18,7 @@ import com.kayako.sdk.messenger.conversation.PostConversationBodyParams;
 import com.kayako.sdk.messenger.conversation.PostConversationRequester;
 import com.kayako.sdk.messenger.conversationstarter.GetConversationStarterRequester;
 import com.kayako.sdk.messenger.message.*;
-import com.kayako.sdk.messenger.rating.GetRatingListRequester;
+import com.kayako.sdk.messenger.rating.*;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
@@ -97,4 +97,13 @@ public class RequesterFactory {
     public static Requester getRatingListRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth, long conversationId) {
         return new CommonRequester(new GetRatingListRequester(helpDeskUrl, fingerprintAuth, conversationId));
     }
+
+    public static Requester postRatingRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth, long conversationId, PostRatingBodyParams postRatingBodyParams) {
+        return new CommonRequester(new PostRatingRequester(helpDeskUrl, fingerprintAuth, conversationId, postRatingBodyParams));
+    }
+
+    public static Requester putRatingRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth, long conversationId, PutRatingBodyParams putRatingBodyParams) {
+        return new CommonRequester(new PutRatingRequester(helpDeskUrl, fingerprintAuth, conversationId, putRatingBodyParams));
+    }
+
 }
