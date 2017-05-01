@@ -4,6 +4,7 @@ import com.kayako.sdk.base.parser.DataNodeParser;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Parser;
+import com.kayako.sdk.base.requester.CommonRequester;
 import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.error.response.*;
 import com.kayako.sdk.helpcenter.articles.Article;
@@ -35,6 +36,8 @@ import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.conversationstarter.ConversationStarterParser;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.MessageParser;
+import com.kayako.sdk.messenger.rating.Rating;
+import com.kayako.sdk.messenger.rating.RatingParser;
 
 import java.util.Locale;
 
@@ -204,4 +207,20 @@ public class ParserFactory {
     public static Parser<Attachment> getAttachmentParser() {
         return new AttachmentParser();
     }
+
+    // Rating
+
+    public static Parser<Rating> getRatingParser() {
+        return new RatingParser();
+    }
+
+    public static ListParser<Rating> getRatingListParser() {
+        return new DataNodeParser<Rating>(getRatingParser());
+    }
+
+
+    public static ItemParser<Rating> getItemRatingParser() {
+        return new DataNodeParser<Rating>(getRatingParser());
+    }
+
 }

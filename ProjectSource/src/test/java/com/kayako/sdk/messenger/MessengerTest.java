@@ -10,6 +10,7 @@ import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.messenger.message.PutMessageBodyParams;
+import com.kayako.sdk.messenger.rating.Rating;
 import com.kayako.sdk.mockserver.MockWebServerHelper;
 import com.kayako.sdk.mockserver.SampleDispatcher;
 import com.kayako.sdk.mockserver.base.ISampleResponse;
@@ -294,5 +295,24 @@ public class MessengerTest {
                 );
 
         Assert.assertEquals(true, status);
+    }
+
+    @Test
+    public void test_getRatingList() throws Exception {
+        mockWebServerHelper.setDispatcher(new SampleDispatcher(new GetRatingList()));
+
+        List<Rating> ratings = new Messenger(helpdeskUrl, new FingerprintAuth("7ef545ce-ee5c-410e-9a7f-0e01f2da988e")).getRatingList(359L);
+        Assert.assertEquals(2, ratings.size());
+
+        Rating rating1 = ratings.get(0);
+        Assert.assertEquals(Rating.SCORE.GOOD, rating1.getScore());
+
+        Rating rating2 = ratings.get(1);
+        Assert.assertEquals(Rating.SCORE.GOOD, rating2.getScore());
+
+        System.out.println("Rating1: " + rating1.getCreatedAt());
+        System.out.println("Rating2: " + rating2.getCreatedAt());
+        Assert.assertTrue("Sorted in ascending order of createdAt", rating1.getCreatedAt() < rating2.getCreatedAt());
+
     }
 }

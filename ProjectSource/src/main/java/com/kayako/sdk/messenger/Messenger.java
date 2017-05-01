@@ -16,6 +16,7 @@ import com.kayako.sdk.messenger.conversationstarter.ConversationStarter;
 import com.kayako.sdk.messenger.message.Message;
 import com.kayako.sdk.messenger.message.PostMessageBodyParams;
 import com.kayako.sdk.messenger.message.PutMessageBodyParams;
+import com.kayako.sdk.messenger.rating.Rating;
 import com.kayako.sdk.utils.FingerprintUtils;
 
 import java.util.List;
@@ -139,5 +140,13 @@ public class Messenger {
 
     public void putMessage(long conversationId, long messageId, PutMessageBodyParams putMessageBodyParams, EmptyCallback emptyCallback) {
         new EmptyManager(RequesterFactory.putMessageItemRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, messageId, putMessageBodyParams)).getStatus(emptyCallback);
+    }
+
+    public List<Rating> getRatingList(long conversationId) throws KayakoException {
+        return new ListManager<Rating>(RequesterFactory.getRatingListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId), ParserFactory.getRatingListParser()).getList();
+    }
+
+    public void getRatingList(long conversationId, ListCallback<Rating> callback) {
+        new ListManager<Rating>(RequesterFactory.getRatingListRequester(mHelpDeskUrl, mFingerprintAuth, conversationId), ParserFactory.getRatingListParser()).getList(callback);
     }
 }
