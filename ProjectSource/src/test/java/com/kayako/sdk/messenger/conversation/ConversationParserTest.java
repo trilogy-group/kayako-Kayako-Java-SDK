@@ -266,7 +266,7 @@ public class ConversationParserTest {
             "      \"resourceType\": \"caseStatus\",\n" +
             "      \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/cases/statuses/2\"\n" +
             "    },\n" +
-            "    \"isCompleted\": false,\n" +
+            "    \"isClosed\": false,\n" +
             "    \"priority\": {\n" +
             "      \"id\": 4,\n" +
             "      \"label\": \"Urgent\",\n" +
@@ -323,7 +323,7 @@ public class ConversationParserTest {
         Assert.assertEquals("Open", conversation.getStatus().getLabel());
         Assert.assertEquals("Urgent", conversation.getPriority().getLabel());
         Assert.assertEquals("presence-61485139915436ab6fc57ca6b1e0bc87f58649bc427077133b6e71a278c3e8a2@v1_cases_20", conversation.getRealtimeChannel());
-        Assert.assertEquals(false, conversation.isCompleted());
+        Assert.assertEquals(false, conversation.isClosed());
     }
 
     @Test

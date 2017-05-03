@@ -37,7 +37,7 @@ public class Conversation extends ComparableResource {
 
     private Status status;
 
-    private Boolean isCompleted;
+    private Boolean isClosed;
 
     private Priority priority;
 
@@ -59,7 +59,7 @@ public class Conversation extends ComparableResource {
 
     private Long updatedAt;
 
-    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, UserMinimal lastAgentReplier, Team assignedTeam, Status status, Boolean isCompleted, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt, String lastMessagePreview, MessageStatus lastMessageStatus) {
+    public Conversation(Long id, String uuid, String legacyId, String subject, ChannelType channel, UserMinimal requester, UserMinimal creator, UserMinimal lastReplier, UserMinimal lastAgentReplier, Team assignedTeam, Status status, Boolean isClosed, ReadMarker readMarker, Priority priority, String realtimeChannel, Long lastRepliedAt, Long createdAt, Long updatedAt, String lastMessagePreview, MessageStatus lastMessageStatus) {
         this.id = id;
         this.uuid = uuid;
         this.legacyId = legacyId;
@@ -71,7 +71,7 @@ public class Conversation extends ComparableResource {
         this.lastAgentReplier = lastAgentReplier;
         this.assignedTeam = assignedTeam;
         this.status = status;
-        this.isCompleted = isCompleted;
+        this.isClosed = isClosed;
         this.priority = priority;
         this.realtimeChannel = realtimeChannel;
         this.readMarker = readMarker;
@@ -171,12 +171,12 @@ public class Conversation extends ComparableResource {
         this.status = status;
     }
 
-    public Boolean isCompleted() {
-        return isCompleted;
+    public Boolean isClosed() {
+        return isClosed;
     }
 
-    public void setCompleted(Boolean completed) {
-        isCompleted = completed;
+    public void setIsClosed(Boolean closed) {
+        isClosed = closed;
     }
 
     public Priority getPriority() {

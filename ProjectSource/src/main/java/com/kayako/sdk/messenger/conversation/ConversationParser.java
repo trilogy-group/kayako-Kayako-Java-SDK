@@ -27,7 +27,7 @@ public class ConversationParser implements Parser<Conversation> {
     private static final String ITEM_LAST_AGENT_REPLIER = "lastAgentReplier";
     private static final String ITEM_TEAM = "assignedTeam";
     private static final String ITEM_STATUS = "status";
-    private static final String ITEM_IS_COMPLETED = "isCompleted";
+    private static final String ITEM_IS_CLOSED = "isClosed";
     private static final String ITEM_PRIORITY = "priority";
     private static final String ITEM_REALTIME_CHANNEL = "realtimeChannel";
     private static final String ITEM_READ_MARKER = "readMarker";
@@ -52,7 +52,7 @@ public class ConversationParser implements Parser<Conversation> {
                 resourceMap.isNotNull(ITEM_LAST_AGENT_REPLIER) ? ParserFactory.getUserMinimalParser().parse(resourceMap.getAsJsonString(ITEM_LAST_AGENT_REPLIER)) : null,
                 resourceMap.isNotNull(ITEM_TEAM) ? ParserFactory.getTeamParser().parse(resourceMap.getAsJsonString(ITEM_TEAM)) : null,
                 resourceMap.isNotNull(ITEM_STATUS) ? ParserFactory.getStatusParser().parse(resourceMap.getAsJsonString(ITEM_STATUS)) : null,
-                resourceMap.getAsBoolean(ITEM_IS_COMPLETED),
+                resourceMap.getAsBoolean(ITEM_IS_CLOSED),
                 resourceMap.isNotNull(ITEM_READ_MARKER) ? ParserFactory.getReadMarkerParser().parse(resourceMap.getAsJsonString(ITEM_READ_MARKER)) : null,
                 resourceMap.isNotNull(ITEM_PRIORITY) ? ParserFactory.getPriorityParser().parse(resourceMap.getAsJsonString(ITEM_PRIORITY)) : null,
                 resourceMap.getAsString(ITEM_REALTIME_CHANNEL),

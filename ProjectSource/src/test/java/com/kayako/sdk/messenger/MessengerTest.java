@@ -93,6 +93,7 @@ public class MessengerTest {
         Assert.assertNotNull(conversation);
         Assert.assertEquals(23, conversation.getId().longValue());
         Assert.assertEquals(null, conversation.getReadMarker());
+        Assert.assertEquals(false, conversation.isClosed());
     }
 
     @Test
