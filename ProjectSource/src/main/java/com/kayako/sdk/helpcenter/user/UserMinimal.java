@@ -13,13 +13,15 @@ public class UserMinimal extends ComparableResource {
     private String avatarUrl;
     private Long lastActiveAt;
     private Long lastSeenAt;
+    private String presenceChannel;
 
-    public UserMinimal(Long id, String fullName, String avatarUrl, Long lastActiveAt, Long lastSeenAt) {
+    public UserMinimal(Long id, String fullName, String avatarUrl, Long lastActiveAt, Long lastSeenAt, String presenceChannel) {
         this.id = id;
         this.fullName = fullName;
         this.avatarUrl = avatarUrl;
         this.lastActiveAt = lastActiveAt;
         this.lastSeenAt = lastSeenAt;
+        this.presenceChannel = presenceChannel;
     }
 
     public Long getId() {
@@ -60,6 +62,10 @@ public class UserMinimal extends ComparableResource {
 
     public void setLastSeenAt(Long lastSeenAt) {
         this.lastSeenAt = lastSeenAt;
+    }
+
+    public String getPresenceChannel() {
+        return presenceChannel;
     }
 
     @Override

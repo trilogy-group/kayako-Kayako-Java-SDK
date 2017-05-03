@@ -16,6 +16,7 @@ public class UserMinimalParser implements Parser<UserMinimal> {
     private static final String ITEM_AVATAR = "avatar";
     private static final String ITEM_LAST_ACTIVE_AT = "lastActiveAt";
     private static final String ITEM_LAST_SEEN_AT = "lastSeenAt";
+    private static final String ITEM_PRESENCE_CHANNEL = "presenceChannel";
 
     @Override
     public UserMinimal parse(String jsonOfResource) throws NullPointerException {
@@ -27,6 +28,8 @@ public class UserMinimalParser implements Parser<UserMinimal> {
 
         Long lastActiveAt = resourceMap.getAsTimeInMilliseconds(ITEM_LAST_ACTIVE_AT);
         Long lastSeenAt = resourceMap.getAsTimeInMilliseconds(ITEM_LAST_SEEN_AT);
-        return new UserMinimal(id, fullName, avatarUrl, lastActiveAt, lastSeenAt);
+        String presenceChannel = resourceMap.getAsString(ITEM_PRESENCE_CHANNEL);
+        
+        return new UserMinimal(id, fullName, avatarUrl, lastActiveAt, lastSeenAt, presenceChannel);
     }
 }
