@@ -341,6 +341,7 @@ public class MessengerTest {
         Rating rating1 = new Messenger(helpdeskUrl, new FingerprintAuth("7ef545ce-ee5c-410e-9a7f-0e01f2da988e"))
                 .putRating(
                         359L,
+                        6,
                         new PutRatingBodyParams(
                                 Rating.SCORE.GOOD,
                                 "Nice. I love it."

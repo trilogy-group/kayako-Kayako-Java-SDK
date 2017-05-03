@@ -102,8 +102,8 @@ public class RequesterFactory {
         return new CommonRequester(new PostRatingRequester(helpDeskUrl, fingerprintAuth, conversationId, postRatingBodyParams));
     }
 
-    public static Requester putRatingRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth, long conversationId, PutRatingBodyParams putRatingBodyParams) {
-        return new CommonRequester(new PutRatingRequester(helpDeskUrl, fingerprintAuth, conversationId, putRatingBodyParams));
+    public static Requester putRatingRequester(String helpDeskUrl, FingerprintAuth fingerprintAuth, long conversationId, long ratingId, PutRatingBodyParams putRatingBodyParams) {
+        return new CommonRequester(new PutRatingRequester(helpDeskUrl, fingerprintAuth, conversationId, ratingId, putRatingBodyParams));
     }
 
 }

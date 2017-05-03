@@ -164,16 +164,16 @@ public class Messenger {
                 .getItem(callback);
     }
 
-    public Rating putRating(long conversationId, PutRatingBodyParams putRatingBodyParams) throws KayakoException {
+    public Rating putRating(long conversationId, long ratingId, PutRatingBodyParams putRatingBodyParams) throws KayakoException {
         return new ItemManager<Rating>(
-                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, putRatingBodyParams),
+                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, ratingId, putRatingBodyParams),
                 ParserFactory.getItemRatingParser())
                 .getItem();
     }
 
-    public void putRating(long conversationId, PutRatingBodyParams putRatingBodyParams, ItemCallback callback) {
+    public void putRating(long conversationId, long ratingId, PutRatingBodyParams putRatingBodyParams, ItemCallback callback) {
         new ItemManager<Rating>(
-                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, putRatingBodyParams),
+                RequesterFactory.putRatingRequester(mHelpDeskUrl, mFingerprintAuth, conversationId, ratingId, putRatingBodyParams),
                 ParserFactory.getItemRatingParser())
                 .getItem(callback);
     }

@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class PutRatingRequester extends PutRequestProperty {
 
-    private static final String ENDPOINT = "api/v1/conversations/%s/ratings.json";
+    private static final String ENDPOINT = "api/v1/conversations/%s/ratings/%s";
 
     private static final String ARG_SCORE = "score";
     private static final String ARG_COMMENT = "comment";
@@ -22,11 +22,13 @@ public class PutRatingRequester extends PutRequestProperty {
     private FingerprintAuth mFingerprintAuth;
     private Map<String, String> mBodyParams;
     private long mConversationId;
+    private long mRatingId;
 
-    public PutRatingRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, long conversationId, PostRatingBodyParams bodyParams) {
+    public PutRatingRequester(String helpdeskUrl, FingerprintAuth fingerprintAuth, long conversationId, long ratingId, PostRatingBodyParams bodyParams) {
         mHelpdeskUrl = helpdeskUrl;
         mFingerprintAuth = fingerprintAuth;
         mConversationId = conversationId;
+        mRatingId = ratingId;
         mBodyParams = new HashMap<>();
         mBodyParams.put(ARG_SCORE, bodyParams.getScore().name());
         if (bodyParams.getScore() != null) {
@@ -46,7 +48,7 @@ public class PutRatingRequester extends PutRequestProperty {
 
     @Override
     public String getEndpointUrl() {
-        return String.format(ENDPOINT, mConversationId);
+        return String.format(ENDPOINT, mConversationId, mRatingId);
     }
 
     @Override
