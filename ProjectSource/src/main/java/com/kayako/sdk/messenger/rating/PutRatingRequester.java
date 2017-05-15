@@ -31,7 +31,7 @@ public class PutRatingRequester extends PutRequestProperty {
         mRatingId = ratingId;
         mBodyParams = new HashMap<>();
         mBodyParams.put(ARG_SCORE, bodyParams.getScore().name());
-        if (bodyParams.getScore() != null) {
+        if (bodyParams.getComment() != null) {
             mBodyParams.put(ARG_COMMENT, bodyParams.getComment());
         }
     }
