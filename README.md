@@ -1,3 +1,4 @@
+[ ![Download](https://api.bintray.com/packages/kayako-support/kayako-devkits/kayako/images/download.svg) ](https://bintray.com/kayako-support/kayako-devkits/kayako/_latestVersion)
 
 # Overview
 
