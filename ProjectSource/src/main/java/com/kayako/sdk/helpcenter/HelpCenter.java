@@ -40,7 +40,7 @@ public class HelpCenter {
         new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
     }
 
-    public void getCategories(int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Category> callback) throws KayakoException {
+    public void getCategories(int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Category> callback) {
         new ListManager<Category>(RequesterFactory.getCategoryListRequester(mHelpDeskUrl, offset, limit), ParserFactory.getCategoryListParser(mLocale)).getList(callback);
     }
 
@@ -64,12 +64,12 @@ public class HelpCenter {
         new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
     }
 
-    public void getSection(long categoryId, int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Section> callback) {
-        new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
-    }
-
     public Section getSection(long sectionId) throws KayakoException {
         return new ItemManager<Section>(RequesterFactory.getSectionItemRequester(mHelpDeskUrl, sectionId), ParserFactory.getSectionItemParser(mLocale)).getItem();
+    }
+
+    public void getSection(long categoryId, int offset, int limit, com.kayako.sdk.base.callback.ListCallback<Section> callback) {
+        new ListManager<Section>(RequesterFactory.getSectionListRequester(mHelpDeskUrl, categoryId, offset, limit), ParserFactory.getSectionListParser(mLocale)).getList(callback);
     }
 
     public void getSection(long sectionId, ItemCallback<Section> callback) {
