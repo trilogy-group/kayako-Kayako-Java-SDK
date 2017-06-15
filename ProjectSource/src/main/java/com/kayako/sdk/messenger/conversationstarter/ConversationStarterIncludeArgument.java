@@ -17,6 +17,5 @@ public class ConversationStarterIncludeArgument extends IncludeArgument {
     public ConversationStarterIncludeArgument() {
         super(resources);
         append(new UserMinimalIncludeArgument());
-        append(new ConversationIncludeArgument());
     }
 }

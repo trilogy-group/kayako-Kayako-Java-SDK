@@ -273,11 +273,6 @@ public class MessengerTest {
 
             Assert.assertEquals(conversationStarter.getAverageReplyTime().doubleValue(), 1257.2, 0.09);
 
-            List<Conversation> activeConversations = conversationStarter.getActiveConversations();
-            Assert.assertEquals(activeConversations.get(0).getLastReplier().getFullName(), "Neil Mathew");
-            Assert.assertEquals(activeConversations.get(1).getLastReplier().getFullName(), "John Doe 2");
-            Assert.assertEquals(activeConversations.get(2).getLastReplier().getFullName(), "John Doe 2");
-
         } catch (KayakoException e) {
             e.printStackTrace();
             fail();

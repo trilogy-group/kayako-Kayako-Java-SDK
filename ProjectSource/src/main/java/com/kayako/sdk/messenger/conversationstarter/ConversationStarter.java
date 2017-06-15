@@ -16,12 +16,9 @@ public class ConversationStarter implements Resource {
 
     private Double averageReplyTime;
 
-    private List<Conversation> activeConversations;
-
-    public ConversationStarter(List<UserMinimal> lastActiveAgents, Double averageReplyTime, List<Conversation> activeConversations) {
+    public ConversationStarter(List<UserMinimal> lastActiveAgents, Double averageReplyTime) {
         this.lastActiveAgents = lastActiveAgents;
         this.averageReplyTime = averageReplyTime;
-        this.activeConversations = activeConversations;
     }
 
     public List<UserMinimal> getLastActiveAgents() {
@@ -30,10 +27,6 @@ public class ConversationStarter implements Resource {
 
     public Double getAverageReplyTime() {
         return averageReplyTime;
-    }
-
-    public List<Conversation> getActiveConversations() {
-        return activeConversations;
     }
 
 }

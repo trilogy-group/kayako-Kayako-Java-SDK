@@ -3,7 +3,6 @@ package com.kayako.sdk.messenger.conversationstarter;
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
-import com.kayako.sdk.messenger.conversation.Conversation;
 import com.kayako.sdk.utils.ParserUtils;
 
 import java.util.List;
@@ -23,21 +22,14 @@ public class ConversationStarterParser implements Parser<ConversationStarter> {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
         List<UserMinimal> lastActiveAgentList = null;
-        List<Conversation> conversationList = null;
 
         if (resourceMap.isNotNull(ITEM_LAST_ACTIVE_AGENTS)) {
             lastActiveAgentList = ParserUtils.getResourceList(jsonOfResource, ITEM_LAST_ACTIVE_AGENTS, ParserFactory.getUserMinimalParser());
         }
 
-        if (resourceMap.isNotNull(ITEM_ACTIVE_CONVERSATIONS)) {
-            Parser<Conversation> conversationParser = ParserFactory.getConversationParser();
-            conversationList = ParserUtils.getResourceList(jsonOfResource, ITEM_ACTIVE_CONVERSATIONS, conversationParser);
-        }
-
         return new ConversationStarter(
                 lastActiveAgentList,
-                resourceMap.getAsDouble(ITEM_AVERAGE_REPLY_TIME),
-                conversationList
+                resourceMap.getAsDouble(ITEM_AVERAGE_REPLY_TIME)
         );
     }
 }

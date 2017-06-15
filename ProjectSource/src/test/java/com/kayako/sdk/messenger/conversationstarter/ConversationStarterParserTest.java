@@ -223,7 +223,6 @@ public class ConversationStarterParserTest {
         ConversationStarter conversationStarter = conversationStarterParser.parse(conversationStarterResponse1);
 
         Assert.assertEquals(3, conversationStarter.getLastActiveAgents().size());
-        Assert.assertEquals(3, conversationStarter.getActiveConversations().size());
         Assert.assertEquals(1257.2, conversationStarter.getAverageReplyTime().doubleValue(), 0.09);
     }
 }
