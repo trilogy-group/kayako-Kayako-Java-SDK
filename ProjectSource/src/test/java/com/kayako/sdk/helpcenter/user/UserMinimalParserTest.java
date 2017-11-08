@@ -27,8 +27,8 @@ public class UserMinimalParserTest {
         Assert.assertEquals("https://kayako-mobile-testing.kayako.com/avatar/get/22e238af-5bcd-5159-a4ac-e7f016821151?1489507212", userMinimal.getAvatarUrl());
         Assert.assertEquals("Robin Malhotra", userMinimal.getFullName());
         Assert.assertEquals(6, userMinimal.getId().longValue());
-        Assert.assertEquals(148950212000L, userMinimal.getLastActiveAt().longValue());
-        Assert.assertEquals(148950212000L, userMinimal.getLastSeenAt().longValue());
+        Assert.assertEquals(1489507212000L, userMinimal.getLastActiveAt().longValue());
+        Assert.assertEquals(1489507212000L, userMinimal.getLastSeenAt().longValue());
     }
 
     @Test

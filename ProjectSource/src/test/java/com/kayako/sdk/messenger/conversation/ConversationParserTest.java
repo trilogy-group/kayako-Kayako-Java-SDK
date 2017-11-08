@@ -33,6 +33,14 @@ public class ConversationParserTest {
             "      \"resourceType\": \"userMinimal\",\n" +
             "      \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/14\"\n" +
             "    },\n" +
+            "    \"lastAgentReplier\": {\n" +
+            "      \"id\": 1,\n" +
+            "      \"fullName\": \"Kayako Mobile Testing\",\n" +
+            "      \"lastActiveAt\": \"2017-02-08T08:21:42+00:00\",\n" +
+            "      \"avatar\": \"https://kayako-mobile-testing.kayako.com/avatar/get/1e4dd52f-6383-5e07-aed0-864c06d6b232?1486542102\",\n" +
+            "      \"resourceType\": \"userMinimal\",\n" +
+            "      \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/users/1\"\n" +
+            "    },\n" +
             "    \"lastReplier\": {\n" +
             "      \"id\": 1,\n" +
             "      \"fullName\": \"Kayako Mobile Testing\",\n" +
@@ -189,8 +197,6 @@ public class ConversationParserTest {
             "  }";
 
     String conversationResponse2 = "{\n" +
-            "  \"status\": 200,\n" +
-            "  \"data\": {\n" +
             "    \"id\": 20,\n" +
             "    \"uuid\": \"a420b635-0d77-5306-af8a-867744566acc\",\n" +
             "    \"legacyId\": null,\n" +
@@ -293,15 +299,7 @@ public class ConversationParserTest {
             "    \"updatedAt\": \"2017-02-08T05:53:04+00:00\",\n" +
             "    \"resourceType\": \"conversation\",\n" +
             "    \"resourceUrl\": \"https://kayako-mobile-testing.kayako.com/api/v1/conversations/20\"\n" +
-            "  },\n" +
-            "  \"resource\": \"conversation\",\n" +
-            "  \"logs\": [\n" +
-            "    {\n" +
-            "      \"level\": \"NOTICE\",\n" +
-            "      \"message\": \"Redundant request parameters supplied: limit, offset\"\n" +
-            "    }\n" +
-            "  ]\n" +
-            "}";
+            "  }";
 
     @Test
     public void test1() throws Exception {
@@ -323,7 +321,8 @@ public class ConversationParserTest {
         Assert.assertEquals("Open", conversation.getStatus().getLabel());
         Assert.assertEquals("Urgent", conversation.getPriority().getLabel());
         Assert.assertEquals("presence-61485139915436ab6fc57ca6b1e0bc87f58649bc427077133b6e71a278c3e8a2@v1_cases_20", conversation.getRealtimeChannel());
-        Assert.assertEquals(false, conversation.isClosed());
+
+        // Assert.assertEquals(false, conversation.isClosed()); NO LONGER RELEVANT - we use status to decide now
     }
 
     @Test
@@ -333,7 +332,8 @@ public class ConversationParserTest {
 
         Assert.assertEquals(48L, conversation.getReadMarker().getId().longValue());
         Assert.assertEquals(1, conversation.getReadMarker().getUnreadCount().intValue());
-        Assert.assertEquals(241L, conversation.getReadMarker().getLastReadAt().longValue());
+        Assert.assertEquals(241L, conversation.getReadMarker().getLastReadPostId().longValue());
+        Assert.assertEquals(1486470068000L, conversation.getReadMarker().getLastReadAt().longValue());
 
         Assert.assertEquals("Hello Hello", conversation.getLastMessagePreview());
         Assert.assertEquals(MessageStatus.DELIVERED, conversation.getLastMessageStatus());
