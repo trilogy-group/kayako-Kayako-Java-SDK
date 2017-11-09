@@ -1,17 +1,15 @@
 package com.kayako.sdk.helpcenter.section;
 
-import com.kayako.sdk.base.requester.ItemRequester;
-import com.kayako.sdk.base.requester.RequestCallback;
-import com.kayako.sdk.base.requester.Response;
-import com.kayako.sdk.utils.RequesterUtils;
+import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
-import java.io.IOException;
+import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class GetSectionRequester implements ItemRequester {
+public class GetSectionRequester extends GetRequestProperty {
     public static final String ENDPOINT = "/api/v1/sections/%s";
     public static final String INCLUDE = "localeField,category";
 
@@ -26,11 +24,29 @@ public class GetSectionRequester implements ItemRequester {
         mSectionId = sectionId;
     }
 
-    public Response request() throws IOException {
-        return RequesterUtils.getSync(mHelpCenterUrl, String.format(ENDPOINT, mSectionId), INCLUDE, null, null);
+    @Override
+    public String getHelpCenterUrl() {
+        return mHelpCenterUrl;
     }
 
-    public void request(RequestCallback callback) {
-        RequesterUtils.getAsync(mHelpCenterUrl, String.format(ENDPOINT, mSectionId), INCLUDE, null, null, callback);
+    @Override
+    public IncludeArgument getInclude() {
+        return new SectionIncludeArgument();
     }
+
+    @Override
+    public String getEndpointUrl() {
+        return String.format(ENDPOINT, mSectionId);
+    }
+
+    @Override
+    public Map<String, String> getQueryParameters() {
+        return null;
+    }
+
+    @Override
+    public Map<String, String> getHeaders() {
+        return null;
+    }
+
 }

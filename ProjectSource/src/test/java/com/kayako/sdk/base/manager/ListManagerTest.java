@@ -4,7 +4,7 @@ import com.google.gson.JsonParseException;
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Resource;
-import com.kayako.sdk.base.requester.ListRequester;
+import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.error.ErrorCode;
@@ -45,7 +45,7 @@ public class ListManagerTest {
      */
     @Test
     public void testExternalNetworkError_AuthFail() {
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
 
             Response response = new Response(401, "{\n" +
                     "  \"status\": 401,\n" +
@@ -146,7 +146,8 @@ public class ListManagerTest {
             }
         };
 
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -178,7 +179,8 @@ public class ListManagerTest {
      */
     @Test
     public void testInternalParseError() {
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -227,7 +229,8 @@ public class ListManagerTest {
      */
     @Test
     public void testInternalNetworkError() {
-        ListRequester requesterThatThrowsIOException = new ListRequester() {
+        Requester requesterThatThrowsIOException = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 throw new SSLHandshakeException("meh");
@@ -277,7 +280,7 @@ public class ListManagerTest {
             }
         };
 
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
             @Override
             public Response request() throws IOException {
                 throw new SocketTimeoutException();
@@ -309,7 +312,7 @@ public class ListManagerTest {
      */
     @Test
     public void testOtherError() {
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -362,7 +365,7 @@ public class ListManagerTest {
      */
     @Test
     public void testInternalNetworkError_404_Not_Found() {
-        ListRequester requester = new ListRequester() {
+        Requester requester = new Requester() {
 
             Response response = new Response(404, "Invalid response json");
 

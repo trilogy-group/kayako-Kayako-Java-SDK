@@ -48,7 +48,7 @@ public class ExceptionUtils {
         if (errorListParser.containsList(json)) {
             errors = errorListParser.parseList(json);
         }
-        
+
         return new ResponseMessages(statusCode, notifications, errors, logs);
     }
 
@@ -81,5 +81,26 @@ public class ExceptionUtils {
             default:
                 return "Failed to make request";
         }
+    }
+
+    public static void logAllErrors(ResponseMessages responseMessages) {
+        if (responseMessages == null) {
+            return;
+        }
+
+        if (responseMessages.getErrors() != null)
+            for (Error error : responseMessages.getErrors()) {
+                LogUtils.logError(ExceptionUtils.class, error.toString());
+            }
+
+        if (responseMessages.getLogs() != null)
+            for (Log error : responseMessages.getLogs()) {
+                LogUtils.logError(ExceptionUtils.class,error.toString());
+            }
+
+        if (responseMessages.getNotifications() != null)
+            for (Notification error : responseMessages.getNotifications()) {
+                LogUtils.logError(ExceptionUtils.class,error.toString());
+            }
     }
 }

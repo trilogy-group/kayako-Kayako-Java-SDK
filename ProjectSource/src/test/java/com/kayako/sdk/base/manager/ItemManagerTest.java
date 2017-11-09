@@ -4,8 +4,8 @@ import com.google.gson.JsonParseException;
 import com.kayako.sdk.ParserFactory;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.Resource;
-import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.base.requester.RequestCallback;
+import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.error.ErrorCode;
 import com.kayako.sdk.error.KayakoException;
@@ -43,7 +43,7 @@ public class ItemManagerTest {
      */
     @Test
     public void testExternalNetworkError_AuthFail() {
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
 
             Response response = new Response(401, "{\n" +
                     "  \"status\": 401,\n" +
@@ -145,7 +145,8 @@ public class ItemManagerTest {
             }
         };
 
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -177,7 +178,8 @@ public class ItemManagerTest {
      */
     @Test
     public void testInternalParseError() {
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -225,7 +227,8 @@ public class ItemManagerTest {
      */
     @Test
     public void testInternalNetworkError() {
-        ItemRequester requesterThatThrowsIOException = new ItemRequester() {
+        Requester requesterThatThrowsIOException = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 throw new SSLHandshakeException("meh");
@@ -275,7 +278,8 @@ public class ItemManagerTest {
             }
         };
 
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 throw new SocketTimeoutException();
@@ -307,7 +311,8 @@ public class ItemManagerTest {
      */
     @Test
     public void testOtherError() {
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
+
             @Override
             public Response request() throws IOException {
                 return new Response(200, null);
@@ -360,7 +365,7 @@ public class ItemManagerTest {
      */
     @Test
     public void testInternalNetworkError_404_Not_Found() {
-        ItemRequester requester = new ItemRequester() {
+        Requester requester = new Requester() {
 
             Response response = new Response(404, "Invalid response json");
 

@@ -1,19 +1,17 @@
 package com.kayako.sdk.helpcenter.search;
 
-import com.kayako.sdk.base.parser.ListParser;
-import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.ParserFactory;
+import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.helpcenter.articles.Article;
 import com.kayako.sdk.utils.ParserUtils;
 
-import java.util.List;
 import java.util.Locale;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class SearchArticleParser implements ListParser<SearchArticle> {
+public class SearchArticleParser implements Parser<SearchArticle> {
 
     private static final String NODE_ORIGINAL = "original";
 
@@ -24,10 +22,6 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
 
     public SearchArticleParser(Locale locale) {
         mLocale = locale;
-    }
-
-    public List<SearchArticle> parseList(String json) {
-        return ParserUtils.getResourceListFromDataNode(json, this);
     }
 
     @Override
@@ -46,7 +40,4 @@ public class SearchArticleParser implements ListParser<SearchArticle> {
         return searchArticle;
     }
 
-    public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
-    }
 }

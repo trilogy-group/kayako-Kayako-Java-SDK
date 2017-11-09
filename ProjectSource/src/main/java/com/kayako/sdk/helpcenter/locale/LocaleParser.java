@@ -2,17 +2,14 @@ package com.kayako.sdk.helpcenter.locale;
 
 //import com.google.gson.JsonObject;
 
-import com.kayako.sdk.base.parser.ItemParser;
-import com.kayako.sdk.base.parser.ListParser;
+import com.kayako.sdk.base.parser.Parser;
 import com.kayako.sdk.utils.ParserUtils;
-
-import java.util.List;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class LocaleParser implements ListParser<Locale>, ItemParser<Locale> {
+public class LocaleParser implements Parser<Locale> {
 
     public static final String ITEM_ID = "id";
     public static final String ITEM_LOCALE = "locale";
@@ -47,21 +44,5 @@ public class LocaleParser implements ListParser<Locale>, ItemParser<Locale> {
         }
 
         return locale;
-    }
-
-    public List<Locale> parseList(String json) {
-        return ParserUtils.getResourceListFromDataNode(json, this);
-    }
-
-    public Locale parseItem(String json) throws NullPointerException {
-        return ParserUtils.getResourceFromDataNode(json, this);
-    }
-
-    public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
-    }
-
-    public boolean containsItem(String jsonOfResponse) {
-        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

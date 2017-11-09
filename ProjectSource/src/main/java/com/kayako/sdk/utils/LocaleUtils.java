@@ -1,7 +1,5 @@
 package com.kayako.sdk.utils;
 
-import com.kayako.sdk.helpcenter.locale.Locale;
-
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 16/09/16

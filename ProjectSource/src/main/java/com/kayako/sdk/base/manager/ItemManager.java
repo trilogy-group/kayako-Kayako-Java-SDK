@@ -3,8 +3,8 @@ package com.kayako.sdk.base.manager;
 import com.kayako.sdk.base.callback.ItemCallback;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.parser.Resource;
-import com.kayako.sdk.base.requester.ItemRequester;
 import com.kayako.sdk.base.requester.RequestCallback;
+import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.error.ErrorCode;
 import com.kayako.sdk.error.KayakoException;
@@ -18,10 +18,10 @@ import java.io.IOException;
  */
 public class ItemManager<T extends Resource> {
 
-    private ItemRequester requester;
+    private Requester requester;
     private ItemParser<T> parser;
 
-    public ItemManager(ItemRequester requester, ItemParser parser) {
+    public ItemManager(Requester requester, ItemParser parser) {
         this.parser = parser;
         this.requester = requester;
     }
@@ -64,13 +64,12 @@ public class ItemManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-
-                // Throw External Network Error (e1)
-                if (response.statusCode < 200 || response.statusCode > 299) {
-                    callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
-                }
-
                 try {
+                    // Throw External Network Error (e1)
+                    if (response.statusCode < 200 || response.statusCode > 299) {
+                        callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
+                    }
+
                     // Parse Json Response
                     T item = parser.parseItem(response.body);
 

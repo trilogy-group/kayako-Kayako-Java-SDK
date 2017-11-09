@@ -5,6 +5,7 @@ package com.kayako.sdk.base.requester;
  * @date 04/11/16
  */
 public class Response {
+
     public int statusCode;
 
     public String body;

@@ -11,4 +11,5 @@ public interface Requester {
     Response request() throws IOException;
 
     void request(RequestCallback callback);
+
 }

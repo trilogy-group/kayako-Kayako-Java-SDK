@@ -2,7 +2,7 @@ package com.kayako.sdk.base.manager;
 
 import com.kayako.sdk.base.parser.ListParser;
 import com.kayako.sdk.base.parser.Resource;
-import com.kayako.sdk.base.requester.ListRequester;
+import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.base.requester.RequestCallback;
 import com.kayako.sdk.base.requester.Response;
 import com.kayako.sdk.error.ErrorCode;
@@ -19,10 +19,10 @@ import java.util.List;
  */
 public class ListManager<T extends Resource> {
 
-    private ListRequester requester;
+    private Requester requester;
     private ListParser<T> parser;
 
-    public ListManager(ListRequester requester, ListParser<T> parser) {
+    public ListManager(Requester requester, ListParser<T> parser) {
         this.parser = parser;
         this.requester = requester;
     }
@@ -67,13 +67,12 @@ public class ListManager<T extends Resource> {
         // Make Request
         requester.request(new RequestCallback() {
             public void onSuccess(Response response) {
-
-                // Throw External Network Error (e1)
-                if (response.statusCode < 200 || response.statusCode > 299) {
-                    callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
-                }
-
                 try {
+                    // Throw External Network Error (e1)
+                    if (response.statusCode < 200 || response.statusCode > 299) {
+                        callback.onFailure(ExceptionUtils.generateExternalKayakoException(response.statusCode, response.body));
+                    }
+
                     // Parse Json Response
                     List<T> list = parser.parseList(response.body);
 

@@ -15,7 +15,7 @@ import java.util.Locale;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class ArticleParser implements ListParser<Article>, ItemParser<Article> {
+public class ArticleParser implements Parser<Article> {
 
     private static final String NODE_TITLES = "titles";
     private static final String NODE_CONTENTS = "contents";
@@ -52,24 +52,5 @@ public class ArticleParser implements ListParser<Article>, ItemParser<Article> {
         article.setLastUpdated(map.getAsTimeInMilliseconds(ITEM_UPDATED_AT));
 
         return article;
-    }
-
-    public List<Article> parseList(String json) {
-        return ParserUtils.getResourceListFromDataNode(json, this);
-    }
-
-    @Override
-    public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContainedInDataNode(jsonOfResponse);
-    }
-
-    @Override
-    public Article parseItem(String json) throws NullPointerException {
-        return ParserUtils.getResourceFromDataNode(json, this);
-    }
-
-    @Override
-    public boolean containsItem(String jsonOfResponse) {
-        return ParserUtils.checkIfItemContainedInDataNode(jsonOfResponse);
     }
 }

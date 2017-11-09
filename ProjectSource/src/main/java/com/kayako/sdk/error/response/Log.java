@@ -21,4 +21,12 @@ public class Log implements ResponseResource {
     public Type getResponseMessageType() {
         return Type.LOG;
     }
+
+    @Override
+    public String toString() {
+        return "Log{" +
+                "level='" + level + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

@@ -22,7 +22,7 @@ public class NotificationListParser implements ListParser<Notification> {
 
     @Override
     public boolean containsList(String jsonOfResponse) {
-        return ParserUtils.checkIfListContained(jsonOfResponse,NODE_NOTIFICATIONS);
+        return ParserUtils.checkIfListContained(jsonOfResponse, NODE_NOTIFICATIONS);
     }
 
     public Notification parse(String jsonOfResource) throws NullPointerException {

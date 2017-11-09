@@ -1,17 +1,15 @@
 package com.kayako.sdk.helpcenter.locale;
 
-import com.kayako.sdk.base.requester.RequestCallback;
-import com.kayako.sdk.base.requester.ListRequester;
-import com.kayako.sdk.base.requester.Response;
-import com.kayako.sdk.utils.RequesterUtils;
+import com.kayako.sdk.base.requester.GetRequestProperty;
+import com.kayako.sdk.base.requester.IncludeArgument;
 
-import java.io.IOException;
+import java.util.Map;
 
 /**
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 12/09/16
  */
-public class GetLocaleListRequester implements ListRequester {
+public class GetLocaleListRequester extends GetRequestProperty {
 
     public static final String ENDPOINT = "/api/v1/locales.json";
     public static final String INCLUDE = "locale";
@@ -22,11 +20,29 @@ public class GetLocaleListRequester implements ListRequester {
         mHelpCenterUrl = helpCenterUrl;
     }
 
-    public Response request() throws IOException {
-        return RequesterUtils.getSync(mHelpCenterUrl, ENDPOINT, INCLUDE, null, null);
+    @Override
+    public String getHelpCenterUrl() {
+        return mHelpCenterUrl;
     }
 
-    public void request(RequestCallback callback) {
-        RequesterUtils.getAsync(mHelpCenterUrl, ENDPOINT, INCLUDE, null, null, callback);
+    @Override
+    public IncludeArgument getInclude() {
+        return new LocaleIncludeArgument();
     }
+
+    @Override
+    public String getEndpointUrl() {
+        return ENDPOINT;
+    }
+
+    @Override
+    public Map<String, String> getQueryParameters() {
+        return null;
+    }
+
+    @Override
+    public Map<String, String> getHeaders() {
+        return null;
+    }
+
 }

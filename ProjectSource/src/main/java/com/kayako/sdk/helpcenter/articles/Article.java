@@ -1,6 +1,6 @@
 package com.kayako.sdk.helpcenter.articles;
 
-import com.kayako.sdk.base.parser.Resource;
+import com.kayako.sdk.base.parser.ComparableResource;
 import com.kayako.sdk.helpcenter.section.Section;
 import com.kayako.sdk.helpcenter.user.UserMinimal;
 
@@ -8,7 +8,7 @@ import com.kayako.sdk.helpcenter.user.UserMinimal;
  * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 24/08/16
  */
-public class Article implements Resource {
+public class Article extends ComparableResource {
 
     private Long id;
 
@@ -102,5 +102,10 @@ public class Article implements Resource {
                 ", lastUpdated=" + lastUpdated +
                 ", lastPosted=" + lastPosted +
                 '}';
+    }
+
+    @Override
+    public String getIdentifier() {
+        return String.valueOf(id);
     }
 }
