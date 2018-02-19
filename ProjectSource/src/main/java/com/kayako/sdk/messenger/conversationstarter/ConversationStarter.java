@@ -16,9 +16,12 @@ public class ConversationStarter implements Resource {
 
     private Double averageReplyTime;
 
-    public ConversationStarter(List<UserMinimal> lastActiveAgents, Double averageReplyTime) {
+    private String realtimeUrl;
+
+    public ConversationStarter(String realtimeUrl, List<UserMinimal> lastActiveAgents, Double averageReplyTime) {
         this.lastActiveAgents = lastActiveAgents;
         this.averageReplyTime = averageReplyTime;
+        this.realtimeUrl = realtimeUrl;
     }
 
     public List<UserMinimal> getLastActiveAgents() {
@@ -27,6 +30,10 @@ public class ConversationStarter implements Resource {
 
     public Double getAverageReplyTime() {
         return averageReplyTime;
+    }
+
+    public String getRealtimeUrl() {
+        return realtimeUrl;
     }
 
 }

@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class ConversationStarterParser implements Parser<ConversationStarter> {
 
+    private static final String ITEM_REALTIME_URL = "realtimeUrl";
     private static final String ITEM_LAST_ACTIVE_AGENTS = "lastActiveAgents";
     private static final String ITEM_AVERAGE_REPLY_TIME = "averageReplyTime";
     private static final String ITEM_ACTIVE_CONVERSATIONS = "activeConversations";
@@ -21,13 +22,17 @@ public class ConversationStarterParser implements Parser<ConversationStarter> {
     public ConversationStarter parse(String jsonOfResource) throws NullPointerException {
         ParserUtils.ResourceMap resourceMap = ParserUtils.convertResourceJsonToResourceMap(jsonOfResource);
 
+
         List<UserMinimal> lastActiveAgentList = null;
 
         if (resourceMap.isNotNull(ITEM_LAST_ACTIVE_AGENTS)) {
             lastActiveAgentList = ParserUtils.getResourceList(jsonOfResource, ITEM_LAST_ACTIVE_AGENTS, ParserFactory.getUserMinimalParser());
         }
 
+        String realtimeUrl = resourceMap.getAsString(ITEM_REALTIME_URL);
+
         return new ConversationStarter(
+                realtimeUrl,
                 lastActiveAgentList,
                 resourceMap.getAsDouble(ITEM_AVERAGE_REPLY_TIME)
         );
