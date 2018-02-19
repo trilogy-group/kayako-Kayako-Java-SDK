@@ -48,10 +48,12 @@ public class SampleDispatcher extends Dispatcher {
         String path = request.getPath();
         for (String key : sampleResponse.getQueryParameters().keySet()) {
             if (key.equals("include")) {
-                return areIncludeArgumentsMatching(
+                boolean areIncludeArgumentsMatching = areIncludeArgumentsMatching(
                         extractIncludeValueFromUrl(request.getPath()),
                         sampleResponse.getQueryParameters().get(key));
-
+                if (!areIncludeArgumentsMatching) {
+                    return false;
+                }
             } else if (!path.contains(key + "=" + sampleResponse.getQueryParameters().get(key))) {
                 return false;
             }
