@@ -17,7 +17,7 @@ pipeline {
         stage('Environment') {
             steps {
                 sh 'printenv'
-                sh 'gradle --version'
+                sh "${env.GRADLE_HOME}/bin/gradle --version"
             }
         }
         stage('Build') {
