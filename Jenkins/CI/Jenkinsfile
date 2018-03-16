@@ -83,7 +83,7 @@ pipeline {
                 }
 
                 def githubCommit = new com.aurea.setGitHubCommitStatus()
-                githubCommit.setGitHubCommitStatus("Build ${env.BUILD_VERSION}", "${currentBuild.currentResult}", "${env.GIT_URL}", "${commitToSetStatusOn}", "${env.GITHUB_CONTEXT}")
+                githubCommit.setGitHubCommitStatus("Build ${env.BUILD_NUMBER}", "${currentBuild.currentResult}", "${env.GIT_URL}", "${commitToSetStatusOn}", "${env.GITHUB_CONTEXT}")
             }
             script {
                 def comitterEmail = sh (
