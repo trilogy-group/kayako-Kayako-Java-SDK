@@ -29,7 +29,7 @@ pipeline {
                         productVersion: "${env.ALINE_PRODUCT_VERSION}",
                         types: 'Java',
                         scmRelativeDir: '../',
-                        processTests: true
+                        processTests: false
                     ) {
                         sh "${env.GRADLE_HOME}/bin/gradle test"
                     }
