@@ -1,12 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb7551f8-c8dc-4aa0-bd58-516705fd5b53" name="Default" comment="" />
-    <ignored path="Kayako Support Java SDK.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="b2665308-a867-40d7-9dd6-f6b65d9f52da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/something.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/ParserFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/RequesterFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/auth/FingerprintAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/auth/SessionAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/EmptyManager_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/ItemManager_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/ListManager_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/parser/ComparableResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/parser/DataNodeParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/AttachmentFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/CommonRequester_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/GetRequestPropertyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/RequestProperty_METHODTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/ResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/ErrorCodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/KayakoExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/ResponseMessagesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/response/ErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/response/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/response/NotificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/response/Type_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/GetArticleListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/GetArticleRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/LocaleIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/LocaleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/GetSearchArticleListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/SearchArticleIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/SearchArticleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/GetSectionListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/GetSectionRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/user/UserMinimalIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/user/UserMinimalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/attachment/AttachmentIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/attachment/AttachmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/attachment/ThumbnailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/ConversationIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/ConversationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/GetConversationListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/GetConversationRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/PostConversationBodyParams_SourceTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/PostConversationRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/ChannelTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/priority/PriorityIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/priority/PriorityParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/priority/PriorityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/readmarker/ReadMarkerIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/readmarker/ReadMarkerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/status/StatusIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/status/StatusParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/status/Status_TypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/team/TeamIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/team/TeamParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/team/TeamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversationstarter/ConversationStarterIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversationstarter/ConversationStarterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversationstarter/GetConversationStarterRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/EmptyIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageSourceTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageStatusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PostMessageBodyParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PostMessageRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageBodyParams_MessageStatusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/GetRatingListRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingBodyParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PutRatingBodyParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PutRatingRequesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/RatingIncludeArgumentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/Rating_SCORETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/ExceptionUtils_1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/FingerprintUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/LocaleUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/LogUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtils_1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
+    <list id="03ba8db8-710f-4319-ab48-6ac236d1a879" name="idea" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/kayako-Kayako-Java-SDK.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_aurea_tests_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_diffblue_deeptestutils_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_openpojo_openpojo_0_8_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_mockwebserver_3_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ejb_javax_ejb_api_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_el_javax_el_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_enterprise_cdi_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_faces_javax_faces_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_interceptor_javax_interceptor_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__nl_jqno_equalsverifier_equalsverifier_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_evosuite_evosuite_runtime_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_2_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hsqldb_hsqldb_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_servlet_jboss_servlet_api_3_1_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_all_2_0_2_beta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_all_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_api_mockito_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_api_mockito_common_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_api_support_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_core_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_module_junit4_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_module_junit4_common_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_powermock_powermock_reflect_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_threeten_threetenbp_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__joda_time_joda_time_no_tzdb_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_danlew_android_joda_aar_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Kayako Support SDK.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Kayako_Support_SDK_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,104 +185,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Kayako_Support_SDK$com_kayako_sdk_in_Kayako_Support_SDK.ic" NAME="com.kayako.sdk in Kayako_Support_SDK Coverage Results" MODIFIED="1522740981450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kayako.sdk.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Kayako_Support_SDK$All_in_Kayako_Support_SDK.ic" NAME="All in Kayako_Support_SDK Coverage Results" MODIFIED="1522723772830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ProjectSource$com_kayako_sdk_in_Kayako_Support_SDK.ic" NAME="com.kayako.sdk in Kayako_Support_SDK Coverage Results" MODIFIED="1522378475932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kayako.sdk.*</FILTER>
+    </SUITE>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Kayako Support SDK" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Run Configurations" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.RunConfigurationsNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Kayako Support SDK" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="other" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Kayako Support Java SDK" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelpCenterTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/HelpCenterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#2271#2272#0" expanded="true" />
-                <element signature="e#2358#2359#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.java</find>
+      <find>expec</find>
+      <find>thrown</find>
+      <find>thrown.expect</find>
+      <find>expect(</find>
+      <find>import static org.evosuite.shaded.org.mockito.Mockito.*;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>import static org.mockito.Mockito.*;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="enhancement/KAYAKO-343" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\user\.gradle\wrapper\dists\gradle-2.13-all\1b9wlm73elu4cqnbc0rk7r7qn\gradle-2.13" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2.13" />
       </map>
     </option>
     <option name="availableProjects">
@@ -177,6 +297,10 @@
                 <option name="description" value="Generates the Maven POM file for publication 'MyPublication'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generatePomFileForMyPublicationPublication" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourcesJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
@@ -305,7 +429,43 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2950084938000" />
+        <entry key="C:/RandomJava/dnd5spellbook" value="4261968337683" />
+        <entry key="C:/redknee/app/crm/trunk" value="2995079901920" />
+        <entry key="C:/redknee/product/s2100/oasis/adapter/trunk" value="7487862753949" />
+        <entry key="$PROJECT_DIR$/../../aurea-ut-analytix" value="1493251339555" />
+        <entry key="$PROJECT_DIR$/../../aurea-ut-analytix-master" value="1491799062000" />
+        <entry key="$PROJECT_DIR$/../../devfactory-ut-pattern-finder" value="2990383244791" />
+        <entry key="$PROJECT_DIR$/../../devfactory-utbelt" value="2980646958033" />
+        <entry key="$PROJECT_DIR$/../../ignite-gensym adds/newnolstudio-gradle" value="2983836264380" />
+        <entry key="$PROJECT_DIR$/../../ignite-gensym_adds/gensym-gradle" value="2983928328669" />
+        <entry key="$PROJECT_DIR$/../../ignite-gensym_adds/ignite-gensym-core" value="2987787660994" />
+        <entry key="$PROJECT_DIR$/../../ignite-gensym_adds/ignite-gensym-nolstudio" value="2987807749939" />
+        <entry key="$PROJECT_DIR$/../../ignite-gensym_adds/newnolstudio-gradle" value="2983877127403" />
+        <entry key="$PROJECT_DIR$" value="6089722668653" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2316299276" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1979977391" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="773649273" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_Framework" value="2995230641494" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_ProductEls" value="2996265125364" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_carrier-solutions-inform" value="2996183784306" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_redknee-platform-framework" value="4488472585694" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_turnkey-converged-billing-voucher-management" value="4488317184622" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_unified-appl-ote" value="2990135601301" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_unified-appl-saf" value="1495067860514" />
+        <entry key="$PROJECT_DIR$/../../redknee/Redknee_unified-ip-application-router" value="1495068751046" />
+        <entry key="$PROJECT_DIR$/../../redknee/appcrm" value="2995191435381" />
+        <entry key="$PROJECT_DIR$/../../redknee/ems" value="5980404774936" />
+        <entry key="$PROJECT_DIR$/../../redknee/floyd-toronto-Framework" value="2994629156936" />
+        <entry key="$PROJECT_DIR$/../../sbe" value="17590541075257" />
+        <entry key="D:/java/javasymbolsolver" value="2978746075750" />
+        <entry key="D:/java/spring-framework" value="2974318552796" />
+        <entry key="D:/java/spring-shell" value="4470985217681" />
+        <entry key="D:/java/spring-shell/samples/helloworld" value="1490328405897" />
+        <entry key="D:/rcaou2017com" value="7489600483297" />
+        <entry key="D:/v/src/TimeEntry" value="2988252276423" />
+        <entry key="D:/y" value="1497232707782" />
+        <entry key="D:/zzz" value="1497496775582" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -374,6 +534,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/298992280d62b944afd0ae9bfe3329f5487dd434/ezmorph-1.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/e30837a0843d5ea477b9334efdb730e66ffbd253/xercesImpl-2.9.1-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/1136d197e2755bbde296ceee217ec5fe2917477b/xercesImpl-2.9.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.ant/ant-launcher/1.8.0/8b53ba16fa62fb1034da8f1de200ddc407c8381/ant-launcher-1.8.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/3.8.1/525753763e53f6f76da052b316d0f2e3bfa4d73/junit-3.8.1-sources.jar" />
@@ -530,504 +691,252 @@
         </entry>
       </map>
     </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../auto-task" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/LocaleRequester.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/user/UserParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/utils/RequesterUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ItemCallback.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ListCallback.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/GetSectionListRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/ItemManager_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/ListManager_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/LocaleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/LogUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageSourceTypeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageStatusTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/PostConversationBodyParams_SourceTypeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/user/UserMinimalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/response/Type_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/team/TeamTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleListRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/GetSectionRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingBodyParamsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/priority/PriorityTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageBodyParams_MessageStatusTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/Rating_SCORETest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/SearchArticleManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryManagerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ItemParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ListParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticleRequester.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/LocaleManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/section/SectionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticleManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/CategoryManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/HelpCenter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/HelpCenterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/user/UserMinimal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/section/Section.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/Locale.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/Article.java" />
-        <option value="$PROJECT_DIR$/bintray-properties.gradle" />
-        <option value="$PROJECT_DIR$/bintray.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtils_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/RequestProperty_METHODTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/status/Status_TypeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PutRatingRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PostMessageRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/IncludeArgumentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/GetRatingListRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageListRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversationstarter/GetConversationStarterRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/GetConversationRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/ErrorCodeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/EmptyManager_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/ConversationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/parser/ComparableResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/ExceptionUtils_1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/GetArticleRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryListRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryRequesterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/ChannelTypeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/RequesterFactoryTest.java" />
+        <option value="$PROJECT_DIR$/files-to-move.groovy" />
+        <option value="$PROJECT_DIR$/.evosuite/tmp_2018_04_03_10_20_51/tests/com/kayako/sdk/ParserFactory_ESTest_scaffolding.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtils_ESTest.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/ParserUtils_MyResourceMapTest.java" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="419" />
+    <option name="y" value="-20" />
+    <option name="width" value="960" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="837" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Assignment issuesGroovy</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>GroovyAssignabilityCheck</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Kayako Support SDK">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Kayako Support SDK">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Kayako_Support_SDK_main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sdk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kayako Support SDK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectSource" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpcenter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Kayako Support SDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectSource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.46781608" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_25" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="cores_evosuite_param" value="1" />
+    <property name="evosuite_gui_dialog_height" value="300" />
+    <property name="evosuite_gui_dialog_width" value="570" />
+    <property name="evosuite_jar_location" value="C:\crossover\evosuite-1.0.5.jar" />
+    <property name="execution_mode" value="MVN" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kayako-kre-java-client" />
+    <property name="memory_evosuite_param" value="1000" />
+    <property name="mvn_location" value="C:\apache-maven-3.2.5\bin\mvn.bat" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15319975" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="target_folder_evosuite_param" value="src/evo" />
+    <property name="time_evosuite_param" value="2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.kayako.sdk.helpcenter" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="D:\crossover\repos\kayako-Kayako-Java-SDK\ProjectSource\src\test\java" />
+      <recent name="D:\crossover\repos\kayako-Kayako-Java-SDK\ProjectSource\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HelpCenterTest">
-    <configuration default="false" name="Kayako-Java-SDK [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="Kayako-Java-SDK [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="Kayako-Java-SDK [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="Kayako-Java-SDK [bintrayUpload]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bintrayUpload" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="HelpCenterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests com.kayako.sdk.helpcenter.HelpCenterTest" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <method />
-    </configuration>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.com.kayako.sdk in Kayako_Support_SDK">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
+    <configuration name="files-to-move" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="Kayako_Support_SDK" />
+      <setting name="path" value="file://$PROJECT_DIR$/files-to-move.groovy" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
-      <method />
+    </configuration>
+    <configuration name="All in Kayako_Support_SDK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kayako_Support_SDK" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ParserUtils_MyResourceMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kayako_Support_SDK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kayako.sdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kayako.sdk.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.kayako.sdk.utils.ParserUtils_MyResourceMapTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -1036,82 +945,57 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
-      <envs />
       <patterns />
-      <method />
     </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+    <configuration name="com.kayako.sdk in Kayako_Support_SDK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kayako_Support_SDK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kayako.sdk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kayako.sdk" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Kayako Support SDK" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -1119,543 +1003,333 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [clean]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [classes]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [bintrayUpload]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.HelpCenterTest" />
+    <list>
+      <item itemvalue="JUnit.com.kayako.sdk in Kayako_Support_SDK" />
+      <item itemvalue="JUnit.All in Kayako_Support_SDK" />
+      <item itemvalue="JUnit.ParserUtils_MyResourceMapTest" />
+      <item itemvalue="Groovy.files-to-move" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.HelpCenterTest" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [classes]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [bintrayUpload]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.Kayako-Java-SDK [clean]" />
+      <list>
+        <item itemvalue="JUnit.com.kayako.sdk in Kayako_Support_SDK" />
+        <item itemvalue="JUnit.All in Kayako_Support_SDK" />
+        <item itemvalue="Groovy.files-to-move" />
+        <item itemvalue="JUnit.ParserUtils_MyResourceMapTest" />
+        <item itemvalue="JUnit.com.kayako.sdk in Kayako_Support_SDK" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fb7551f8-c8dc-4aa0-bd58-516705fd5b53" name="Default" comment="" />
-      <created>1474807083112</created>
+      <changelist id="b2665308-a867-40d7-9dd6-f6b65d9f52da" name="Default" comment="" />
+      <changelist id="03ba8db8-710f-4319-ab48-6ac236d1a879" name="idea" comment="" />
+      <created>1522375477834</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1474807083112</updated>
+      <updated>1522375477834</updated>
+      <workItem from="1522375481227" duration="4067000" />
+      <workItem from="1522659754907" duration="84000" />
+      <workItem from="1522718496258" duration="5367000" />
+      <workItem from="1522724267077" duration="192000" />
+      <workItem from="1522724490868" duration="45000" />
+      <workItem from="1522725588148" duration="4756000" />
     </task>
+    <task id="LOCAL-00001" summary="Add bulk unit tests">
+      <created>1522378338483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522378338483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 47m 43s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="All_in_Kayako_Support_SDK - 2018.04.03 at 09h 20m 25s.xml">
+      <configuration name="All in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 48m 37s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="All_in_Kayako_Support_SDK - 2018.04.03 at 09h 20m 59s.xml">
+      <configuration name="All in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 48m 54s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="com_kayako_sdk_in_Kayako_Support_SDK - 2018.04.03 at 09h 37m 10s.xml">
+      <configuration name="com.kayako.sdk in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 49m 33s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="com_kayako_sdk_in_Kayako_Support_SDK - 2018.04.03 at 09h 37m 27s.xml">
+      <configuration name="com.kayako.sdk in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 50m 20s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="All_in_Kayako_Support_SDK - 2018.04.03 at 09h 46m 01s.xml">
+      <configuration name="All in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 52m 35s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="All_in_Kayako_Support_SDK - 2018.04.03 at 09h 46m 22s.xml">
+      <configuration name="All in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 53m 37s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="All_in_Kayako_Support_SDK - 2018.04.03 at 09h 49m 35s.xml">
+      <configuration name="All in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HelpCenterTest - 2016.09.30 at 07h 56m 48s.xml">
-      <configuration name="HelpCenterTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="com_kayako_sdk_in_Kayako_Support_SDK - 2018.04.03 at 14h 36m 18s.xml">
+      <configuration name="com.kayako.sdk in Kayako_Support_SDK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_kayako_sdk_in_Kayako_Support_SDK - 2018.04.03 at 14h 36m 33s.xml">
+      <configuration name="com.kayako.sdk in Kayako_Support_SDK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_kayako_sdk_in_Kayako_Support_SDK - 2018.04.03 at 14h 53m 15s.xml">
+      <configuration name="com.kayako.sdk in Kayako_Support_SDK" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="837" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.49427754" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55771905" sideWeight="0.47711015" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3852573" sideWeight="0.5200286" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4534075" sideWeight="0.47997138" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.64673156" sideWeight="0.47997138" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.4874552" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16595136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.47311828" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5268817" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005208" side_tool="true" weight="0.32925585" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.3296875" />
+      <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="bottom" id="Build" order="17" sideWeight="0.49947917" weight="0.32925585" />
+      <window_info anchor="bottom" id="EvoSuite" order="0" weight="0.13659531" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.3646245" />
+      <window_info anchor="bottom" id="TODO" order="15" weight="0.32960325" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.33944955" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.47298676" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.5453619" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.4138859" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32608697" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19106567" />
+      <window_info anchor="bottom" id="JProfiler" order="6" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.31225297" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
+      <window_info anchor="bottom" id="Statistic" order="1" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" x="92" y="92" width="1736" height="896" id="Documentation" order="4" type="FLOATING" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.49947917" weight="0.32925585" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.47314814" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32608697" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005208" side_tool="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Statistic" order="1" />
+      <window_info anchor="right" x="92" y="92" width="1736" height="896" id="Documentation" order="4" type="FLOATING" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="EvoSuite" order="0" weight="0.32962963" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="5" />
+      <window_info anchor="bottom" id="JProfiler" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="17" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.5462963" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.3296875" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18489583" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3398148" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
+      <window_info anchor="bottom" id="TODO" order="15" weight="0.32960325" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.4140625" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.31225297" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.3646245" />
+    </layout-to-restore>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleParser.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/HelpCenterTest.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/HelpCenterTest.java</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Add bulk unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bulk unit tests" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/Locale.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleListRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/GetSectionRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingBodyParamsTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/priority/PriorityTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageBodyParams_MessageStatusTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/Rating_SCORETest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/SearchArticleManagerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleIncludeArgumentPojoTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleManagerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtils_1Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/RequestProperty_METHODTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/search/SearchArticleIncludeArgumentPojoTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/status/Status_TypeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PutRatingRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PutMessageRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/PostRatingRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/PostMessageRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/requester/IncludeArgumentTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/rating/GetRatingListRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/message/GetMessageListRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/locale/GetLocaleRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversationstarter/GetConversationStarterRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/GetConversationRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/error/ErrorCodeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/manager/EmptyManager_1Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/ConversationTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/base/parser/ComparableResourceTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/ExceptionUtils_1Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/GetArticleRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryListRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/GetCategoryRequesterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/messenger/conversation/fields/ChannelTypeTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/articles/ArticleTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/RequesterFactoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/files-to-move.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="486" column="31" selection-start-line="486" selection-start-column="31" selection-end-line="486" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/category/CategoryManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/section/SectionManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/utils/ParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/Requester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/utils/LocaleUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/CategoryParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ItemCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ItemParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleRequester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/CategoryRequester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ListParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticleRequester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/LocaleRequester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/src/core/org/gradle/api/tasks/bundling/AbstractArchiveTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/src/core/org/gradle/api/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="1492" column="31" selection-start-line="1492" selection-start-column="31" selection-end-line="1492" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kayako-sdk-0.0.1-pom.xml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1048">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/publications/mavenJava/pom-default.xml" />
-    <entry file="file://$PROJECT_DIR$/build/libs/kayako-sdk-0.0.1-pom.xml" />
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/RequesterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/LocaleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/base/ListCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/CategoryManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticleManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/section/SectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/HelpCenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/section/SectionParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="434" column="6" selection-start-line="434" selection-start-column="6" selection-end-line="434" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/user/UserMinimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/section/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/search/SearchArticle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/locale/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/category/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <element signature="e#1892#1893#0" expanded="false" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/helpcenter/articles/ArticleManager.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/auth/FingerprintAuthTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/auth/SessionAuthTest.java" />
+    <entry file="file://$PROJECT_DIR$/tmp/test/java/com/kayako/sdk/utils/LocaleUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="406">
+          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/test/java/com/kayako/sdk/base/requester/AttachmentFileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replay_pid10600.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.evosuite/tmp_2018_04_03_10_03_54/tests/com/kayako/sdk/base/requester/IncludeArgument_ESTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2352">
+          <folding>
+            <element signature="e#0#5616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/auth/FingerprintAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kayako/sdk/utils/RequesterUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="196">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/System.java">
+    <entry file="file://$PROJECT_DIR$/.evosuite/tmp_2018_04_03_10_20_51/tests/com/kayako/sdk/ParserFactory_ESTest_scaffolding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8685">
-          <caret line="620" column="29" selection-start-line="620" selection-start-column="29" selection-end-line="620" selection-end-column="29" />
+        <state relative-caret-position="207">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bintray.properties" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/auth/SessionAuth_ESTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/RequesterUtils_ESTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="113" column="26" lean-forward="true" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/helpcenter/HelpCenterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kayako/sdk/utils/ParserUtils_MyResourceMapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#2271#2272#0" expanded="true" />
-            <element signature="e#2358#2359#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="gradleExecuteTaskHistory">
-    <option value="" />
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor>
-            <show-content>
-              <type id="library" />
-              <type id="artifact" />
-            </show-content>
-          </artifact-editor>
-          <last-edited>unnamed</last-edited>
+          <artifact-editor />
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1667,7 +1341,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1675,10 +1349,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>groovy-2.4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1690,7 +1365,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1698,12 +1373,24 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Kayako Support SDK</last-edited>
+          <last-edited>Kayako_Support_SDK</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20000002" />
               </list>
             </option>
           </splitter-proportions>
@@ -1711,11 +1398,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: com.google.code.gson:gson:2.4</last-edited>
+          <last-edited>Gradle: com.aurea:tests-commons:1.8.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.46781608" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
