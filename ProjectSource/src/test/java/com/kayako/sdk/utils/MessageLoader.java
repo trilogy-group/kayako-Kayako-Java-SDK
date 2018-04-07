@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class MessageLoader {
     public static String readFile(String msgFile, String contentFile, int contentLength){
-        String path = "mockedMessages/";
+        String path = "resources/mockedMessages/";
         String line;
         StringBuilder messageBuilder = new StringBuilder();
         int tabs;
