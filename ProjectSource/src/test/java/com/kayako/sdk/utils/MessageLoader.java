@@ -39,7 +39,7 @@ public final class MessageLoader {
                 messageBuilder.append(line).append(System.lineSeparator());
               }
             } catch (IOException ioe) {
-              LogUtils.logError(Class.forName("MessageLoader"), ioe.getMessage());
+              LogUtils.logError(MessageLoader.class, ioe.getMessage());
             }
             if (contentLength > 1 && i != (contentLength - 1)) {
               messageBuilder.insert(messageBuilder.length() - 1, ",");
@@ -51,7 +51,7 @@ public final class MessageLoader {
         }
       }
     } catch (IOException ioe) {
-      LogUtils.logError(Class.forName("MessageLoader"), ioe.getMessage());
+      LogUtils.logError(MessageLoader.class, ioe.getMessage());
     }
     return messageBuilder.toString();
   }
