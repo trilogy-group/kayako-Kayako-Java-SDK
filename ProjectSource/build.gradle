@@ -131,5 +131,6 @@ dependencies {
     testCompile 'com.aurea:tests-commons:1.8.1'
     testCompile 'com.openpojo:openpojo:0.8.4'
     testCompile 'nl.jqno.equalsverifier:equalsverifier:2.4.3'
+    testCompile 'com.diffblue:deeptestutils:1.0.0'
 }
 
