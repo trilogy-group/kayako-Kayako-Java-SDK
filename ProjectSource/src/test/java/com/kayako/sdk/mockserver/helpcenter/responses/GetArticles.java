@@ -4,7 +4,6 @@ import com.kayako.sdk.mockserver.base.BaseSampleResponse;
 import com.kayako.sdk.utils.MessageLoader;
 
 /**
- * @author Neil Mathew (neil.mathew@kayako.com)
  * @date 15/02/17
  */
 public class GetArticles extends BaseSampleResponse {
