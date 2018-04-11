@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
     }
 }
@@ -35,6 +36,7 @@ task wrapper(type: Wrapper) {
 
 allprojects {
     repositories {
+        mavenCentral()
         jcenter()
     }
     apply plugin: 'maven'
@@ -109,5 +111,6 @@ dependencies {
     testCompile 'org.powermock:powermock-module-junit4:1.6.6'
     testCompile 'org.powermock:powermock-api-mockito:1.6.6'
     testCompile "org.mockito:mockito-core:1.10.8"
+    testCompile	'com.diffblue:deeptestutils:1.0.0'
 }
 
