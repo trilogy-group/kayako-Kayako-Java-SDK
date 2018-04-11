@@ -6,14 +6,14 @@ import com.kayako.sdk.base.requester.Requester;
 import com.kayako.sdk.messenger.message.PutMessageBodyParams;
 import com.kayako.sdk.messenger.rating.PostRatingBodyParams;
 import com.kayako.sdk.messenger.rating.PutRatingBodyParams;
-import java.util.HashMap;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import java.util.HashMap;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class RequesterFactoryTest {
 

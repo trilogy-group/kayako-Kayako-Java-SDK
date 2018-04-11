@@ -4,15 +4,15 @@ import com.diffblue.deeptestutils.Reflector;
 import com.kayako.sdk.error.response.Error;
 import com.kayako.sdk.error.response.Log;
 import com.kayako.sdk.error.response.Notification;
-import java.util.ArrayList;
-import java.util.List;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ResponseMessagesTest {
 

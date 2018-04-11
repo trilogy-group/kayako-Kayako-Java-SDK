@@ -3,16 +3,16 @@ package com.kayako.sdk.messenger.message;
 import com.diffblue.deeptestutils.Reflector;
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.AttachmentFile;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class PostMessageRequesterTest {
 

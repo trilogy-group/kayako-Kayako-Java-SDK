@@ -4,15 +4,15 @@ import com.diffblue.deeptestutils.Reflector;
 import com.kayako.sdk.base.callback.ItemCallback;
 import com.kayako.sdk.base.parser.ItemParser;
 import com.kayako.sdk.base.requester.Requester;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ItemManager_1Test {
 

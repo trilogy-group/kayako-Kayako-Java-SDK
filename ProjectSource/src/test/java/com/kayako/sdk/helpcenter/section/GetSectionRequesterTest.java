@@ -1,15 +1,15 @@
 package com.kayako.sdk.helpcenter.section;
 
 import com.diffblue.deeptestutils.Reflector;
-import java.lang.reflect.Constructor;
-import java.util.Map;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import java.lang.reflect.Constructor;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class GetSectionRequesterTest {
 

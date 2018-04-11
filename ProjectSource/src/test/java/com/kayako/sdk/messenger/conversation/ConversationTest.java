@@ -8,13 +8,12 @@ import com.kayako.sdk.messenger.conversation.fields.readmarker.ReadMarker;
 import com.kayako.sdk.messenger.conversation.fields.status.Status;
 import com.kayako.sdk.messenger.conversation.fields.team.Team;
 import com.kayako.sdk.messenger.message.MessageStatus;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ConversationTest {
 
