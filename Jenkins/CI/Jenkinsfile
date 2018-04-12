@@ -31,7 +31,9 @@ pipeline {
                         scmRelativeDir: '../',
                         processTests: false
                     ) {
+
                         sh "${env.GRADLE_HOME}/bin/gradle test"
+                        
                     }
                 }
                 dir("ProjectSource") {
