@@ -13,7 +13,8 @@ public abstract class AbstractRequestProperty extends GetRequestProperty {
 
   AbstractRequestProperty(String endpointUrl, String helpCenterUrl,
       Map<String, String> queryParameters, Map<String, String> headers, IncludeArgument include,
-      Map<String, String> bodyParameters) {   
+      Map<String, String> bodyParameters) {
+         
     this.endpointUrl = endpointUrl;
     this.helpCenterUrl = helpCenterUrl;
     this.queryParameters = queryParameters;
