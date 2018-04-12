@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class PostRatingBodyParams {
 
+  private static final String PARM_SCORE = "score";
+  private static final String PARM_COMMENT = "comment";
+
   // Mandatory Fields
   private Rating.SCORE score;
 
@@ -39,9 +42,9 @@ public class PostRatingBodyParams {
   public Map<String, String> getBodyParameters() {
     Map<String, String> bodyParameters = new HashMap<>();
 
-    bodyParameters.put("score", score.name());
+    bodyParameters.put(PARM_SCORE, score.name());
     if (comment != null) {
-      bodyParameters.put("comment", comment);
+      bodyParameters.put(PARM_COMMENT, comment);
     }
     return bodyParameters;
   }

@@ -7,6 +7,11 @@ import com.kayako.sdk.base.requester.AttachmentFile;
 
 public class PostMessageBodyParams {
 
+  private static final String PARM_CONTENTS = "contents";
+  private static final String PARM_SOURCE = "source";
+  private static final String PARM_CLIENT_ID = "client_id";
+  private static final String PARM_FILE = "files";
+
   private String contents;
   private MessageSourceType type;
   private String clientId;
@@ -58,12 +63,12 @@ public class PostMessageBodyParams {
   public Map<String, String> getBodyParameters() {
     Map<String, String> bodyParameters = new HashMap<>();
 
-    bodyParameters.put("contents", contents);
+    bodyParameters.put(PARM_CONTENTS, contents);
     if (type != null) {
-      bodyParameters.put("source", type.toString());
+      bodyParameters.put(PARM_SOURCE, type.toString());
     }
     if (clientId != null) {
-      bodyParameters.put("client_id", clientId);
+      bodyParameters.put(PARM_CLIENT_ID, clientId);
     }
     return bodyParameters;
   }
@@ -76,7 +81,7 @@ public class PostMessageBodyParams {
     }
 
     for (AttachmentFile attachmentFile : attachmentFileList) {
-      attachmentFiles.put("files", attachmentFile);
+      attachmentFiles.put(PARM_FILE, attachmentFile);
     }
     return attachmentFiles;
   }

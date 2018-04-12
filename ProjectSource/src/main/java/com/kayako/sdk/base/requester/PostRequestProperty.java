@@ -1,10 +1,11 @@
 package com.kayako.sdk.base.requester;
 
+import java.util.Collections;
 import java.util.Map;
 
 public abstract class PostRequestProperty extends AbstractRequestProperty {
 
-  Map<String, AttachmentFile> attachmentFiles;
+  private final Map<String, AttachmentFile> attachmentFiles;
 
   public PostRequestProperty(String endpointUrl, String mHelpCenterUrl,
       Map<String, String> queryParameters, Map<String, String> headers, IncludeArgument include,
@@ -14,7 +15,7 @@ public abstract class PostRequestProperty extends AbstractRequestProperty {
   }
 
   public Map<String, AttachmentFile> getAttachmentFiles() {
-    return attachmentFiles;
+    return Collections.unmodifiableMap(attachmentFiles);
   }
 
   public METHOD getMethod() {

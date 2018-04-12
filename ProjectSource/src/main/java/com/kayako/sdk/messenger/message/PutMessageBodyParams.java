@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class PutMessageBodyParams {
 
+  private static final String PARM_MSG_STATUS = "message_status";
+
   private MessageStatus messageStatus;
 
   public PutMessageBodyParams(MessageStatus messageStatus) {
@@ -24,7 +26,7 @@ public class PutMessageBodyParams {
 
   public Map<String, String> getBodyParameters() {
     Map<String, String> bodyParameters = new HashMap<>();
-    bodyParameters.put("message_status", messageStatus.name());
+    bodyParameters.put(PARM_MSG_STATUS, messageStatus.name());
     return bodyParameters;
   }
 

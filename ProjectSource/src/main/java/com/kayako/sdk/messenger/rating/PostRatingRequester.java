@@ -1,5 +1,6 @@
 package com.kayako.sdk.messenger.rating;
 
+import java.util.Collections;
 import java.util.HashMap;
 import com.kayako.sdk.auth.FingerprintAuth;
 import com.kayako.sdk.base.requester.AttachmentFile;
@@ -14,6 +15,6 @@ public class PostRatingRequester extends PostRequestProperty {
 
     super(String.format(unformattedEndpoint, conversationId), helpdeskUrl, null,
         fingerprintAuth.getHeaders(), new RatingIncludeArgument(), bodyParams.getBodyParameters(),
-        new HashMap<String, AttachmentFile>());
+        Collections.<String, AttachmentFile>emptyMap());
   }
 }

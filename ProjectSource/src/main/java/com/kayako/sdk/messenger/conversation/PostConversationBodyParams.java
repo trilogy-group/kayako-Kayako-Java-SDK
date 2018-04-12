@@ -5,13 +5,17 @@ import java.util.Map;
 
 public class PostConversationBodyParams {
 
+  private static final String PARM_NAME = "name";
+  private static final String PARM_EMAIL = "email";
+  private static final String PARM_SUBJECT = "subject";
+  private static final String PARM_CONTENTS = "contents";
+  private static final String PARM_SOURCE = "source";
+  private static final String PARM_CLIENT_ID = "client_id";
+
   // Mandatory Fields
-  private String name;
-  private String email;
-  private String subject;
-  private String contents;
-  private SourceType source;
+  private final String name, email, subject, contents;
   private String clientId;
+  private final SourceType source;
 
   public PostConversationBodyParams(String name, String email, String subject, String contents,
       SourceType source) {
@@ -28,16 +32,8 @@ public class PostConversationBodyParams {
 
   public PostConversationBodyParams(String name, String email, String subject, String contents,
       SourceType source, String clientId) {
-    if (name == null || email == null || subject == null || contents == null || source == null) {
-      throw new IllegalArgumentException("Mandatory fields can not be null ");
-    }
-
-    this.name = name;
-    this.email = email;
-    this.subject = subject;
-    this.contents = contents;
+    this(name, email, subject, contents, source);
     this.clientId = clientId;
-    this.source = source;
   }
 
   public String getName() {
@@ -71,13 +67,13 @@ public class PostConversationBodyParams {
   public Map<String, String> getBodyParameters() {
     Map<String, String> bodyParameters = new HashMap<>();
 
-    bodyParameters.put("name", name);
-    bodyParameters.put("email", email);
-    bodyParameters.put("subject", subject);
-    bodyParameters.put("contents", contents);
-    bodyParameters.put("source", source.name());
+    bodyParameters.put(PARM_NAME, name);
+    bodyParameters.put(PARM_EMAIL, email);
+    bodyParameters.put(PARM_SUBJECT, subject);
+    bodyParameters.put(PARM_CONTENTS, contents);
+    bodyParameters.put(PARM_SOURCE, source.name());
     if (clientId != null) {
-      bodyParameters.put("client_id", clientId);
+      bodyParameters.put(PARM_CLIENT_ID, clientId);
     }
     return bodyParameters;
   }

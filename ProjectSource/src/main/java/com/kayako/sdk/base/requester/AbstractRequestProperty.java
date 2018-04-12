@@ -4,12 +4,12 @@ import java.util.Map;
 
 public abstract class AbstractRequestProperty extends GetRequestProperty {
 
-  private String helpCenterUrl;
-  private String endpointUrl;
-  private Map<String, String> queryParameters;
-  private Map<String, String> headers;
-  private IncludeArgument include;
-  private Map<String, String> bodyParameters;
+  private final String helpCenterUrl;
+  private final String endpointUrl;
+  private final Map<String, String> queryParameters;
+  private final Map<String, String> headers;
+  private final IncludeArgument include;
+  private final Map<String, String> bodyParameters;
 
   AbstractRequestProperty(String endpointUrl, String helpCenterUrl,
       Map<String, String> queryParameters, Map<String, String> headers, IncludeArgument include,
