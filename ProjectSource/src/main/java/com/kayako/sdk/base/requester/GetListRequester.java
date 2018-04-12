@@ -16,6 +16,7 @@ public abstract class GetListRequester extends GetRequestProperty {
 
   public GetListRequester(String endpoint, String argId, String helpCenterUrl, long id, int offset,
       int limit) {
+    
     this.ENDPOINT = endpoint;
     this.ARG_ID = argId;
     this.mId = id;
