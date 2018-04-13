@@ -1,0 +1,17 @@
+{
+	"id": 6,
+	"locale": "zh-tw",
+	"name": "中文",
+	"nativeName": "中文（台灣）",
+	"region": "TW",
+	"nativeRegion": "台灣",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2016-03-01T03:28:40+00:00",
+	"updatedAt": "2016-03-01T03:28:40+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/6"
+}

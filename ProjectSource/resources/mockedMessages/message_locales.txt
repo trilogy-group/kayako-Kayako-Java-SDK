@@ -1,0 +1,8 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "locale",
+	"totalCount": 44\n" +
+}

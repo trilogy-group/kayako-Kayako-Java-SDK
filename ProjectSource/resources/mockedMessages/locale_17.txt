@@ -1,0 +1,17 @@
+{
+	"id": 18,
+	"locale": "fil",
+	"name": "Filipino",
+	"nativeName": "Filipino",
+	"region": "",
+	"nativeRegion": "",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2016-03-01T03:28:40+00:00",
+	"updatedAt": "2016-03-01T03:28:40+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/18"
+}
