@@ -1,0 +1,38 @@
+{
+	"id": 5,
+	"titles": [
+		{
+			"id": 1499,
+			"locale": "en-us",
+			"translation": "User Guide",
+			"createdAt": "2016-06-23T14:12:20+00:00",
+			"updatedAt": "2016-06-23T14:12:20+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "5-user-guide",
+			"resourceType": "slug"
+		}
+	],
+	"descriptions": [
+		{
+			"id": 1500,
+			"locale": "en-us",
+			"translation": null,
+			"createdAt": "2016-06-23T14:12:20+00:00",
+			"updatedAt": "2016-06-23T14:12:20+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+		}
+	],
+	"brand": null,
+	"displayOrder": 1,
+	"createdAt": "2016-06-23T14:12:20+00:00",
+	"updatedAt": "2016-07-04T12:08:24+00:00",
+	"resourceType": "category",
+	"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+}
