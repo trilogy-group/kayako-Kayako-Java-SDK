@@ -1,0 +1,81 @@
+{
+	"id": 237,
+	"titles": [
+		{
+			"id": 87,
+			"locale": "en-us",
+			"translation": "Interactive Tutorials",
+			"createdAt": "2016-04-29T05:03:04+00:00",
+			"updatedAt": "2016-04-29T05:03:04+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/87"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "237-interactive-tutorials",
+			"resourceType": "slug"
+		}
+	],
+	"descriptions": [
+		{
+			"id": 88,
+			"locale": "en-us",
+			"translation": "Get help performing common Kayako Classic tasks with these interactive tutorials.",
+			"createdAt": "2016-04-29T05:03:04+00:00",
+			"updatedAt": "2016-04-29T05:03:04+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/88"
+		}
+	],
+	"visibility": "PUBLIC",
+	"category": {
+		"id": 1,
+		"titles": [
+			{
+				"id": 33,
+				"locale": "en-us",
+				"translation": "Kayako Classic Documentation",
+				"createdAt": "2016-04-29T05:03:00+00:00",
+				"updatedAt": "2016-04-29T05:03:00+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/33"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1-kayako-classic-documentation",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 34,
+				"locale": "en-us",
+				"translation": "This user guide will bring you up to speed on key features, walk you through common tasks, and put you on the path to Kayako mastery.",
+				"createdAt": "2016-04-29T05:03:00+00:00",
+				"updatedAt": "2016-04-29T05:03:00+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/34"
+			}
+		],
+		"brand": null,
+		"displayOrder": 2,
+		"createdAt": "2016-01-16T05:47:57+00:00",
+		"updatedAt": "2016-07-04T12:04:07+00:00",
+		"resourceType": "category",
+		"resourceUrl": "https://support.kayako.com/api/v1/categories/1"
+	},
+	"agent": {
+		"id": 389,
+		"resourceType": "userMinimal"
+	},
+	"articleOrderBy": "LATEST",
+	"totalArticles": 4,
+	"createdAt": "2016-02-24T21:45:50+00:00",
+	"updatedAt": "2016-07-04T12:13:12+00:00",
+	"resourceType": "section",
+	"resourceUrl": "https://support.kayako.com/api/v1/sections/237"
+}

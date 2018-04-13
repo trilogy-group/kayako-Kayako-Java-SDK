@@ -1,0 +1,12 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "section",
+	"offset": 0,
+	"limit": 10,
+	"totalCount": 12,
+	"nextUrl": "https://support.kayako.com/api/v1/sections.json?_case=camel&categoryId=1&include=localeField%2Ccategory&offset=10",
+	"lastUrl": "https://support.kayako.com/api/v1/sections.json?_case=camel&categoryId=1&include=localeField%2Ccategory&offset=10"
+}
