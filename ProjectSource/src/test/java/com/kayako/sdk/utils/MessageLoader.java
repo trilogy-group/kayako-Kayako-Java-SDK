@@ -29,11 +29,11 @@ public final class MessageLoader {
     throw new AssertionError("This class cannot be instantiated");
   }
 
-  public static String readFile(String msgFile, String contentFile, int contentLength) {
+  public static String readFile(String msgFile, String contentFile, int contentLength){
 
-    String line;
-    StringBuilder messageBuilder = new StringBuilder();
-    int tabs;
+		String line;
+		StringBuilder messageBuilder = new StringBuilder();
+		int tabs;
 
     try (BufferedReader msgReader = Files.newBufferedReader(
         Paths.get(PATH + MSG_PREFIX + msgFile + TXT_EXTENSION), StandardCharsets.UTF_8)) {
