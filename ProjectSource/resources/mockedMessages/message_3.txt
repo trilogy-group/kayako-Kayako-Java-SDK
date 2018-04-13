@@ -1,0 +1,30 @@
+{
+	"id": 244,
+	"uuid": "5586528e-0622-4f63-a393-b0e5e67c41a1",
+	"clientId": null,
+	"subject": "Hey",
+	"channel": "HELPCENTER",
+	"contentText": "bleh 16",
+	"contentHtml": "bleh 16",
+	"creator": {
+		"id": 14,
+		"fullName": "John Doe",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/f19cebf8-6d34-51e3-89ec-42e072a6ad43?1486460502",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/14"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"source": null,
+	"metadata": {
+		"user_agent": "",
+		"page_url": ""
+	},
+	"messageStatus": "DELIVERED",
+	"messageStatusUpdatedAt": "2017-02-07T10:39:51+00:00",
+	"createdAt": "2017-02-07T10:39:51+00:00",
+	"updatedAt": "2017-02-07T10:39:51+00:00",
+	"resourceType": "case_message",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/20/messages/244"
+}
