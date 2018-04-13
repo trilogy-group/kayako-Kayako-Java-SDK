@@ -1,0 +1,164 @@
+{
+	"uuid": "3e69d2d3-bfa4-5f02-9434-8cd6df482920",
+	"title": "Continued support subscription plans for Kayako Download legacy license customers",
+	"contents": "<p dir=\"ltr\">When we launched the new, cloud-only Kayako in July  2016, we also announced an end-of-life (EOL) for Kayako Download  (July 2017, with 6 months of security fixes).</p>  <p dir=\"ltr\">Since then, <a href=\"https://support.kayako.com/article/1284-kayako-download-continued-support\" rel=\"nofollow\">we announced the cancellation of those end-of-life  plans</a> and that we will continue to support and develop Kayako  Download (aka, Kayako Classic) alongside the new Kayako.</p>  <p dir=\"ltr\">As part of this, we have also introduced new a new  continued support subscription for Kayako Download perpetual  customers who want to continue receiving access to support and  new product updates.</p>  <h1 dir=\"ltr\">The new continued support plans</h1>  <p dir=\"ltr\">Kayako Download perpetual license customers who want  to continue receiving support and access to new updates will need  to renew onto a new continued support subscription:</p>  <ul>    <li dir=\"ltr\">$15 per staff user per month for Kayako Case and    Kayako Engage, billed annually</li>    <li dir=\"ltr\">$20 per staff user per month for Kayako Fusion,    billed annually</li>  </ul>  <p><span style=\"background-color: transparent; text-align: initial;\">An  additional 10% discount is available for two-year renewals made  upfront.</span></p>  <p><span style=\"background-color: transparent; text-align: initial;\">In addition  to securing ongoing development, new capabilities, updates and  support, this subscription also guarantees your discount pricing  for the new Kayako in the cloud, whenever you choose to upgrade.  When you decide to upgrade, you&#39;ll just pay the same price for  each of your staff user.</span></p>  <h1>Questions answered</h1>  <h3 dir=\"ltr\">Why do I need to pay more for my renewal?</h3>  <p>In short, so that we can sustainably develop and support  Kayako Download.</p>  <p>The reason why we originally announced an end-of-life for  Kayako Download was because we could no longer sustain supporting  and developing it for our customers on legacy license plans, such  as yours, which we have historically grandfathered.</p>  <p>This is for a few reasons, including the increased capability  breadth and added complexity of the Kayako Download product, and  the declining number of our customers who have opted or stuck  with for Kayako Download (on-premise) vs Kayako in the cloud.</p>  <p>That&#39;s why we initially decided to end-of-life the product.  However, following this announcement, we were contacted by a  large number of customers who asked us to put together tailored  extended support contracts for them. We took a few of these  conversations forward and had a lot of take up. </p>  <p>Off the back of this, we created a new business model around  Kayako Download, which resulted in these new continued support  plans. That&#39;s what we are now offering to all existing Kayako  Download customers.</p>  <h3 dir=\"ltr\">What happens if I don&#39;t renew onto the new  continued support plans?</h3>  <p>There is no obligation to renew. If you do not wish to sign  up<span> </span>to<span> </span>the continued support  plans, you can continue using your Kayako Download perpetual  license, but your access to new product releases and Kayako  support will lapse at the earlier of your license expiry date, or  July 2017 (the original end-of-life date).</p>  <h3 dir=\"ltr\">What is a staff user, and how does the licensing  work?</h3>  <p>A <em>staff user</em> is anyone who needs to log in to the  staff or admin area of your Kayako and support your customers  (replying to tickets, accepting live chats, etc).</p>  <p>You need one staff user license for every enabled staff user  account in your Kayako installation. You can see how many you  have today in your admin control panel, under Staff and then  Manage Staff.</p>  <h3 dir=\"ltr\">How can I renew an &#39;unlimited staff user&#39;  license?</h3>  <p>The new continued support plans are priced per staff user. If  you have an &#39;unlimited staff user&#39; license, you&#39;ll need to renew  for the number of staff user accounts you need in your  Kayako.</p>  <h3 dir=\"ltr\">Will I be able to add new staff users to my  license?</h3>  <p>You can add any number of staff users to your license, and  would only need to pay the pro-rata difference. For example, if  you were 7 months into your 1 year subscription and you added a  new staff user, you&#39;d pay for the remaining 5 months for your  term. </p>  <p>You can also reduce the number of staff users on your license,  but these changes won&#39;t affect your billing until your  renewal.</p>  <p>You no longer need to upgrade your license level in lots of 10  staff users at a time. If you just need one extra, you only need  to add 1 staff user to your subscription.</p>  <h3 dir=\"ltr\">What if I want to upgrade to the new Kayako?</h3>  <p>As well as securing the cheapest upgrade path to the new  Kayako (because you&#39;ll pay the same you do on the continued  support plan), you can still upgrade to the new Kayako, at a time  that suits you. <a href=\"https://support.kayako.com/article/1275-upgrading-to-the-new-kayako-for-kayako-classic-customers\" rel=\"nofollow\">Find out more</a> here.</p>  <h3>I&#39;m waiting to be upgraded to the new Kayako - how does this  change my options?</h3>  <p>We&#39;re sorry it has taken a while for us to get going with the  upgrades. When we launched the new Kayako, we weren&#39;t expecting  the amount of interest from Kayako Download customers to upgrade.  So, we took the time to pause and improve the speed of the  process, including better documentation and automated upgrade  tools.</p>  <p>We&#39;ll be back up very shortly. We&#39;re doing new trials on the  new migration process now. You&#39;ll certainly hear from us  in<span> </span>the coming couple<span> </span>of  months.</p>  <p>You may still want to consider the new continued support plans  for your Kayako Download license today. </p>  <p>By renewing onto those plans, you will lock in your discounted  pricing and will secure the cheapest upgrade path to the new  Kayako. Customers upgrading to the new Kayako from Kayako  Download will get access to the <strong>Loyalty</strong> plan,  which has all the capabilities of our top  <strong>Enterprise</strong> plan that are available today.  Instead of paying $90 per staff per user for the Enterprise plan,  you&#39;ll only need to pay whatever you pay on your continued  support plan.</p>  <h3 dir=\"ltr\">What happens if I cancel my continued support  subscription in the future?</h3>  <p>If you let your subscription lapse, you would lose application  access (i.e. the ability to reply to and update tickets), but  you&#39;d still have all of your data. </p>  <p>Your license key is tied to the subscription plan. Securing  the regular<span> </span>renewals while customers are still  using Kayako<span> </span>is a key part of us being able to  continue developing and supporting Kayako Download.</p>  <p>If you have any specific concerns around business continuity,  <a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">contact us to  discuss</a>.</p>  <h3 dir=\"ltr\">My license is still active - do I need to renew  onto the new plans?</h3>  <p>If you renew onto the new continued support plans while your  license is still active, you&#39;ll receive an additional discount  for the lifetime of your subscription. Log in to <a href=\"https://my.kayako.com\" rel=\"nofollow\">my.kayako.com</a> and  click <strong>View options and renew</strong> under your  license to find out more.</p>  <p>Any support subscription that is active on your license will  be credited back to you, pro-rata. For example, if you have 3  months of support remaining on your license and you renew onto  the continued support plans early, you&#39;ll receive that value back  in a credit. You won&#39;t double-pay for anything.</p>  <h3 dir=\"ltr\">I need a lot of staff users, so this model won&#39;t  work for me</h3>  <p>If you need a large number of staff users, we&#39;re happy to  tailor a proposal for you on the continued support plans - drop  us a line with your license ID or domain name: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h3 dir=\"ltr\">I&#39;m an NPO, charity or academic institution - do I  receive a discount?</h3>  <p>This depends on your license type and the discounts you may  have already received. Please contact us for more information:  <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h1 dir=\"ltr\">What next for Kayako Classic</h1>  <p>In the last year, we&#39;ve released:</p>  <ul>    <li>A new, responsive, mobile-friendly support center</li>    <li>The ability to merge user accounts</li>    <li>{placeholder} support for ticket replies</li>    <li>Rich text ticket replies</li>    <li>Custom field data now available for use in ticket    notification templates</li>    <li>Improved searching in the support center</li>    <li>Your customers now have the ability to CC other recipients    when creating tickets from support center</li>    <li>Significant speed and relevancy improvements to search in    the staff area</li>    <li>Changes to improve auto-threading and conversation views in    email services like Gmail</li>    <li>Significant email parsing improvements, including MS    Outlook email attachment (.msg, .eml) parsing</li>    <li>Improved localization support</li>    <li>More than 20 security enhancements and fixes</li>    <li>100s of other smaller improvements and fixes</li>  </ul>  <p>Our focus is to continue to focus improving and developing  what Kayako Classic is already good at: powerful and flexible and  customisable workflows, and a productivity suite to make even  small teams productive dealing with large numbers of support  tickets.</p>  <p>While we don&#39;t have a public roadmap for any of our products,  in the coming year, we&#39;ll be looking closely at (among other  things) some popular feature requests, including: further  searching improvements, keyboard shortcuts, ticket filtering in  the support center, popular workflow feature  requests such  as the ability to permanently close support tickets and email  parser failure alerts, SLA improvements and the ability to  leverage custom field data in rules in Kayako.</p>  <p><a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">We&#39;d love  to hear your feedback</a> about what you&#39;d like to see.</p>  <h1 dir=\"ltr\">What next for your license renewal</h1>  <h3 dir=\"ltr\">Renewing</h3>  <p>To renew your Kayako Download license onto the continued  support plans, visit <a href=\"https://my.kayako.com\" rel=\"nofollow\">my.kayako.com</a> and click <strong>View options and  renew</strong> under your license. You&#39;ll be able to  configure your renewal and pay by card online.</p>  <p>If you need a quotation or would like to pay by bank transfer,  please contact us: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h3 dir=\"ltr\">Questions</h3>  <p>Our team is happy to answer any questions about your Kayako  Download license, the new Kayako and the continued support plans.  Send us an email: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>",
+	"link": "https://support.kayako.com/article/1304-continued-support-subscription-plans-for-kayako-download-legacy-license-customers",
+	"original": {
+		"id": 1304,
+		"uuid": "3e69d2d3-bfa4-5f02-9434-8cd6df482920",
+		"titles": [
+			{
+				"id": 1968,
+				"locale": "en-us",
+				"translation": "Continued support subscription plans for Kayako Download legacy license customers",
+				"createdAt": "2017-02-10T18:54:47); 00:00",
+				"updatedAt": "2017-02-10T18:57:00); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1968"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1304-continued-support-subscription-plans-for-kayako-download-legacy-license-customers",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1969,
+				"locale": "en-us",
+				"translation": "<p dir=\"ltr\">When we launched the new, cloud-only Kayako in July  2016, we also announced an end-of-life (EOL) for Kayako Download  (July 2017, with 6 months of security fixes).</p>  <p dir=\"ltr\">Since then, <a href=\"https://support.kayako.com/article/1284-kayako-download-continued-support\" rel=\"nofollow\">we announced the cancellation of those end-of-life  plans</a> and that we will continue to support and develop Kayako  Download (aka, Kayako Classic) alongside the new Kayako.</p>  <p dir=\"ltr\">As part of this, we have also introduced new a new  continued support subscription for Kayako Download perpetual  customers who want to continue receiving access to support and  new product updates.</p>  <h1 dir=\"ltr\">The new continued support plans</h1>  <p dir=\"ltr\">Kayako Download perpetual license customers who want  to continue receiving support and access to new updates will need  to renew onto a new continued support subscription:</p>  <ul>    <li dir=\"ltr\">$15 per staff user per month for Kayako Case and    Kayako Engage, billed annually</li>    <li dir=\"ltr\">$20 per staff user per month for Kayako Fusion,    billed annually</li>  </ul>  <p><span style=\"background-color: transparent; text-align: initial;\">An  additional 10% discount is available for two-year renewals made  upfront.</span></p>  <p><span style=\"background-color: transparent; text-align: initial;\">In addition  to securing ongoing development, new capabilities, updates and  support, this subscription also guarantees your discount pricing  for the new Kayako in the cloud, whenever you choose to upgrade.  When you decide to upgrade, you&#39;ll just pay the same price for  each of your staff user.</span></p>  <h1>Questions answered</h1>  <h3 dir=\"ltr\">Why do I need to pay more for my renewal?</h3>  <p>In short, so that we can sustainably develop and support  Kayako Download.</p>  <p>The reason why we originally announced an end-of-life for  Kayako Download was because we could no longer sustain supporting  and developing it for our customers on legacy license plans, such  as yours, which we have historically grandfathered.</p>  <p>This is for a few reasons, including the increased capability  breadth and added complexity of the Kayako Download product, and  the declining number of our customers who have opted or stuck  with for Kayako Download (on-premise) vs Kayako in the cloud.</p>  <p>That&#39;s why we initially decided to end-of-life the product.  However, following this announcement, we were contacted by a  large number of customers who asked us to put together tailored  extended support contracts for them. We took a few of these  conversations forward and had a lot of take up. </p>  <p>Off the back of this, we created a new business model around  Kayako Download, which resulted in these new continued support  plans. That&#39;s what we are now offering to all existing Kayako  Download customers.</p>  <h3 dir=\"ltr\">What happens if I don&#39;t renew onto the new  continued support plans?</h3>  <p>There is no obligation to renew. If you do not wish to sign  up<span> </span>to<span> </span>the continued support  plans, you can continue using your Kayako Download perpetual  license, but your access to new product releases and Kayako  support will lapse at the earlier of your license expiry date, or  July 2017 (the original end-of-life date).</p>  <h3 dir=\"ltr\">What is a staff user, and how does the licensing  work?</h3>  <p>A <em>staff user</em> is anyone who needs to log in to the  staff or admin area of your Kayako and support your customers  (replying to tickets, accepting live chats, etc).</p>  <p>You need one staff user license for every enabled staff user  account in your Kayako installation. You can see how many you  have today in your admin control panel, under Staff and then  Manage Staff.</p>  <h3 dir=\"ltr\">How can I renew an &#39;unlimited staff user&#39;  license?</h3>  <p>The new continued support plans are priced per staff user. If  you have an &#39;unlimited staff user&#39; license, you&#39;ll need to renew  for the number of staff user accounts you need in your  Kayako.</p>  <h3 dir=\"ltr\">Will I be able to add new staff users to my  license?</h3>  <p>You can add any number of staff users to your license, and  would only need to pay the pro-rata difference. For example, if  you were 7 months into your 1 year subscription and you added a  new staff user, you&#39;d pay for the remaining 5 months for your  term. </p>  <p>You can also reduce the number of staff users on your license,  but these changes won&#39;t affect your billing until your  renewal.</p>  <p>You no longer need to upgrade your license level in lots of 10  staff users at a time. If you just need one extra, you only need  to add 1 staff user to your subscription.</p>  <h3 dir=\"ltr\">What if I want to upgrade to the new Kayako?</h3>  <p>As well as securing the cheapest upgrade path to the new  Kayako (because you&#39;ll pay the same you do on the continued  support plan), you can still upgrade to the new Kayako, at a time  that suits you. <a href=\"https://support.kayako.com/article/1275-upgrading-to-the-new-kayako-for-kayako-classic-customers\" rel=\"nofollow\">Find out more</a> here.</p>  <h3>I&#39;m waiting to be upgraded to the new Kayako - how does this  change my options?</h3>  <p>We&#39;re sorry it has taken a while for us to get going with the  upgrades. When we launched the new Kayako, we weren&#39;t expecting  the amount of interest from Kayako Download customers to upgrade.  So, we took the time to pause and improve the speed of the  process, including better documentation and automated upgrade  tools.</p>  <p>We&#39;ll be back up very shortly. We&#39;re doing new trials on the  new migration process now. You&#39;ll certainly hear from us  in<span> </span>the coming couple<span> </span>of  months.</p>  <p>You may still want to consider the new continued support plans  for your Kayako Download license today. </p>  <p>By renewing onto those plans, you will lock in your discounted  pricing and will secure the cheapest upgrade path to the new  Kayako. Customers upgrading to the new Kayako from Kayako  Download will get access to the <strong>Loyalty</strong> plan,  which has all the capabilities of our top  <strong>Enterprise</strong> plan that are available today.  Instead of paying $90 per staff per user for the Enterprise plan,  you&#39;ll only need to pay whatever you pay on your continued  support plan.</p>  <h3 dir=\"ltr\">What happens if I cancel my continued support  subscription in the future?</h3>  <p>If you let your subscription lapse, you would lose application  access (i.e. the ability to reply to and update tickets), but  you&#39;d still have all of your data. </p>  <p>Your license key is tied to the subscription plan. Securing  the regular<span> </span>renewals while customers are still  using Kayako<span> </span>is a key part of us being able to  continue developing and supporting Kayako Download.</p>  <p>If you have any specific concerns around business continuity,  <a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">contact us to  discuss</a>.</p>  <h3 dir=\"ltr\">My license is still active - do I need to renew  onto the new plans?</h3>  <p>If you renew onto the new continued support plans while your  license is still active, you&#39;ll receive an additional discount  for the lifetime of your subscription. Log in to <a href=\"https://my.kayako.com\" rel=\"nofollow\">my.kayako.com</a> and  click <strong>View options and renew</strong> under your  license to find out more.</p>  <p>Any support subscription that is active on your license will  be credited back to you, pro-rata. For example, if you have 3  months of support remaining on your license and you renew onto  the continued support plans early, you&#39;ll receive that value back  in a credit. You won&#39;t double-pay for anything.</p>  <h3 dir=\"ltr\">I need a lot of staff users, so this model won&#39;t  work for me</h3>  <p>If you need a large number of staff users, we&#39;re happy to  tailor a proposal for you on the continued support plans - drop  us a line with your license ID or domain name: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h3 dir=\"ltr\">I&#39;m an NPO, charity or academic institution - do I  receive a discount?</h3>  <p>This depends on your license type and the discounts you may  have already received. Please contact us for more information:  <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h1 dir=\"ltr\">What next for Kayako Classic</h1>  <p>In the last year, we&#39;ve released:</p>  <ul>    <li>A new, responsive, mobile-friendly support center</li>    <li>The ability to merge user accounts</li>    <li>{placeholder} support for ticket replies</li>    <li>Rich text ticket replies</li>    <li>Custom field data now available for use in ticket    notification templates</li>    <li>Improved searching in the support center</li>    <li>Your customers now have the ability to CC other recipients    when creating tickets from support center</li>    <li>Significant speed and relevancy improvements to search in    the staff area</li>    <li>Changes to improve auto-threading and conversation views in    email services like Gmail</li>    <li>Significant email parsing improvements, including MS    Outlook email attachment (.msg, .eml) parsing</li>    <li>Improved localization support</li>    <li>More than 20 security enhancements and fixes</li>    <li>100s of other smaller improvements and fixes</li>  </ul>  <p>Our focus is to continue to focus improving and developing  what Kayako Classic is already good at: powerful and flexible and  customisable workflows, and a productivity suite to make even  small teams productive dealing with large numbers of support  tickets.</p>  <p>While we don&#39;t have a public roadmap for any of our products,  in the coming year, we&#39;ll be looking closely at (among other  things) some popular feature requests, including: further  searching improvements, keyboard shortcuts, ticket filtering in  the support center, popular workflow feature  requests such  as the ability to permanently close support tickets and email  parser failure alerts, SLA improvements and the ability to  leverage custom field data in rules in Kayako.</p>  <p><a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">We&#39;d love  to hear your feedback</a> about what you&#39;d like to see.</p>  <h1 dir=\"ltr\">What next for your license renewal</h1>  <h3 dir=\"ltr\">Renewing</h3>  <p>To renew your Kayako Download license onto the continued  support plans, visit <a href=\"https://my.kayako.com\" rel=\"nofollow\">my.kayako.com</a> and click <strong>View options and  renew</strong> under your license. You&#39;ll be able to  configure your renewal and pay by card online.</p>  <p>If you need a quotation or would like to pay by bank transfer,  please contact us: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>  <h3 dir=\"ltr\">Questions</h3>  <p>Our team is happy to answer any questions about your Kayako  Download license, the new Kayako and the continued support plans.  Send us an email: <a href=\"mailto:%20classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>",
+				"createdAt": "2017-02-10T18:54:47); 00:00",
+				"updatedAt": "2017-02-14T14:46:32); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1969"
+			}
+		],
+		"keywords": "kayako download, end of life, eol, kayako classic",
+		"section": {
+			"id": 251,
+			"titles": [
+				{
+					"id": 1583,
+					"locale": "en-us",
+					"translation": "FAQs",
+					"createdAt": "2016-06-30T16:06:18); 00:00",
+					"updatedAt": "2016-06-30T16:06:18); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1583"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "251-faqs",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1584,
+					"locale": "en-us",
+					"translation": "Have a question about Kayako Classic? You're in the right place! Find answers to common questions here.",
+					"createdAt": "2016-06-30T16:06:18); 00:00",
+					"updatedAt": "2016-06-30T16:06:18); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1584"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 1,
+				"titles": [
+					{
+						"id": 33,
+						"locale": "en-us",
+						"translation": "Kayako Classic Documentation",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/33"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "1-kayako-classic-documentation",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 34,
+						"locale": "en-us",
+						"translation": "This user guide will bring you up to speed on key features, walk you through common tasks, and put you on the path to Kayako mastery.",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/34"
+					}
+				],
+				"brand": null,
+				"displayOrder": 2,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-04T12:04:07); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/1"
+			},
+			"agent": {
+				"id": 389,
+				"fullName": "Kelly O'Brien",
+				"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 121,
+			"createdAt": "2016-06-30T16:06:18); 00:00",
+			"updatedAt": "2017-02-12T00:33:14); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/251"
+		},
+		"creator": {
+			"id": 22,
+			"fullName": "Jamie Edwards",
+			"lastActiveAt": "2017-02-14T15:17:20); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1487085440",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+		},
+		"author": {
+			"id": 22,
+			"fullName": "Jamie Edwards",
+			"lastActiveAt": "2017-02-14T15:17:20); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1487085440",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 0,
+		"downvoteCount": 0,
+		"views": 201,
+		"rank": 0,
+		"tags": [
+			{
+				"id": 1290,
+				"resourceType": "tag"
+			}
+		],
+		"isFeatured": false,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2017-02-10T18:54:47); 00:00",
+		"publishedAt": "2017-02-10T18:54:47); 00:00",
+		"updatedAt": "2017-02-14T14:46:32); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1304"
+	},
+	"createdAt": "2017-02-10T18:54:47); 00:00",
+	"updatedAt": "2017-02-14T14:46:32); 00:00"
+}

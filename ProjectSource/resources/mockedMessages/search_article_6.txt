@@ -1,0 +1,159 @@
+{
+	"uuid": "9d140515-2e94-508f-902b-7be4ed1e7779",
+	"title": "Handling chats with Kayako Desktop for Windows",
+	"contents": "<p>Kayako Desktop provides you with a platform to interact with  your site visitors and manage your support chats effectively. By  connecting Kayako Desktop to your Kayako domain, you can manage  live chat requests that come in through Kayako Messenger (or the  chat widget on your support site, if you&#39;re using Kayako  Classic). </p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  Kayako Desktop provides your support team an all-in-one tool for  offering real-time support, including live chat, simultaneous  conversations, visitor monitoring, support for multiple Kayako  instances, and much more. </span></p>  <p>Kayako Desktop comes in two flavors: one for Windows, one for  Mac OS X. This article is about Kayako Desktop for Windows  (KDFW). </p>  <p><em style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  NOTE: For help with Kayako Desktop for Mac,  visit </em><a href=\"https://support.kayako.com/article/1173-handling-chats-with-kayako-desktop-for-mac\" rel=\"nofollow\"><em style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">our  KDFM</em><em> article</em></a>.</p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  In this article we&#39;ll give you an overview of how Kayako  interacts with KDFW and then walk you through how to accept and  join chat conversations.</span></p>  <p><span style=\"font-size: 20px; font-weight: 600; line-height: 1.1; text-align: initial; background-color: transparent;\">  Understanding how Kayako and KDFW work together</span></p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  Any agent that&#39;s going to be offering chat support will need  to </span><a href=\"https://support.kayako.com/article/1117-installing-and-configuring-kayako-desktop\" rel=\"nofollow\">install KDFW and connect <span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  it to their Kayako account</span></a><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">.  From there, they&#39;ll be ready to accept chat requests from your  site visitors.</span></p>  <p>Anytime a new chat request comes in, KDFW will send your team  a notification. Once an agent accepts the chat, they can interact  with the customer directly. They also have the option to join  ongoing chats or initiate chats proactively, from the visitor  list in KDFW&#39;s main window. </p>  <p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/ajwgPUYPUitL72bMwDbw2N2VHyKYHzqH\" style=\"width: 670px; height: 249.83px;\"></p>  <p>Any chats that come in, whether an agent accepts them or not,  will appear in the agent area as a new conversation. Every  message that goes back and forth will be added to the  conversation timeline. When the chat session is over, the  conversation will be marked as complete.</p>  <p><em>NOTE: If you&#39;re using Kayako Classic, you&#39;ll find  a </em><em>&#39;Chat History&#39; page that logs every chat  conversation your team has. You&#39;ll find it in the staff control  panel, under &#39;Live Support&#39;.</em></p>  <p>Now that you have a sense for how KDFW and Kayako work  together, let&#39;s look at some of the common tasks you&#39;ll be using  KDFW for.</p>  <h2 id=\"accepting_rejecting\">Accepting or rejecting a chat  request</h2>  <p>When a customer initiates a chat, one of your support agents  who&#39;s online in KDFW will receive a chat request pop-up:</p>  <p><img src=\"https://lh4.googleusercontent.com/gzAthOPr05BN76Kb5F5__uDSFkDskCbVeZu15tMF_aUSqHz2Jvje1MHJcC55gwy_Yr86x9uDzGaO8VqVbLgkzKwh84Tw2a5p6tLiiuzLFiz1jAg8Qro4GsiSGrfZYqyuoLw_wUfu\" height=\"99\" class=\"fr-dib fr-draggable\" style=\"width: 296px;\"></p>  <p>You can see the customer name (Adam) and chat subject in the  pop-up. </p>  <p>If you click <strong>Accept</strong>, you&#39;ll start a  conversation with the customer. If you click  <strong>Decline</strong>, chat request will be routed to next  available agent.</p>  <h2>Joining an ongoing chat</h2>  <p>In addition to accepting new chat requests, you can also join  ongoing chats from the main KDFW tab. </p>  <p>To join an ongoing chat:</p>  <ol>    <li>Log into Kayako Desktop for Windows.</li>    <li>The first screen you&#39;ll see is the &#39;Visitors&#39; screen. Find    the chat you want to join and right-click.</li>    <li> Hover over the &#39;Join&#39; option.<br>    <img src=\"https://lh3.googleusercontent.com/h1wUVe4j0LeXZkosZQXhVrn1-szOEKbxoDQDZra_qze-QqhepcSuSfPdJD7zqb_bPS_UfdGEn7BRONBfpvXypkZ8wqbGuB7TQB-0kmk59r64fqwetiPjW-NIQf2iwJkEOsYRA8Pi\" height=\"232\" class=\"fr-dib fr-draggable\" style=\"width: 581px;\"></li>    <li>From here, you have two options:       <ul>        <li><strong>Join Chat</strong> — Click this option to join        the chat and be visible to both the other agent and the        customer.</li>        <li><strong>Join Chat as Observer</strong> — Click this        option to join the chat as an observer, you will not be        able to participate in the conversation and the only staff        member will aware of your presence.</li>      </ul>    </li>  </ol>  <h2>Sending files from a chat window</h2>  <p>Are you in a chat with the customer and want to share a file  on the fly? Don&#39;t worry, no channel-switching required. KDFW lets  you send many different types of media. When you share a file  with your customer, it will appear in their chat window, where  they download it. Any files you send over KDFW are secured by the  same measures that protect the rest of your Kayako account.</p>  <p dir=\"ltr\">Below, we&#39;ll go through the different types of files  you can send.</p>  <h3 dir=\"ltr\">Sending an image</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send an image </strong>button.<br>    <em>NOTE: You&#39;ll can also send an image from the    <strong>Push</strong> menu on the toolbar. </em></li>    <li>From the &#39;Push image&#39; window, you&#39;ll have two options:      <ul>        <li><strong>Upload an image from the local system</strong>        — Choose this option to upload an image file from your        computer.</li>        <li><strong>Send an online image</strong> — Choose this        option to send an image to the customer using the URL for        that image</li>      </ul>    </li>    <li>Add your image and click the    <strong>OK </strong>button to send the image to your    customer. </li>  </ol>  <h3>Sending a file</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send a file </strong>button.<br>    <em>NOTE: You&#39;ll can also send a file from the    <strong>Push</strong> menu on the toolbar. </em></li>    <li>In the &#39;Push file&#39; window, click    <strong>Browse</strong>.</li>    <li>Find the file you&#39;d like to send and click    <strong>OK</strong>.</li>    <li>Click the <strong>OK</strong> button again to send the    file.</li>  </ol>  <h3>Sending a code snippet</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send example source    code </strong>button.<img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/lxJPQIECJzJHp4SL3YJsCQmBr9NcqFnQ\" style=\"width: 546px; height: 138.982px;\"><em>NOTE: You&#39;ll can    also send a code snippet from the <strong>Push</strong> menu on    the toolbar. </em></li>    <li>In the &#39;Push code&#39; window, paste the source code you&#39;d like    to send.</li>    <li>From the &#39;Language&#39; drop-down, select the language    respective to the source code you are sharing.</li>    <li>Click the <strong>OK</strong> button to send the code    snippet.</li>  </ol>  <p>The customer will get the shared code in the chat window which  can be copied to use further easily.</p>  <h3>Sending a hyperlink</h3>  <ol>    <li>From your chat window, above the reply text box, you&#39;ll see    a <strong>Push URL </strong>text box.<br>    <em>NOTE: You can also send a hyperlink from the    <strong>Push </strong>menu on the toolbar. </em></li>    <li>Type or paste the URL you want to link your customer    to. </li>    <li>Click the <strong>Send </strong>button to the right to    send across a clickable hyperlink.</li>  </ol>",
+	"link": "https://support.kayako.com/article/1174-handling-chats-with-kayako-desktop-for-windows",
+	"original": {
+		"id": 1174,
+		"uuid": "9d140515-2e94-508f-902b-7be4ed1e7779",
+		"titles": [
+			{
+				"id": 1575,
+				"locale": "en-us",
+				"translation": "Handling chats with Kayako Desktop for Windows",
+				"createdAt": "2016-06-27T22:23:33); 00:00",
+				"updatedAt": "2016-06-27T22:23:33); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1575"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1174-handling-chats-with-kayako-desktop-for-windows",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1576,
+				"locale": "en-us",
+				"translation": "<p>Kayako Desktop provides you with a platform to interact with  your site visitors and manage your support chats effectively. By  connecting Kayako Desktop to your Kayako domain, you can manage  live chat requests that come in through Kayako Messenger (or the  chat widget on your support site, if you&#39;re using Kayako  Classic). </p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  Kayako Desktop provides your support team an all-in-one tool for  offering real-time support, including live chat, simultaneous  conversations, visitor monitoring, support for multiple Kayako  instances, and much more. </span></p>  <p>Kayako Desktop comes in two flavors: one for Windows, one for  Mac OS X. This article is about Kayako Desktop for Windows  (KDFW). </p>  <p><em style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  NOTE: For help with Kayako Desktop for Mac,  visit </em><a href=\"https://support.kayako.com/article/1173-handling-chats-with-kayako-desktop-for-mac\" rel=\"nofollow\"><em style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">our  KDFM</em><em> article</em></a>.</p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  In this article we&#39;ll give you an overview of how Kayako  interacts with KDFW and then walk you through how to accept and  join chat conversations.</span></p>  <p><span style=\"font-size: 20px; font-weight: 600; line-height: 1.1; text-align: initial; background-color: transparent;\">  Understanding how Kayako and KDFW work together</span></p>  <p><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  Any agent that&#39;s going to be offering chat support will need  to </span><a href=\"https://support.kayako.com/article/1117-installing-and-configuring-kayako-desktop\" rel=\"nofollow\">install KDFW and connect <span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">  it to their Kayako account</span></a><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">.  From there, they&#39;ll be ready to accept chat requests from your  site visitors.</span></p>  <p>Anytime a new chat request comes in, KDFW will send your team  a notification. Once an agent accepts the chat, they can interact  with the customer directly. They also have the option to join  ongoing chats or initiate chats proactively, from the visitor  list in KDFW&#39;s main window. </p>  <p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/ajwgPUYPUitL72bMwDbw2N2VHyKYHzqH\" style=\"width: 670px; height: 249.83px;\"></p>  <p>Any chats that come in, whether an agent accepts them or not,  will appear in the agent area as a new conversation. Every  message that goes back and forth will be added to the  conversation timeline. When the chat session is over, the  conversation will be marked as complete.</p>  <p><em>NOTE: If you&#39;re using Kayako Classic, you&#39;ll find  a </em><em>&#39;Chat History&#39; page that logs every chat  conversation your team has. You&#39;ll find it in the staff control  panel, under &#39;Live Support&#39;.</em></p>  <p>Now that you have a sense for how KDFW and Kayako work  together, let&#39;s look at some of the common tasks you&#39;ll be using  KDFW for.</p>  <h2 id=\"accepting_rejecting\">Accepting or rejecting a chat  request</h2>  <p>When a customer initiates a chat, one of your support agents  who&#39;s online in KDFW will receive a chat request pop-up:</p>  <p><img src=\"https://lh4.googleusercontent.com/gzAthOPr05BN76Kb5F5__uDSFkDskCbVeZu15tMF_aUSqHz2Jvje1MHJcC55gwy_Yr86x9uDzGaO8VqVbLgkzKwh84Tw2a5p6tLiiuzLFiz1jAg8Qro4GsiSGrfZYqyuoLw_wUfu\" height=\"99\" class=\"fr-dib fr-draggable\" style=\"width: 296px;\"></p>  <p>You can see the customer name (Adam) and chat subject in the  pop-up. </p>  <p>If you click <strong>Accept</strong>, you&#39;ll start a  conversation with the customer. If you click  <strong>Decline</strong>, chat request will be routed to next  available agent.</p>  <h2>Joining an ongoing chat</h2>  <p>In addition to accepting new chat requests, you can also join  ongoing chats from the main KDFW tab. </p>  <p>To join an ongoing chat:</p>  <ol>    <li>Log into Kayako Desktop for Windows.</li>    <li>The first screen you&#39;ll see is the &#39;Visitors&#39; screen. Find    the chat you want to join and right-click.</li>    <li> Hover over the &#39;Join&#39; option.<br>    <img src=\"https://lh3.googleusercontent.com/h1wUVe4j0LeXZkosZQXhVrn1-szOEKbxoDQDZra_qze-QqhepcSuSfPdJD7zqb_bPS_UfdGEn7BRONBfpvXypkZ8wqbGuB7TQB-0kmk59r64fqwetiPjW-NIQf2iwJkEOsYRA8Pi\" height=\"232\" class=\"fr-dib fr-draggable\" style=\"width: 581px;\"></li>    <li>From here, you have two options:       <ul>        <li><strong>Join Chat</strong> — Click this option to join        the chat and be visible to both the other agent and the        customer.</li>        <li><strong>Join Chat as Observer</strong> — Click this        option to join the chat as an observer, you will not be        able to participate in the conversation and the only staff        member will aware of your presence.</li>      </ul>    </li>  </ol>  <h2>Sending files from a chat window</h2>  <p>Are you in a chat with the customer and want to share a file  on the fly? Don&#39;t worry, no channel-switching required. KDFW lets  you send many different types of media. When you share a file  with your customer, it will appear in their chat window, where  they download it. Any files you send over KDFW are secured by the  same measures that protect the rest of your Kayako account.</p>  <p dir=\"ltr\">Below, we&#39;ll go through the different types of files  you can send.</p>  <h3 dir=\"ltr\">Sending an image</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send an image </strong>button.<br>    <em>NOTE: You&#39;ll can also send an image from the    <strong>Push</strong> menu on the toolbar. </em></li>    <li>From the &#39;Push image&#39; window, you&#39;ll have two options:      <ul>        <li><strong>Upload an image from the local system</strong>        — Choose this option to upload an image file from your        computer.</li>        <li><strong>Send an online image</strong> — Choose this        option to send an image to the customer using the URL for        that image</li>      </ul>    </li>    <li>Add your image and click the    <strong>OK </strong>button to send the image to your    customer. </li>  </ol>  <h3>Sending a file</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send a file </strong>button.<br>    <em>NOTE: You&#39;ll can also send a file from the    <strong>Push</strong> menu on the toolbar. </em></li>    <li>In the &#39;Push file&#39; window, click    <strong>Browse</strong>.</li>    <li>Find the file you&#39;d like to send and click    <strong>OK</strong>.</li>    <li>Click the <strong>OK</strong> button again to send the    file.</li>  </ol>  <h3>Sending a code snippet</h3>  <ol>    <li>From your chat window, above the reply text box, click the    <strong>Send example source    code </strong>button.<img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/lxJPQIECJzJHp4SL3YJsCQmBr9NcqFnQ\" style=\"width: 546px; height: 138.982px;\"><em>NOTE: You&#39;ll can    also send a code snippet from the <strong>Push</strong> menu on    the toolbar. </em></li>    <li>In the &#39;Push code&#39; window, paste the source code you&#39;d like    to send.</li>    <li>From the &#39;Language&#39; drop-down, select the language    respective to the source code you are sharing.</li>    <li>Click the <strong>OK</strong> button to send the code    snippet.</li>  </ol>  <p>The customer will get the shared code in the chat window which  can be copied to use further easily.</p>  <h3>Sending a hyperlink</h3>  <ol>    <li>From your chat window, above the reply text box, you&#39;ll see    a <strong>Push URL </strong>text box.<br>    <em>NOTE: You can also send a hyperlink from the    <strong>Push </strong>menu on the toolbar. </em></li>    <li>Type or paste the URL you want to link your customer    to. </li>    <li>Click the <strong>Send </strong>button to the right to    send across a clickable hyperlink.</li>  </ol>",
+				"createdAt": "2016-06-27T22:23:33); 00:00",
+				"updatedAt": "2017-02-11T17:35:59); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1576"
+			}
+		],
+		"keywords": "kdfw, kayako desktop for windows, live chat, kayako desktop",
+		"section": {
+			"id": 245,
+			"titles": [
+				{
+					"id": 1507,
+					"locale": "en-us",
+					"translation": "Channels",
+					"createdAt": "2016-06-23T14:39:29); 00:00",
+					"updatedAt": "2016-06-23T14:39:29); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1507"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "245-channels",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1508,
+					"locale": "en-us",
+					"translation": "Communicate with customers via email, chat, and social media – all without ever leaving Kayako.",
+					"createdAt": "2016-06-23T14:39:29); 00:00",
+					"updatedAt": "2016-06-23T14:39:29); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1508"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 5,
+				"titles": [
+					{
+						"id": 1499,
+						"locale": "en-us",
+						"translation": "User Guide",
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "5-user-guide",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 1500,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+					}
+				],
+				"brand": null,
+				"displayOrder": 1,
+				"createdAt": "2016-06-23T14:12:20); 00:00",
+				"updatedAt": "2016-07-04T12:08:24); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+			},
+			"agent": {
+				"id": 389,
+				"fullName": "Kelly O'Brien",
+				"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 9,
+			"createdAt": "2016-06-23T14:39:29); 00:00",
+			"updatedAt": "2016-12-21T23:38:30); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/245"
+		},
+		"creator": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"author": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 0,
+		"downvoteCount": 0,
+		"views": 2216,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": false,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2016-06-27T22:23:32); 00:00",
+		"publishedAt": "2016-07-01T19:23:57); 00:00",
+		"updatedAt": "2017-02-11T17:35:59); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1174"
+	},
+	"createdAt": "2016-06-27T22:23:32); 00:00",
+	"updatedAt": "2017-02-11T17:35:59); 00:00"
+}

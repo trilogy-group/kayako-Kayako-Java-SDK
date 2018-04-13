@@ -1,0 +1,159 @@
+{
+	"uuid": "fb2480a5-2c69-5137-b13a-ce13db22db1d",
+	"title": "Introducing the new Kayako",
+	"contents": "<p dir=\"ltr\">Today, I’m really excited to announce the launch of  the new Kayako, a brand new product, platform, and user  experience that has been redesigned and reimagined for delivering  modern, personal customer service.</p>  <p dir=\"ltr\">We’ve listened carefully to your feedback, and  thought hard about what businesses should be doing to improve  their customer service instead of just managing the existing  demands on their team. </p>  <h2 dir=\"ltr\">Kayako helps you get better at customer  service</h2>  <p dir=\"ltr\">We exist to help businesses to get better at  customer service. To deliver effortless, personal, and memorable  customer support. To transform your team from a cost-center, into  a profit-center. To become so good at customer service that it  becomes your competitive advantage. </p>  <p dir=\"ltr\">And it starts with reimagining the traditional  customer service helpdesk. </p>  <p dir=\"ltr\">Kayako is a customer service platform that unifies  your support channels, your customer information and your team -  so you can work better together to truly understand your customer  and support them where they are. </p>  <p dir=\"ltr\">With the new Kayako, you can:</p>  <ul>    <li dir=\"ltr\">      <p dir=\"ltr\">Offer an effortless customer experience with      unified, multi-channel cases </p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Understand your customer like never before with      user timelines including more context with plug and play      integrations</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Work closely with your team with built-in      collaboration tools</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Be more productive with customizable automations      and workflows </p>    </li>  </ul>  <p dir=\"ltr\"><a href=\"https://www.kayako.com/blog/kayako-launches-unified-customer-service-platform/\" rel=\"nofollow\">Read more about why we’ve designed the new  Kayako.</a></p>  <h2 dir=\"ltr\">What this means for you</h2>  <p dir=\"ltr\">If you’re new to Kayako — welcome! We hope you’ll  love it. <a href=\"http://kayako.com/free-trial\" rel=\"nofollow\">Sign up for your free 14-day trial</a>, and let us  know your thoughts. </p>  <p dir=\"ltr\">If you’re an existing Kayako customers, please log  into <a href=\"https://my.kayako.com/#upgrade\" rel=\"nofollow\">my.kayako.com</a> for more information on how and when  you’ll be able to upgrade. You can also view a <a href=\"https://support.kayako.com/article/1140-understanding-what-s-changed-in-the-new-kayako\" rel=\"nofollow\">comprehensive list of changes in this help center  article</a>. Finally, feel free to sign up for a free trial to  take it for a test drive.</p>  <h2 dir=\"ltr\">We’re here to help</h2>  <p dir=\"ltr\">Thanks for being part of our journey so far — I’m  looking forward to our next adventure together! </p>  <p dir=\"ltr\">Thanks,</p>  <p dir=\"ltr\">Varun Shoor<br>  CEO, Kayako</p>  <p dir=\"ltr\">p.s. Our Kayako 4 self-service articles will  continue to be hosted here on support.kayako.com. You can  identify them by the “Kayako Classic” flag at the top! </p>",
+	"link": "https://support.kayako.com/article/1194-introducing-the-new-kayako",
+	"original": {
+		"id": 1194,
+		"uuid": "fb2480a5-2c69-5137-b13a-ce13db22db1d",
+		"titles": [
+			{
+				"id": 1619,
+				"locale": "en-us",
+				"translation": "Introducing the new Kayako",
+				"createdAt": "2016-07-04T13:07:33); 00:00",
+				"updatedAt": "2016-07-04T13:07:33); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1619"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1194-introducing-the-new-kayako",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1620,
+				"locale": "en-us",
+				"translation": "<p dir=\"ltr\">Today, I’m really excited to announce the launch of  the new Kayako, a brand new product, platform, and user  experience that has been redesigned and reimagined for delivering  modern, personal customer service.</p>  <p dir=\"ltr\">We’ve listened carefully to your feedback, and  thought hard about what businesses should be doing to improve  their customer service instead of just managing the existing  demands on their team. </p>  <h2 dir=\"ltr\">Kayako helps you get better at customer  service</h2>  <p dir=\"ltr\">We exist to help businesses to get better at  customer service. To deliver effortless, personal, and memorable  customer support. To transform your team from a cost-center, into  a profit-center. To become so good at customer service that it  becomes your competitive advantage. </p>  <p dir=\"ltr\">And it starts with reimagining the traditional  customer service helpdesk. </p>  <p dir=\"ltr\">Kayako is a customer service platform that unifies  your support channels, your customer information and your team -  so you can work better together to truly understand your customer  and support them where they are. </p>  <p dir=\"ltr\">With the new Kayako, you can:</p>  <ul>    <li dir=\"ltr\">      <p dir=\"ltr\">Offer an effortless customer experience with      unified, multi-channel cases </p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Understand your customer like never before with      user timelines including more context with plug and play      integrations</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Work closely with your team with built-in      collaboration tools</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\">Be more productive with customizable automations      and workflows </p>    </li>  </ul>  <p dir=\"ltr\"><a href=\"https://www.kayako.com/blog/kayako-launches-unified-customer-service-platform/\" rel=\"nofollow\">Read more about why we’ve designed the new  Kayako.</a></p>  <h2 dir=\"ltr\">What this means for you</h2>  <p dir=\"ltr\">If you’re new to Kayako — welcome! We hope you’ll  love it. <a href=\"http://kayako.com/free-trial\" rel=\"nofollow\">Sign up for your free 14-day trial</a>, and let us  know your thoughts. </p>  <p dir=\"ltr\">If you’re an existing Kayako customers, please log  into <a href=\"https://my.kayako.com/#upgrade\" rel=\"nofollow\">my.kayako.com</a> for more information on how and when  you’ll be able to upgrade. You can also view a <a href=\"https://support.kayako.com/article/1140-understanding-what-s-changed-in-the-new-kayako\" rel=\"nofollow\">comprehensive list of changes in this help center  article</a>. Finally, feel free to sign up for a free trial to  take it for a test drive.</p>  <h2 dir=\"ltr\">We’re here to help</h2>  <p dir=\"ltr\">Thanks for being part of our journey so far — I’m  looking forward to our next adventure together! </p>  <p dir=\"ltr\">Thanks,</p>  <p dir=\"ltr\">Varun Shoor<br>  CEO, Kayako</p>  <p dir=\"ltr\">p.s. Our Kayako 4 self-service articles will  continue to be hosted here on support.kayako.com. You can  identify them by the “Kayako Classic” flag at the top! </p>",
+				"createdAt": "2016-07-04T13:07:33); 00:00",
+				"updatedAt": "2016-12-02T13:59:46); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1620"
+			}
+		],
+		"keywords": null,
+		"section": {
+			"id": 221,
+			"titles": [
+				{
+					"id": 81,
+					"locale": "en-us",
+					"translation": "Latest Updates",
+					"createdAt": "2016-04-29T05:03:03); 00:00",
+					"updatedAt": "2016-04-29T05:03:03); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/81"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "221-latest-updates",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 82,
+					"locale": "en-us",
+					"translation": "Articles in this section are visible to all users",
+					"createdAt": "2016-04-29T05:03:04); 00:00",
+					"updatedAt": "2016-04-29T05:03:04); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/82"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 2,
+				"titles": [
+					{
+						"id": 35,
+						"locale": "en-us",
+						"translation": "News",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/35"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "2-news",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 36,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/36"
+					}
+				],
+				"brand": null,
+				"displayOrder": 3,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-01T15:15:27); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/2"
+			},
+			"agent": {
+				"id": 2,
+				"fullName": "Varun Shoor",
+				"lastActiveAt": "2017-02-14T18:08:23); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/c9356716-fc6c-42a3-b0e2-4bf567f1223c?1487095703",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/2"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 84,
+			"createdAt": "2016-01-16T05:47:57); 00:00",
+			"updatedAt": "2017-01-17T09:44:51); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/221"
+		},
+		"creator": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"author": {
+			"id": 2,
+			"fullName": "Varun Shoor",
+			"lastActiveAt": "2017-02-14T18:08:23); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/c9356716-fc6c-42a3-b0e2-4bf567f1223c?1487095703",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/2"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 2,
+		"downvoteCount": 2,
+		"views": 16633,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": false,
+		"allowComments": false,
+		"totalComments": 15,
+		"createdAt": "2016-07-04T13:07:33); 00:00",
+		"publishedAt": "2016-07-04T13:18:18); 00:00",
+		"updatedAt": "2016-12-15T15:30:42); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1194"
+	},
+	"createdAt": "2016-07-04T13:07:33); 00:00",
+	"updatedAt": "2016-12-15T15:30:42); 00:00"
+}
