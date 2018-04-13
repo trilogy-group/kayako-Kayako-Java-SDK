@@ -2,15 +2,15 @@ package com.kayako.sdk.base.requester;
 
 import java.util.Map;
 
-/**
- * @author Neil Mathew (neil.mathew@kayako.com)
- * @date 09/02/17
- */
-public abstract class PutRequestProperty extends GetRequestProperty {
+public abstract class PutRequestProperty extends AbstractRequestProperty {
 
-    public abstract Map<String, String> getBodyParameters();
+  public PutRequestProperty(String endpointUrl, String mHelpCenterUrl,
+      Map<String, String> queryParameters, Map<String, String> headers, IncludeArgument include,
+      Map<String, String> bodyParameters) {
+    super(endpointUrl, mHelpCenterUrl, queryParameters, headers, include, bodyParameters);
+  }
 
-    public METHOD getMethod() {
-        return METHOD.PUT;
-    }
+  public METHOD getMethod() {
+    return METHOD.PUT;
+  }
 }

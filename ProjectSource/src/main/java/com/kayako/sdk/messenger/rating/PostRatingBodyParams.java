@@ -1,39 +1,52 @@
 package com.kayako.sdk.messenger.rating;
 
-/**
- * @author Neil Mathew (neil.mathew@kayako.com)
- * @date 10/02/17
- */
+import java.util.HashMap;
+import java.util.Map;
+
 public class PostRatingBodyParams {
 
-    // Mandatory Fields
-    private Rating.SCORE score;
+  private static final String PARM_SCORE = "score";
+  private static final String PARM_COMMENT = "comment";
 
-    // Optional Fields
-    private String comment;
+  // Mandatory Fields
+  private Rating.SCORE score;
 
-    public PostRatingBodyParams(Rating.SCORE score) {
-        this.score = score;
+  // Optional Fields
+  private String comment;
 
-        if (score == null) {
-            throw new IllegalStateException("Mandatory field can not be null");
-        }
+  public PostRatingBodyParams(Rating.SCORE score) {
+    this.score = score;
+
+    if (score == null) {
+      throw new IllegalStateException("Mandatory field can not be null");
     }
+  }
 
-    public PostRatingBodyParams(Rating.SCORE score, String comment) {
-        this.score = score;
-        this.comment = comment;
+  public PostRatingBodyParams(Rating.SCORE score, String comment) {
+    this.score = score;
+    this.comment = comment;
 
-        if (score == null) {
-            throw new IllegalStateException("Mandatory field can not be null");
-        }
+    if (score == null) {
+      throw new IllegalStateException("Mandatory field can not be null");
     }
+  }
 
-    public Rating.SCORE getScore() {
-        return score;
-    }
+  public Rating.SCORE getScore() {
+    return score;
+  }
 
-    public String getComment() {
-        return comment;
+  public String getComment() {
+    return comment;
+  }
+
+  public Map<String, String> getBodyParameters() {
+    Map<String, String> bodyParameters = new HashMap<>();
+
+    bodyParameters.put(PARM_SCORE, score.name());
+    if (comment != null) {
+      bodyParameters.put(PARM_COMMENT, comment);
     }
+    return bodyParameters;
+  }
+
 }

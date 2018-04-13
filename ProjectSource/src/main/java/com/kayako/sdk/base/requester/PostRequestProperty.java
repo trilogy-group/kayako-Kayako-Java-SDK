@@ -1,22 +1,24 @@
 package com.kayako.sdk.base.requester;
 
 import java.util.Collections;
-import java.util.List;
 import java.util.Map;
 
-/**
- * @author Neil Mathew (neil.mathew@kayako.com)
- * @date 09/02/17
- */
-public abstract class PostRequestProperty extends GetRequestProperty {
+public abstract class PostRequestProperty extends AbstractRequestProperty {
 
-    public abstract Map<String, String> getBodyParameters();
+  private final Map<String, AttachmentFile> attachmentFiles;
 
-    public Map<String, AttachmentFile> getAttachmentFiles() {
-        return Collections.emptyMap();
-    }
+  public PostRequestProperty(String endpointUrl, String mHelpCenterUrl,
+      Map<String, String> queryParameters, Map<String, String> headers, IncludeArgument include,
+      Map<String, String> bodyParameters, Map<String, AttachmentFile> attachmentFiles) {
+    super(endpointUrl, mHelpCenterUrl, queryParameters, headers, include, bodyParameters);
+    this.attachmentFiles = attachmentFiles;
+  }
 
-    public METHOD getMethod() {
-        return METHOD.POST;
-    }
+  public Map<String, AttachmentFile> getAttachmentFiles() {
+    return Collections.unmodifiableMap(attachmentFiles);
+  }
+
+  public METHOD getMethod() {
+    return METHOD.POST;
+  }
 }
