@@ -1,0 +1,30 @@
+{
+	"id": 241,
+	"uuid": "49fd16ee-944e-4362-aaf9-d8cf1b8fc019",
+	"clientId": null,
+	"subject": "Hey",
+	"channel": "MAIL",
+	"contentText": "Smooth. Hello!",
+	"contentHtml": "Smooth. Hello!",
+	"creator": {
+		"id": 1,
+		"fullName": "Kayako Mobile Testing",
+		"lastActiveAt": "2017-02-14T13:06:10+00:00",
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/1e4dd52f-6383-5e07-aed0-864c06d6b232?1487077570",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/1"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"source": null,
+	"metadata": {
+		"user_agent": "",
+		"page_url": ""
+	},
+	"messageStatus": "SEEN",
+	"messageStatusUpdatedAt": "2017-02-07T12:21:08+00:00",
+	"createdAt": "2017-02-07T10:39:40+00:00",
+	"updatedAt": "2017-02-07T10:39:40+00:00",
+	"resourceType": "case_message",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/20/messages/241"
+}

@@ -1,0 +1,159 @@
+{
+	"uuid": "49fcd9aa-d2d6-5417-a4d0-d5e9e0e2879c",
+	"title": "Kayako Download: Continued support",
+	"contents": "<p dir=\"ltr\">When we launched the new, cloud-only Kayako in July  2016, we also announced an end-of-life (EOL) for Kayako Download   (July 2017, with 6 months of security updates).</p>  <p dir=\"ltr\">We are cancelling the EOL for Kayako Download, and  we will continue to develop and support Kayako Download alongside  the new Kayako.</p>  <p dir=\"ltr\">We took this decision after listening to your  feedback:</p>  <ul>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>Kayako Download customers who we could      not migrate fast enough</strong><br>      We’ve had more people sign up to move to the new Kayako than      we ever imagined, and we’re running a backlog, and some of      you want to take more time to migrate. We’ve taken a pause      while we simplify the upgrade process and speed it up. In the      meantime, you can be assured we’ll continue to support and      develop Kayako Download.</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>The time-based discounts to move to the      new Kayako didn’t go down very well</strong><br>      Our intention was to offer discounts that rewarded our early      adopters, and of course we wanted to encourage everyone onto      the new platform as soon as possible. However, many were not      ready to move so soon, and felt it was unfair that they’d      miss out on the discounts. We agree, and we’re simplifying      this offer.</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>Kayako Download customers who can’t move      to the cloud</strong><br>      We’ve been overwhelmed by the love from customers who need to      keep using Kayako Download behind-the-firewall, and have      asked us to continue developing and supporting them on      it. </p>    </li>  </ul>  <h1>Explaining the reversal of the decision</h1>  <h3 dir=\"ltr\">Why we announced an EOL for Kayako Download</h3>  <p dir=\"ltr\">Even as the Kayako Download platform expanded in  capabilities, breadth and depth, we have always grandfathered the  prices our customers on legacy renewal pricing plans.</p>  <p dir=\"ltr\">Lately, with so many of our customers opting for the  cloud instead of on-premise, we could no longer afford to develop  and maintain the Kayako Download platform for a shrinking number  of customers on legacy pricing plans.</p>  <h3 dir=\"ltr\">What changed</h3>  <p dir=\"ltr\">When we announced the EOL, a large number of Kayako  Download customers contacted us requesting tailored, extended  support contracts. This spurred an idea: how many other customers  would be willing to pay more in exchange for a commitment from us  to continue developing and supporting Kayako Download?</p>  <p dir=\"ltr\">Hundreds of customers took us up on a proposal for  them to move to a simple, low price subscription to secure  ongoing support for Kayako Download. </p>  <p dir=\"ltr\">We have created a new business model around Kayako  Download, which secures the future of Kayako Download, new  updates and support, and also simplifies the pathway to the new  Kayako in the cloud.</p>  <h1 dir=\"ltr\">What this means for you</h1>  <h3 dir=\"ltr\">For Kayako OnDemand customers</h3>  <p dir=\"ltr\">Nothing changes for our Kayako OnDemand customers.  We&#39;ll continue to support your current Kayako product, and we&#39;ll  continue to upgrade you to the new Kayako when you’re ready.</p>  <h3 dir=\"ltr\">For Kayako Download subscription customers (signed  up July 2014 onwards)</h3>  <p dir=\"ltr\">We will continue to support and develop Kayako  Download with new capabilities and updates, and you have the  option of upgrading to the new Kayako at a time that suits  you.</p>  <p dir=\"ltr\">Your pricing stays the same now and also won&#39;t  change if you make the upgrade to the new Kayako in the  cloud..</p>  <h3 dir=\"ltr\" id=\"newsimplesubscription\">For Kayako Download  customers on legacy pricing plans (signed up before July  2014)</h3>  <p dir=\"ltr\">Kayako Download perpetual license customers who are  on legacy pricing plans will need to renew onto a new continued  support subscription plans.</p>  <p dir=\"ltr\"><a href=\"https://support.kayako.com/article/1304-continued-support-subscription-plans-for-kayako-download-legacy-license-customers\" rel=\"nofollow\">Find out more in this article</a>.</p>  <h1 dir=\"ltr\">Upgrading to the new Kayako</h1>  <p>You can still upgrade to the new Kayako, at a time that suits  you. <a href=\"https://support.kayako.com/article/1275-upgrading-to-the-new-kayako-for-kayako-classic-customers\" rel=\"nofollow\">Find out more</a> here.</p>  <h1 dir=\"ltr\">A thank you</h1>  <p dir=\"ltr\">Thank you for your continued support. The amount of  support we saw from existing customers was overwhelming. We would  much rather not discontinue one of our products, and it is  amazing to see so many customers readily sign up to keep Kayako  Download going.</p>  <p>We’re pleased to have come up with a way that ensures we have  sufficient commitments to keep Kayako Download going as a  sustainable business for the long term, and to still be able to  reward our existing customers for their loyalty, and we are sorry  if the original decision caused any stress. We look forward to  making it up to you.</p>  <h1 dir=\"ltr\">Questions?</h1>  <p>Feel free to drop us a line: <a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>",
+	"link": "https://support.kayako.com/article/1284-kayako-download-continued-support",
+	"original": {
+		"id": 1284,
+		"uuid": "49fcd9aa-d2d6-5417-a4d0-d5e9e0e2879c",
+		"titles": [
+			{
+				"id": 1868,
+				"locale": "en-us",
+				"translation": "Kayako Download: Continued support",
+				"createdAt": "2016-12-22T10:24:43); 00:00",
+				"updatedAt": "2017-01-26T14:50:32); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1868"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1284-kayako-download-continued-support",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1869,
+				"locale": "en-us",
+				"translation": "<p dir=\"ltr\">When we launched the new, cloud-only Kayako in July  2016, we also announced an end-of-life (EOL) for Kayako Download   (July 2017, with 6 months of security updates).</p>  <p dir=\"ltr\">We are cancelling the EOL for Kayako Download, and  we will continue to develop and support Kayako Download alongside  the new Kayako.</p>  <p dir=\"ltr\">We took this decision after listening to your  feedback:</p>  <ul>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>Kayako Download customers who we could      not migrate fast enough</strong><br>      We’ve had more people sign up to move to the new Kayako than      we ever imagined, and we’re running a backlog, and some of      you want to take more time to migrate. We’ve taken a pause      while we simplify the upgrade process and speed it up. In the      meantime, you can be assured we’ll continue to support and      develop Kayako Download.</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>The time-based discounts to move to the      new Kayako didn’t go down very well</strong><br>      Our intention was to offer discounts that rewarded our early      adopters, and of course we wanted to encourage everyone onto      the new platform as soon as possible. However, many were not      ready to move so soon, and felt it was unfair that they’d      miss out on the discounts. We agree, and we’re simplifying      this offer.</p>    </li>    <li dir=\"ltr\">      <p dir=\"ltr\"><strong>Kayako Download customers who can’t move      to the cloud</strong><br>      We’ve been overwhelmed by the love from customers who need to      keep using Kayako Download behind-the-firewall, and have      asked us to continue developing and supporting them on      it. </p>    </li>  </ul>  <h1>Explaining the reversal of the decision</h1>  <h3 dir=\"ltr\">Why we announced an EOL for Kayako Download</h3>  <p dir=\"ltr\">Even as the Kayako Download platform expanded in  capabilities, breadth and depth, we have always grandfathered the  prices our customers on legacy renewal pricing plans.</p>  <p dir=\"ltr\">Lately, with so many of our customers opting for the  cloud instead of on-premise, we could no longer afford to develop  and maintain the Kayako Download platform for a shrinking number  of customers on legacy pricing plans.</p>  <h3 dir=\"ltr\">What changed</h3>  <p dir=\"ltr\">When we announced the EOL, a large number of Kayako  Download customers contacted us requesting tailored, extended  support contracts. This spurred an idea: how many other customers  would be willing to pay more in exchange for a commitment from us  to continue developing and supporting Kayako Download?</p>  <p dir=\"ltr\">Hundreds of customers took us up on a proposal for  them to move to a simple, low price subscription to secure  ongoing support for Kayako Download. </p>  <p dir=\"ltr\">We have created a new business model around Kayako  Download, which secures the future of Kayako Download, new  updates and support, and also simplifies the pathway to the new  Kayako in the cloud.</p>  <h1 dir=\"ltr\">What this means for you</h1>  <h3 dir=\"ltr\">For Kayako OnDemand customers</h3>  <p dir=\"ltr\">Nothing changes for our Kayako OnDemand customers.  We&#39;ll continue to support your current Kayako product, and we&#39;ll  continue to upgrade you to the new Kayako when you’re ready.</p>  <h3 dir=\"ltr\">For Kayako Download subscription customers (signed  up July 2014 onwards)</h3>  <p dir=\"ltr\">We will continue to support and develop Kayako  Download with new capabilities and updates, and you have the  option of upgrading to the new Kayako at a time that suits  you.</p>  <p dir=\"ltr\">Your pricing stays the same now and also won&#39;t  change if you make the upgrade to the new Kayako in the  cloud..</p>  <h3 dir=\"ltr\" id=\"newsimplesubscription\">For Kayako Download  customers on legacy pricing plans (signed up before July  2014)</h3>  <p dir=\"ltr\">Kayako Download perpetual license customers who are  on legacy pricing plans will need to renew onto a new continued  support subscription plans.</p>  <p dir=\"ltr\"><a href=\"https://support.kayako.com/article/1304-continued-support-subscription-plans-for-kayako-download-legacy-license-customers\" rel=\"nofollow\">Find out more in this article</a>.</p>  <h1 dir=\"ltr\">Upgrading to the new Kayako</h1>  <p>You can still upgrade to the new Kayako, at a time that suits  you. <a href=\"https://support.kayako.com/article/1275-upgrading-to-the-new-kayako-for-kayako-classic-customers\" rel=\"nofollow\">Find out more</a> here.</p>  <h1 dir=\"ltr\">A thank you</h1>  <p dir=\"ltr\">Thank you for your continued support. The amount of  support we saw from existing customers was overwhelming. We would  much rather not discontinue one of our products, and it is  amazing to see so many customers readily sign up to keep Kayako  Download going.</p>  <p>We’re pleased to have come up with a way that ensures we have  sufficient commitments to keep Kayako Download going as a  sustainable business for the long term, and to still be able to  reward our existing customers for their loyalty, and we are sorry  if the original decision caused any stress. We look forward to  making it up to you.</p>  <h1 dir=\"ltr\">Questions?</h1>  <p>Feel free to drop us a line: <a href=\"mailto:classic@kayako.com\" rel=\"nofollow\">classic@kayako.com</a></p>",
+				"createdAt": "2016-12-22T10:24:43); 00:00",
+				"updatedAt": "2017-02-12T17:23:42); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1869"
+			}
+		],
+		"keywords": "kayako classic, eol, kayako download",
+		"section": {
+			"id": 221,
+			"titles": [
+				{
+					"id": 81,
+					"locale": "en-us",
+					"translation": "Latest Updates",
+					"createdAt": "2016-04-29T05:03:03); 00:00",
+					"updatedAt": "2016-04-29T05:03:03); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/81"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "221-latest-updates",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 82,
+					"locale": "en-us",
+					"translation": "Articles in this section are visible to all users",
+					"createdAt": "2016-04-29T05:03:04); 00:00",
+					"updatedAt": "2016-04-29T05:03:04); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/82"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 2,
+				"titles": [
+					{
+						"id": 35,
+						"locale": "en-us",
+						"translation": "News",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/35"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "2-news",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 36,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/36"
+					}
+				],
+				"brand": null,
+				"displayOrder": 3,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-01T15:15:27); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/2"
+			},
+			"agent": {
+				"id": 2,
+				"fullName": "Varun Shoor",
+				"lastActiveAt": "2017-02-14T18:08:23); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/c9356716-fc6c-42a3-b0e2-4bf567f1223c?1487095703",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/2"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 84,
+			"createdAt": "2016-01-16T05:47:57); 00:00",
+			"updatedAt": "2017-01-17T09:44:51); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/221"
+		},
+		"creator": {
+			"id": 22,
+			"fullName": "Jamie Edwards",
+			"lastActiveAt": "2017-02-14T15:17:20); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1487085440",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+		},
+		"author": {
+			"id": 22,
+			"fullName": "Jamie Edwards",
+			"lastActiveAt": "2017-02-14T15:17:20); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1487085440",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 5,
+		"downvoteCount": 0,
+		"views": 6575,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": true,
+		"allowComments": false,
+		"totalComments": 0,
+		"createdAt": "2016-12-22T10:24:43); 00:00",
+		"publishedAt": "2016-12-22T10:24:43); 00:00",
+		"updatedAt": "2017-02-12T17:23:42); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1284"
+	},
+	"createdAt": "2016-12-22T10:24:43); 00:00",
+	"updatedAt": "2017-02-12T17:23:42); 00:00"
+}

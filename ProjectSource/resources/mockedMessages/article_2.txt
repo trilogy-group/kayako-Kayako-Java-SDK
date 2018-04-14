@@ -1,0 +1,151 @@
+{
+	"id": 1179,
+	"uuid": "704dcb1d-23a6-5e81-a18c-79a36836ea24",
+	"titles": [
+		{
+			"id": 1589,
+			"locale": "en-us",
+			"translation": "Exploring the Help Center",
+			"createdAt": "2016-06-30T16:13:55);00:00",
+			"updatedAt": "2016-06-30T16:13:55);00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1589"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "1179-exploring-the-help-center",
+			"resourceType": "slug"
+		}
+	],
+	"contents": [
+		{
+			"id": 1590,
+			"locale": "en-us",
+			"translation": "<p>Your Help Center is the first line of support for your customers. They can search for answers in your self-service content, chat with your support team via Messenger, and start and monitor their conversations with your support team. Customers can also update their user profiles from the Help Center.</p> <p>Anyone that contributes to your self-service content will also be spending a lot of time in the Help Center. The content editing tools are built right in, so if you come across an article that needs a change, you can open it for editing, on the spot. You&#39;ll also be able to customize the look and feel of the Help Center. Whether you just want to add your own logo and color scheme or dig into the templates to overhaul the way the Help Center is displayed, you&#39;ll find all those options here.</p> <p>In this article, we&#39;ll highlight some of the key features of the Help Center and link off to other areas of the user guide, so you can get started using them.</p> <h2>Getting started with Help Center features</h2> <p>Your Help Center is the first stop for your customers when they have a question. Any visitor to the Help Center can search your self-service content or start a conversation with your team. Once <a href=\"https://support.kayako.com/article/1182-signing-into-your-kayako\" rel=\"nofollow\">they sign in to the Help Center</a> they can also track and update their open conversations, make changes to their user profiles, and comment on articles. By default, the Help Center is located at &#39;http://<em>yourcompany</em>.kayako.com&#39;, but you can customize the location by <a href=\"https://support.kayako.com/article/1155-brands\" rel=\"nofollow\">defining a custom domain in your Help Center&#39;s brand</a>.</p> <p>Wherever it lives, though, the Help Center really has three main sections you&#39;ll be concerned with:</p> <ul>   <li>     <p><strong>User menu</strong> — In addition to the search bar     and Messenger, the user menu is where most of your customers&#39;     options live.<br>     <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/bCMLJMlKImfU6JIDtIFLwS0uSRPunHgO\" style=\"width: 430px; height: 199.233px;\">Any visitor to the     Help Center, logged in or not, can click the <strong>Start a     conversation</strong> link, fill out the<a href=\"https://support.kayako.com/article/1152-building-forms-for-different-conversation-types\" rel=\"nofollow\"> form</a>, and start talking to your     support team. Once a user is logged in, they&#39;ll also be able     to see and respond to any open conversations they have, as     well as update their profile from this menu.</p>     <p>Learn more in <a href=\"https://support.kayako.com/article/1180-creating-user-accounts\" rel=\"nofollow\">our user guide article about user     accounts</a>.</p>   </li>   <li>     <p><strong>Self-service content</strong> — Your self-service     content lives below the search bar, and your team will be     editing and organizing your content directly from the Help     Center interface.<br>     <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/75ANOIGxBq6u1j4TuUJIWhKOXUECLWhT\" style=\"width: 658px; height: 256.242px;\">You can add and     delete categories, sections, and articles. You can edit     existing articles, as well as moving them to new categories     and sections. You can also moderate and reply to customer     comments on individual articles.</p>     <p>Learn more in <a href=\"https://support.kayako.com/article/1165-help-center-content\" rel=\"nofollow\">our article about managing your Help Center     content.</a></p>   </li>   <li>     <p><strong>Customization tools</strong> — To deliver a     seamlessly branded experience to your customers, you have     full control over the look and feel of your Help Center,     thanks to the customization panel.<br>     <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/bT4iDnWxrNiCHJ0Ufy9xXslTCQSRXFIp\" style=\"width: 602px; height: 495.73px;\">You can start with     just a logo and a custom font or color scheme, or you can dig     into the page templates themselves. From there you can     customize every detail of how your Help Center appears to     your customers.</p>     <p>Learn more in <a href=\"https://support.kayako.com/article/1166-help-center-customization\" rel=\"nofollow\">our article about customizing the appearance     of your Help Center</a>.</p>   </li> </ul>",
+			"createdAt": "2016-06-30T16:13:55);00:00",
+			"updatedAt": "2017-01-18T01:46:01);00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1590"
+		}
+	],
+	"keywords": null,
+	"section": {
+		"id": 243,
+		"titles": [
+			{
+				"id": 1501,
+				"locale": "en-us",
+				"translation": "Getting started",
+				"createdAt": "2016-06-23T14:13:01);00:00",
+				"updatedAt": "2016-06-23T14:13:01);00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1501"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "243-getting-started",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 1502,
+				"locale": "en-us",
+				"translation": "If you're new to Kayako, this is the place to be. Let's get you up and running!",
+				"createdAt": "2016-06-23T14:13:01);00:00",
+				"updatedAt": "2016-06-23T14:13:01);00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1502"
+			}
+		],
+		"visibility": "PUBLIC",
+		"category": {
+			"id": 5,
+			"titles": [
+				{
+					"id": 1499,
+					"locale": "en-us",
+					"translation": "User Guide",
+					"createdAt": "2016-06-23T14:12:20);00:00",
+					"updatedAt": "2016-06-23T14:12:20);00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "5-user-guide",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1500,
+					"locale": "en-us",
+					"translation": null,
+					"createdAt": "2016-06-23T14:12:20);00:00",
+					"updatedAt": "2016-06-23T14:12:20);00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+				}
+			],
+			"brand": null,
+			"displayOrder": 1,
+			"createdAt": "2016-06-23T14:12:20);00:00",
+			"updatedAt": "2016-07-04T12:08:24);00:00",
+			"resourceType": "category",
+			"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+		},
+		"agent": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28);00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"articleOrderBy": "LATEST",
+		"totalArticles": 5,
+		"createdAt": "2016-06-23T14:13:00);00:00",
+		"updatedAt": "2017-02-03T17:08:52);00:00",
+		"resourceType": "section",
+		"resourceUrl": "https://support.kayako.com/api/v1/sections/243"
+	},
+	"creator": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28);00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"author": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28);00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"status": "PUBLISHED",
+	"upvoteCount": 0,
+	"downvoteCount": 0,
+	"views": 2971,
+	"rank": 0,
+	"tags": [],
+	"isFeatured": false,
+	"allowComments": true,
+	"totalComments": 0,
+	"createdAt": "2016-06-30T16:13:55);00:00",
+	"publishedAt": "2016-06-30T23:20:05);00:00",
+	"updatedAt": "2017-01-18T01:46:01);00:00",
+	"resourceType": "article",
+	"resourceUrl": "https://support.kayako.com/api/v1/articles/1179"
+}

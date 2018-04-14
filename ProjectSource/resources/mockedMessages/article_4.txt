@@ -1,0 +1,151 @@
+{
+	"id": 1177,
+	"uuid": "aab8ac87-b2b1-5ce2-8350-8d6fd9eac41d",
+	"titles": [
+		{
+			"id": 1585,
+			"locale": "en-us",
+			"translation": "Getting acquainted with the admin area",
+			"createdAt": "2016-06-30T16:12:40);00:00",
+			"updatedAt": "2016-06-30T16:12:40);00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1585"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "1177-getting-acquainted-with-the-admin-area",
+			"resourceType": "slug"
+		}
+	],
+	"contents": [
+		{
+			"id": 1586,
+			"locale": "en-us",
+			"translation": "<p>If you&#39;re a support manager or other power user, you&#39;ll need to get to know the admin area of Kayako. The admin area is home to a lot of workhorse Kayako features, including the automation engine, branding, and localization tools, and configuration options for views, fields, and forms.</p> <p>In this article, we&#39;ll give you a high-level introduction to the admin area of Kayako. We&#39;ll also highlight some of the features you may want to try out next, with links off to other areas of the user guide.</p> <h2>Exploring Kayako&#39;s admin features</h2> <p>When you sign in to Kayako with an administrator account, you&#39;ll see a gear icon on the top toolbar throughout the agent area.</p> <p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/7dV9RRbBDOskeHntpFV9ANAE7UQCabhQ\" alt=\"admin area link in agent area\"></p> <p>Clicking on the gear icon will take you into the admin area. You can also log directly into the admin area by adding &#39;/admin&#39; to the end of your Help Center URL.</p> <p>What you see in the admin area will depend on what permissions your administrator account has. In this article, we&#39;ll cover all the possible configuration options you&#39;d see if you have full administrative access.</p> <p><em>NOTE: To learn more, check our <a href=\"https://support.kayako.com/article/1183-assigning-user-roles-to-control-access\" rel=\"nofollow\">user guide article about user roles and permissions</a>.</em></p> <p>No matter where you are in the admin area, you&#39;ll see a sidebar menu on the left. Let&#39;s take a quick look at each section of that menu:</p> <ul>   <li>     <strong>Channels</strong> — Here you&#39;ll be able to add and     edit the channels you use to communicate with your customers.     You can manage your support team&#39;s <a href=\"https://support.kayako.com/article/1147-configuring-email-support\" rel=\"nofollow\">email addresses</a>, <a href=\"https://support.kayako.com/article/1171-enabling-kayako-messenger\" rel=\"nofollow\">Messenger instances</a>, <a href=\"https://support.kayako.com/article/1148-setting-up-twitter-support\" rel=\"nofollow\">Twitter accounts</a>, <a href=\"https://support.kayako.com/article/1149-adding-facebook-support\" rel=\"nofollow\">Facebook pages</a>, and <a href=\"https://support.kayako.com/article/1170-webhooks\" rel=\"nofollow\">incoming webhooks</a> from here.   </li>   <li>     <strong>Apps</strong>— In this section, you&#39;ll find settings     for hooking up Kayako integrations, including communicating     with other apps using <a href=\"https://support.kayako.com/article/1169-zapier\" rel=\"nofollow\">Zapier</a> or manually creating user-defined     <a href=\"https://support.kayako.com/article/1146-defining-custom-endpoints\" rel=\"nofollow\">endpoints</a> to enable further integrations.   </li>   <li>     <strong>Manage</strong> — You can use the options in this     section to customize how your team breaks down their workload     with <a href=\"https://support.kayako.com/article/1150-adding-and-editing-views\" rel=\"nofollow\">views</a>, what kind of information you track     with conversation <a href=\"https://support.kayako.com/article/1151-adding-custom-fields-for-conversations-users-and-organizations\" rel=\"nofollow\">fields</a> and <a href=\"https://support.kayako.com/article/1152-building-forms-for-different-conversation-types\" rel=\"nofollow\">forms</a>. In addition, you&#39;ll be able to     build up a collection of reusable replies and updates using     <a href=\"https://support.kayako.com/article/1153-automating-common-replies-and-updates-using-macros\" rel=\"nofollow\">macros</a>. And if you&#39;re providing <a href=\"https://support.kayako.com/article/1154-localization\" rel=\"nofollow\">multi-lingual</a> or <a href=\"https://support.kayako.com/article/1155-brands\" rel=\"nofollow\">multi-brand</a> support from your Kayako, you&#39;ll     find settings for those features here.   </li>   <li>     <strong>People</strong> — The options in this section let you     <a href=\"https://support.kayako.com/article/1180-creating-user-accounts\" rel=\"nofollow\">add and configure user accounts</a> for both     your support team and your customers. You can also configure     user roles and permissions, and group your users into     <a href=\"https://support.kayako.com/article/1156-grouping-staff-users-into-teams\" rel=\"nofollow\">staff teams</a> or <a href=\"https://support.kayako.com/article/1184-managing-customer-organizations\" rel=\"nofollow\">customer organizations</a>.   </li>   <li>     <strong>Automation</strong> — Under this heading you&#39;ll find     options for building powerful automations, including <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">SLAs</a> <a href=\"https://support.kayako.com/article/1159-creating-automations-with-triggers-and-monitors\" rel=\"nofollow\">triggers, and monitors</a>. If you haven&#39;t     gotten started with automation yet, we&#39;d recommend you start     with our <a href=\"https://support.kayako.com/article/1167-automation-intro\" rel=\"nofollow\">intro to automation article</a>.   </li>   <li><strong>Account Settings</strong> — This section of the   menu is home to all your Kayako account settings. You&#39;ll be   able to view and edit your account details, change your plan,   and edit your security settings.</li> </ul>",
+			"createdAt": "2016-06-30T16:12:40);00:00",
+			"updatedAt": "2017-01-18T02:37:18);00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1586"
+		}
+	],
+	"keywords": null,
+	"section": {
+		"id": 243,
+		"titles": [
+			{
+				"id": 1501,
+				"locale": "en-us",
+				"translation": "Getting started",
+				"createdAt": "2016-06-23T14:13:01);00:00",
+				"updatedAt": "2016-06-23T14:13:01);00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1501"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "243-getting-started",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 1502,
+				"locale": "en-us",
+				"translation": "If you're new to Kayako, this is the place to be. Let's get you up and running!",
+				"createdAt": "2016-06-23T14:13:01);00:00",
+				"updatedAt": "2016-06-23T14:13:01);00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1502"
+			}
+		],
+		"visibility": "PUBLIC",
+		"category": {
+			"id": 5,
+			"titles": [
+				{
+					"id": 1499,
+					"locale": "en-us",
+					"translation": "User Guide",
+					"createdAt": "2016-06-23T14:12:20);00:00",
+					"updatedAt": "2016-06-23T14:12:20);00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "5-user-guide",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1500,
+					"locale": "en-us",
+					"translation": null,
+					"createdAt": "2016-06-23T14:12:20);00:00",
+					"updatedAt": "2016-06-23T14:12:20);00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+				}
+			],
+			"brand": null,
+			"displayOrder": 1,
+			"createdAt": "2016-06-23T14:12:20);00:00",
+			"updatedAt": "2016-07-04T12:08:24);00:00",
+			"resourceType": "category",
+			"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+		},
+		"agent": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28);00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"articleOrderBy": "LATEST",
+		"totalArticles": 5,
+		"createdAt": "2016-06-23T14:13:00);00:00",
+		"updatedAt": "2017-02-03T17:08:52);00:00",
+		"resourceType": "section",
+		"resourceUrl": "https://support.kayako.com/api/v1/sections/243"
+	},
+	"creator": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28);00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"author": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28);00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"status": "PUBLISHED",
+	"upvoteCount": 1,
+	"downvoteCount": 0,
+	"views": 2210,
+	"rank": 0,
+	"tags": [],
+	"isFeatured": false,
+	"allowComments": true,
+	"totalComments": 2,
+	"createdAt": "2016-06-30T16:12:40);00:00",
+	"publishedAt": "2016-06-30T23:21:54);00:00",
+	"updatedAt": "2017-01-18T02:37:18);00:00",
+	"resourceType": "article",
+	"resourceUrl": "https://support.kayako.com/api/v1/articles/1177"
+}

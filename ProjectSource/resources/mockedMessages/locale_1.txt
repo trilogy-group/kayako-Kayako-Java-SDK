@@ -1,0 +1,17 @@
+{
+	"id": 1,
+	"locale": "en-us",
+	"name": "English",
+	"nativeName": "English (United States)",
+	"region": "US",
+	"nativeRegion": "United States",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": true,
+	"isLocalised": true,
+	"createdAt": "2016-01-16T05:47:57+00:00",
+	"updatedAt": "2016-01-16T05:47:57+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/1"
+}

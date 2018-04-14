@@ -1,0 +1,17 @@
+{
+	"id": 19,
+	"locale": "ar",
+	"name": "العربية",
+	"nativeName": "العربية",
+	"region": "",
+	"nativeRegion": "",
+	"script": "",
+	"variant": "",
+	"direction": "rtl",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2016-03-01T03:28:40+00:00",
+	"updatedAt": "2016-03-01T03:28:40+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/19"
+}

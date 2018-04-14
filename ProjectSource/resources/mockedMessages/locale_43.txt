@@ -1,0 +1,17 @@
+{
+	"id": 44,
+	"locale": "ms",
+	"name": "Bahasa Melayu",
+	"nativeName": "Bahasa Melayu",
+	"region": "",
+	"nativeRegion": "",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2016-12-21T12:48:14+00:00",
+	"updatedAt": "2016-12-21T12:48:14+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/44"
+}

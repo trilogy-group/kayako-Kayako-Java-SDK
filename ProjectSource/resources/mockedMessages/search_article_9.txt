@@ -1,0 +1,159 @@
+{
+	"uuid": "6c459095-007a-5149-8ac5-2d11cc4ab629",
+	"title": "Introducing the new Kayako: webinar recording",
+	"contents": "<p><span>Watch Jamie Edwards, co-founder of Kayako, and Gary McGrath,Customer Success Consultant, give this special webinar to learnmore about the new Kayako and how these changes affect existingKayako customers.</span></p><p><br/></p><p><a href=\"http://learn.kayako.com/introducing-the-new-kayako-recording\" rel=\"nofollow\"><img src=\"https://support.kayako.com/base/media/url/pAKbz5kTREX8kMwRxavep5uPBXDvcess\"/></a></p><p><br/></p><p><strong><span>What&#39;s next?</span></strong></p><p><span>1. Visit <a href=\"http://my.kayako.com/#upgrade\" rel=\"nofollow\">my.kayako.com/#upgrade</a> for more information onyour upgrade options</span></p><p><span>2. Take the new Kayako for a test drive! Sign up for a <a href=\"https://www.kayako.com/free-trial\" rel=\"nofollow\">freetrial</a></span></p><p><span>3. Check back at <a href=\"https://my.kayako.com/\" rel=\"nofollow\">my.kayako.com</a>from <strong>August 15</strong> for information on migration</span></p>",
+	"link": "https://support.kayako.com/article/1195-introducing-the-new-kayako-webinar-recording",
+	"original": {
+		"id": 1195,
+		"uuid": "6c459095-007a-5149-8ac5-2d11cc4ab629",
+		"titles": [
+			{
+				"id": 1621,
+				"locale": "en-us",
+				"translation": "Introducing the new Kayako: webinar recording",
+				"createdAt": "2016-07-07T10:18:38); 00:00",
+				"updatedAt": "2016-07-07T10:18:38); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1621"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1195-introducing-the-new-kayako-webinar-recording",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1622,
+				"locale": "en-us",
+				"translation": "<p><span>Watch Jamie Edwards, co-founder of Kayako, and Gary McGrath,Customer Success Consultant, give this special webinar to learnmore about the new Kayako and how these changes affect existingKayako customers.</span></p><p><br/></p><p><a href=\"http://learn.kayako.com/introducing-the-new-kayako-recording\" rel=\"nofollow\"><img src=\"https://support.kayako.com/base/media/url/pAKbz5kTREX8kMwRxavep5uPBXDvcess\"/></a></p><p><br/></p><p><strong><span>What&#39;s next?</span></strong></p><p><span>1. Visit <a href=\"http://my.kayako.com/#upgrade\" rel=\"nofollow\">my.kayako.com/#upgrade</a> for more information onyour upgrade options</span></p><p><span>2. Take the new Kayako for a test drive! Sign up for a <a href=\"https://www.kayako.com/free-trial\" rel=\"nofollow\">freetrial</a></span></p><p><span>3. Check back at <a href=\"https://my.kayako.com/\" rel=\"nofollow\">my.kayako.com</a>from <strong>August 15</strong> for information on migration</span></p>",
+				"createdAt": "2016-07-07T10:18:38); 00:00",
+				"updatedAt": "2016-07-07T10:18:38); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1622"
+			}
+		],
+		"keywords": "customer webinar, recording, new kayako",
+		"section": {
+			"id": 221,
+			"titles": [
+				{
+					"id": 81,
+					"locale": "en-us",
+					"translation": "Latest Updates",
+					"createdAt": "2016-04-29T05:03:03); 00:00",
+					"updatedAt": "2016-04-29T05:03:03); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/81"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "221-latest-updates",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 82,
+					"locale": "en-us",
+					"translation": "Articles in this section are visible to all users",
+					"createdAt": "2016-04-29T05:03:04); 00:00",
+					"updatedAt": "2016-04-29T05:03:04); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/82"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 2,
+				"titles": [
+					{
+						"id": 35,
+						"locale": "en-us",
+						"translation": "News",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/35"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "2-news",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 36,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/36"
+					}
+				],
+				"brand": null,
+				"displayOrder": 3,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-01T15:15:27); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/2"
+			},
+			"agent": {
+				"id": 2,
+				"fullName": "Varun Shoor",
+				"lastActiveAt": "2017-02-14T18:08:23); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/c9356716-fc6c-42a3-b0e2-4bf567f1223c?1487095703",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/2"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 84,
+			"createdAt": "2016-01-16T05:47:57); 00:00",
+			"updatedAt": "2017-01-17T09:44:51); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/221"
+		},
+		"creator": {
+			"id": 734896,
+			"fullName": "Alicia Carney",
+			"lastActiveAt": "2017-02-14T14:27:15); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/edbb977f-e95f-5a5b-9175-0d1f2ec5fddc?1487082435",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/734896"
+		},
+		"author": {
+			"id": 734896,
+			"fullName": "Alicia Carney",
+			"lastActiveAt": "2017-02-14T14:27:15); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/edbb977f-e95f-5a5b-9175-0d1f2ec5fddc?1487082435",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/734896"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 0,
+		"downvoteCount": 0,
+		"views": 2111,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": false,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2016-07-07T10:18:38); 00:00",
+		"publishedAt": "2016-07-07T10:28:42); 00:00",
+		"updatedAt": "2016-07-07T10:52:56); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1195"
+	},
+	"createdAt": "2016-07-07T10:18:38); 00:00",
+	"updatedAt": "2016-07-07T10:52:56); 00:00"
+}

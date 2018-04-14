@@ -1,0 +1,159 @@
+{
+	"uuid": "ab6f0c10-ade3-5898-bb0a-37fd808f5b07",
+	"title": "Starting out with Kayako",
+	"contents": "<p>Welcome to Kayako! We&#39;re so happy to have you here! To help  you start serving your customers using Kayako, we&#39;ve put together  this guide to walk you through the basics of getting up and  running. Each step below will walk you through the basics, and  then link off to an article with detailed explanations and  instructions for that particular task.</p>  <p><span style=\"background-color: transparent; text-align: initial;\">We&#39;ve  charted the following course to help you get started helping your  customers as quickly and smoothly as possible: </span></p>  <ul>    <li>      <a href=\"#tour\" rel=\"nofollow\">Step 1: Take a tour of the      Kayako interface</a>    </li>    <li>      <a href=\"#staff\" rel=\"nofollow\">Step 2: Add user accounts for      your staff</a>    </li>    <li>      <a href=\"#channels\" rel=\"nofollow\">Step 3: Set up your      support channels</a>    </li>    <li>      <a href=\"#conversation_replies\" rel=\"nofollow\">Step 4: Get      your team ready to start handling conversations</a>    </li>    <li>      <a href=\"#views\" rel=\"nofollow\">Step 5: Fine tune your      views</a>    </li>    <li>      <a href=\"#help_center\" rel=\"nofollow\">Step 6: Add content to      your Help Center</a>    </li>    <li>      <a href=\"#next_steps\" rel=\"nofollow\">Step 7: Explore your      next steps</a>     </li>  </ul>  <h2 id=\"tour\">Step 1: Take a tour of the Kayako interface</h2>  <p>To get oriented in Kayako, we recommend starting out with this  video tour. We&#39;ll take you quickly through each area of the  interface and introduce some key features. </p>  <p><iframe src=\"//fast.wistia.net/embed/iframe/cr5rohub5k\" title=\"Wistia video player\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen=\"allowfullscreen\" width=\"600\" height=\"337\" id=\"wistia_embed\"></iframe></p>  <script src=\"//fast.wistia.net/assets/external/E-v1.js\">  </script>  <p>You can find more detail on each area of Kayako in our  overview articles about the <a href=\"https://support.kayako.com/article/1178-navigating-the-agent-area\" rel=\"nofollow\">  agent area</a>, the <a href=\"https://support.kayako.com/article/1177-getting-acquainted-with-the-admin-area\" rel=\"nofollow\">  admin area</a>, and the <a href=\"https://support.kayako.com/article/1179-exploring-the-help-center\" rel=\"nofollow\">  Help Center</a>.</p>  <h2 id=\"staff\">Step 2: Add user accounts for your staff</h2>  <p>After you&#39;ve taken a look around, it&#39;s a good idea to start   adding user accounts for your agents. Each agent will need  their  own user account, which will let them log in to the  agent area  and start viewing and responding to  conversations. You can  quickly add staff users from the  admin area, by clicking <strong>Team Directory </strong>on  the sidebar. </p>  <p><em>NOTE: The number of agent accounts you&#39;ll be able to add   depends on how many seats your subscription  includes.</em></p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1180-adding-and-editing-user-accounts-in-kayako\" rel=\"nofollow\">our article about creating user accounts</a>.</p>  <h2 id=\"channels\">Step 3: Set up your email, real-time, and   social support channels</h2>  <p>Next step is to get Kayako ready to take questions from your   customers—no matter what their preferred method of  communication.  By default, your customers can start up a  new conversation from  your Help Center, but you&#39;ll likely  also want to: </p>  <ul>    <li>      <strong>Add one or more email addresses</strong> that Kayako       will use to receive and send messages. Learn more in      our  article on <a href=\"https://support.kayako.com/article/1147-configuring-email-support\" rel=\"nofollow\">configuring email accounts</a>.    </li>    <li>      <strong>Enable Kayako Messenger</strong>—our real-time       support tool—on your Help Center. Learn more in our      article  on <a href=\"https://support.kayako.com/article/1171-enabling-kayako-messenger\" rel=\"nofollow\">enabling live support with Messenger</a>.    </li>    <li>      <strong>Connect your social media accounts</strong> to offer       support via Twitter or Facebook. Learn more in our      articles  on <a href=\"https://support.kayako.com/article/1148-setting-up-twitter-support\" rel=\"nofollow\">setting up Twitter support</a> and <a href=\"https://support.kayako.com/article/1149-adding-facebook-support\" rel=\"nofollow\">connecting to Facebook pages</a>.    </li>  </ul>  <h2 id=\"conversation_replies\">Step 4: Get your team ready to   start handling conversations</h2>  <p>Once you have a support channel or two set up, it&#39;s time to   get your team started with actually replying to and  updating  conversations. Each conversation combines a  unified timeline of  your interactions with the customer, on  any channel, with a  powerful toolbar that lets you reply  to, assign, categorize, and  otherwise move the conversation  along.</p>  <p>Help your team get started with <a href=\"https://support.kayako.com/article/1168-responding-to-customer-conversations\" rel=\"nofollow\">our article about responding to support   conversations</a>. </p>  <h2 id=\"views\">Step 5: Fine tune your views</h2>  <p>As your queue starts to get busier, it&#39;s useful to give your   support team lots of ways to slice and dice their workload.  Maybe  they need to see only the conversations assigned to  their team,  only the conversations from a particular  organization, or only  the conversations set to a particular  priority level. Customizing  views lets you filter  conversations however you want.</p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1150-adding-and-editing-views\" rel=\"nofollow\">our article about customizing views</a>.</p>  <h2 id=\"help_center\">Step 6: Add content to your Help Center</h2>  <p>Since self-service is a valuable resource for your support   team, now is a good time to get some content up onto your  Help  Center. Kayako includes a set of frictionless content  management  tools, allowing you to add, edit, and organize  your self-service  content right from the Help Center.</p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1165-help-center-content\" rel=\"nofollow\">our article about managing Help Center   content</a>.</p>  <h2 id=\"conversation_replies\"><span style=\"background-color: transparent; text-align: initial;\">Step 7:   Explore your next steps</span></h2>  <p>Now that you&#39;ve got the basics down, why not dive a little   deeper and explore some of Kayako&#39;s more powerful features?  Here  are a few things you might try out next : </p>  <ul>    <li>      <a href=\"https://support.kayako.com/article/1156-grouping-staff-users-into-teams\" rel=\"nofollow\">Organize your staff into functional teams</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1152-building-forms-for-different-conversation-types\" rel=\"nofollow\">Customize your forms</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1167-understanding-automation-in-kayako\" rel=\"nofollow\">Learn how automation works in Kayako</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">Set up SLAs and escalations</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1166-customizing-the-appearance-of-your-help-center\" rel=\"nofollow\">Customize the appearance of your Help       Center</a>    </li>  </ul>  <p>Of course, if at any point you run into a question, we&#39;d love   to hear from you! Hit us up from the Messenger pop-up  below, the  Help Center search above, or the <strong>Start a   conversation </strong>link up top. </p>  <p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/LEOtjC8WJy8OU6tISHcyS45dhRmM8dCk\" style=\"width: 624px; height: 346.816px;\"></p>",
+	"link": "https://support.kayako.com/article/1145-starting-out-with-kayako",
+	"original": {
+		"id": 1145,
+		"uuid": "ab6f0c10-ade3-5898-bb0a-37fd808f5b07",
+		"titles": [
+			{
+				"id": 1503,
+				"locale": "en-us",
+				"translation": "Starting out with Kayako",
+				"createdAt": "2016-06-23T14:14:35); 00:00",
+				"updatedAt": "2016-06-23T14:14:35); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1503"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1145-starting-out-with-kayako",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1504,
+				"locale": "en-us",
+				"translation": "<p>Welcome to Kayako! We&#39;re so happy to have you here! To help  you start serving your customers using Kayako, we&#39;ve put together  this guide to walk you through the basics of getting up and  running. Each step below will walk you through the basics, and  then link off to an article with detailed explanations and  instructions for that particular task.</p>  <p><span style=\"background-color: transparent; text-align: initial;\">We&#39;ve  charted the following course to help you get started helping your  customers as quickly and smoothly as possible: </span></p>  <ul>    <li>      <a href=\"#tour\" rel=\"nofollow\">Step 1: Take a tour of the      Kayako interface</a>    </li>    <li>      <a href=\"#staff\" rel=\"nofollow\">Step 2: Add user accounts for      your staff</a>    </li>    <li>      <a href=\"#channels\" rel=\"nofollow\">Step 3: Set up your      support channels</a>    </li>    <li>      <a href=\"#conversation_replies\" rel=\"nofollow\">Step 4: Get      your team ready to start handling conversations</a>    </li>    <li>      <a href=\"#views\" rel=\"nofollow\">Step 5: Fine tune your      views</a>    </li>    <li>      <a href=\"#help_center\" rel=\"nofollow\">Step 6: Add content to      your Help Center</a>    </li>    <li>      <a href=\"#next_steps\" rel=\"nofollow\">Step 7: Explore your      next steps</a>     </li>  </ul>  <h2 id=\"tour\">Step 1: Take a tour of the Kayako interface</h2>  <p>To get oriented in Kayako, we recommend starting out with this  video tour. We&#39;ll take you quickly through each area of the  interface and introduce some key features. </p>  <p><iframe src=\"//fast.wistia.net/embed/iframe/cr5rohub5k\" title=\"Wistia video player\" class=\"wistia_embed\" name=\"wistia_embed\" allowfullscreen=\"allowfullscreen\" width=\"600\" height=\"337\" id=\"wistia_embed\"></iframe></p>  <script src=\"//fast.wistia.net/assets/external/E-v1.js\">  </script>  <p>You can find more detail on each area of Kayako in our  overview articles about the <a href=\"https://support.kayako.com/article/1178-navigating-the-agent-area\" rel=\"nofollow\">  agent area</a>, the <a href=\"https://support.kayako.com/article/1177-getting-acquainted-with-the-admin-area\" rel=\"nofollow\">  admin area</a>, and the <a href=\"https://support.kayako.com/article/1179-exploring-the-help-center\" rel=\"nofollow\">  Help Center</a>.</p>  <h2 id=\"staff\">Step 2: Add user accounts for your staff</h2>  <p>After you&#39;ve taken a look around, it&#39;s a good idea to start   adding user accounts for your agents. Each agent will need  their  own user account, which will let them log in to the  agent area  and start viewing and responding to  conversations. You can  quickly add staff users from the  admin area, by clicking <strong>Team Directory </strong>on  the sidebar. </p>  <p><em>NOTE: The number of agent accounts you&#39;ll be able to add   depends on how many seats your subscription  includes.</em></p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1180-adding-and-editing-user-accounts-in-kayako\" rel=\"nofollow\">our article about creating user accounts</a>.</p>  <h2 id=\"channels\">Step 3: Set up your email, real-time, and   social support channels</h2>  <p>Next step is to get Kayako ready to take questions from your   customers—no matter what their preferred method of  communication.  By default, your customers can start up a  new conversation from  your Help Center, but you&#39;ll likely  also want to: </p>  <ul>    <li>      <strong>Add one or more email addresses</strong> that Kayako       will use to receive and send messages. Learn more in      our  article on <a href=\"https://support.kayako.com/article/1147-configuring-email-support\" rel=\"nofollow\">configuring email accounts</a>.    </li>    <li>      <strong>Enable Kayako Messenger</strong>—our real-time       support tool—on your Help Center. Learn more in our      article  on <a href=\"https://support.kayako.com/article/1171-enabling-kayako-messenger\" rel=\"nofollow\">enabling live support with Messenger</a>.    </li>    <li>      <strong>Connect your social media accounts</strong> to offer       support via Twitter or Facebook. Learn more in our      articles  on <a href=\"https://support.kayako.com/article/1148-setting-up-twitter-support\" rel=\"nofollow\">setting up Twitter support</a> and <a href=\"https://support.kayako.com/article/1149-adding-facebook-support\" rel=\"nofollow\">connecting to Facebook pages</a>.    </li>  </ul>  <h2 id=\"conversation_replies\">Step 4: Get your team ready to   start handling conversations</h2>  <p>Once you have a support channel or two set up, it&#39;s time to   get your team started with actually replying to and  updating  conversations. Each conversation combines a  unified timeline of  your interactions with the customer, on  any channel, with a  powerful toolbar that lets you reply  to, assign, categorize, and  otherwise move the conversation  along.</p>  <p>Help your team get started with <a href=\"https://support.kayako.com/article/1168-responding-to-customer-conversations\" rel=\"nofollow\">our article about responding to support   conversations</a>. </p>  <h2 id=\"views\">Step 5: Fine tune your views</h2>  <p>As your queue starts to get busier, it&#39;s useful to give your   support team lots of ways to slice and dice their workload.  Maybe  they need to see only the conversations assigned to  their team,  only the conversations from a particular  organization, or only  the conversations set to a particular  priority level. Customizing  views lets you filter  conversations however you want.</p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1150-adding-and-editing-views\" rel=\"nofollow\">our article about customizing views</a>.</p>  <h2 id=\"help_center\">Step 6: Add content to your Help Center</h2>  <p>Since self-service is a valuable resource for your support   team, now is a good time to get some content up onto your  Help  Center. Kayako includes a set of frictionless content  management  tools, allowing you to add, edit, and organize  your self-service  content right from the Help Center.</p>  <p>Learn more in <a href=\"https://support.kayako.com/article/1165-help-center-content\" rel=\"nofollow\">our article about managing Help Center   content</a>.</p>  <h2 id=\"conversation_replies\"><span style=\"background-color: transparent; text-align: initial;\">Step 7:   Explore your next steps</span></h2>  <p>Now that you&#39;ve got the basics down, why not dive a little   deeper and explore some of Kayako&#39;s more powerful features?  Here  are a few things you might try out next : </p>  <ul>    <li>      <a href=\"https://support.kayako.com/article/1156-grouping-staff-users-into-teams\" rel=\"nofollow\">Organize your staff into functional teams</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1152-building-forms-for-different-conversation-types\" rel=\"nofollow\">Customize your forms</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1167-understanding-automation-in-kayako\" rel=\"nofollow\">Learn how automation works in Kayako</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">Set up SLAs and escalations</a>    </li>    <li>      <a href=\"https://support.kayako.com/article/1166-customizing-the-appearance-of-your-help-center\" rel=\"nofollow\">Customize the appearance of your Help       Center</a>    </li>  </ul>  <p>Of course, if at any point you run into a question, we&#39;d love   to hear from you! Hit us up from the Messenger pop-up  below, the  Help Center search above, or the <strong>Start a   conversation </strong>link up top. </p>  <p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/LEOtjC8WJy8OU6tISHcyS45dhRmM8dCk\" style=\"width: 624px; height: 346.816px;\"></p>",
+				"createdAt": "2016-06-23T14:14:35); 00:00",
+				"updatedAt": "2017-02-03T17:12:30); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1504"
+			}
+		],
+		"keywords": null,
+		"section": {
+			"id": 243,
+			"titles": [
+				{
+					"id": 1501,
+					"locale": "en-us",
+					"translation": "Getting started",
+					"createdAt": "2016-06-23T14:13:01); 00:00",
+					"updatedAt": "2016-06-23T14:13:01); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1501"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "243-getting-started",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1502,
+					"locale": "en-us",
+					"translation": "If you're new to Kayako, this is the place to be. Let's get you up and running!",
+					"createdAt": "2016-06-23T14:13:01); 00:00",
+					"updatedAt": "2016-06-23T14:13:01); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1502"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 5,
+				"titles": [
+					{
+						"id": 1499,
+						"locale": "en-us",
+						"translation": "User Guide",
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "5-user-guide",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 1500,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+					}
+				],
+				"brand": null,
+				"displayOrder": 1,
+				"createdAt": "2016-06-23T14:12:20); 00:00",
+				"updatedAt": "2016-07-04T12:08:24); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+			},
+			"agent": {
+				"id": 389,
+				"fullName": "Kelly O'Brien",
+				"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 5,
+			"createdAt": "2016-06-23T14:13:00); 00:00",
+			"updatedAt": "2017-02-03T17:08:52); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/243"
+		},
+		"creator": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"author": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 2,
+		"downvoteCount": 0,
+		"views": 12365,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": true,
+		"allowComments": false,
+		"totalComments": 0,
+		"createdAt": "2016-06-23T14:14:35); 00:00",
+		"publishedAt": "2016-06-23T14:14:35); 00:00",
+		"updatedAt": "2017-02-03T17:12:31); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1145"
+	},
+	"createdAt": "2016-06-23T14:14:35); 00:00",
+	"updatedAt": "2017-02-03T17:12:31); 00:00"
+}

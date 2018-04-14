@@ -1,0 +1,102 @@
+{
+	"id": 243,
+	"titles": [
+		{
+			"id": 1501,
+			"locale": "en-us",
+			"translation": "Getting started",
+			"createdAt": "2016-06-23T14:13:01+00:00",
+			"updatedAt": "2016-06-23T14:13:01+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1501"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "243-getting-started",
+			"resourceType": "slug"
+		}
+	],
+	"descriptions": [
+		{
+			"id": 1502,
+			"locale": "en-us",
+			"translation": "If you're new to Kayako, this is the place to be. Let's get you up and running!",
+			"createdAt": "2016-06-23T14:13:01+00:00",
+			"updatedAt": "2016-06-23T14:13:01+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1502"
+		}
+	],
+	"visibility": "PUBLIC",
+	"category": {
+		"id": 5,
+		"titles": [
+			{
+				"id": 1499,
+				"locale": "en-us",
+				"translation": "User Guide",
+				"createdAt": "2016-06-23T14:12:20+00:00",
+				"updatedAt": "2016-06-23T14:12:20+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "5-user-guide",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 1500,
+				"locale": "en-us",
+				"translation": null,
+				"createdAt": "2016-06-23T14:12:20+00:00",
+				"updatedAt": "2016-06-23T14:12:20+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+			}
+		],
+		"brand": null,
+		"displayOrder": 1,
+		"createdAt": "2016-06-23T14:12:20+00:00",
+		"updatedAt": "2016-07-04T12:08:24+00:00",
+		"resourceType": "category",
+		"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+	},
+	"agent": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"role": {
+			"id": 1,
+			"title": "Administrator",
+			"response": "ADMIN",
+			"resourceType": "role",
+			"resourceUrl": "https://support.kayako.com/api/v1/roles/1"
+		},
+		"teams": [
+			{
+				"id": 16,
+				"title": "Support",
+				"createdAt": "2016-01-16T05:47:57+00:00",
+				"updatedAt": "2016-03-30T11:40:31+00:00",
+				"resourceType": "teamMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/teams/16"
+			}
+		],
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1466605783",
+		"lastActivityAt": null,
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"articleOrderBy": "LATEST",
+	"totalArticles": 5,
+	"createdAt": "2016-06-23T14:13:00+00:00",
+	"updatedAt": "2016-08-12T18:56:41+00:00",
+	"resourceType": "section",
+	"resourceUrl": "https://support.kayako.com/api/v1/sections/243"
+}

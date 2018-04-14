@@ -1,0 +1,57 @@
+{
+	"id": 26,
+	"uuid": "ae275a5c-3697-5507-8c2b-311a6be95110",
+	"legacyId": null,
+	"subject": "Hello Hello",
+	"channel": "HELPCENTER",
+	"requester": {
+		"id": 15,
+		"fullName": "John Doe 2",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/fd9d91e4-b576-5f17-9aae-6b16a3dcffbc?1486698827",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
+	},
+	"creator": {
+		"id": 15,
+		"fullName": "John Doe 2",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/fd9d91e4-b576-5f17-9aae-6b16a3dcffbc?1486698827",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
+	},
+	"lastReplier": {
+		"id": 15,
+		"fullName": "John Doe 2",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/fd9d91e4-b576-5f17-9aae-6b16a3dcffbc?1486698827",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
+	},
+	"lastAgentReplier": null,
+	"assignedTeam": null,
+	"assignedAgent": null,
+	"status": {
+		"id": 1,
+		"label": "New",
+		"type": "NEW",
+		"sortOrder": 1,
+		"isSlaActive": true,
+		"isDeleted": false,
+		"createdAt": "2017-01-09T13:25:38+00:00",
+		"updatedAt": "2017-01-09T13:25:38+00:00",
+		"resourceType": "caseStatus",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/cases/statuses/1"
+	},
+	"isCompleted": false,
+	"priority": null,
+	"type": null,
+	"readMarker": null,
+	"customFields": [],
+	"realtimeChannel": "presence-61485139915436ab6fc57ca6b1e0bc87f58649bc427077133b6e71a278c3e8a2@v1_cases_26",
+	"lastRepliedAt": "2017-02-10T04:03:42+00:00",
+	"createdAt": "2017-02-10T04:03:42+00:00",
+	"updatedAt": "2017-02-10T04:03:42+00:00",
+	"resourceType": "conversation",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/26"
+}

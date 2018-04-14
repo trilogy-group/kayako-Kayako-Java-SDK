@@ -1,0 +1,14 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "conversation",
+	"offset": 5,
+	"limit": 3,
+	"totalCount": 15,
+	"firstUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=3",
+	"previousUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=3&offset=2",
+	"nextUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=3&offset=8",
+	"lastUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=3&offset=12"\n" +
+}

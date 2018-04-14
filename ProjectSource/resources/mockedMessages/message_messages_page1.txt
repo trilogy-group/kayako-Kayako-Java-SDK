@@ -1,0 +1,12 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "conversationMessage",
+	"offset": 0,
+	"limit": 5,
+	"totalCount": 16,
+	"nextUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/22/messages.json?_case=camel&include=userMinimal&limit=5&offset=5",
+	"lastUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/22/messages.json?_case=camel&include=userMinimal&limit=5&offset=15"
+}
