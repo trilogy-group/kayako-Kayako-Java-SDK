@@ -1,15 +1,6 @@
 package com.kayako.sdk.utils;
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
-public final class MessageLoader {
-package com.kayako.sdk.utils;
-
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -67,4 +58,4 @@ public final class MessageLoader {
     return messageBuilder.toString();
   }
 }
-}
+
