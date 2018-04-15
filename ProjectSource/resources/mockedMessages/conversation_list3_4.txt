@@ -28,8 +28,8 @@
 		"resourceType": "userMinimal",
 		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
 	},
-   "lastAgentReplier": null,\n"+
-		        "            "assignedTeam": null,
+	"lastAgentReplier": null,
+	"assignedTeam": null,
 	"assignedAgent": null,
 	"status": {
 		"id": 1,

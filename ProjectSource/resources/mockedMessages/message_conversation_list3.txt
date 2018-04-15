@@ -9,5 +9,5 @@
 	"totalCount": 15,
 	"firstUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=7",
 	"previousUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=7&offset=1",
-	"lastUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=7&offset=14"\n" +
+	"lastUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations.json?_case=camel&include=userMinimal%2Cteam%2CcaseStatus%2CcasePriority&limit=7&offset=14"
 }
