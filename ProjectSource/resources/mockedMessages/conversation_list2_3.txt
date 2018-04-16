@@ -28,13 +28,13 @@
 		"resourceType": "userMinimal",
 		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/6"
 	},
-   "lastAgentReplier": null,\n"+
-		        "            "assignedTeam": {
+	"lastAgentReplier": null,
+	"assignedTeam": {
 		"id": 1,
 		"title": "General",
 		"businesshour": {
-		    "id": 3,
-		    "resourceType": "businessHour"
+			"id": 3,
+			"resourceType": "businessHour"
 		},
 		"memberCount": 10,
 		"createdAt": "2017-01-09T13:25:20+00:00",
