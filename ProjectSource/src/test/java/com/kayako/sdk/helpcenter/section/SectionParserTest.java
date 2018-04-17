@@ -1,10 +1,14 @@
 package com.kayako.sdk.helpcenter.section;
 
 import static org.junit.Assert.assertTrue;
+import static org.hamcrest.CoreMatchers.notNullValue;
+
 import java.util.List;
 import java.util.Locale;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ErrorCollector;
 import com.kayako.sdk.base.parser.DataNodeParser;
 import com.kayako.sdk.utils.MessageLoader;
 
@@ -13,6 +17,9 @@ public class SectionParserTest {
   private final String MESSAGE_FILE = "section_parser";
   private final String CONTENT_FILE = "section_parser";
   private final int CONTENT_LENGTH = 5;
+
+  @Rule
+  public final ErrorCollector collector = new ErrorCollector();
 
   @Test
   public void parse() throws Exception {
@@ -31,8 +38,8 @@ public class SectionParserTest {
   }
 
   private void validateSection(Section section) {
-    Assert.assertNotNull(section.getId());
-    Assert.assertNotNull(section.getTitle());
+    collector.checkThat(section.getId(), notNullValue());
+    collector.checkThat(section.getTitle(), notNullValue());
     System.out.println(section.getId() + ":" + section.getTitle());
   }
 }
