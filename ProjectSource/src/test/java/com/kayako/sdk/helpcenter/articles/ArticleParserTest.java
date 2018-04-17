@@ -10,9 +10,9 @@ import com.kayako.sdk.utils.MessageLoader;
 
 public class ArticleParserTest {
 
-  private final String MESSAGE_FILE = "article_parser";
-  private final String CONTENT_FILE = "article_parser";
-  private final int CONTENT_LENGTH = 2;
+  private static final String MESSAGE_FILE = "article_parser";
+  private static final String CONTENT_FILE = "article_parser";
+  private static final int CONTENT_LENGTH = 2;
 
   @Test
   public void parse() throws Exception {
@@ -27,9 +27,6 @@ public class ArticleParserTest {
   }
 
   private void validateArticle1(Article article) {
-    Assert.assertNotNull(article.getId());
-    Assert.assertNotNull(article.getTitle());
-    Assert.assertNotNull(article.getAuthor());
     Assert.assertTrue(article.getLastPosted() != 0);
     Assert.assertTrue(article.getLastUpdated() != 0);
 
