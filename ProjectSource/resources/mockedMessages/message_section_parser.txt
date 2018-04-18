@@ -6,5 +6,5 @@
 	"resource": "section",
 	"offset": 0,
 	"limit": 10,
-	"totalCount": 9\n" +
+	"totalCount": 9
 }
