@@ -4,5 +4,5 @@
 		*****
 	],
 	"resource": "locale",
-	"totalCount": 44\n" +
+	"totalCount": 44
 }
