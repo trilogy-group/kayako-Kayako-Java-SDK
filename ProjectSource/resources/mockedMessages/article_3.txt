@@ -1,0 +1,151 @@
+{
+	"id": 1178,
+	"uuid": "d319f8a0-9417-5ee2-b621-013e0994630f",
+	"titles": [
+		{
+			"id": 1587,
+			"locale": "en-us",
+			"translation": "Navigating the agent area",
+			"createdAt": "2016-06-30T16:13:11+00:00",
+			"updatedAt": "2016-06-30T16:13:11+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1587"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "1178-navigating-the-agent-area",
+			"resourceType": "slug"
+		}
+	],
+	"contents": [
+		{
+			"id": 1588,
+			"locale": "en-us",
+			"translation": "<p>Your support team will be spending the majority of their time  in Kayako&#39;s agent area. From here they can keep track of the  support queue, reply to and resolve conversations, and search  through all of the user, organization, and conversation  information that Kayako stores.</p>  <p>In this article, we&#39;ll introduce you to the agent area, and  call out some of the features you&#39;ll be using most often. We&#39;ll  include links to other articles that will go into each feature in  more detail.</p>  <h2>Learning your way around the agent area</h2>  <p>You can sign in to the agent area by adding &#39;/agent&#39; to the  end of your Help Center URL. Once you&#39;re in, you&#39;ll see the inbox  for your support queue, as well as a search bar and some icons up  on the toolbar.</p>  <p>Let&#39;s take a look at the main elements on the agent area  interface:</p>  <ul>    <li>      <p><strong>Inbox and conversation views</strong> — The inbox      is the default view of your support queue, showing you all      your teams&#39; open conversations. You can click on any      conversation to open it for updates. You can also update      multiple conversations at once, by checking them and making      your changes in the &#39;Update conversations&#39; panel that      appears.<br>      <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/Pefqt9Yxmt0KRFznOOxvluSVrn8TFZSw\" alt=\"animated demo of batch updates\">In the sidebar, you&#39;ll      see a list of views, each of which will display a different      filtered list of your conversations. You can define as many      views you as you like, to suit the needs of your team.Learn      more in <a href=\"https://support.kayako.com/article/1150-adding-and-editing-views\" rel=\"nofollow\">our article creating custom views of your      support conversations</a>.</p>    </li>    <li>      <p><strong>Search bar</strong> — At the top right, you&#39;ll see      the agent search bar. From here, you can search... pretty      much every corner of Kayako. The search bar will return      results from conversations, users, organizations, Help Center      articles, you name it. You can refine your search using a      number of search modifiers. For example, you can use      &#39;in:conversations&#39; to limit your results to conversations      that match your criteria.<br>      <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/EbnIfnsL75VP2B5SwTwKsFRDl128Ss9X\" alt=\"animated demo of user search\">As soon as you start      typing, the search will return previews of the top results,      which you can browse quickly. You can also click the      <strong>Open more results</strong> link to see a full list of      the search results.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1164-unified-search\" rel=\"nofollow\">our article about unified search and what you can      do with it</a>.</p>    </li>    <li>      <p><strong>&#39;Add new&#39; menu</strong> — In the upper right is a      button with a plus on it. Clicking this will open up a menu      where you can create new conversations, users, and      organizations.<br>      <img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/C7dETeK9ElLOFlhL0rlWFcR6OovfS3PZ\" style=\"width: 467px; height: 266.711px;\">You can click the icon for      the type of content you want to create. Kayako will then      prompt you for a basic detail or two. Once you hit the      <strong>Add</strong> or <strong>Next</strong> button, you&#39;ll      be taken to the page for your new content and have the chance      to fill in all the details.</p>      <p>Learn more in our articles about <a href=\"https://support.kayako.com/article/1168-responding-to-customer-conversations\" rel=\"nofollow\">responding to conversations</a>, <a href=\"https://support.kayako.com/article/1180-creating-user-accounts\" rel=\"nofollow\">creating user accounts</a>, and <a href=\"https://support.kayako.com/article/1184-managing-customer-organizations\" rel=\"nofollow\">adding customer organizations</a>.</p>    </li>  </ul>",
+			"createdAt": "2016-06-30T16:13:11+00:00",
+			"updatedAt": "2017-01-18T02:28:19+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1588"
+		}
+	],
+	"keywords": null,
+	"section": {
+		"id": 243,
+		"titles": [
+			{
+				"id": 1501,
+				"locale": "en-us",
+				"translation": "Getting started",
+				"createdAt": "2016-06-23T14:13:01+00:00",
+				"updatedAt": "2016-06-23T14:13:01+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1501"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "243-getting-started",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 1502,
+				"locale": "en-us",
+				"translation": "If you're new to Kayako, this is the place to be. Let's get you up and running!",
+				"createdAt": "2016-06-23T14:13:01+00:00",
+				"updatedAt": "2016-06-23T14:13:01+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1502"
+			}
+		],
+		"visibility": "PUBLIC",
+		"category": {
+			"id": 5,
+			"titles": [
+				{
+					"id": 1499,
+					"locale": "en-us",
+					"translation": "User Guide",
+					"createdAt": "2016-06-23T14:12:20+00:00",
+					"updatedAt": "2016-06-23T14:12:20+00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "5-user-guide",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1500,
+					"locale": "en-us",
+					"translation": null,
+					"createdAt": "2016-06-23T14:12:20+00:00",
+					"updatedAt": "2016-06-23T14:12:20+00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+				}
+			],
+			"brand": null,
+			"displayOrder": 1,
+			"createdAt": "2016-06-23T14:12:20+00:00",
+			"updatedAt": "2016-07-04T12:08:24+00:00",
+			"resourceType": "category",
+			"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+		},
+		"agent": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28+00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"articleOrderBy": "LATEST",
+		"totalArticles": 5,
+		"createdAt": "2016-06-23T14:13:00+00:00",
+		"updatedAt": "2017-02-03T17:08:52+00:00",
+		"resourceType": "section",
+		"resourceUrl": "https://support.kayako.com/api/v1/sections/243"
+	},
+	"creator": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28+00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"author": {
+		"id": 389,
+		"fullName": "Kelly O'Brien",
+		"lastActiveAt": "2017-02-14T00:33:28+00:00",
+		"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"status": "PUBLISHED",
+	"upvoteCount": 0,
+	"downvoteCount": 0,
+	"views": 1793,
+	"rank": 0,
+	"tags": [],
+	"isFeatured": false,
+	"allowComments": true,
+	"totalComments": 0,
+	"createdAt": "2016-06-30T16:13:11+00:00",
+	"publishedAt": "2016-06-30T23:20:32+00:00",
+	"updatedAt": "2017-01-18T02:28:19+00:00",
+	"resourceType": "article",
+	"resourceUrl": "https://support.kayako.com/api/v1/articles/1178"
+}

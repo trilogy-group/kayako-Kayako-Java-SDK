@@ -1,0 +1,10 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "article",
+	"offset": 0,
+	"limit": 10,
+	"totalCount": 5
+}

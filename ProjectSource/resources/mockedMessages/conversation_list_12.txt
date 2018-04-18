@@ -1,0 +1,77 @@
+{
+	"id": 20,
+	"uuid": "a420b635-0d77-5306-af8a-867744566acc",
+	"legacyId": null,
+	"subject": "Hey",
+	"channel": "HELPCENTER",
+	"requester": {
+		"id": 14,
+		"fullName": "John Doe",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/f19cebf8-6d34-51e3-89ec-42e072a6ad43?1486460502",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/14"
+	},
+	"creator": {
+		"id": 14,
+		"fullName": "John Doe",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/f19cebf8-6d34-51e3-89ec-42e072a6ad43?1486460502",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/14"
+	},
+	"lastReplier": {
+		"id": 1,
+		"fullName": "Kayako Mobile Testing",
+		"lastActiveAt": "2017-02-13T11:54:27+00:00",
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/1e4dd52f-6383-5e07-aed0-864c06d6b232?1486986867",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/1"
+	},
+	"lastAgentReplier": null,
+	"assignedTeam": {
+		"id": 1,
+		"title": "General",
+		"businesshour": {
+			"id": 3,
+			"resourceType": "businessHour"
+		},
+		"memberCount": 10,
+		"createdAt": "2017-01-09T13:25:20+00:00",
+		"updatedAt": "2017-01-09T13:25:20+00:00",
+		"resourceType": "team",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/teams/1"
+	},
+	"assignedAgent": null,
+	"status": {
+		"id": 2,
+		"label": "Open",
+		"type": "OPEN",
+		"sortOrder": 2,
+		"isSlaActive": true,
+		"isDeleted": false,
+		"createdAt": "2017-01-09T13:25:38+00:00",
+		"updatedAt": "2017-01-09T13:25:38+00:00",
+		"resourceType": "caseStatus",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/cases/statuses/2"
+	},
+	"isCompleted": false,
+	"priority": {
+		"id": 4,
+		"label": "Urgent",
+		"level": 4,
+		"createdAt": "2017-01-09T13:25:38+00:00",
+		"updatedAt": "2017-01-09T13:25:38+00:00",
+		"resourceType": "casePriority",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/cases/priorities/4"
+	},
+	"type": null,
+	"readMarker": null,
+	"customFields": [],
+	"realtimeChannel": "presence-61485139915436ab6fc57ca6b1e0bc87f58649bc427077133b6e71a278c3e8a2@v1_cases_20",
+	"lastRepliedAt": "2017-02-07T10:40:22+00:00",
+	"createdAt": "2017-02-07T09:41:42+00:00",
+	"updatedAt": "2017-02-08T05:53:04+00:00",
+	"resourceType": "conversation",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/20"
+}

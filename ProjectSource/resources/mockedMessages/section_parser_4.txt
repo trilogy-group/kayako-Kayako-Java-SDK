@@ -1,0 +1,102 @@
+{
+	"id": 252,
+	"titles": [
+		{
+			"id": 1623,
+			"locale": "en-us",
+			"translation": "Release notes",
+			"createdAt": "2016-07-08T15:30:20+00:00",
+			"updatedAt": "2016-07-08T15:30:20+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1623"
+		}
+	],
+	"slugs": [
+		{
+			"locale": "en-us",
+			"translation": "252-release-notes",
+			"resourceType": "slug"
+		}
+	],
+	"descriptions": [
+		{
+			"id": 1624,
+			"locale": "en-us",
+			"translation": "Weekly summaries of improvements, new features and fixes in each release.",
+			"createdAt": "2016-07-08T15:30:20+00:00",
+			"updatedAt": "2016-07-08T15:30:20+00:00",
+			"resourceType": "localeField",
+			"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1624"
+		}
+	],
+	"visibility": "PUBLIC",
+	"category": {
+		"id": 5,
+		"titles": [
+			{
+				"id": 1499,
+				"locale": "en-us",
+				"translation": "User Guide",
+				"createdAt": "2016-06-23T14:12:20+00:00",
+				"updatedAt": "2016-06-23T14:12:20+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "5-user-guide",
+				"resourceType": "slug"
+			}
+		],
+		"descriptions": [
+			{
+				"id": 1500,
+				"locale": "en-us",
+				"translation": null,
+				"createdAt": "2016-06-23T14:12:20+00:00",
+				"updatedAt": "2016-06-23T14:12:20+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+			}
+		],
+		"brand": null,
+		"displayOrder": 1,
+		"createdAt": "2016-06-23T14:12:20+00:00",
+		"updatedAt": "2016-07-04T12:08:24+00:00",
+		"resourceType": "category",
+		"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+	},
+	"agent": {
+		"id": 22,
+		"fullName": "Jamie Edwards",
+		"role": {
+			"id": 5,
+			"title": "Owner",
+			"response": "OWNER",
+			"resourceType": "role",
+			"resourceUrl": "https://support.kayako.com/api/v1/roles/5"
+		},
+		"teams": [
+			{
+				"id": 46,
+				"title": "Hello",
+				"createdAt": "2016-01-16T05:47:57+00:00",
+				"updatedAt": "2016-01-16T12:58:38+00:00",
+				"resourceType": "teamMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/teams/46"
+			}
+		],
+		"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1470042534",
+		"lastActivityAt": null,
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+	},
+	"articleOrderBy": "LATEST",
+	"totalArticles": 7,
+	"createdAt": "2016-07-08T15:30:20+00:00",
+	"updatedAt": "2016-08-19T14:04:16+00:00",
+	"resourceType": "section",
+	"resourceUrl": "https://support.kayako.com/api/v1/sections/252"
+}

@@ -1,6 +1,7 @@
 package com.kayako.sdk.utils;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -8,7 +9,8 @@ import java.nio.file.Paths;
 
 public final class MessageLoader {
 
-  private static final String PATH = "resources/mockedMessages/";
+  private static final String PATH =
+      "resources" + File.separator + "mockedMessages" + File.separator;
   private static final String MSG_PREFIX = "message_";
   private static final String TXT_EXTENSION = ".txt";
   private static final String CONTENT_MARK = "*****";
@@ -18,11 +20,11 @@ public final class MessageLoader {
     throw new AssertionError("This class cannot be instantiated");
   }
 
-  public static String readFile(String msgFile, String contentFile, int contentLength) {
+  public static String readFile(String msgFile, String contentFile, int contentLength){
 
-    String line;
-    StringBuilder messageBuilder = new StringBuilder();
-    int tabs;
+		String line;
+		StringBuilder messageBuilder = new StringBuilder();
+		int tabs;
 
     try (BufferedReader msgReader = Files.newBufferedReader(
         Paths.get(PATH + MSG_PREFIX + msgFile + TXT_EXTENSION), StandardCharsets.UTF_8)) {
@@ -56,3 +58,4 @@ public final class MessageLoader {
     return messageBuilder.toString();
   }
 }
+

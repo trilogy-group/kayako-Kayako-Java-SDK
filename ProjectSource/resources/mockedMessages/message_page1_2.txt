@@ -1,0 +1,30 @@
+{
+	"id": 323,
+	"uuid": "4a6fb541-2718-4b88-9bcf-079aa481cc13",
+	"clientId": null,
+	"subject": "Hello Hello",
+	"channel": "MAIL",
+	"contentText": "RUN FOREST RUN",
+	"contentHtml": "RUN FOREST RUN",
+	"creator": {
+		"id": 10,
+		"fullName": "Neil Mathew #2",
+		"lastActiveAt": "2017-02-14T12:58:38+00:00",
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/9e3180e4-6967-5f62-93df-185beae50f93?1487077118",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/10"
+	},
+	"attachments": [],
+	"downloadAll": null,
+	"source": null,
+	"metadata": {
+		"user_agent": "",
+		"page_url": ""
+	},
+	"messageStatus": "DELIVERED",
+	"messageStatusUpdatedAt": "2017-02-13T06:46:15+00:00",
+	"createdAt": "2017-02-13T06:44:59+00:00",
+	"updatedAt": "2017-02-13T06:44:59+00:00",
+	"resourceType": "case_message",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/22/messages/323"
+}

@@ -1,0 +1,17 @@
+{
+	"id": 46,
+	"locale": "es_419",
+	"name": "español",
+	"nativeName": "Español (Latinoamérica)",
+	"region": "419",
+	"nativeRegion": "Latinoamérica",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2017-01-15T08:05:05+00:00",
+	"updatedAt": "2017-01-15T08:05:05+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/46"
+}

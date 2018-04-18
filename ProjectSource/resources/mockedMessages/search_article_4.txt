@@ -1,0 +1,159 @@
+{
+	"uuid": "e7f11dea-ac1e-5f03-b778-1696e583e77a",
+	"title": "Kayako Classic 4.77",
+	"contents": "<p>Find out more about Kayako Classic:<span> </span><a href=\"https://www.kayako.com/classic\" rel=\"nofollow\">www.kayako.com/classic</a></p>  <h2>New</h2>  <ul>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5061\" rel=\"nofollow\">SWIFT-5061</a>] - Added option for    administrators to control maximum cases per page for individual    views.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5066\" rel=\"nofollow\">SWIFT-5066</a>] - The Knowledgebase and News    wysiwyg editors now support drag/drop image upload.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5060\" rel=\"nofollow\">SWIFT-5060</a>] - <span>Emojis support has been    added to case subjects.</span>    </li>  </ul>  <h2>Fixes and other improvements</h2>  <ul>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5082\" rel=\"nofollow\">SWIFT-5082</a>] - &#34;From Email is Empty&#34; error is    logged if the FROM contains special characters    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-2992\" rel=\"nofollow\">SWIFT-2992</a>] - Duplicate tickets displayed    within Client Support Center when sorting according to status    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4479\" rel=\"nofollow\">SWIFT-4479</a>] - In Open Queue mode,    transferred chat requests are not offered in Kayako Desktop if    operator&#39;s status is set to &#39;Away&#39;    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-2440\" rel=\"nofollow\">SWIFT-2440</a>] - Help desk should not send    follow up emails to the CC&#39;d users of a ticket    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3297\" rel=\"nofollow\">SWIFT-3297</a>] - Improved pagination when    searching cases from staff control panel.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3654\" rel=\"nofollow\">SWIFT-3654</a>] - Attachment support has been    added to the staff API for notifications and replies.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3702\" rel=\"nofollow\">SWIFT-3702</a>] - In Open Queue mode, chats    cannot be transferred to staff when live chat department is not    assigned    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4424\" rel=\"nofollow\">SWIFT-4424</a>] - SLA plan is not applied if    &#34;clear Reply Due time&#34; option is enabled for a status.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4857\" rel=\"nofollow\">SWIFT-4857</a>] - Custom fields linked to Live    chat (after chat) group are not updating    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4968\" rel=\"nofollow\">SWIFT-4968</a>] - First ticket post treated as    plain text, even if it contains HTML.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5034\" rel=\"nofollow\">SWIFT-5034</a>] - Current year within yearly    ticket recurrence is now supported    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5054\" rel=\"nofollow\">SWIFT-5054</a>] - Resolved and Autoclosed date    show different timestamps in reports.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5063\" rel=\"nofollow\">SWIFT-5063</a>] - Improved support and error    messages when<span> &#34;open_basedir&#34; is enabled</span>    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5069\" rel=\"nofollow\">SWIFT-5069</a>] - Emails from iP<span>hones are    being parsed blank</span>    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5079\" rel=\"nofollow\">SWIFT-5079</a>] - Merging users generates a PHP    error    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3020\" rel=\"nofollow\">SWIFT-3020</a>] - <span>Survey email should be    sent after a ticket is closed</span>    </li>  </ul>",
+	"link": "https://support.kayako.com/article/1302-kayako-classic-4-77",
+	"original": {
+		"id": 1302,
+		"uuid": "e7f11dea-ac1e-5f03-b778-1696e583e77a",
+		"titles": [
+			{
+				"id": 1962,
+				"locale": "en-us",
+				"translation": "Kayako Classic 4.77",
+				"createdAt": "2017-02-07T10:40:46); 00:00",
+				"updatedAt": "2017-02-07T10:40:46); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1962"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1302-kayako-classic-4-77",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1963,
+				"locale": "en-us",
+				"translation": "<p>Find out more about Kayako Classic:<span> </span><a href=\"https://www.kayako.com/classic\" rel=\"nofollow\">www.kayako.com/classic</a></p>  <h2>New</h2>  <ul>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5061\" rel=\"nofollow\">SWIFT-5061</a>] - Added option for    administrators to control maximum cases per page for individual    views.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5066\" rel=\"nofollow\">SWIFT-5066</a>] - The Knowledgebase and News    wysiwyg editors now support drag/drop image upload.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5060\" rel=\"nofollow\">SWIFT-5060</a>] - <span>Emojis support has been    added to case subjects.</span>    </li>  </ul>  <h2>Fixes and other improvements</h2>  <ul>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5082\" rel=\"nofollow\">SWIFT-5082</a>] - &#34;From Email is Empty&#34; error is    logged if the FROM contains special characters    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-2992\" rel=\"nofollow\">SWIFT-2992</a>] - Duplicate tickets displayed    within Client Support Center when sorting according to status    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4479\" rel=\"nofollow\">SWIFT-4479</a>] - In Open Queue mode,    transferred chat requests are not offered in Kayako Desktop if    operator&#39;s status is set to &#39;Away&#39;    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-2440\" rel=\"nofollow\">SWIFT-2440</a>] - Help desk should not send    follow up emails to the CC&#39;d users of a ticket    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3297\" rel=\"nofollow\">SWIFT-3297</a>] - Improved pagination when    searching cases from staff control panel.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3654\" rel=\"nofollow\">SWIFT-3654</a>] - Attachment support has been    added to the staff API for notifications and replies.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3702\" rel=\"nofollow\">SWIFT-3702</a>] - In Open Queue mode, chats    cannot be transferred to staff when live chat department is not    assigned    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4424\" rel=\"nofollow\">SWIFT-4424</a>] - SLA plan is not applied if    &#34;clear Reply Due time&#34; option is enabled for a status.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4857\" rel=\"nofollow\">SWIFT-4857</a>] - Custom fields linked to Live    chat (after chat) group are not updating    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-4968\" rel=\"nofollow\">SWIFT-4968</a>] - First ticket post treated as    plain text, even if it contains HTML.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5034\" rel=\"nofollow\">SWIFT-5034</a>] - Current year within yearly    ticket recurrence is now supported    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5054\" rel=\"nofollow\">SWIFT-5054</a>] - Resolved and Autoclosed date    show different timestamps in reports.    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5063\" rel=\"nofollow\">SWIFT-5063</a>] - Improved support and error    messages when<span> &#34;open_basedir&#34; is enabled</span>    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5069\" rel=\"nofollow\">SWIFT-5069</a>] - Emails from iP<span>hones are    being parsed blank</span>    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-5079\" rel=\"nofollow\">SWIFT-5079</a>] - Merging users generates a PHP    error    </li>    <li>[<a href=\"https://kayako.atlassian.net/browse/SWIFT-3020\" rel=\"nofollow\">SWIFT-3020</a>] - <span>Survey email should be    sent after a ticket is closed</span>    </li>  </ul>",
+				"createdAt": "2017-02-07T10:40:46); 00:00",
+				"updatedAt": "2017-02-07T10:40:46); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1963"
+			}
+		],
+		"keywords": null,
+		"section": {
+			"id": 255,
+			"titles": [
+				{
+					"id": 1852,
+					"locale": "en-us",
+					"translation": "Kayako Classic Release Notes",
+					"createdAt": "2016-12-19T12:05:28); 00:00",
+					"updatedAt": "2016-12-19T12:05:28); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1852"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "255-kayako-classic-release-notes",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1853,
+					"locale": "en-us",
+					"translation": "Release notes for new Kayako Classic releases.",
+					"createdAt": "2016-12-19T12:05:28); 00:00",
+					"updatedAt": "2016-12-19T12:05:28); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1853"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 1,
+				"titles": [
+					{
+						"id": 33,
+						"locale": "en-us",
+						"translation": "Kayako Classic Documentation",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/33"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "1-kayako-classic-documentation",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 34,
+						"locale": "en-us",
+						"translation": "This user guide will bring you up to speed on key features, walk you through common tasks, and put you on the path to Kayako mastery.",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/34"
+					}
+				],
+				"brand": null,
+				"displayOrder": 2,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-04T12:04:07); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/1"
+			},
+			"agent": {
+				"id": 22,
+				"fullName": "Jamie Edwards",
+				"lastActiveAt": "2017-02-14T15:17:20); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/e020e878-f992-4f8e-b1bf-d51708d5459a?1487085440",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/22"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 5,
+			"createdAt": "2016-12-19T12:05:28); 00:00",
+			"updatedAt": "2017-02-07T10:40:46); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/255"
+		},
+		"creator": {
+			"id": 120,
+			"fullName": "Gurpreet Singh",
+			"lastActiveAt": "2017-02-14T16:36:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/cc7d490f-19b1-48a7-84f0-482dc60c8130?1487090188",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/120"
+		},
+		"author": {
+			"id": 120,
+			"fullName": "Gurpreet Singh",
+			"lastActiveAt": "2017-02-14T16:36:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/cc7d490f-19b1-48a7-84f0-482dc60c8130?1487090188",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/120"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 0,
+		"downvoteCount": 0,
+		"views": 332,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": false,
+		"allowComments": false,
+		"totalComments": 0,
+		"createdAt": "2017-02-07T10:40:46); 00:00",
+		"publishedAt": "2017-02-07T10:43:39); 00:00",
+		"updatedAt": "2017-02-07T10:43:39); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1302"
+	},
+	"createdAt": "2017-02-07T10:40:46); 00:00",
+	"updatedAt": "2017-02-07T10:43:39); 00:00"
+}

@@ -1,0 +1,159 @@
+{
+	"uuid": "e36be3a2-dbf7-5528-b8d4-ef3aad9b84f2",
+	"title": "Understanding automation in Kayako",
+	"contents": "<p>Kayako has a suite of tools to help you automate the flow of  conversations through your support team. Whether you want to set  reply and resolution deadlines, automate conversation updates,  schedule email notifications, or keep an eye on conversations  with high-priority customers, Kayako&#39;s automation tools let you  build powerful, complex business rules.</p>  <p>Before jumping in, it&#39;s useful to understand the different  types of automation that are available. In this article we&#39;ll  give you an overview of each of Kayako&#39;s automation features and  discuss some common uses to give you some ideas about how your  team can take full advantage. We&#39;ll also point you to more  in-depth resources that will help you dig in and start automating  your processes.</p>  <h2>Getting to know your automation tools</h2>  <p>Although you can create incredibly complex automations in  Kayako, the tools that you&#39;ll use to build them are simple. There  are three basic automation structures available: SLAs, monitors,  and triggers. Each serves as a building block, which you can  either use for single, one-off task automations or for pieces of  larger, multi-step workflows.</p>  <p>Let&#39;s start with a description of each structure:</p>  <ul>    <li>      <p><strong>SLAs</strong> — You&#39;ll use these to define targets      for reply and resolution times, and apply them to any      conversations that match the criteria you specify. They can      be paired with other types of automation to enable      notifications or escalations based on when a conversation is      about to — or has — breached a deadline.</p>    </li>    <li>      <p><strong>Monitors</strong> — You&#39;ll use these to check your      open conversations periodically, and then perform actions on      any that meet the criteria you specify. Kayako will run your      monitors once an hour, making them a great way to keep an eye      on your support queue and make sure nothing is slipping      through the cracks.</p>    </li>    <li>      <p><strong>Triggers</strong> — You&#39;ll use these to set      automated actions to run whenever certain conversations are      created or updated. Like monitors, triggers are tuned so they      only apply to conversations that meet the criteria you      specify. Triggers are especially useful when you&#39;re      automating a series of successive actions in broader      conversation workflows.</p>    </li>  </ul>  <p>You can learn more about these automation structures in our  articles <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">about setting SLAs and escalations</a> and about  <a href=\"https://support.kayako.com/article/1159-creating-automations-with-triggers-and-monitors\" rel=\"nofollow\">building basic monitors and triggers</a>. With  these three pieces, you can construct a huge variety of  automations to suit your support team&#39;s needs.</p>  <h2>Planning automation for your team</h2>  <p>With so many possibilities, it&#39;s helpful to start with a clear  plan of what you&#39;d like Kayako to automate for you. Whether you  have predefined business rules that you want recreate in Kayako  or you&#39;re starting from scratch, the following examples should  provide a good jumping off point.</p>  <ul>    <li>      <p><strong>Fine tune your automated conversation and survey      emails</strong> — Kayako ships with a handful of prebuilt      triggers and monitors that manage the automated conversation      emails that are sent to update customers and agents on their      conversations. To modify these, you can either make changes      to the existing automations or add new ones.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1223-modifying-automated-conversation-emails-and-satisfaction-surveys\" rel=\"nofollow\">our article about modifying your automated      conversation emails</a>.</p>    </li>    <li>      <p><strong>Optimize response and resolution times</strong> —      SLAs are the foundation of this type of automation, since      they allow you to set and monitor target times. Before you      create any, you&#39;ll need to think about the criteria by which      you want to group your conversations, and what kinds of      targets each group should have. Once you&#39;ve created SLAs for      your groupings, you can add monitors to send reminder emails      prior to your targets, as well as triggers to escalate any      conversations that have breached.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">our article about creating SLAs and      escalations</a>.</p>    </li>    <li>      <p><strong>Send reminders and notifications</strong> — You      can use automations to send notifications to certain agents      or teams to remind them about conversations that need their      attention. You could, for example, use a trigger to send a      notification email to a senior member of your department any      time a new conversation is opened by your highest profile      customer. Or you could set up a monitor to send a reminder      email for any conversations that have been waiting for a      customer reply for 48 hours.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1217-setting-automatic-notifications-and-reminders\" rel=\"nofollow\">our article about notifications and      reminders</a>.</p>    </li>    <li>      <p><strong>Assign conversations automatically</strong> —      Routing conversations automatically to particular agents or      teams comes in handy when you have multiple channels, brands,      or support types that you need to manage. For a simple      example, let&#39;s say you have one support agent charged with      handling Twitter support. You can use a trigger to      automatically assign any communication that comes in via      Twitter to that agent.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1218-controlling-assignments-with-automation\" rel=\"nofollow\">our article about automating conversation      assignments</a>.</p>    </li>    <li>      <p><strong style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">      Manage end-to-end workflows</strong><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\"> —      You can also combine all of the use cases above to create      sophisticated workflows that shepherd your conversations from      when the customer initiates it to when your team successfully      resolves it. By mapping out the different paths your support      conversations should follow, you can then create a system of      interdependent automations to accommodate even the most      complicated use cases.</span></p>    </li>    <li>      <p>Learn more in <a href=\"https://support.kayako.com/article/1219-building-end-to-end-workflows-with-automations\" rel=\"nofollow\">our article about end-to-end      workflows</a>.</p>    </li>  </ul>  <p>As you start building automations for your team, you may want  to pay a visit to <a href=\"https://support.kayako.com/article/1163-actions-conditions\" rel=\"nofollow\">our reference article on all of the available  conditions and actions</a> you can experiment with. Happy  automating! </p>",
+	"link": "https://support.kayako.com/article/1167-understanding-automation-in-kayako",
+	"original": {
+		"id": 1167,
+		"uuid": "e36be3a2-dbf7-5528-b8d4-ef3aad9b84f2",
+		"titles": [
+			{
+				"id": 1561,
+				"locale": "en-us",
+				"translation": "Understanding automation in Kayako",
+				"createdAt": "2016-06-24T22:47:01); 00:00",
+				"updatedAt": "2016-06-24T22:47:01); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1561"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1167-understanding-automation-in-kayako",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1562,
+				"locale": "en-us",
+				"translation": "<p>Kayako has a suite of tools to help you automate the flow of  conversations through your support team. Whether you want to set  reply and resolution deadlines, automate conversation updates,  schedule email notifications, or keep an eye on conversations  with high-priority customers, Kayako&#39;s automation tools let you  build powerful, complex business rules.</p>  <p>Before jumping in, it&#39;s useful to understand the different  types of automation that are available. In this article we&#39;ll  give you an overview of each of Kayako&#39;s automation features and  discuss some common uses to give you some ideas about how your  team can take full advantage. We&#39;ll also point you to more  in-depth resources that will help you dig in and start automating  your processes.</p>  <h2>Getting to know your automation tools</h2>  <p>Although you can create incredibly complex automations in  Kayako, the tools that you&#39;ll use to build them are simple. There  are three basic automation structures available: SLAs, monitors,  and triggers. Each serves as a building block, which you can  either use for single, one-off task automations or for pieces of  larger, multi-step workflows.</p>  <p>Let&#39;s start with a description of each structure:</p>  <ul>    <li>      <p><strong>SLAs</strong> — You&#39;ll use these to define targets      for reply and resolution times, and apply them to any      conversations that match the criteria you specify. They can      be paired with other types of automation to enable      notifications or escalations based on when a conversation is      about to — or has — breached a deadline.</p>    </li>    <li>      <p><strong>Monitors</strong> — You&#39;ll use these to check your      open conversations periodically, and then perform actions on      any that meet the criteria you specify. Kayako will run your      monitors once an hour, making them a great way to keep an eye      on your support queue and make sure nothing is slipping      through the cracks.</p>    </li>    <li>      <p><strong>Triggers</strong> — You&#39;ll use these to set      automated actions to run whenever certain conversations are      created or updated. Like monitors, triggers are tuned so they      only apply to conversations that meet the criteria you      specify. Triggers are especially useful when you&#39;re      automating a series of successive actions in broader      conversation workflows.</p>    </li>  </ul>  <p>You can learn more about these automation structures in our  articles <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">about setting SLAs and escalations</a> and about  <a href=\"https://support.kayako.com/article/1159-creating-automations-with-triggers-and-monitors\" rel=\"nofollow\">building basic monitors and triggers</a>. With  these three pieces, you can construct a huge variety of  automations to suit your support team&#39;s needs.</p>  <h2>Planning automation for your team</h2>  <p>With so many possibilities, it&#39;s helpful to start with a clear  plan of what you&#39;d like Kayako to automate for you. Whether you  have predefined business rules that you want recreate in Kayako  or you&#39;re starting from scratch, the following examples should  provide a good jumping off point.</p>  <ul>    <li>      <p><strong>Fine tune your automated conversation and survey      emails</strong> — Kayako ships with a handful of prebuilt      triggers and monitors that manage the automated conversation      emails that are sent to update customers and agents on their      conversations. To modify these, you can either make changes      to the existing automations or add new ones.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1223-modifying-automated-conversation-emails-and-satisfaction-surveys\" rel=\"nofollow\">our article about modifying your automated      conversation emails</a>.</p>    </li>    <li>      <p><strong>Optimize response and resolution times</strong> —      SLAs are the foundation of this type of automation, since      they allow you to set and monitor target times. Before you      create any, you&#39;ll need to think about the criteria by which      you want to group your conversations, and what kinds of      targets each group should have. Once you&#39;ve created SLAs for      your groupings, you can add monitors to send reminder emails      prior to your targets, as well as triggers to escalate any      conversations that have breached.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1158-establishing-slas-and-escalations\" rel=\"nofollow\">our article about creating SLAs and      escalations</a>.</p>    </li>    <li>      <p><strong>Send reminders and notifications</strong> — You      can use automations to send notifications to certain agents      or teams to remind them about conversations that need their      attention. You could, for example, use a trigger to send a      notification email to a senior member of your department any      time a new conversation is opened by your highest profile      customer. Or you could set up a monitor to send a reminder      email for any conversations that have been waiting for a      customer reply for 48 hours.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1217-setting-automatic-notifications-and-reminders\" rel=\"nofollow\">our article about notifications and      reminders</a>.</p>    </li>    <li>      <p><strong>Assign conversations automatically</strong> —      Routing conversations automatically to particular agents or      teams comes in handy when you have multiple channels, brands,      or support types that you need to manage. For a simple      example, let&#39;s say you have one support agent charged with      handling Twitter support. You can use a trigger to      automatically assign any communication that comes in via      Twitter to that agent.</p>      <p>Learn more in <a href=\"https://support.kayako.com/article/1218-controlling-assignments-with-automation\" rel=\"nofollow\">our article about automating conversation      assignments</a>.</p>    </li>    <li>      <p><strong style=\"text-align: initial; line-height: 1.6; background-color: transparent;\">      Manage end-to-end workflows</strong><span style=\"text-align: initial; line-height: 1.6; background-color: transparent;\"> —      You can also combine all of the use cases above to create      sophisticated workflows that shepherd your conversations from      when the customer initiates it to when your team successfully      resolves it. By mapping out the different paths your support      conversations should follow, you can then create a system of      interdependent automations to accommodate even the most      complicated use cases.</span></p>    </li>    <li>      <p>Learn more in <a href=\"https://support.kayako.com/article/1219-building-end-to-end-workflows-with-automations\" rel=\"nofollow\">our article about end-to-end      workflows</a>.</p>    </li>  </ul>  <p>As you start building automations for your team, you may want  to pay a visit to <a href=\"https://support.kayako.com/article/1163-actions-conditions\" rel=\"nofollow\">our reference article on all of the available  conditions and actions</a> you can experiment with. Happy  automating! </p>",
+				"createdAt": "2016-06-24T22:47:01); 00:00",
+				"updatedAt": "2017-02-11T19:27:17); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1562"
+			}
+		],
+		"keywords": null,
+		"section": {
+			"id": 247,
+			"titles": [
+				{
+					"id": 1511,
+					"locale": "en-us",
+					"translation": "Automation",
+					"createdAt": "2016-06-23T14:39:59); 00:00",
+					"updatedAt": "2016-06-23T14:39:59); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1511"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "247-automation",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1512,
+					"locale": "en-us",
+					"translation": "Take work off your team's plate by mastering Kayako's powerful, versatile automation tools.",
+					"createdAt": "2016-06-23T14:40:00); 00:00",
+					"updatedAt": "2016-06-23T14:40:00); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1512"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 5,
+				"titles": [
+					{
+						"id": 1499,
+						"locale": "en-us",
+						"translation": "User Guide",
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "5-user-guide",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 1500,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-06-23T14:12:20); 00:00",
+						"updatedAt": "2016-06-23T14:12:20); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+					}
+				],
+				"brand": null,
+				"displayOrder": 1,
+				"createdAt": "2016-06-23T14:12:20); 00:00",
+				"updatedAt": "2016-07-04T12:08:24); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+			},
+			"agent": {
+				"id": 389,
+				"fullName": "Kelly O'Brien",
+				"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 8,
+			"createdAt": "2016-06-23T14:39:59); 00:00",
+			"updatedAt": "2016-09-01T23:42:37); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/247"
+		},
+		"creator": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"author": {
+			"id": 389,
+			"fullName": "Kelly O'Brien",
+			"lastActiveAt": "2017-02-14T00:33:28); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1487032408",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 1,
+		"downvoteCount": 0,
+		"views": 2596,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": true,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2016-06-24T22:47:01); 00:00",
+		"publishedAt": "2016-07-01T15:33:17); 00:00",
+		"updatedAt": "2017-02-11T19:27:17); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1167"
+	},
+	"createdAt": "2016-06-24T22:47:01); 00:00",
+	"updatedAt": "2017-02-11T19:27:17); 00:00"
+}

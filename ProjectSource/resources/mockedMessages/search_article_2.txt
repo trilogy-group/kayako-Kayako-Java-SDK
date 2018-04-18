@@ -1,0 +1,172 @@
+{
+	"uuid": "5d9cb4fd-3686-57db-a559-de7c3b0480bd",
+	"title": "Recorded Webinar: How to migrate to the new Kayako",
+	"contents": "<p><a href=\"http://learn.kayako.com/recorded-webinar-how-to-migrate-the-new-kayako\" rel=\"nofollow\"></a>Great news - we&#39;re beginning to migrate our  customers&#39; data over to their new Kayako accounts. Last week, we  hosted a webinar to share our migration process with our  customers.</p>  <p>For this special presentation,  Kayako&#39;s<strong><span> </span>Customer Success Consultant  Gary McGrath</strong> walked us through:</p>  <ul>    <li>How to prepare your data for migration</li>    <li>Testing the new platform and going live</li>    <li>How to replicate business rules and defaults after    migrating</li>  </ul>  <p><a href=\"http://learn.kayako.com/recorded-webinar-how-to-migrate-the-new-kayako\" rel=\"nofollow\"><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/ugkyUpliFqtEbuAGXRgceBj6uTGt67Ba\" style=\"width: 537px; height: 264px;\"></a><br></p>  <h2>Getting ready to upgrade from Kayako Classic?</h2>  <p>Find answers to all your questions here.</p>  <p>   - <a href=\"http://www.slideshare.net/kayakocom/webinar-deck-how-to-migrate-to-the-new-kayako\" rel=\"nofollow\">Migration webinar slides</a></p>  <p>   - <a href=\"https://support.kayako.com/article/1206-understanding-how-the-upgrade-process-works\" rel=\"nofollow\">Understanding how the migration process  works</a></p>  <p>   - <a href=\"https://support.kayako.com/api/v1/articles/1206/attachments/489167/download\" rel=\"nofollow\">Kayako Migration Worksheet</a></p>  <p>   - <a href=\"https://support.kayako.com/section/253-upgrades-migration\" rel=\"nofollow\">Upgrades &amp; Migration User Guides</a></p>  <h2>Want to learn more about the new Kayako?</h2>  <p>Sign up for a <a href=\"https://www.kayako.com/product/demo\" rel=\"nofollow\">personal demo</a> of the new product here, or  check out our <a href=\"https://www.kayako.com/product/demo\" rel=\"nofollow\">recorded webinar specifically for existing  customers</a> considering an upgrade.</p>",
+	"link": "https://support.kayako.com/article/1227-recorded-webinar-how-to-migrate-to-the-new-kayako",
+	"original": {
+		"id": 1227,
+		"uuid": "5d9cb4fd-3686-57db-a559-de7c3b0480bd",
+		"titles": [
+			{
+				"id": 1721,
+				"locale": "en-us",
+				"translation": "Recorded Webinar: How to migrate to the new Kayako",
+				"createdAt": "2016-09-12T14:50:38); 00:00",
+				"updatedAt": "2016-09-12T14:50:38); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1721"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1227-recorded-webinar-how-to-migrate-to-the-new-kayako",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1722,
+				"locale": "en-us",
+				"translation": "<p><a href=\"http://learn.kayako.com/recorded-webinar-how-to-migrate-the-new-kayako\" rel=\"nofollow\"></a>Great news - we&#39;re beginning to migrate our  customers&#39; data over to their new Kayako accounts. Last week, we  hosted a webinar to share our migration process with our  customers.</p>  <p>For this special presentation,  Kayako&#39;s<strong><span> </span>Customer Success Consultant  Gary McGrath</strong> walked us through:</p>  <ul>    <li>How to prepare your data for migration</li>    <li>Testing the new platform and going live</li>    <li>How to replicate business rules and defaults after    migrating</li>  </ul>  <p><a href=\"http://learn.kayako.com/recorded-webinar-how-to-migrate-the-new-kayako\" rel=\"nofollow\"><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/ugkyUpliFqtEbuAGXRgceBj6uTGt67Ba\" style=\"width: 537px; height: 264px;\"></a><br></p>  <h2>Getting ready to upgrade from Kayako Classic?</h2>  <p>Find answers to all your questions here.</p>  <p>   - <a href=\"http://www.slideshare.net/kayakocom/webinar-deck-how-to-migrate-to-the-new-kayako\" rel=\"nofollow\">Migration webinar slides</a></p>  <p>   - <a href=\"https://support.kayako.com/article/1206-understanding-how-the-upgrade-process-works\" rel=\"nofollow\">Understanding how the migration process  works</a></p>  <p>   - <a href=\"https://support.kayako.com/api/v1/articles/1206/attachments/489167/download\" rel=\"nofollow\">Kayako Migration Worksheet</a></p>  <p>   - <a href=\"https://support.kayako.com/section/253-upgrades-migration\" rel=\"nofollow\">Upgrades &amp; Migration User Guides</a></p>  <h2>Want to learn more about the new Kayako?</h2>  <p>Sign up for a <a href=\"https://www.kayako.com/product/demo\" rel=\"nofollow\">personal demo</a> of the new product here, or  check out our <a href=\"https://www.kayako.com/product/demo\" rel=\"nofollow\">recorded webinar specifically for existing  customers</a> considering an upgrade.</p>",
+				"createdAt": "2016-09-12T14:50:38); 00:00",
+				"updatedAt": "2016-09-12T14:50:38); 00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1722"
+			}
+		],
+		"keywords": "migration, upgrade, kayako classic, the new kayako",
+		"section": {
+			"id": 221,
+			"titles": [
+				{
+					"id": 81,
+					"locale": "en-us",
+					"translation": "Latest Updates",
+					"createdAt": "2016-04-29T05:03:03); 00:00",
+					"updatedAt": "2016-04-29T05:03:03); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/81"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "221-latest-updates",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 82,
+					"locale": "en-us",
+					"translation": "Articles in this section are visible to all users",
+					"createdAt": "2016-04-29T05:03:04); 00:00",
+					"updatedAt": "2016-04-29T05:03:04); 00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/82"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 2,
+				"titles": [
+					{
+						"id": 35,
+						"locale": "en-us",
+						"translation": "News",
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/35"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "2-news",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 36,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-04-29T05:03:00); 00:00",
+						"updatedAt": "2016-04-29T05:03:00); 00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/36"
+					}
+				],
+				"brand": null,
+				"displayOrder": 3,
+				"createdAt": "2016-01-16T05:47:57); 00:00",
+				"updatedAt": "2016-07-01T15:15:27); 00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/2"
+			},
+			"agent": {
+				"id": 2,
+				"fullName": "Varun Shoor",
+				"lastActiveAt": "2017-02-14T18:08:23); 00:00",
+				"avatar": "https://support.kayako.com/avatar/get/c9356716-fc6c-42a3-b0e2-4bf567f1223c?1487095703",
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/2"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 84,
+			"createdAt": "2016-01-16T05:47:57); 00:00",
+			"updatedAt": "2017-01-17T09:44:51); 00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/221"
+		},
+		"creator": {
+			"id": 734896,
+			"fullName": "Alicia Carney",
+			"lastActiveAt": "2017-02-14T14:27:15); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/edbb977f-e95f-5a5b-9175-0d1f2ec5fddc?1487082435",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/734896"
+		},
+		"author": {
+			"id": 734896,
+			"fullName": "Alicia Carney",
+			"lastActiveAt": "2017-02-14T14:27:15); 00:00",
+			"avatar": "https://support.kayako.com/avatar/get/edbb977f-e95f-5a5b-9175-0d1f2ec5fddc?1487082435",
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/734896"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 1,
+		"downvoteCount": 0,
+		"views": 2188,
+		"rank": 0,
+		"tags": [
+			{
+				"id": 1064,
+				"resourceType": "tag"
+			},
+			{
+				"id": 1101,
+				"resourceType": "tag"
+			},
+			{
+				"id": 1249,
+				"resourceType": "tag"
+			}
+		],
+		"isFeatured": false,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2016-09-12T14:50:38); 00:00",
+		"publishedAt": "2016-09-12T14:52:47); 00:00",
+		"updatedAt": "2016-09-12T14:54:27); 00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1227"
+	},
+	"createdAt": "2016-09-12T14:50:38); 00:00",
+	"updatedAt": "2016-09-12T14:54:27); 00:00"
+}

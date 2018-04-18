@@ -1,0 +1,69 @@
+{
+	"id": 30,
+	"uuid": "a37db5e8-5dbd-5513-baeb-fdfb2d74aee2",
+	"legacyId": null,
+	"subject": "Hello Hello",
+	"channel": "HELPCENTER",
+	"requester": {
+		"id": 15,
+		"fullName": "John Doe 2",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/fd9d91e4-b576-5f17-9aae-6b16a3dcffbc?1486698827",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
+	},
+	"creator": {
+		"id": 15,
+		"fullName": "John Doe 2",
+		"lastActiveAt": null,
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/fd9d91e4-b576-5f17-9aae-6b16a3dcffbc?1486698827",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/15"
+	},
+	"lastReplier": {
+		"id": 6,
+		"fullName": "Robin Malhotra",
+		"lastActiveAt": "2017-02-13T11:53:37+00:00",
+		"avatar": "https://kayako-mobile-testing.kayako.com/avatar/get/22e238af-5bcd-5159-a4ac-e7f016821151?1486986817",
+		"resourceType": "userMinimal",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/users/6"
+	},
+	"lastAgentReplier": null,
+	"assignedTeam": {
+		"id": 1,
+		"title": "General",
+		"businesshour": {
+			"id": 3,
+			"resourceType": "businessHour"
+		},
+		"memberCount": 10,
+		"createdAt": "2017-01-09T13:25:20+00:00",
+		"updatedAt": "2017-01-09T13:25:20+00:00",
+		"resourceType": "team",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/teams/1"
+	},
+	"assignedAgent": null,
+	"status": {
+		"id": 2,
+		"label": "Open",
+		"type": "OPEN",
+		"sortOrder": 2,
+		"isSlaActive": true,
+		"isDeleted": false,
+		"createdAt": "2017-01-09T13:25:38+00:00",
+		"updatedAt": "2017-01-09T13:25:38+00:00",
+		"resourceType": "caseStatus",
+		"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/cases/statuses/2"
+	},
+	"isCompleted": false,
+	"priority": null,
+	"type": null,
+	"readMarker": null,
+	"customFields": [],
+	"realtimeChannel": "presence-61485139915436ab6fc57ca6b1e0bc87f58649bc427077133b6e71a278c3e8a2@v1_cases_30",
+	"lastRepliedAt": "2017-02-10T14:00:02+00:00",
+	"createdAt": "2017-02-10T04:17:48+00:00",
+	"updatedAt": "2017-02-10T14:00:02+00:00",
+	"resourceType": "conversation",
+	"resourceUrl": "https://kayako-mobile-testing.kayako.com/api/v1/conversations/30"
+}

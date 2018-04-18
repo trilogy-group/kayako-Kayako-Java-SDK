@@ -1,0 +1,12 @@
+{
+	"status": 200,
+	"data": [
+		*****
+	],
+	"resource": "search",
+	"offset": 0,
+	"limit": 10,
+	"totalCount": 269,
+	"nextUrl": "https://support.kayako.com/api/v1/helpcenter/search.json?_case=camel&in=articles&include=localeField%2Ccategory%2Csection%2Carticle%2CuserMinimal&offset=10&query=kayako",
+	"lastUrl": "https://support.kayako.com/api/v1/helpcenter/search.json?_case=camel&in=articles&include=localeField%2Ccategory%2Csection%2Carticle%2CuserMinimal&offset=260&query=kayako"
+}

@@ -1,0 +1,213 @@
+{
+	"uuid": "5cbc8bc2-5951-5aa2-aac8-ee57fff591f5",
+	"title": "Handling chats with Kayako Desktop for Mac",
+	"contents": "<p>Kayako Desktop provides you with a platform to interact with your site visitors and manage your support chats effectively. By connecting Kayako Desktop to your Kayako domain, you can manage live chat requests that come in through Kayako Messenger (or the chat widget on your support site, if you're using Kayako Classic).&nbsp;</p><p>Kayako Desktop provides your support team an all-in-one tool for offering real-time support, including live chat, simultaneous conversations, visitor monitoring, support for multiple Kayako instances, and much more.&nbsp;</p><p>Kayako Desktop comes in two flavors: one for Windows, one for Mac OS X. This article is about Kayako Desktop for Mac (KDFM).&nbsp;</p><p><em>NOTE: For help with Kayako Desktop for Windows, visit&nbsp;</em><a href=\"https://support.kayako.com/article/1174-handling-chats-with-kayako-desktop-for-windows\"><em>our KDFW</em><em>&nbsp;article</em></a>.</p><p>In this article, we'll give you an overview of how KDFM and Kayako work together, and then walk you through KDFM's capabilities step-by-step.&nbsp;</p><h2 id=\"understanding-kdfm\">Understanding how Kayako and KDFM work together</h2><p>Any agent that's going to be offering chat support will need to <a href=\"https://support.kayako.com/article/1117-installing-and-configuring-kayako-desktop\">install KDFM and connect it to their Kayako account</a>. From there, they'll be ready to accept chat requests from your site visitors.</p><p>Anytime a new chat request comes in, KDFM will send your team a notification. Once an agent accepts the chat, they can interact with the customer directly. They also have the option to join ongoing chats or initiate chats proactively, from the visitor list in KDFM's main window:</p><p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/cdjSnveiox6ajFv9LJPGfLlXA3WSqF3s\" style=\"width: 561px; height: 265.792px;\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\"></p><p>Once a chat conversation is started, the entire conversation is added to a case in Kayako. If the customer has an open case already, the chat transcript will get added to that case. If they don't, Kayako will open a new case for them. You'll be able to see a complete record of the conversation, including any files sent back and forth, from the case timeline.</p><p><em>NOTE: If you're using Kayako Classic, you'll find a&nbsp;</em><em>'Chat History' page that logs every chat conversation your team has. You'll find it <em>in the staff control panel, under 'Live Support'.</em></em></p><p>Now that you have a sense for how KDFW and Kayako work together, let's look at some of the common tasks you'll be using KDFW for.</p><h2 id=\"monitoring\">Monitoring site visitors</h2><p>To monitor visitors to your support site:</p><ol><li>Log into Kayako Desktop for Mac.</li><li>The first screen you'll see is the 'Visitors' screen. As soon as a new visitor arrives on your support site, you'll see their IP address appear on a new row.</li><li>When a visitor has initiated a chat, their name will appear in the 'Full Name' column.</li><li>You can click the 'Wait Time' column heading to sort visitors by how long they've been waiting for a response.<br><em>NOTE: You can sort by any of the other column headers, as well.</em></li><li>For a different view of your site visitors, you can click the location icon to see each visitor's location plotted on a map.<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/U9sOIkMZkax95oOPskn7l86qJo05mqN0\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 264px;\"><br></li><li>Read on for instructions on how to initiate or accept chats with your visitors.</li></ol><h2 id=\"incoming\">Handling incoming chats from customers</h2><p>To pick up an incoming chat:</p><ol><li>When a site visitor clicks the 'Live Support' button on your support site, KDFM will display a notification.</li><li>Click the <strong>Accept</strong> button to accept and start chatting with the customer:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/9wbVW7gUTstZ1CgQPQw3WMTbNZmeWwrU\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 300px;\"><br></li><li>If multiple customers have initiated chats, you can find them in the sidebar under the 'Incoming' heading.</li><li>Click a customer name to open a chat window.</li><li>Click the <strong>Accept</strong> button to start chatting.</li><li>From within the chat window, enter your message into the text area at the bottom and hit <strong>Enter</strong> to send it.</li><li>You can also share files with the customer by clicking the paperclip icon below the text area.<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/CEuq90ecyJQo8koddzqzWVB9s0E4Vpk7\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 241px;\" data-pin-nopin=\"true\"><br></li><li>From the window that appears, find the file you want to share and click <strong>Open</strong>.</li><li>At any point you can copy or save the chat transcript by clicking on the <strong>Actions</strong> dropdown in the upper-right.<br><em>NOTE: Remember that the chat will also be stored as a case in the agent area.</em></li><li>When the customer leaves the chat, the conversation will move down under the 'Archived Chats' heading in your sidebar.</li></ol><h2 id=\"initiating\">Initiating chats with customers</h2><p>To initiate a chat with a site visitor:</p><ol><li>In addition to accepting incoming chats, you can also proactively initiate a chat with any visitor on your site, from the 'Visitors' screen.</li><li>Select the visitor you want to chat with by clicking on their name.</li><li>Click the <strong>Actions</strong> dropdown and select one of the following:<ul><li><strong>Engage inline</strong> - Choose this option to pop up a full chat window on the page the visitor is currently viewing.</li><li><strong>Engage alert</strong> - Choose this option to display pop-up that reminds the visitor that they can chat with your support team.&nbsp;</li></ul></li><li>Once the visitor has accepted the chat, you'll be able to have a conversation with them as usual.</li></ol><h2 id=\"notifications\">Customizing your notifications settings</h2><p>To change your notification settings:</p><ol><li>From anywhere in KDFM, click the gear icon in the upper-right corner to open the 'Preferences' screen:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/GCTUkFMuaOv0UUEqws6nYhAglLVqqK46\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 246px;\"><br></li><li>From the sidebar, click the <strong>Notifications</strong> menu item.</li><li>Here you'll see a list of all of the notifications that KDFM can send.</li><li>To disable a particular notification, uncheck the 'Enabled' box.</li><li>To change the notification sound for a particular event, click the <strong>[...]</strong> button.</li><li>Select the sound file you'd like to use and click the <strong>Open</strong> button.</li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><h2 id=\"status\">Changing your online status</h2><p>To change your account's online status:</p><ol><li>You can change your online status in two ways: manually or by adjusting the automatic settings.</li><li>To change your status manually, click the <strong>Online</strong> status dropdown from the toolbar:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/SG4cXOY2dZkUHLFIXG3mw6B3LwvXhyOw\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 187px;\"><br></li><li>Select a status from the list to change your status.</li><li>When you're ready to come back online, you'll need to come back to this list and select it manually.</li><li>To modify KDFM's automatic status changes, click the gear icon to open the 'Preferences' screen.</li><li>From the sidebar, click the <strong>Chat</strong> menu item.</li><li>You'll see two options here:<ul><li><strong>Auto Busy when I'm chatting with [#] visitors</strong> - Enable this option if you want KDFM to set your status to 'Busy' automatically, whenever you're chatting with the specified number of customers.</li><li><strong>Auto Away when I'm idle for [#] minutes</strong> - Enable this option if you want KDFM to set your status to 'Away' automatically, whenever you're not interacting with KDFM for more than the specified number of minutes.</li></ul></li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><h2 id=\"settings\">Configuring other account settings</h2><p>To modify your other account settings:</p><ol><li>From anywhere in KDFM, click the gear icon in the upper-right corner to open the 'Preferences' screen.</li><li>Click the <strong>General</strong> menu item.</li><li>On this screen, you'll see several options:<ul><li><strong>Automatically launch Kayako Desktop at startup</strong> - Enable this option to launch KDFM whenever you start your computer.</li><li><strong>Automatically check for product updates</strong> - Enable this option to have KDFM check for updates regularly.</li><li><strong>Chat time interval, in seconds</strong> - Edit the value of this field to control how frequently KDFM checks with the server for new chat data.</li><li><strong>Data time interval, in seconds</strong> - Edit the value of this field to control how frequently KDFM requests updated site visitor and support agent data from the server.</li></ul></li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><p><br></p>",
+	"link": "https://support.kayako.com/article/1173-handling-chats-with-kayako-desktop-for-mac",
+	"original": {
+		"id": 1173,
+		"uuid": "5cbc8bc2-5951-5aa2-aac8-ee57fff591f5",
+		"titles": [
+			{
+				"id": 1573,
+				"locale": "en-us",
+				"translation": "Handling chats with Kayako Desktop for Mac",
+				"createdAt": "2016-06-27T22:22:41+00:00",
+				"updatedAt": "2016-06-27T22:22:41+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1573"
+			}
+		],
+		"slugs": [
+			{
+				"locale": "en-us",
+				"translation": "1173-handling-chats-with-kayako-desktop-for-mac",
+				"resourceType": "slug"
+			}
+		],
+		"contents": [
+			{
+				"id": 1574,
+				"locale": "en-us",
+				"translation": "<p>Kayako Desktop provides you with a platform to interact with your site visitors and manage your support chats effectively. By connecting Kayako Desktop to your Kayako domain, you can manage live chat requests that come in through Kayako Messenger (or the chat widget on your support site, if you're using Kayako Classic).&nbsp;</p><p>Kayako Desktop provides your support team an all-in-one tool for offering real-time support, including live chat, simultaneous conversations, visitor monitoring, support for multiple Kayako instances, and much more.&nbsp;</p><p>Kayako Desktop comes in two flavors: one for Windows, one for Mac OS X. This article is about Kayako Desktop for Mac (KDFM).&nbsp;</p><p><em>NOTE: For help with Kayako Desktop for Windows, visit&nbsp;</em><a href=\"https://support.kayako.com/article/1174-handling-chats-with-kayako-desktop-for-windows\"><em>our KDFW</em><em>&nbsp;article</em></a>.</p><p>In this article, we'll give you an overview of how KDFM and Kayako work together, and then walk you through KDFM's capabilities step-by-step.&nbsp;</p><h2 id=\"understanding-kdfm\">Understanding how Kayako and KDFM work together</h2><p>Any agent that's going to be offering chat support will need to <a href=\"https://support.kayako.com/article/1117-installing-and-configuring-kayako-desktop\">install KDFM and connect it to their Kayako account</a>. From there, they'll be ready to accept chat requests from your site visitors.</p><p>Anytime a new chat request comes in, KDFM will send your team a notification. Once an agent accepts the chat, they can interact with the customer directly. They also have the option to join ongoing chats or initiate chats proactively, from the visitor list in KDFM's main window:</p><p><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/cdjSnveiox6ajFv9LJPGfLlXA3WSqF3s\" style=\"width: 561px; height: 265.792px;\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\"></p><p>Once a chat conversation is started, the entire conversation is added to a case in Kayako. If the customer has an open case already, the chat transcript will get added to that case. If they don't, Kayako will open a new case for them. You'll be able to see a complete record of the conversation, including any files sent back and forth, from the case timeline.</p><p><em>NOTE: If you're using Kayako Classic, you'll find a&nbsp;</em><em>'Chat History' page that logs every chat conversation your team has. You'll find it <em>in the staff control panel, under 'Live Support'.</em></em></p><p>Now that you have a sense for how KDFW and Kayako work together, let's look at some of the common tasks you'll be using KDFW for.</p><h2 id=\"monitoring\">Monitoring site visitors</h2><p>To monitor visitors to your support site:</p><ol><li>Log into Kayako Desktop for Mac.</li><li>The first screen you'll see is the 'Visitors' screen. As soon as a new visitor arrives on your support site, you'll see their IP address appear on a new row.</li><li>When a visitor has initiated a chat, their name will appear in the 'Full Name' column.</li><li>You can click the 'Wait Time' column heading to sort visitors by how long they've been waiting for a response.<br><em>NOTE: You can sort by any of the other column headers, as well.</em></li><li>For a different view of your site visitors, you can click the location icon to see each visitor's location plotted on a map.<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/U9sOIkMZkax95oOPskn7l86qJo05mqN0\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 264px;\"><br></li><li>Read on for instructions on how to initiate or accept chats with your visitors.</li></ol><h2 id=\"incoming\">Handling incoming chats from customers</h2><p>To pick up an incoming chat:</p><ol><li>When a site visitor clicks the 'Live Support' button on your support site, KDFM will display a notification.</li><li>Click the <strong>Accept</strong> button to accept and start chatting with the customer:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/9wbVW7gUTstZ1CgQPQw3WMTbNZmeWwrU\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 300px;\"><br></li><li>If multiple customers have initiated chats, you can find them in the sidebar under the 'Incoming' heading.</li><li>Click a customer name to open a chat window.</li><li>Click the <strong>Accept</strong> button to start chatting.</li><li>From within the chat window, enter your message into the text area at the bottom and hit <strong>Enter</strong> to send it.</li><li>You can also share files with the customer by clicking the paperclip icon below the text area.<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/CEuq90ecyJQo8koddzqzWVB9s0E4Vpk7\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 241px;\" data-pin-nopin=\"true\"><br></li><li>From the window that appears, find the file you want to share and click <strong>Open</strong>.</li><li>At any point you can copy or save the chat transcript by clicking on the <strong>Actions</strong> dropdown in the upper-right.<br><em>NOTE: Remember that the chat will also be stored as a case in the agent area.</em></li><li>When the customer leaves the chat, the conversation will move down under the 'Archived Chats' heading in your sidebar.</li></ol><h2 id=\"initiating\">Initiating chats with customers</h2><p>To initiate a chat with a site visitor:</p><ol><li>In addition to accepting incoming chats, you can also proactively initiate a chat with any visitor on your site, from the 'Visitors' screen.</li><li>Select the visitor you want to chat with by clicking on their name.</li><li>Click the <strong>Actions</strong> dropdown and select one of the following:<ul><li><strong>Engage inline</strong> - Choose this option to pop up a full chat window on the page the visitor is currently viewing.</li><li><strong>Engage alert</strong> - Choose this option to display pop-up that reminds the visitor that they can chat with your support team.&nbsp;</li></ul></li><li>Once the visitor has accepted the chat, you'll be able to have a conversation with them as usual.</li></ol><h2 id=\"notifications\">Customizing your notifications settings</h2><p>To change your notification settings:</p><ol><li>From anywhere in KDFM, click the gear icon in the upper-right corner to open the 'Preferences' screen:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/GCTUkFMuaOv0UUEqws6nYhAglLVqqK46\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 246px;\"><br></li><li>From the sidebar, click the <strong>Notifications</strong> menu item.</li><li>Here you'll see a list of all of the notifications that KDFM can send.</li><li>To disable a particular notification, uncheck the 'Enabled' box.</li><li>To change the notification sound for a particular event, click the <strong>[...]</strong> button.</li><li>Select the sound file you'd like to use and click the <strong>Open</strong> button.</li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><h2 id=\"status\">Changing your online status</h2><p>To change your account's online status:</p><ol><li>You can change your online status in two ways: manually or by adjusting the automatic settings.</li><li>To change your status manually, click the <strong>Online</strong> status dropdown from the toolbar:<br><img class=\"fr-dib fr-draggable\" src=\"https://support.kayako.com/base/media/url/SG4cXOY2dZkUHLFIXG3mw6B3LwvXhyOw\" data-status=\"201\" data-data=\"[object Object]\" data-resource=\"media\" data-total_count=\"1\" style=\"width: 187px;\"><br></li><li>Select a status from the list to change your status.</li><li>When you're ready to come back online, you'll need to come back to this list and select it manually.</li><li>To modify KDFM's automatic status changes, click the gear icon to open the 'Preferences' screen.</li><li>From the sidebar, click the <strong>Chat</strong> menu item.</li><li>You'll see two options here:<ul><li><strong>Auto Busy when I'm chatting with [#] visitors</strong> - Enable this option if you want KDFM to set your status to 'Busy' automatically, whenever you're chatting with the specified number of customers.</li><li><strong>Auto Away when I'm idle for [#] minutes</strong> - Enable this option if you want KDFM to set your status to 'Away' automatically, whenever you're not interacting with KDFM for more than the specified number of minutes.</li></ul></li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><h2 id=\"settings\">Configuring other account settings</h2><p>To modify your other account settings:</p><ol><li>From anywhere in KDFM, click the gear icon in the upper-right corner to open the 'Preferences' screen.</li><li>Click the <strong>General</strong> menu item.</li><li>On this screen, you'll see several options:<ul><li><strong>Automatically launch Kayako Desktop at startup</strong> - Enable this option to launch KDFM whenever you start your computer.</li><li><strong>Automatically check for product updates</strong> - Enable this option to have KDFM check for updates regularly.</li><li><strong>Chat time interval, in seconds</strong> - Edit the value of this field to control how frequently KDFM checks with the server for new chat data.</li><li><strong>Data time interval, in seconds</strong> - Edit the value of this field to control how frequently KDFM requests updated site visitor and support agent data from the server.</li></ul></li><li>When you've made your changes, click the <strong>Close</strong> button to leave the 'Preferences' screen.</li></ol><p><br></p>",
+				"createdAt": "2016-06-27T22:22:41+00:00",
+				"updatedAt": "2016-06-27T22:22:41+00:00",
+				"resourceType": "localeField",
+				"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1574"
+			}
+		],
+		"keywords": "kdfm, kayako desktop for mac, live chat, kayako desktop",
+		"section": {
+			"id": 245,
+			"titles": [
+				{
+					"id": 1507,
+					"locale": "en-us",
+					"translation": "Channels",
+					"createdAt": "2016-06-23T14:39:29+00:00",
+					"updatedAt": "2016-06-23T14:39:29+00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1507"
+				}
+			],
+			"slugs": [
+				{
+					"locale": "en-us",
+					"translation": "245-channels",
+					"resourceType": "slug"
+				}
+			],
+			"descriptions": [
+				{
+					"id": 1508,
+					"locale": "en-us",
+					"translation": "Communicate with customers via email, chat, and social media – all without ever leaving Kayako.",
+					"createdAt": "2016-06-23T14:39:29+00:00",
+					"updatedAt": "2016-06-23T14:39:29+00:00",
+					"resourceType": "localeField",
+					"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1508"
+				}
+			],
+			"visibility": "PUBLIC",
+			"category": {
+				"id": 5,
+				"titles": [
+					{
+						"id": 1499,
+						"locale": "en-us",
+						"translation": "User Guide",
+						"createdAt": "2016-06-23T14:12:20+00:00",
+						"updatedAt": "2016-06-23T14:12:20+00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1499"
+					}
+				],
+				"slugs": [
+					{
+						"locale": "en-us",
+						"translation": "5-user-guide",
+						"resourceType": "slug"
+					}
+				],
+				"descriptions": [
+					{
+						"id": 1500,
+						"locale": "en-us",
+						"translation": null,
+						"createdAt": "2016-06-23T14:12:20+00:00",
+						"updatedAt": "2016-06-23T14:12:20+00:00",
+						"resourceType": "localeField",
+						"resourceUrl": "https://support.kayako.com/api/v1/locale/fields/1500"
+					}
+				],
+				"brand": null,
+				"displayOrder": 1,
+				"createdAt": "2016-06-23T14:12:20+00:00",
+				"updatedAt": "2016-07-04T12:08:24+00:00",
+				"resourceType": "category",
+				"resourceUrl": "https://support.kayako.com/api/v1/categories/5"
+			},
+			"agent": {
+				"id": 389,
+				"uuid": "74658251-3717-43c9-8653-410e7ca2e449",
+				"fullName": "Kelly O'Brien",
+				"role": {
+					"id": 1,
+					"title": "Administrator",
+					"response": "ADMIN",
+					"resourceType": "role",
+					"resourceUrl": "https://support.kayako.com/api/v1/roles/1"
+				},
+				"teams": [
+					{
+						"id": 16,
+						"title": "Support",
+						"createdAt": "2016-01-16T05:47:57+00:00",
+						"updatedAt": "2016-03-30T11:40:31+00:00",
+						"resourceType": "teamMinimal",
+						"resourceUrl": "https://support.kayako.com/api/v1/teams/16"
+					}
+				],
+				"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1466605783",
+				"lastActivityAt": null,
+				"resourceType": "userMinimal",
+				"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+			},
+			"articleOrderBy": "LATEST",
+			"totalArticles": 8,
+			"createdAt": "2016-06-23T14:39:29+00:00",
+			"updatedAt": "2016-07-08T17:21:01+00:00",
+			"resourceType": "section",
+			"resourceUrl": "https://support.kayako.com/api/v1/sections/245"
+		},
+		"creator": {
+			"id": 389,
+			"uuid": "74658251-3717-43c9-8653-410e7ca2e449",
+			"fullName": "Kelly O'Brien",
+			"role": {
+				"id": 1,
+				"title": "Administrator",
+				"response": "ADMIN",
+				"resourceType": "role",
+				"resourceUrl": "https://support.kayako.com/api/v1/roles/1"
+			},
+			"teams": [
+				{
+					"id": 16,
+					"title": "Support",
+					"createdAt": "2016-01-16T05:47:57+00:00",
+					"updatedAt": "2016-03-30T11:40:31+00:00",
+					"resourceType": "teamMinimal",
+					"resourceUrl": "https://support.kayako.com/api/v1/teams/16"
+				}
+			],
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1466605783",
+			"lastActivityAt": null,
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"author": {
+			"id": 389,
+			"uuid": "74658251-3717-43c9-8653-410e7ca2e449",
+			"fullName": "Kelly O'Brien",
+			"role": {
+				"id": 1,
+				"title": "Administrator",
+				"response": "ADMIN",
+				"resourceType": "role",
+				"resourceUrl": "https://support.kayako.com/api/v1/roles/1"
+			},
+			"teams": [
+				{
+					"id": 16,
+					"title": "Support",
+					"createdAt": "2016-01-16T05:47:57+00:00",
+					"updatedAt": "2016-03-30T11:40:31+00:00",
+					"resourceType": "teamMinimal",
+					"resourceUrl": "https://support.kayako.com/api/v1/teams/16"
+				}
+			],
+			"avatar": "https://support.kayako.com/avatar/get/74658251-3717-43c9-8653-410e7ca2e449?1466605783",
+			"lastActivityAt": null,
+			"resourceType": "userMinimal",
+			"resourceUrl": "https://support.kayako.com/api/v1/users/389"
+		},
+		"attachments": [],
+		"downloadAll": null,
+		"status": "PUBLISHED",
+		"upvoteCount": 0,
+		"downvoteCount": 0,
+		"views": 562,
+		"rank": 0,
+		"tags": [],
+		"isFeatured": false,
+		"allowComments": true,
+		"totalComments": 0,
+		"createdAt": "2016-06-27T22:22:41+00:00",
+		"publishedAt": "2016-06-30T23:26:23+00:00",
+		"updatedAt": "2016-06-30T23:26:23+00:00",
+		"resourceType": "article",
+		"resourceUrl": "https://support.kayako.com/api/v1/articles/1173"
+	},
+	"createdAt": "2016-06-27T22:22:41+00:00",
+	"updatedAt": "2016-06-30T23:26:23+00:00"
+}

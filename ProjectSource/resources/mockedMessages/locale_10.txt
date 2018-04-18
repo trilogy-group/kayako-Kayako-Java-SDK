@@ -1,0 +1,17 @@
+{
+	"id": 11,
+	"locale": "it",
+	"name": "italiano",
+	"nativeName": "Italiano",
+	"region": "",
+	"nativeRegion": "",
+	"script": "",
+	"variant": "",
+	"direction": "ltr",
+	"isPublic": false,
+	"isLocalised": false,
+	"createdAt": "2016-03-01T03:28:40+00:00",
+	"updatedAt": "2017-02-14T14:20:11+00:00",
+	"resourceType": "locale",
+	"resourceUrl": "https://support.kayako.com/api/v1/locales/11"
+}
