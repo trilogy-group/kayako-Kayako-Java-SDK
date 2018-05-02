@@ -70,22 +70,16 @@ pipeline {
     }
     post {
         always {
-            script {
+             script {
                 sh("echo 'CURRENT BUILD RESULT: ${currentBuild.currentResult}'")
                 sh("echo 'CURRENT GITHUB URL: ${env.GIT_URL}'")
                 sh("echo 'CURRENT GITHUB COMMIT: ${env.GIT_COMMIT}'")
 
-                // it shoud give us previous commit, we'll set github status on, to get correct check result
-                def previousCommit = sh (script: "git show HEAD | grep Merge |  tail -1 | awk '{print \$2}'", returnStdout: true).trim()
-                sh("echo 'PREVIOUS GITHUB COMMIT: ${previousCommit}'")
-
-                def commitToSetStatusOn = "${env.GIT_COMMIT}"
-                if ("${env.GITHUB_CONTEXT}" == "jenkins-pr/build-result" ) {
-                    commitToSetStatusOn = previousCommit
+                if ("${env.GITHUB_CONTEXT}" != "jenkins-pr/build-result" ) {
+                    def commitToSetStatusOn = "${env.GIT_COMMIT}"
+                    def githubCommit = new com.aurea.setGitHubCommitStatus()
+                    githubCommit.setGitHubCommitStatus("Build ${env.BUILD_NUMBER}", "${currentBuild.currentResult}", "${env.GIT_URL}", "${commitToSetStatusOn}", "${env.GITHUB_CONTEXT}")
                 }
-
-                def githubCommit = new com.aurea.setGitHubCommitStatus()
-                githubCommit.setGitHubCommitStatus("Build ${env.BUILD_NUMBER}", "${currentBuild.currentResult}", "${env.GIT_URL}", "${commitToSetStatusOn}", "${env.GITHUB_CONTEXT}")
             }
             script {
                 def comitterEmail = sh (
