@@ -1,0 +1,40 @@
+pipeline {
+    agent { 
+        node {
+            label "${env.DOCKER_NODE_LABEL}"
+        }
+    }
+    options {
+        timestamps()
+    }
+    stages {
+        stage('Install Toolkit') {
+            steps {
+                sh "python -V"
+                sh "apt-get install --assume-yes python-setuptools python-dev build-essential bzip2 xz-utils zlib1g libxml2-dev libxslt1-dev"
+                sh "mkdir -p /scancode"
+                sh "wget https://github.com/nexB/scancode-toolkit/releases/download/v2.2.1/scancode-toolkit-2.2.1.zip -O /scancode/scancode-toolkit-2.2.1.zip"
+                sh "unzip -o /scancode/scancode-toolkit-2.2.1.zip -d /scancode"
+                sh "ls -1 -a"
+            }
+        }
+        stage('Make Report') {
+            steps {
+                sh 'rm -rf ./scancode && mkdir ./scancode'
+                sh "/scancode/scancode-toolkit-2.2.1/scancode --format html --diag --verbose -n 4 --timeout ${env.SCANCODE_TIMEOUT}  --ignore '*.zip' --ignore '*.log' --ignore '*.jar' --ignore '*.war' --ignore '*.class' --ignore '*.pdf' --ignore '*.jpg' --ignore '*.png' --ignore '*.tmp' --ignore '*.gif' . ./scancode/oss-report.html"
+            }
+        }
+        stage("Publish Report") {
+            steps {
+                publishHTML (target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: './scancode',
+                    reportFiles: 'oss-report.html',
+                    reportName: "OSS Report"
+                ])
+            }
+        }     
+    }
+}
