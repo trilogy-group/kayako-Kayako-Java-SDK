@@ -1,0 +1,30 @@
+pipeline {
+    agent { 
+        node {
+            label "${env.DOCKER_NODE_LABEL}"
+        }
+    }
+    options {
+        timestamps()
+    }
+    stages {
+        stage('Make Report') {
+            steps {
+                sh 'rm -rf ./scancode && mkdir ./scancode'
+                sh "/scancode/scancode-toolkit-2.2.1/scancode --format html --diag --verbose -n 4 --timeout ${env.SCANCODE_TIMEOUT}  --ignore '*.zip' --ignore '*.log' --ignore '*.jar' --ignore '*.war' --ignore '*.class' --ignore '*.pdf' --ignore '*.jpg' --ignore '*.png' --ignore '*.tmp' --ignore '*.gif' . ./scancode/oss-report.html"
+            }
+        }
+        stage("Publish Report") {
+            steps {
+                publishHTML (target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: true,
+                    reportDir: './scancode',
+                    reportFiles: 'oss-report.html',
+                    reportName: "OSS Report"
+                ])
+            }
+        }     
+    }
+}
