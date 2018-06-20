@@ -71,6 +71,7 @@ pipeline {
     post {
         always {
              script {
+                // push to build
                 sh("echo 'CURRENT BUILD RESULT: ${currentBuild.currentResult}'")
                 sh("echo 'CURRENT GITHUB URL: ${env.GIT_URL}'")
                 sh("echo 'CURRENT GITHUB COMMIT: ${env.GIT_COMMIT}'")
